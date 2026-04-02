@@ -1,105 +1,72 @@
 import logging
-
-
-
 import os.path
-from crawlers.linkExtractor import writePastURLS, getPastURLs
-from crawlers.articleExtractor import getArticle
-
+import json
 import time
 import random
+from linkExtractor import writePastURLS, getPastURLs
+from articleExtractor import getArticle
 
-
-
-# Set up basic logging configuration
-logging.basicConfig(
-    level=logging.DEBUG,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    datefmt='%Y-%m-%d %H:%M:%S',
-    handlers=[
-        logging.FileHandler("app.log"),
-        logging.StreamHandler()
-    ]
-)
-
-
-
+# Logging configuration for process monitoring
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
 logger = logging.getLogger(__name__)
 
+# Folder Configuration
+folder_path = ["data/links", "data/articles"]
+for p in folder_path:
+    if not os.path.exists(p): 
+        os.makedirs(p)
 
-folder_path = [os.path.join("data", "links"),os.path.join("data","articles")]
-for folder in folder_path:
-    if not os.path.exists(folder):
-        # If the folder does not exist, create it
-        os.makedirs(folder)
-        print(f"Folder '{folder}' created.")
-    else:
-        print(f"Folder '{folder}' already exists.")
+# Complete List of Sources
+source_links = [
+    "abola.pt", 
+    "record.pt", 
+    "ojogo.pt", 
+    "sapo.pt", 
+    "noticiasaominuto.com"
+]
 
+# YEAR CONFIGURATION: Toggle based on processing needs
+# Full list for 30-year longitudinal analysis
+years = [1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022, 2024]
 
-'''
-Step 1:
-Extract the links from Arquivo.pT
-'''
-
-"""
-source_links = ["abola.pt",
-                "record.pt",
-                "ojogo.pt",
-                "desporto.sapo.pt",
-                "zap.aeiou.pt/noticias/desporto",
-                "www.noticiasaominuto.com/desporto",
-                "https://pt.euronews.com/noticias/desporto",
-                "https://www.flashscore.pt/noticias/"]
-
-begin_year = 1998
-end_year = 2024
+# STEP 1: Link Retrieval from Arquivo.pt
+print("\nSTEP 1: LINK RETRIEVAL (ARQUIVO.PT)")
 for url in source_links:
-    print(f"Extracting: {url}")
+    for year in years:
+        # getPastURLs applies dynamic limits (500 for older years)
+        links = getPastURLs(year, url)
+        writePastURLS(links, url, year, folder_path[0])
+        print(f"Source: {url} | Year: {year} | Retrieved Links: {len(links)}")
 
-    for year in range(begin_year, end_year):
-        time.sleep(random.randint(2, 5))
-        links = getPastURLs(year=str(year), url=url)
-        writePastURLS(links=links, url=url, year=str(year), filepath=folder_path)
-        print(f"year:{year} - size: {len(links)}")
-
-
-"""
-
-
-'''
-Step 2:
-Extract the articles from each link:
-'''
-
-
-
-import json
-files=[f for f in os.listdir(os.path.join("data","links")) if f.endswith(".json")]
-
-import time
-import random
-
+# STEP 2: Content Extraction and Cleaning (HTML Parsing)
+print("\nSTEP 2: ARTICLE EXTRACTION AND BOILERPLATE REMOVAL")
+# Filters only the JSON files corresponding to the selected years
+files = [f for f in os.listdir(folder_path[0]) if any(str(y) in f for y in years)]
 
 for file in files:
-    print(file)
-    data_extracted=list()
-    if not (os.path.exists(os.path.join("data", "articles", file))):
-        with open(os.path.join("data","links",file),"r") as js:
-            data=json.load(js)
-            print(data)
-            for entry in data:
-                print(entry)
-                time.sleep(random.randint(3,5))
+    print(f"Processing: {file}")
+    data_extracted = []
+    
+    with open(os.path.join(folder_path[0], file), "r", encoding='utf-8') as js:
+        links_data = json.load(js)
+        
+        for entry in links_data:
+            # Random pause to respect API limits and avoid blocking
+            time.sleep(random.uniform(2, 5)) 
+            
+            # Extraction using era-specific selectors and blacklist filters
+            res = getArticle(entry["link"], entry["year"], entry["source"], logger)
+            
+            for r in res:
+                item = entry.copy()
+                item.update(r)
+                data_extracted.append(item)
+    
+    # Saving structured data for subsequent NER analysis
+    if data_extracted:
+        output_file = os.path.join(folder_path[1], file)
+        with open(output_file, "w", encoding='utf-8') as wf:
+            json.dump(data_extracted, wf, indent=4, ensure_ascii=False)
+            print(f"  [SUCCESS] {len(data_extracted)} cleaned articles saved in {file}.")
 
-                result=getArticle(entry["link"],entry["year"],entry["source"],logger)
-                for r in result:
-                    temp=entry
-                    temp.update(r)
-                    data_extracted.append(temp)
-
-
-        with open(os.path.join("data", "articles", file), "w") as wf:
-            json.dump(data_extracted, wf, indent=4)
-    else:
-        print("File already outputted")
+print("\nPROCESS COMPLETED.")

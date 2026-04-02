@@ -1,10 +1,5 @@
 [
     {
-        "link": "https://arquivo.pt/noFrame/replay/20021123085458/http://desporto.sapo.pt:80/",
-        "source": "desporto.sapo.pt",
-        "year": "2002"
-    },
-    {
         "link": "https://arquivo.pt/noFrame/replay/20020924135246/http://desporto.sapo.pt:80/",
         "source": "desporto.sapo.pt",
         "year": "2002"
@@ -16,6 +11,11 @@
     },
     {
         "link": "https://arquivo.pt/noFrame/replay/20020921210922/http://desporto.sapo.pt:80/",
+        "source": "desporto.sapo.pt",
+        "year": "2002"
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20021123085458/http://desporto.sapo.pt:80/",
         "source": "desporto.sapo.pt",
         "year": "2002"
     }

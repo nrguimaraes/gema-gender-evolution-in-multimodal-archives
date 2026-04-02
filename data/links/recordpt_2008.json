@@ -1,6 +1,16 @@
 [
     {
-        "link": "https://arquivo.pt/noFrame/replay/20080106122509/http://www.record.pt:80/",
+        "link": "https://arquivo.pt/noFrame/replay/20081022014404/http://www.record.pt/",
+        "source": "record.pt",
+        "year": "2008"
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20080108045802/http://www.record.pt:80/",
+        "source": "record.pt",
+        "year": "2008"
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20080103003002/http://www.record.pt:80/",
         "source": "record.pt",
         "year": "2008"
     },
@@ -15,32 +25,17 @@
         "year": "2008"
     },
     {
-        "link": "https://arquivo.pt/noFrame/replay/20080103003002/http://www.record.pt:80/",
+        "link": "https://arquivo.pt/noFrame/replay/20080104163629/http://www.record.pt:80/",
         "source": "record.pt",
         "year": "2008"
     },
     {
-        "link": "https://arquivo.pt/noFrame/replay/20080214151721/http://www.record.pt/",
+        "link": "https://arquivo.pt/noFrame/replay/20080106122509/http://www.record.pt:80/",
         "source": "record.pt",
         "year": "2008"
     },
     {
         "link": "https://arquivo.pt/noFrame/replay/20080314153048/http://www.record.pt/",
-        "source": "record.pt",
-        "year": "2008"
-    },
-    {
-        "link": "https://arquivo.pt/noFrame/replay/20081022014404/http://www.record.pt/",
-        "source": "record.pt",
-        "year": "2008"
-    },
-    {
-        "link": "https://arquivo.pt/noFrame/replay/20080108045802/http://www.record.pt:80/",
-        "source": "record.pt",
-        "year": "2008"
-    },
-    {
-        "link": "https://arquivo.pt/noFrame/replay/20081026020851/http://www.record.pt/",
         "source": "record.pt",
         "year": "2008"
     },
@@ -55,7 +50,12 @@
         "year": "2008"
     },
     {
-        "link": "https://arquivo.pt/noFrame/replay/20080104163629/http://www.record.pt:80/",
+        "link": "https://arquivo.pt/noFrame/replay/20081026020851/http://www.record.pt/",
+        "source": "record.pt",
+        "year": "2008"
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20080214151721/http://www.record.pt/",
         "source": "record.pt",
         "year": "2008"
     }

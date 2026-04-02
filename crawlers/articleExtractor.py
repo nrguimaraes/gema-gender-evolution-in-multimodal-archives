@@ -1,271 +1,104 @@
 import requests
 from bs4 import BeautifulSoup
 import re
-import os.path
-def desportosapo_extractor(url,year,logger):
-    article_list=list()
 
+def generic_clean(elements, url):
+    """
+    Filters 'garbage' from menus, titles with context, and removes local duplicates.
+    """
+    extracted = []
+    # Words that indicate navigation menus rather than news content
+    blacklist = ["chat", "fórum", "discussão", "on-line", "classificações", "pesquisa", 
+                 "contactos", "contatos", "publicidade", "newsletter", "tópicos", "seguinte"]
+    
+    for e in elements:
+        if e:
+            title = e.get_text().strip()
+            # Title > 30 characters to ensure enough context for BERTimbau
+            if len(title) > 30 and not any(word in title.lower() for word in blacklist):
+                # Cleaning double spaces and line breaks
+                title = re.sub(r'\s+', ' ', title)
+                extracted.append({"title": title, "link": url})
+    return extracted
+
+def abola_extractor(url, year, logger):
+    headers = {"User-Agent": "Mozilla/5.0"}
     try:
-        response = requests.get(url)
+        response = requests.get(url, headers=headers, timeout=60)
         soup = BeautifulSoup(response.text, 'html.parser')
-        element = soup.find_all(class_="title")
-        for e in element:
-            try:
-                link="https://arquivo.pt/"+e.find("a")["href"]
-                temp={"title":e.get_text(),"link":link}
-                article_list.append(temp)
-            except Exception as ex:
-                print(str(ex))
-                logger.error(str(ex) + "  " + url)
-    except Exception as ex2:
-        print(str(ex2))
-        logger.error(str(ex2) + "  " + url)
-    return article_list
-
-
-def noticiasminuto_extractor(url,year,logger):
-    article_list=list()
-
-    try:
-        response = requests.get(url)
-        soup = BeautifulSoup(response.text, 'html.parser')
-        element = soup.find_all(class_="article-thumb-text")
-        article_list=list()
-        for e in element:
-            try:
-                link=e.find("a")["href"]
-                temp={"title":e.get_text().replace("\n",""),"link":link}
-                article_list.append(temp)
-            except Exception as ex:
-                print(str(ex))
-                logger.error(str(ex) + "  " + url)
-    except Exception as ex2:
-        print(str(ex2))
-        logger.error(str(ex2) + "  " + url)
-    return article_list
-
-
-
-def aeiou_extractor(url,year,logger):
-    article_list = list()
-    try:
-        response = requests.get(url)
-        soup = BeautifulSoup(response.text, 'html.parser')
-        element = soup.find_all(attrs={"class":"post-item-title"})
-        for e in element:
-            try:
-                link=e.find("a")["href"]
-                temp={"title":e.get_text().replace("\n",""),"link":link}
-                article_list.append(temp)
-            except Exception as ex:
-                print(str(ex))
-                logger.error(str(ex) + "  " + url)
-    except Exception as ex2:
-        print(str(ex2))
-        logger.error(str(ex2) + "  " + url)
-    return article_list
-
-
-def flashscore_extractor(url,year,logger):
-    article_list=list()
-
-    try:
-        response = requests.get(url)
-        soup = BeautifulSoup(response.text, 'html.parser')
-        element = soup.find_all(attrs={"class":"rssNews"})
-        for e in element:
-            try:
-                link=link="https://arquivo.pt/"+e["href"]
-                temp={"title":e.get_text().replace("\n",""),"link":link}
-                article_list.append(temp)
-            except Exception as ex:
-                print(str(ex))
-                logger.error(str(ex) + "  " + url)
-    except Exception as ex2:
-        print(str(ex2))
-        logger.error(str(ex2) + "  " + url)
-    return article_list
-
-import re
-
-def euronews_extractor(url,year,logger):
-    article_list = list()
-    try:
-        response = requests.get(url)
-        soup = BeautifulSoup(response.text, 'html.parser')
-        element = soup.find_all(attrs={"class":"m-object__title__link"})
-        for e in element:
-            try:
-                link="https://arquivo.pt/"+e["href"]
-                title=e.get_text().replace("\n","")
-                title=re.sub(r'\s+', ' ', title)
-                temp={"title":title,"link":link}
-                article_list.append(temp)
-            except Exception as ex:
-                print(str(ex))
-                logger.error(str(ex) + "  " + url)
-    except Exception as ex2:
-        print(str(ex2))
-        logger.error(str(ex2) + "  " + url)
-    return article_list
-
-
-
-
-
-def record_extractor(url,year,logger):
-    article_list=list()
-    try:
-        response = requests.get(url)
-        soup = BeautifulSoup(response.text, 'html.parser')
-        element = soup.find_all(attrs={"class":"noticia_box"})
-
-        for e in element:
-            try:
-
-                link="https://arquivo.pt/"+e.find("a")["href"]
-                title=e.find("a").get_text().replace("\n","")
-                title=re.sub(r'\s+', ' ', title)
-                temp={"title":title,"link":link}
-                article_list.append(temp)
-            except Exception as ex:
-                print(str(ex))
-                logger.error(str(ex) + "  " + url)
-    except Exception as ex2:
-        print(str(ex2))
-        logger.error(str(ex2) + "  " + url)
-    return article_list
-
-
-def ojogo_extractor(url,year,logger):
-    article_list = list()
-    try:
-        response = requests.get(url)
-        soup = BeautifulSoup(response.text, 'html.parser')
-        element = soup.find_all("article")
-        for e in element:
-            try:
-                e=e.find("h2")
-                link="https://arquivo.pt/"+e.find("a")["href"]
-                title=e.find("a").get_text().replace("\n","")
-                title=re.sub(r'\s+', ' ', title)
-                temp={"title":title,"link":link}
-                article_list.append(temp)
-            except Exception as ex:
-                print(str(ex))
-                logger.error(str(ex) + "  " + url)
-    except Exception as ex2:
-        print(str(ex2))
-        logger.error(str(ex2) + "  " + url)
-    return article_list
-
-
-
-def abola_extractor_2009(url,logger):
-    #linkNoticias
-    article_list = list()
-    try:
-        response = requests.get(url)
-        soup = BeautifulSoup(response.text, 'html.parser')
-        element = soup.find_all(attrs={"class":"linkNoticias"})
-        for e in element:
-            try:
-                link = url+"/"+e["href"]
-                title = re.sub(r'\s+', ' ', e.get_text())
-                temp = {"title": title, "link": link}
-                article_list.append(temp)
-            except Exception as ex:
-                print(str(ex))
-                logger.error(str(ex) + "  " + url)
-    except Exception as ex2:
-        print(str(ex2))
-        logger.error(str(ex2) + "  " + url)
-    return article_list
-
-print(abola_extractor_2009("https://arquivo.pt/noFrame/replay/20090520150834/http://www.abola.pt/",None))
-
-def abola_extractor(url,year,logger):
-    if year in range(2009,2014):
-        abola_extractor_2009(url,logger)
-    else:
-        abola_extractor_default(url,logger)
-
-
-
-def abola_extractor_default(url,logger):
-
-    article_list=list()
-    try:
-        response = requests.get(url)
-        soup = BeautifulSoup(response.text, 'html.parser')
-
-        element = soup.find_all(attrs={"class":["col-md-4 col-sm-6 col-xs-12","col-sm-6 col-xs-12","col-xs-12 top-a1","content-box"]})
-        for e in element:
-            try:
-                link="https://arquivo.pt/"+e.find("a")["href"]
-                title=e.find(attrs={"class":"titulo"}).get_text().replace("\n","")
-                title=re.sub(r'\s+', ' ', title)
-                temp={"title":title,"link":link}
-                article_list.append(temp)
-                logger.info(url + "   extracted")
-            except Exception as ex:
-                print(str(ex))
-                logger.error(str(ex)+"  "+url)
-    except Exception as ex2:
-        print(str(ex2))
-        logger.error(str(ex2) + "  " + url)
-
-    return article_list
-
-
-
-def getArticle(link,year,source,logger):
-    if(source =="abola.pt"):
-        return(abola_extractor(link,logger))
-    elif(source=="desporto.sapo.pt"):
-        return(desportosapo_extractor(link,logger))
-    elif (source == "https://pt.euronews.com/noticias/desporto"):
-        return (euronews_extractor(link,logger))
-    elif (source == "https://www.flashscore.pt/noticias/"):
-        return (flashscore_extractor(link,logger))
-    elif (source == "zap.aeiou.pt/noticias/desporto"):
-        return (aeiou_extractor(link,logger))
-    elif (source == "www.noticiasaominuto.com/desporto"):
-        return (noticiasminuto_extractor(link,logger))
-    elif (source == "ojogo.pt"):
-        return (ojogo_extractor(link,logger))
-    elif (source == "record.pt"):
-        return (record_extractor(link,logger))
-    else:
-        print("Extractor not found")
+        y = int(year)
+        
+        # Era-based selector logic for higher historical precision
+        if y <= 2006: 
+            elements = soup.select('td.noticia-titulo, b font, .linkNoticias, td.titulo')
+        else: 
+            elements = soup.find_all(class_="titulo") or soup.select('h1, h2')
+            
+        return generic_clean(elements, url)
+    except Exception as e:
+        logger.error(f"A Bola Error {year}: {e}")
         return []
 
-"""
+def record_extractor(url, year, logger):
+    headers = {"User-Agent": "Mozilla/5.0"}
+    try:
+        response = requests.get(url, headers=headers, timeout=60)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        y = int(year)
+        
+        # Era-based selectors (Record)
+        if y <= 2006: 
+            elements = soup.select('.noticia_box a, b')
+        elif y <= 2015:
+            elements = soup.select('.txt-preto, .newsslot h2')
+        else: 
+            elements = soup.select('h1, .title')
+            
+        return generic_clean(elements, url)
+    except Exception as e:
+        logger.error(f"Record Error {year}: {e}")
+        return []
 
+def ojogo_extractor(url, year, logger):
+    headers = {"User-Agent": "Mozilla/5.0"}
+    try:
+        response = requests.get(url, headers=headers, timeout=60)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        # O Jogo maintains high consistency between h2 and specific classes
+        elements = soup.select('article h2, .titnot, h1')
+        return generic_clean(elements, url)
+    except Exception as e:
+        logger.error(f"O Jogo Error {year}: {e}")
+        return []
 
-t=abola_extractor("https://arquivo.pt/noFrame/replay/20230103175131/https://www.abola.pt/")
-for i in t:
-    print(i)
+def desportosapo_extractor(url, year, logger):
+    try:
+        response = requests.get(url, timeout=60)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        elements = soup.select('.title, h1, h2')
+        return generic_clean(elements, url)
+    except: return []
 
+def noticiasminuto_extractor(url, year, logger):
+    try:
+        response = requests.get(url, timeout=60)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        elements = soup.select('.article-thumb-text, h1')
+        return generic_clean(elements, url)
+    except: return []
 
-
-
-
-
-import json
-
-for year in range(2023,2001,-1):
-    # Reading a JSON file
-    articles=list()
-    print(year)
-    with open(os.path.join("data","links","desportosapopt_"+str(year)+".json"), 'r') as file:
-        data = json.load(file)
-        for entry in data:
-            t=desportosapo_extractor(entry["link"])
-            if(t):
-                articles=articles+t
-    print(len(articles))
-
-#desportosapo_extractor("https://arquivo.pt/noFrame/replay/20220204181450/https://desporto.sapo.pt/")
-
-"""
+def getArticle(link, year, source, logger):
+    """Main router for multimodal article extraction."""
+    source_lower = source.lower()
+    if "abola.pt" in source_lower: 
+        return abola_extractor(link, year, logger)
+    elif "record.pt" in source_lower: 
+        return record_extractor(link, year, logger)
+    elif "ojogo.pt" in source_lower: 
+        return ojogo_extractor(link, year, logger)
+    elif "sapo.pt" in source_lower: 
+        return desportosapo_extractor(link, year, logger)
+    elif "noticiasaominuto.com" in source_lower: 
+        return noticiasminuto_extractor(link, year, logger)
+    else: 
+        return []
