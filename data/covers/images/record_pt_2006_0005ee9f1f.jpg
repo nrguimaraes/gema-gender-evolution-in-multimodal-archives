@@ -1,0 +1,1179 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<!-- WB Insert -->
+<script>
+  wbinfo = {};
+  wbinfo.top_url = "https://arquivo.pt/noFrame/replay/20200427114945/https://www.record.pt/getimage.asp?tb=DESTAQUES&id=109023";
+  wbinfo.url = "https://www.record.pt/getimage.asp?tb=DESTAQUES&id=109023";
+  wbinfo.timestamp = "20200427114945";
+  wbinfo.request_ts = "20200427114945";
+  wbinfo.prefix = decodeURI("https://arquivo.pt/noFrame/replay/");
+  wbinfo.mod = "";
+  wbinfo.is_framed = false;
+  wbinfo.is_live = false;
+  wbinfo.coll = "replay";
+  wbinfo.proxy_magic = "";
+  wbinfo.static_prefix = "https://arquivo.pt/noFrame/static/";
+  wbinfo.enable_auto_fetch = true;
+  wbinfo.target_frame = "___wb_replay_top_frame";
+</script>
+<script src='https://arquivo.pt/noFrame/static/wombat.js'> </script>
+<script>
+  wbinfo.wombat_ts = "20200427114945";
+  wbinfo.wombat_sec = "1587988185";
+  wbinfo.wombat_scheme = "https";
+  wbinfo.wombat_host = "www.record.pt";
+
+  wbinfo.wombat_opts = {};
+
+  if (window && window._WBWombatInit) {
+    window._WBWombatInit(wbinfo);
+  }
+</script>
+
+
+
+<!-- Add custom banner here. Used only in non-framed replay. -->
+
+
+
+<!-- End WB Insert -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#ff1720"/>
+
+    <title>Record</title>
+    <meta name="description" content="As últimas notícias sobre Futebol, mercado, modalidades, os resultados e classificações. Mas também as grandes entrevistas, a melhor opinião, multimedia e vídeos em record.pt."/>
+    <meta name="keywords" content="Notícias, informação, social, portugal, nacional, internacional,  desporto, sport, sports, futebol, liga, taça, europa, mundo, multimedia, Benfica, Sporting, Porto, videos, fotos"/>
+    <meta charset="utf-8">
+
+    <link href="/noFrame/replay/20200427114945cs_/https://www.record.pt/Content/404.min.css?v=637232541340000000" rel="stylesheet"/>
+    <link href="/noFrame/replay/20200427114945cs_/https://www.record.pt/Content/detalhe.min.css?v=637232541320000000" rel="stylesheet"/>
+    <link href="/noFrame/replay/20200427114945cs_/https://www.record.pt/Content/main.min.css?v=637232541340000000" rel="stylesheet"/>
+    <link href="/noFrame/replay/20200427114945cs_/https://www.record.pt/Content/erro.min.css?v=637232541320000000" rel="stylesheet"/>
+
+    <script src="/noFrame/replay/20200427114945js_/https://www.record.pt/Scripts/bundles/header.js?v=637232541320000000"></script>
+
+    
+
+    <script async="async" src="https://arquivo.pt/noFrame/replay/20200427114945js_/https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script>
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+let arguments;
+
+{
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+
+        var showPubOn = true;
+    
+
+}}</script>
+    <script>
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+let arguments;
+
+{
+        $(function () {
+            var configPubJson = {
+                    slotNames: {
+                        oopSlotName: 'OutOfPage',
+                        mastheadSlotName: 'BTFhorz',
+                        mrecSlotName: 'BTFvert',
+                        leaderboardSlotName: 'BTFhorz',
+                        inContentSlotName: 'BTFInContent'
+                    },
+                    adUnitPaths: {
+                        oopAdUnitPath: '/4196/RECORD_WEBSITE/',
+                        mastheadAdUnitPath: '/4196/RECORD_MASTHEAD/',
+                        mrecAdUnitPath: '/4196/RECORD_WEBSITE/',
+                        leaderboardAdUnitPath: '/4196/RECORD_MASTHEAD/',
+                        pubTestSuffix: 'HOMEPAGE',
+                        inContentAdUnitPath: '/4196/RECORD_WEBSITE/'
+                    },
+                    slotSizes: {
+                        mastheadSizes: [[1240, 220], [970, 250], [728, 90]],
+                        mrecSizes: [[300, 600], [300, 250]],
+                        leaderboardSizes: [[728, 90]],
+                        inContentSizes: [[300, 250], [640, 360], [640, 480]],
+                    }
+                };
+            COF.pubApi.configPubs(configPubJson);
+            COF.pubApi.useCxenseSegments();
+
+                googletag.cmd.push(function () {
+                    var _mastheadCheckSizes = googletag.sizeMapping()
+                        .addSize([0, 0], [[300, 100], [300, 50], [300, 200], [320, 50], [320, 100], [320, 200]])
+                        .addSize([768, 200], [728, 90])
+                        .addSize([1190, 200], [[728, 90], [970, 250], [1240, 220]])
+                        .build();
+
+                    COF.pubApi.configMastheadCheckSizes(_mastheadCheckSizes);
+                });
+
+
+            var kwpag = [];
+            kwpag.push('homepage');
+
+
+            function adsRenderEnded(adsEvent) {
+
+                var slotElementID = adsEvent.slot.getSlotElementId();
+
+                //remove empty grey div
+                if (adsEvent.isEmpty && (slotElementID.indexOf('BTFhorz') > -1 || slotElementID.indexOf('horzATF') > -1 )) {
+                    $('#' + slotElementID).parent('div').hide();
+                    $('#' + slotElementID).parents('.masthead_BG').hide();
+                }
+                if (adsEvent.isEmpty && (slotElementID.indexOf('OutOfPage') > -1)) {
+                    $('#' + slotElementID).hide();
+                }
+
+                //quando há masthead, o MREC fica em baixo da caixa das mais lidas.
+                if (adsEvent.isEmpty && slotElementID.indexOf("horzATF") > -1 && COF.content.where() == 'HOMEPAGE') {
+                    if ($(".mrecToMove").length > 0 && $("#ultimasHp_move").length > 0) {
+                        $("#ultimasHp_move").insertAfter($(".mrecToMove"));
+                        $(".mrecToMove").css("margin-bottom", "20px");
+                        $(".mrecToMove section").removeClass("mt-2");
+                    }
+                }
+
+                if (!adsEvent.isEmpty) {
+                    if (slotElementID.indexOf('BTFhorz') > -1 || slotElementID.indexOf('horzATF') > -1) {
+                        if ($('#' + slotElementID).siblings('span').length == 0) {
+                            $('#' + slotElementID).before('<span class="sr-only">Pub</span>');
+                        }
+                    }
+                    else if (slotElementID.indexOf('BTFvert') > -1 || slotElementID.indexOf('vertATF') > -1) {
+                        if ($('#' + slotElementID).parent().siblings('span').length == 0)
+                            $('#' + slotElementID).parent().before('<span class="pub_txt">Pub</span>');
+                    }
+                    else if (slotElementID.indexOf('BTFInContent') > -1) {
+                        if ($('#' + slotElementID).siblings('span').length == 0)
+                            $('#' + slotElementID).before('<span class="pub_txt">Pub</span>');
+                    }
+                }
+
+                //validacao para carregar o script do optinmonster
+                if ((adsEvent.isEmpty && slotElementID == 'OutOfPage') || (adsEvent.isEmpty && slotElementID.indexOf('horzATF') > -1)) {
+                    indexOptin++;
+                    if (indexOptin == 2 && typeof loadOptinMonster === 'function' && loadOptinMonster() !== undefined) {
+                        loadOptinMonster();
+                    }
+                }
+
+            }
+
+            var indexOptin = 0;
+            googletag.cmd.push(function () {
+                googletag.pubads()
+                    .setTargeting('end', [window.location.href.match(/([^\?]*)\/*$/)[0]])
+                    .setTargeting('kw', kwpag);
+
+                
+                googletag.pubads().setTargeting('up', 'Anonymous');
+                
+                
+
+                googletag.pubads().addEventListener('slotRenderEnded', function (event) {
+                    adsRenderEnded(event);
+                });
+
+                googletag.pubads().enableSingleRequest();
+                googletag.pubads().enableAsyncRendering();
+                googletag.pubads().collapseEmptyDivs(true, true);
+                googletag.pubads().setCentering(true);
+                googletag.companionAds().setRefreshUnfilledSlots(true);
+                googletag.pubads().disableInitialLoad();
+
+                googletag.enableServices();
+
+                //OOP
+                COF.pubApi.renderOOP($('#div-gpt-ad-oop-0'));
+
+                        
+                            COF.pubApi.renderMasthead($('#div-gpt-ad-masthead-0'), '', 'horzATF', 'ATF', false);
+                        
+                    
+                        if ($('#div-gpt-ad-mrec-0').length > 0) {
+                            COF.pubApi.renderMrec($('#div-gpt-ad-mrec-0'), '', 'vertATF', 'ATF', false);
+                        }
+                    
+
+                    googletag.pubads().refresh();
+                });
+        });
+
+    
+
+}}</script>
+
+<script async src="https://arquivo.pt/noFrame/replay/20200427114945js_/https://cdn.insurads.com/bootstrap/HN8GJEAA.js"></script>
+</head>
+<body>
+    <input type="hidden" id="errorPage" value="404"/>
+    
+
+<img src="/noFrame/replay/20200427114945im_/https://www.record.pt/i/lg_print.png" class="print_logo"/>
+
+<div id="placeholderLayerCapa"></div>
+
+<header class="header">
+
+<section class="barra_cofina">
+    <iframe src="//arquivo.pt/noFrame/replay/20200427114945if_///barra.xl.pt/responsive/record.html?site=record.xl.pt" scrolling="no" style="width:100%; height:36px; border:0; overflow:hidden;"></iframe>
+</section>
+    
+
+
+<section class="header_color">
+    <div class="container">
+        <button type="button" class="ic_main_menu">
+            <span>Menu</span>
+        </button>
+        <h1 class="logo_header">
+            <a href="/noFrame/replay/20200427114945/https://www.record.pt/" title="Record">
+                <svg xmlns="http://www.w3.org/2000/svg" class="logo" x="0" y="0" viewbox="0 0 379 100"><path d="M328.32,36.37c-8.21,1.52-15.15,6.38-20.28,13.22a13.1,13.1,0,0,0-4.92-13,10.53,10.53,0,0,0-11.23-.14,58.18,58.18,0,0,0-12.46,10.44c-2.95-6.84-7.13-11.52-14.54-12.46-13.08-2.11-18.75,7.54-18.67,18.92a12.42,12.42,0,0,0-9.41-8.91c4.53,4.47,5.25,12,2.37,20.74C235.37,76.26,225.07,83,217.94,80.58c-8.49-2.52-12.31-12.53-8.13-23.4,2.52-7.06,8.35-13,14.11-15.34,0-.14,11.23-5.26,18.72-0.14a15.55,15.55,0,0,0-6.7-5.62c-13.6-7.06-33,3.1-42,19.87a38.93,38.93,0,0,0-5,17.77c-11.12,11.2-24.73,12.4-28.52.88-6.2-19.37,7.05-36.72,19.22-36.94,1.08,0,1.22.36,0.36,1.3-7.78,5.47-8,15-2,18.22,8.5,4.75,15.41-2.67,16.28-10.8v-3.1c-0.72-7-6.41-13.32-19.88-11.74a38.25,38.25,0,0,0-11.8,3.6c-15.92,7.42-24.84,20.45-25.71,40-5.47,5.69-16.2,11.31-24.41,8.64a11,11,0,0,1-3.67-1.87c-3.09-2.23-5.25-5.61-6.05-10.87a47,47,0,0,0,9.72-1.15,38.15,38.15,0,0,0,15.48-7.06c21.89-16.05,4.61-37.58-15.48-33.91a12.77,12.77,0,0,0-2.23.5c-16,4.47-28.15,20.88-28.87,39.53v3.24a45.59,45.59,0,0,0,3.31,15.34s0,0.13.13,0.35c-16.8,6-25.56-3-26.62-24.47a64.39,64.39,0,0,0,18.14-8.5c17.06-13,19-33,6.19-45.29C75,2.53,65.45.15,55.66,0,31.54-.57,10,16.14.22,39.68c13.6-19.37,33.12-26.06,46.72-21.89C73.22,25.57,61.13,53.72,43,61c-4,.72-7.27.36-9.64-1.08,3.09-11.81,6.55-23.33,10.51-34.56C33.7,23.19,24.34,24.13,15.77,30.1,6.19,51.56,1.3,74.38,0,98.36L30.82,90a57.56,57.56,0,0,1,1.29-20.09c10.43,31.21,27.23,39.89,53.5,19.51,2.28,3.82,9.25,11.48,26.85,6.34,0.72-.22,1.52-0.43,2.31-0.72A43.81,43.81,0,0,0,137,78.56c1.65,7.49,3.81,13.61,11.44,17.57,9.94,4.75,27.15-4.11,40.68-18.43V77.6c1,8.16,5.39,14.88,12.68,18.38,11.08,5.4,31,0,39.74-17.78a50.52,50.52,0,0,0,5.38-19.07l0,0.06a29.14,29.14,0,0,1,1.44-7.41,8.88,8.88,0,0,1,1.66-2.52c1.8-1.88,3.09-1.3,3.81.5,5,14.33-6.33,36.43-12.89,48.6l29.38-4.9c6.34-13.6,9.79-27.36,9.79-41.32a9.42,9.42,0,0,1,4.32-3.46c4-1.44,7.27.58,7.27,4,0,4.18-2,9.65-4.89,14.18,4.89-1.29,9.79-3,14-6a19.66,19.66,0,0,0,1.61-1.37,53,53,0,0,0-2.69,8.42c-4,17.36.36,27.51,10.65,29,5.62,0.65,11.95-1.66,17.93-6.77a48.6,48.6,0,0,0,9.43-11c4,12.16,11.59,20.3,22,19,8.71-1.08,15.77-7.27,20-15.4-8.36,6.69-16.13,1.65-18.87-10.66C359,58.47,362,45.66,365.47,32.84A212.57,212.57,0,0,1,377.64.73l-31,8.71a143.28,143.28,0,0,0-8.14,26.78A31.87,31.87,0,0,0,328.32,36.37Zm0,40c-5.18.86-9.22-2.74-9.22-9.72A24,24,0,0,1,328.32,48a26.82,26.82,0,0,1,9.29-4.89,119.32,119.32,0,0,0-.72,28.22C333.94,74.31,331,75.9,328.32,76.33ZM112.46,60.2c-2.66,2.81-6,5.18-9.72,4.61a35.65,35.65,0,0,1,5.12-18.15,29.61,29.61,0,0,1,4.6-5.83c3.17-3.09,6.27-4,8.43-3,3.31,1.44-.51,11.52-2.74,14.76A51.29,51.29,0,0,1,112.46,60.2Z" fill="#FFF"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="logo-r" x="0" y="0" viewbox="0 0 90.8 100.5"><path d="M86.3 88.9c-26.6 21-43.6 12.5-54.2-19 -1.7 6.7-2 13.4-1.3 20.1L0 98.4c1.3-24 6.2-46.8 15.8-68.3 8.6-6 17.9-6.9 28.1-4.8 -4 11.2-7.4 22.7-10.5 34.6 2.4 1.4 5.6 1.8 9.6 1.1 18.2-7.3 30.2-35.4 4-43.2 -13.6-4.2-33.1 2.5-46.7 21.9C10 16.1 31.5-0.6 55.7 0 65.4 0.2 75 2.5 82.5 9.6c12.8 12.3 10.9 32.3-6.2 45.3 -6 4.1-12.2 6.7-18.1 8.5 1.1 21.9 10.2 30.8 27.6 24.1L86.3 88.9z" fill="#FFF"/></svg>
+                <span class="sr-only">Record</span>
+            </a>
+        </h1>
+        <div class="header_direita">
+            <div class="mainPesquisa">
+<form action="/noFrame/replay/20200427114945/https://www.record.pt/pesquisa/error404/" method="get">        <input type="search" id="search_header" name="q" maxlength="64" placeholder="O que procura no Record?">
+        <button type="submit"><span class="icon-search"></span></button>
+</form></div>
+            
+    <ul class="header_icons d-inline-flex ">
+
+
+        <li class="d-none d-md-block user">
+            <a href="javascript:void(0)" onclick="CofinaSSOApi.gotoLogin();" class="icon-utilizador eventAnalytics" data-category="MenuBarra" data-action="Login" data-name="" data-consumer="ga,piwik">
+                <span class="icon_title">Login/Registo</span>
+            </a>
+        </li>
+
+        <li class="tv d-md-none">
+            <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes" class="icon-tv eventAnalytics" data-category="MenuBarra" data-action="Tv" data-name="" data-consumer="ga,piwik">
+                <span class="icon_title">TV</span>
+            </a>
+        </li>
+            <li class="assinar d-md-none">
+                <a href="https://arquivo.pt/noFrame/replay/20200427114945/https://assinaturas.xl.pt/record?source=record&utm_source=geral_header" target="___wb_replay_top_frame" class="icon-assinar eventAnalytics" data-category="MenuBarra" data-action="Assinar" data-name="" data-consumer="ga,piwik">
+                    <span class="icon_title">Assinar</span>
+                </a>
+            </li>
+        <li class="epaper d-md-none">
+            <a href="/noFrame/replay/20200427114945/https://www.record.pt/epaper" target="___wb_replay_top_frame" class="icon-epaper eventAnalytics" data-category="MenuBarra" data-action="Epaper" data-name="" data-consumer="ga,piwik">
+                <span class="icon_title">E-Paper</span>
+            </a>
+        </li>
+            <li class="notifications">
+                <a href="javascript:;" class="icon-alertas eventAnalytics" data-category="MenuBarra" data-action="Alertas" data-name="" data-consumer="ga,piwik">
+                    <span class="icon_title">Notificações</span>
+                </a>
+
+                <div class="notificacao registerPush" id="notificacao" style="display:none">
+    <div class="notificacaoContainer">
+        <div class="tipNotificacao"></div>
+        <span class="icon-logo-r"></span>
+        <div class="notificacaoText">
+            <span id="notificacaoText">Deseja receber notificações</span>
+            <div class="clearfix mt-2"></div>
+            <a href="javascript:void(0)" id="cancelar" class="cancelar pushCancelRegister btClose_notificacoes" data-action="subscribe">Cancelar</a>
+            <a href="javascript:void(0)" id="pushContinue" class="continuar" data-action="subscribe">Continuar</a>
+        </div>
+    </div>
+</div>
+
+            </li>
+
+        <li class="newsletter d-none d-md-block">
+            <a href="/noFrame/replay/20200427114945/https://www.record.pt/newsletters/subscrever?utm_source=botaoHeader" class="icon-email eventAnalytics" data-category="MenuBarra" data-action="Newsletter" data-name="" data-consumer="ga,piwik">
+                <span class="icon_title">Newsletter</span>
+            </a>
+        </li>
+        <li class="iniciativas d-none d-md-block">
+            <a href="/noFrame/replay/20200427114945/https://www.record.pt/iniciativas?utm_source=botaoHeader" class="icon-iniciativas eventAnalytics" data-category="MenuBarra" data-action="Iniciativas" data-name="" data-consumer="ga,piwik">
+                <span class="icon_title">Iniciativas</span>
+            </a>
+        </li>
+        <li class="liga_record d-none d-md-block">
+            <a href="//arquivo.pt/noFrame/replay/20200427114945///liga.record.pt?utm_source=botaoHeader&utm_medium=referral" target="___wb_replay_top_frame" class="icon-logo-liga-record eventAnalytics" data-category="MenuBarra" data-action="LigaRecord" data-name="" data-consumer="ga,piwik"></a>
+    </ul>
+
+
+                        <div class="header_assinatura d-none d-lg-inline-flex">
+                    <a href="https://arquivo.pt/noFrame/replay/20200427114945/https://assinaturas.xl.pt/record?source=record&utm_source=geral_header" target="___wb_replay_top_frame" class="headerBt_premium eventAnalytics" data-category="Botao_Assinar" data-action="Botao Geral_Header" data-name="" data-consumer="ga,piwik"><span class="icon-logo-r icon-novopremium"></span>Assine já</a>
+                <a href="/noFrame/replay/20200427114945/https://www.record.pt/capas" class="capa" title="Acesso às capas do dia"><img src="//arquivo.pt/noFrame/replay/20200427114945im_///cdn.record.pt/images/2020-04/img_80x100$2020_04_27_01_03_10_1691845.jpg" alt="Capa do dia"/></a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    
+    <div class="hideHeader">
+        <section class="canais_topo">
+            <div class="container">
+                <nav class="nav">
+                            <a class="nav-link eventAnalytics ultimas-noticias" data-category="Geral" data-action="MenuBarra" data-name="/ultimas-noticias?ref=Masterpage_MenuDestaque" data-consumer="ga,piwik" data-areaid="7013" href="/noFrame/replay/20200427114945/https://www.record.pt/ultimas-noticias?ref=Masterpage_MenuDestaque">&#218;ltimas</a>
+                            <a class="nav-link eventAnalytics premium" data-category="Geral" data-action="MenuBarra" data-name="/premium?ref=Masterpage_MenuDestaque" data-consumer="ga,piwik" data-areaid="1536" href="/noFrame/replay/20200427114945/https://www.record.pt/premium?ref=Masterpage_MenuDestaque">Premium</a>
+                            <a class="nav-link eventAnalytics coronavirus" data-category="Geral" data-action="MenuBarra" data-name="/fora-de-campo/coronavirus?ref=Masterpage_MenuDestaque" data-consumer="ga,piwik" data-areaid="7614" href="/noFrame/replay/20200427114945/https://www.record.pt/fora-de-campo/coronavirus?ref=Masterpage_MenuDestaque">Coronav&#237;rus</a>
+                            <a class="nav-link eventAnalytics benfica" data-category="Geral" data-action="MenuBarra" data-name="/futebol/futebol-nacional/liga-nos/benfica?ref=Masterpage_MenuDestaque" data-consumer="ga,piwik" data-areaid="81" href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/benfica?ref=Masterpage_MenuDestaque">Benfica</a>
+                            <a class="nav-link eventAnalytics fc-porto" data-category="Geral" data-action="MenuBarra" data-name="/futebol/futebol-nacional/liga-nos/fc-porto?ref=Masterpage_MenuDestaque" data-consumer="ga,piwik" data-areaid="83" href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/fc-porto?ref=Masterpage_MenuDestaque">FC Porto</a>
+                            <a class="nav-link eventAnalytics sporting" data-category="Geral" data-action="MenuBarra" data-name="/futebol/futebol-nacional/liga-nos/sporting?ref=Masterpage_MenuDestaque" data-consumer="ga,piwik" data-areaid="89" href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/sporting?ref=Masterpage_MenuDestaque">Sporting</a>
+                            <a class="nav-link eventAnalytics o-diario-de-cr7" data-category="Geral" data-action="MenuBarra" data-name="/o-diario-de-cr7?ref=Masterpage_MenuDestaque" data-consumer="ga,piwik" data-areaid="7361" href="/noFrame/replay/20200427114945/https://www.record.pt/o-diario-de-cr7?ref=Masterpage_MenuDestaque">Di&#225;rio de CR7</a>
+                            <a class="nav-link eventAnalytics internacional" data-category="Geral" data-action="MenuBarra" data-name="/internacional?ref=Masterpage_MenuDestaque" data-consumer="ga,piwik" data-areaid="791" href="/noFrame/replay/20200427114945/https://www.record.pt/internacional?ref=Masterpage_MenuDestaque">Internacional</a>
+                            <a class="nav-link eventAnalytics resultados-e-classificacoes" data-category="Geral" data-action="MenuBarra" data-name="/resultados-e-classificacoes?ref=Masterpage_MenuDestaque" data-consumer="ga,piwik" data-areaid="792" href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes?ref=Masterpage_MenuDestaque">Resultados e classifica&#231;&#245;es</a>
+                </nav>
+            </div>
+        </section>
+    </div>
+
+
+
+</header>
+
+
+
+
+<div class="alertas_resultclass"></div>
+
+<div id="alertToCopy">
+    <div class="alerta" style="display:none">
+        <a href="#" class="linkToMatch result_jogo" target="___wb_replay_top_frame">
+            <div class="emblema_clube casa"><img src="/noFrame/replay/20200427114945im_/https://www.record.pt/i/img_84x84_defaultTeam.png" alt="" class="img-fluid"></div>
+            <div class="resultado">-</div>
+            <div class="emblema_clube fora"><img src="/noFrame/replay/20200427114945im_/https://www.record.pt/i/img_84x84_defaultTeam.png" alt="" class="img-fluid"></div>
+        </a>
+
+        <a href="#" class="linkToMatch" target="___wb_replay_top_frame">
+            <div class="alerta_text">
+                <div class="evento_icon"></div>
+                <div class="spanText">
+                    <span>...</span> ...
+                </div>
+            </div>
+        </a>
+
+        <div class="fechar_alerta"><a href="javascript:void(0);" class="fechar_btn"><span class="icon-close"></span></a></div>
+    </div>
+</div>
+
+<script>
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+let arguments;
+
+{
+    var userAlerts = null;
+
+
+}}</script>
+
+<div class="clearfix"></div>
+<div class="ghostHeader"></div>
+<div class="clearfix"></div>
+
+
+    <nav id="mainMenu">
+            <div class="userInfo">
+                <button onclick="CofinaSSOApi.gotoLogin();" class="login-logout">Login</button>
+                <button onclick="var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }{let window = _____WB$wombat$assign$function_____(&quot;window&quot;);let self = _____WB$wombat$assign$function_____(&quot;self&quot;);let document = _____WB$wombat$assign$function_____(&quot;document&quot;);let location = _____WB$wombat$assign$function_____(&quot;location&quot;);let top = _____WB$wombat$assign$function_____(&quot;top&quot;);let parent = _____WB$wombat$assign$function_____(&quot;parent&quot;);let frames = _____WB$wombat$assign$function_____(&quot;frames&quot;);let opener = _____WB$wombat$assign$function_____(&quot;opener&quot;);let arguments;{window.location.href='https://assinaturas.xl.pt/pacotes_de_assinaturas/record/detalhe/1_mes_por_1?source=Record&utm_source=Menu_Hamburguer_Mobile '}}" class="login-logout ml-4">Assinar</button>
+            </div>
+
+        <div class="clearfix mt-3 mb-3 d-lg-none"></div>
+
+        <section class="container">
+            <ul class="menuItems">
+                        <li class="icons_menu pesquisa  ">
+                            <a href="/noFrame/replay/20200427114945/https://www.record.pt/pesquisa" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/pesquisa" data-consumer="ga,piwik" data-url="/pesquisa"><span class="">Pesquisa</span></a>
+
+                        </li>
+                        <li class="icons_menu record-premium  ">
+                            <a href="/noFrame/replay/20200427114945/https://www.record.pt/premium?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/premium?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/premium?ref=Masterpage_Menu"><span class="">Premium</span></a>
+
+                        </li>
+                        <li class="icons_menu o-diario-de-cr7  ">
+                            <a href="/noFrame/replay/20200427114945/https://www.record.pt/o-diario-de-cr7?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/o-diario-de-cr7?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/o-diario-de-cr7?ref=Masterpage_Menu"><span class="">Di&#225;rio de CR7</span></a>
+
+                        </li>
+                        <li class="icons_menu capas  ">
+                            <a href="/noFrame/replay/20200427114945/https://www.record.pt/capas?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/capas?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/capas?ref=Masterpage_Menu"><span class="">Capas</span></a>
+
+                        </li>
+                        <li class="icons_menu entrevistas  ">
+                            <a href="/noFrame/replay/20200427114945/https://www.record.pt/entrevistas?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/entrevistas?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/entrevistas?ref=Masterpage_Menu"><span class="hasChildrens">Entrevistas</span></a>
+                                <ul class="sub_sections">
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/entrevistas/conversas-de-sofa?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/entrevistas/conversas-de-sofa?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/entrevistas/conversas-de-sofa?ref=Masterpage_Menu">Conversas de sof&#225;</a>
+                                        </li>
+                                </ul>
+
+                        </li>
+                        <li class="icons_menu homepage  ">
+                            <a href="/noFrame/replay/20200427114945/https://www.record.pt/" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/" data-consumer="ga,piwik" data-url="/"><span class="">Homepage</span></a>
+
+                        </li>
+                        <li class="icons_menu ultima-hora  ">
+                            <a href="/noFrame/replay/20200427114945/https://www.record.pt/ultimas-noticias?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/ultimas-noticias?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/ultimas-noticias?ref=Masterpage_Menu"><span class="">&#218;ltimas</span></a>
+
+                        </li>
+                        <li class="icons_menu resultados-e-classificacoes  ">
+                            <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/resultados-e-classificacoes?ref=Masterpage_Menu"><span class="">Resultados e classifica&#231;&#245;es</span></a>
+
+                        </li>
+                        <li class="icons_menu futebol  ">
+                            <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/futebol?ref=Masterpage_Menu"><span class="hasChildrens">Futebol</span></a>
+                                <ul class="sub_sections">
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos/benfica?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/futebol/futebol-nacional/liga-nos/benfica?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/benfica?ref=Masterpage_Menu">Benfica</a>
+                                                <div class="otherMenus">
+
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/benfica?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos/benfica?ref=Masterpage_Menu" data-consumer="ga,piwik">Not&#237;cias</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/ligas-nacionais/liga-nos?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/ligas-nacionais/liga-nos?ref=Masterpage_Menu" data-consumer="ga,piwik">Classifica&#231;&#227;o</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/jogos-em-direto/live/?Type=futstats" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/jogos-em-direto/live/?Type=futstats" data-consumer="ga,piwik">Estat&#237;sticas</a>
+                                                </div>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos/fc-porto?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/futebol/futebol-nacional/liga-nos/fc-porto?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/fc-porto?ref=Masterpage_Menu">FC Porto</a>
+                                                <div class="otherMenus">
+
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/fc-porto?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos/fc-porto?ref=Masterpage_Menu" data-consumer="ga,piwik">Not&#237;cias</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/ligas-nacionais/liga-nos?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/ligas-nacionais/liga-nos?ref=Masterpage_Menu" data-consumer="ga,piwik">Classifica&#231;&#227;o</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/jogos-em-direto/live/?Type=futstats" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/jogos-em-direto/live/?Type=futstats" data-consumer="ga,piwik">Estat&#237;sticas</a>
+                                                </div>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos/sporting?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/futebol/futebol-nacional/liga-nos/sporting?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/sporting?ref=Masterpage_Menu">Sporting</a>
+                                                <div class="otherMenus">
+
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/sporting?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos/sporting?ref=Masterpage_Menu" data-consumer="ga,piwik">Not&#237;cias</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/ligas-nacionais/liga-nos?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/ligas-nacionais/liga-nos?ref=Masterpage_Menu" data-consumer="ga,piwik">Classifica&#231;&#227;o</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/jogos-em-direto/live/?Type=futstats" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/jogos-em-direto/live/?Type=futstats" data-consumer="ga,piwik">Estat&#237;sticas</a>
+                                                </div>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/futebol/futebol-nacional/liga-nos?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos?ref=Masterpage_Menu">Liga NOS</a>
+                                                <div class="otherMenus">
+
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/benfica?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos/benfica?ref=Masterpage_Menu" data-consumer="ga,piwik">Benfica</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/fc-porto?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos/fc-porto?ref=Masterpage_Menu" data-consumer="ga,piwik">FC Porto</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/sporting?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos/sporting?ref=Masterpage_Menu" data-consumer="ga,piwik">Sporting</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/aves?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos/aves?ref=Masterpage_Menu" data-consumer="ga,piwik">Aves</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/belenenses-sad?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos/belenenses-sad?ref=Masterpage_Menu" data-consumer="ga,piwik">Belenenses SAD</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/boavista?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos/boavista?ref=Masterpage_Menu" data-consumer="ga,piwik">Boavista</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/famalicao?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos/famalicao?ref=Masterpage_Menu" data-consumer="ga,piwik">Famalic&#227;o</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/maritimo?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos/maritimo?ref=Masterpage_Menu" data-consumer="ga,piwik">Mar&#237;timo</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/gil-vicente?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos/gil-vicente?ref=Masterpage_Menu" data-consumer="ga,piwik">Gil Vicente</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/moreirense?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos/moreirense?ref=Masterpage_Menu" data-consumer="ga,piwik">Moreirense</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/p--ferreira?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos/p--ferreira?ref=Masterpage_Menu" data-consumer="ga,piwik">P. Ferreira</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/portimonense?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos/portimonense?ref=Masterpage_Menu" data-consumer="ga,piwik">Portimonense</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/rio-ave?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos/rio-ave?ref=Masterpage_Menu" data-consumer="ga,piwik">Rio Ave</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/santa-clara?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos/santa-clara?ref=Masterpage_Menu" data-consumer="ga,piwik">Santa Clara</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/sp--braga?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos/sp--braga?ref=Masterpage_Menu" data-consumer="ga,piwik">Sp. Braga</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/tondela?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos/tondela?ref=Masterpage_Menu" data-consumer="ga,piwik">Tondela</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/v--guimaraes?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos/v--guimaraes?ref=Masterpage_Menu" data-consumer="ga,piwik">V. Guimar&#227;es</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-nos/v--setubal?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-nos/v--setubal?ref=Masterpage_Menu" data-consumer="ga,piwik">V. Set&#250;bal</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/ligas-nacionais/liga-nos/resultados" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/ligas-nacionais/liga-nos/resultados" data-consumer="ga,piwik">Resultados</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/ligas-nacionais/liga-nos?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/ligas-nacionais/liga-nos?ref=Masterpage_Menu" data-consumer="ga,piwik">Classifica&#231;&#245;es</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/ligas-nacionais/liga-nos/resumos" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/ligas-nacionais/liga-nos/resumos" data-consumer="ga,piwik">Resumos</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/jogos-em-direto/live/?Type=futstats" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/jogos-em-direto/live/?Type=futstats" data-consumer="ga,piwik">Estat&#237;sticas</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes?ref=Masterpage_Menu" data-consumer="ga,piwik">Calend&#225;rio</a>
+                                                </div>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/2--liga?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/futebol/futebol-nacional/2--liga?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/2--liga?ref=Masterpage_Menu">2&#170; Liga</a>
+                                                <div class="otherMenus">
+
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/2--liga/nacional?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/2--liga/nacional?ref=Masterpage_Menu" data-consumer="ga,piwik">Nacional</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/2--liga/chaves?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/2--liga/chaves?ref=Masterpage_Menu" data-consumer="ga,piwik">Chaves</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/2--liga/feirense?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/2--liga/feirense?ref=Masterpage_Menu" data-consumer="ga,piwik">Feirense</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/2--liga/academica?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/2--liga/academica?ref=Masterpage_Menu" data-consumer="ga,piwik">Acad&#233;mica</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/2--liga/ac-viseu?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/2--liga/ac-viseu?ref=Masterpage_Menu" data-consumer="ga,piwik">Ac. Viseu</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/2--liga/benfica-b?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/2--liga/benfica-b?ref=Masterpage_Menu" data-consumer="ga,piwik"> Benfica B</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/2--liga/cova-da-piedade?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/2--liga/cova-da-piedade?ref=Masterpage_Menu" data-consumer="ga,piwik">Cova da Piedade</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/2--liga/estoril?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/2--liga/estoril?ref=Masterpage_Menu" data-consumer="ga,piwik">Estoril</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/2--liga/farense?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/2--liga/farense?ref=Masterpage_Menu" data-consumer="ga,piwik">Farense</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/2--liga/fc-porto-b?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/2--liga/fc-porto-b?ref=Masterpage_Menu" data-consumer="ga,piwik">FC Porto B</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/2--liga/leixoes?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/2--liga/leixoes?ref=Masterpage_Menu" data-consumer="ga,piwik">Leix&#245;es</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/2--liga/mafra?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/2--liga/mafra?ref=Masterpage_Menu" data-consumer="ga,piwik">Mafra</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/2--liga/penafiel?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/2--liga/penafiel?ref=Masterpage_Menu" data-consumer="ga,piwik">Penafiel</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/2--liga/sp--covilha?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/2--liga/sp--covilha?ref=Masterpage_Menu" data-consumer="ga,piwik">Sp. Covilh&#227;</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/2--liga/ud-oliveirense?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/2--liga/ud-oliveirense?ref=Masterpage_Menu" data-consumer="ga,piwik">Oliveirense</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/2--liga/varzim?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/2--liga/varzim?ref=Masterpage_Menu" data-consumer="ga,piwik">Varzim</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/2--liga/casa-pia?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/2--liga/casa-pia?ref=Masterpage_Menu" data-consumer="ga,piwik">Casa Pia</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/2--liga/vilafranquense?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/2--liga/vilafranquense?ref=Masterpage_Menu" data-consumer="ga,piwik">Vilafranquense</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/ligas-nacionais/2--liga/resultados" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/ligas-nacionais/2--liga/resultados" data-consumer="ga,piwik">Resultados</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/ligas-nacionais/2--liga?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/ligas-nacionais/2--liga?ref=Masterpage_Menu" data-consumer="ga,piwik">Classifica&#231;&#245;es</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes?ref=Masterpage_Menu" data-consumer="ga,piwik">Calend&#225;rio</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/jogos-em-direto/live/?Type=futstats" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/jogos-em-direto/live/?Type=futstats" data-consumer="ga,piwik">Estat&#237;sticas</a>
+                                                </div>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/taca-de-portugal?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/futebol/futebol-nacional/taca-de-portugal?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/taca-de-portugal?ref=Masterpage_Menu">Ta&#231;a de Portugal</a>
+                                                <div class="otherMenus">
+
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/taca-de-portugal?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/taca-de-portugal?ref=Masterpage_Menu" data-consumer="ga,piwik">Not&#237;cias</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/ligas-nacionais/taca-de-portugal/resultados" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/ligas-nacionais/taca-de-portugal/resultados" data-consumer="ga,piwik">Resultados</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/ligas-nacionais/taca-de-portugal?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/ligas-nacionais/taca-de-portugal?ref=Masterpage_Menu" data-consumer="ga,piwik">Classifica&#231;&#245;es</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/jogos-em-direto/live/?Type=futstats" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/jogos-em-direto/live/?Type=futstats" data-consumer="ga,piwik">Estat&#237;sticas</a>
+                                                </div>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/allianz-cup?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/futebol/futebol-nacional/allianz-cup?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/allianz-cup?ref=Masterpage_Menu">Allianz Cup</a>
+                                                <div class="otherMenus">
+
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/allianz-cup?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/allianz-cup?ref=Masterpage_Menu" data-consumer="ga,piwik">Not&#237;cias</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/ligas-nacionais/taca-da-liga-allianz/resultados" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/ligas-nacionais/taca-da-liga-allianz/resultados" data-consumer="ga,piwik">Resultados</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/ligas-nacionais/taca-da-liga-allianz?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/ligas-nacionais/taca-da-liga-allianz?ref=Masterpage_Menu" data-consumer="ga,piwik">Classifica&#231;&#245;es</a>
+                                                </div>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/futebol/selecoes?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/futebol/selecoes?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/selecoes?ref=Masterpage_Menu">Sele&#231;&#245;es</a>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/campeonato-de-portugal?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/futebol/futebol-nacional/campeonato-de-portugal?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/campeonato-de-portugal?ref=Masterpage_Menu">Campeonato de Portugal</a>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/futebol/arbitragem?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/futebol/arbitragem?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/arbitragem?ref=Masterpage_Menu">Arbitragem</a>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/internacional/competicoes-de-clubes/liga-dos-campeoes?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/internacional/competicoes-de-clubes/liga-dos-campeoes?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/internacional/competicoes-de-clubes/liga-dos-campeoes?ref=Masterpage_Menu">Liga dos Campe&#245;es </a>
+                                                <div class="otherMenus">
+
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/internacional/competicoes-de-clubes/liga-dos-campeoes?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/internacional/competicoes-de-clubes/liga-dos-campeoes?ref=Masterpage_Menu" data-consumer="ga,piwik">Not&#237;cias</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/competicoes-internacionais/liga-dos-campeoes/resultados" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/competicoes-internacionais/liga-dos-campeoes/resultados" data-consumer="ga,piwik">Resultados</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/competicoes-internacionais/liga-dos-campeoes?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/competicoes-internacionais/liga-dos-campeoes?ref=Masterpage_Menu" data-consumer="ga,piwik">Classifica&#231;&#245;es</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/jogos-em-direto/live/?Type=futstats" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/jogos-em-direto/live/?Type=futstats" data-consumer="ga,piwik">Estat&#237;sticas</a>
+                                                </div>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/internacional/competicoes-de-clubes/liga-europa?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/internacional/competicoes-de-clubes/liga-europa?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/internacional/competicoes-de-clubes/liga-europa?ref=Masterpage_Menu">Liga Europa</a>
+                                                <div class="otherMenus">
+
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/internacional/competicoes-de-clubes/liga-europa?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/internacional/competicoes-de-clubes/liga-europa?ref=Masterpage_Menu" data-consumer="ga,piwik">Not&#237;cias</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/competicoes-internacionais/liga-europa/resultados" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/competicoes-internacionais/liga-europa/resultados" data-consumer="ga,piwik">Resultados</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/competicoes-internacionais/liga-europa?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/competicoes-internacionais/liga-europa?ref=Masterpage_Menu" data-consumer="ga,piwik">Classifica&#231;&#245;es</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/jogos-em-direto/live/?Type=futstats" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/jogos-em-direto/live/?Type=futstats" data-consumer="ga,piwik">Estat&#237;sticas</a>
+                                                </div>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/internacional/competicoes-de-selecoes/mundial/mundial-2018?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/internacional/competicoes-de-selecoes/mundial/mundial-2018?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/internacional/competicoes-de-selecoes/mundial/mundial-2018?ref=Masterpage_Menu">Mundial 2018</a>
+                                                <div class="otherMenus">
+
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/internacional/competicoes-de-selecoes/mundial/mundial-2018?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/internacional/competicoes-de-selecoes/mundial/mundial-2018?ref=Masterpage_Menu" data-consumer="ga,piwik">Not&#237;cias</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/competicoes-internacionais/mundial-2018/resultados" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/competicoes-internacionais/mundial-2018/resultados" data-consumer="ga,piwik">Resultados</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/ligas-nacionais/liga-nos?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/ligas-nacionais/liga-nos?ref=Masterpage_Menu" data-consumer="ga,piwik">Classifica&#231;&#245;es</a>
+                                                        <a href="https://arquivo.pt/noFrame/replay/20200427114945/http://www.net.marktest.pt" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="http://www.net.marktest.pt" data-consumer="ga,piwik">Estat&#237;sticas</a>
+                                                </div>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/internacional?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/internacional?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/internacional?ref=Masterpage_Menu">Internacional</a>
+                                                <div class="otherMenus">
+
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/internacional/paises/alemanha?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/internacional/paises/alemanha?ref=Masterpage_Menu" data-consumer="ga,piwik">Alemanha</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/internacional/paises/espanha?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/internacional/paises/espanha?ref=Masterpage_Menu" data-consumer="ga,piwik">Espanha</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/internacional/paises/franca?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/internacional/paises/franca?ref=Masterpage_Menu" data-consumer="ga,piwik">Fran&#231;a</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/internacional/paises/inglaterra?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/internacional/paises/inglaterra?ref=Masterpage_Menu" data-consumer="ga,piwik">Inglaterra</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/internacional/paises/brasil?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/internacional/paises/brasil?ref=Masterpage_Menu" data-consumer="ga,piwik">Brasil</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/internacional/paises/italia?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/internacional/paises/italia?ref=Masterpage_Menu" data-consumer="ga,piwik">It&#225;lia</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/internacional/paises/angola?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/internacional/paises/angola?ref=Masterpage_Menu" data-consumer="ga,piwik">Angola</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/internacional/paises/outros?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/internacional/paises/outros?ref=Masterpage_Menu" data-consumer="ga,piwik">Outras ligas</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/internacional/competicoes-de-clubes/liga-dos-campeoes?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/internacional/competicoes-de-clubes/liga-dos-campeoes?ref=Masterpage_Menu" data-consumer="ga,piwik">Liga dos Campe&#245;es</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/internacional/competicoes-de-clubes/liga-europa?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/internacional/competicoes-de-clubes/liga-europa?ref=Masterpage_Menu" data-consumer="ga,piwik">Liga Europa</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/internacional/competicoes-de-clubes/liga-jovem-da-uefa?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/internacional/competicoes-de-clubes/liga-jovem-da-uefa?ref=Masterpage_Menu" data-consumer="ga,piwik">Liga Jovem da UEFA</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/internacional/competicoes-de-selecoes/mundial/mundial-2018?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/internacional/competicoes-de-selecoes/mundial/mundial-2018?ref=Masterpage_Menu" data-consumer="ga,piwik">Mundial 2018</a>
+                                                </div>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/futebol?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/futebol?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/futebol?ref=Masterpage_Menu">Outros</a>
+                                                <div class="otherMenus">
+
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-feminino?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-feminino?ref=Masterpage_Menu" data-consumer="ga,piwik">Futebol feminino</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-de-praia?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-de-praia?ref=Masterpage_Menu" data-consumer="ga,piwik">Futebol de praia</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol-ao-vivo?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol-ao-vivo?ref=Masterpage_Menu" data-consumer="ga,piwik">Futebol ao Vivo</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/liga-revelacao?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/liga-revelacao?ref=Masterpage_Menu" data-consumer="ga,piwik">Liga Revela&#231;&#227;o</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/futebol-nacional/coluna-distrital?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/futebol-nacional/coluna-distrital?ref=Masterpage_Menu" data-consumer="ga,piwik">Coluna Distrital</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/futebol/soccerex?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/futebol/soccerex?ref=Masterpage_Menu" data-consumer="ga,piwik">Soccerex</a>
+                                                </div>
+                                        </li>
+                                </ul>
+
+                        </li>
+                        <li class="icons_menu dicas-record-by-placardpt  ">
+                            <a href="/noFrame/replay/20200427114945/https://www.record.pt/multimedia/dica-record-by-placard-pt?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/multimedia/dica-record-by-placard-pt?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/multimedia/dica-record-by-placard-pt?ref=Masterpage_Menu"><span class="">Dica Record by Placard.pt</span></a>
+
+                        </li>
+                        <li class="icons_menu modalidades  ">
+                            <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/modalidades?ref=Masterpage_Menu"><span class="hasChildrens">Modalidades</span></a>
+                                <ul class="sub_sections">
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/hoquei-em-patins?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/modalidades/hoquei-em-patins?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/hoquei-em-patins?ref=Masterpage_Menu">H&#243;quei em patins</a>
+                                                <div class="otherMenus">
+
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/hoquei-em-patins?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/hoquei-em-patins?ref=Masterpage_Menu" data-consumer="ga,piwik">Not&#237;cias</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/modalidades/hoquei-em-patins/resultados" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/modalidades/hoquei-em-patins/resultados" data-consumer="ga,piwik">Resultados</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/modalidades/hoquei-em-patins?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/modalidades/hoquei-em-patins?ref=Masterpage_Menu" data-consumer="ga,piwik">Classifica&#231;&#245;es</a>
+                                                </div>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/andebol?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/modalidades/andebol?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/andebol?ref=Masterpage_Menu">Andebol</a>
+                                                <div class="otherMenus">
+
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/andebol?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/andebol?ref=Masterpage_Menu" data-consumer="ga,piwik">Not&#237;cias</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/modalidades/andebol/resultados" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/modalidades/andebol/resultados" data-consumer="ga,piwik">Resultados</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/modalidades/andebol?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/modalidades/andebol?ref=Masterpage_Menu" data-consumer="ga,piwik">Classifica&#231;&#245;es</a>
+                                                </div>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/atletismo?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/modalidades/atletismo?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/atletismo?ref=Masterpage_Menu">Atletismo</a>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/motores?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/modalidades/motores?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/motores?ref=Masterpage_Menu">Motores</a>
+                                                <div class="otherMenus">
+
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/motores/motociclismo/motogp?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/motores/motociclismo/motogp?ref=Masterpage_Menu" data-consumer="ga,piwik">MotoGP</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/motores/motociclismo?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/motores/motociclismo?ref=Masterpage_Menu" data-consumer="ga,piwik">Motociclismo</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/motores/automobilismo?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/motores/automobilismo?ref=Masterpage_Menu" data-consumer="ga,piwik">Automobilismo</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/motores/formula-1?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/motores/formula-1?ref=Masterpage_Menu" data-consumer="ga,piwik">F&#243;rmula 1</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/motores/ralis?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/motores/ralis?ref=Masterpage_Menu" data-consumer="ga,piwik">Ralis</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/motores/record-auto?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/motores/record-auto?ref=Masterpage_Menu" data-consumer="ga,piwik">Record Auto</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/motores/todo-o-terreno?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/motores/todo-o-terreno?ref=Masterpage_Menu" data-consumer="ga,piwik">Todo-o-Terreno</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/motores?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/motores?ref=Masterpage_Menu" data-consumer="ga,piwik">Todas</a>
+                                                </div>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/basquetebol?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/modalidades/basquetebol?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/basquetebol?ref=Masterpage_Menu">Basquetebol</a>
+                                                <div class="otherMenus">
+
+                                                        <a href="javascript:;" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="javascript:;" data-consumer="ga,piwik">Not&#237;cias</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/modalidades/basquetebol/resultados" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/modalidades/basquetebol/resultados" data-consumer="ga,piwik">Resultados</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/modalidades/basquetebol?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/modalidades/basquetebol?ref=Masterpage_Menu" data-consumer="ga,piwik">Classifica&#231;&#245;es</a>
+                                                </div>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/tenis?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/modalidades/tenis?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/tenis?ref=Masterpage_Menu">T&#233;nis</a>
+                                                <div class="otherMenus">
+
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/tenis/estoril-open/estoril-open-2019?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/tenis/estoril-open/estoril-open-2019?ref=Masterpage_Menu" data-consumer="ga,piwik">Estoril Open</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/tenis/open-da-australia?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/tenis/open-da-australia?ref=Masterpage_Menu" data-consumer="ga,piwik">Open de Austr&#225;lia </a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/tenis/roland-garros?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/tenis/roland-garros?ref=Masterpage_Menu" data-consumer="ga,piwik">Roland Garros</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/tenis/us-open?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/tenis/us-open?ref=Masterpage_Menu" data-consumer="ga,piwik">US Open</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/tenis/wimbledon?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/tenis/wimbledon?ref=Masterpage_Menu" data-consumer="ga,piwik">Wimbledon</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/tenis?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/tenis?ref=Masterpage_Menu" data-consumer="ga,piwik">Todas</a>
+                                                </div>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/voleibol?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/modalidades/voleibol?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/voleibol?ref=Masterpage_Menu">Voleibol</a>
+                                                <div class="otherMenus">
+
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/voleibol?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/voleibol?ref=Masterpage_Menu" data-consumer="ga,piwik">Not&#237;cias</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/modalidades/voleibol/resultados" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/modalidades/voleibol/resultados" data-consumer="ga,piwik">Resultados</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/modalidades/voleibol?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/modalidades/voleibol?ref=Masterpage_Menu" data-consumer="ga,piwik">Classifica&#231;&#245;es</a>
+                                                </div>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/surf?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/modalidades/surf?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/surf?ref=Masterpage_Menu">Surf</a>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/modalidades?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/modalidades?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades?ref=Masterpage_Menu">Outras</a>
+                                                <div class="otherMenus">
+
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/badminton?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/badminton?ref=Masterpage_Menu" data-consumer="ga,piwik">Badminton</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/canoagem?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/canoagem?ref=Masterpage_Menu" data-consumer="ga,piwik">Canoagem</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/ciclismo?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/ciclismo?ref=Masterpage_Menu" data-consumer="ga,piwik">Ciclismo</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/desportos-de-combate?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/desportos-de-combate?ref=Masterpage_Menu" data-consumer="ga,piwik">Desportos de combate</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/desporto-escolar?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/desporto-escolar?ref=Masterpage_Menu" data-consumer="ga,piwik">Desporto Escolar</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/desporto-universitario?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/desporto-universitario?ref=Masterpage_Menu" data-consumer="ga,piwik">Desporto Universit&#225;rio</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/desportos-radicais?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/desportos-radicais?ref=Masterpage_Menu" data-consumer="ga,piwik">Desportos radicais</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/jogos-europeus?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/jogos-europeus?ref=Masterpage_Menu" data-consumer="ga,piwik">Jogos Europeus</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/jogos-olimpicos?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/jogos-olimpicos?ref=Masterpage_Menu" data-consumer="ga,piwik">Jogos Ol&#237;mpicos</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/judo?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/judo?ref=Masterpage_Menu" data-consumer="ga,piwik">Judo</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/ginastica?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/ginastica?ref=Masterpage_Menu" data-consumer="ga,piwik">Gin&#225;stica</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/golfe?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/golfe?ref=Masterpage_Menu" data-consumer="ga,piwik">Golfe</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/mma?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/mma?ref=Masterpage_Menu" data-consumer="ga,piwik">MMA</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/natacao?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/natacao?ref=Masterpage_Menu" data-consumer="ga,piwik">Nata&#231;&#227;o</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/nfl?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/nfl?ref=Masterpage_Menu" data-consumer="ga,piwik">NFL</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/orientacao?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/orientacao?ref=Masterpage_Menu" data-consumer="ga,piwik">Orienta&#231;&#227;o</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/padel?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/padel?ref=Masterpage_Menu" data-consumer="ga,piwik">Padel</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/raguebi?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/raguebi?ref=Masterpage_Menu" data-consumer="ga,piwik">R&#226;guebi</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/record-pela-patagonia?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/record-pela-patagonia?ref=Masterpage_Menu" data-consumer="ga,piwik">Record pela Patag&#243;nia</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/surf?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/surf?ref=Masterpage_Menu" data-consumer="ga,piwik">Surf</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/tenis-de-mesa?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/tenis-de-mesa?ref=Masterpage_Menu" data-consumer="ga,piwik">T&#233;nis de mesa</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/remo?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/remo?ref=Masterpage_Menu" data-consumer="ga,piwik">Remo</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/triatlo?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/triatlo?ref=Masterpage_Menu" data-consumer="ga,piwik">Triatlo</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/vela?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/vela?ref=Masterpage_Menu" data-consumer="ga,piwik">Vela</a>
+                                                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades/aventura-pela-selva-do-borneu?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/modalidades/aventura-pela-selva-do-borneu?ref=Masterpage_Menu" data-consumer="ga,piwik">Aventura pela selva do Born&#233;u</a>
+                                                </div>
+                                        </li>
+                                </ul>
+
+                        </li>
+                        <li class="icons_menu fazemos-campeoes  ">
+                            <a href="/noFrame/replay/20200427114945/https://www.record.pt/fazemos-campeoes?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/fazemos-campeoes?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/fazemos-campeoes?ref=Masterpage_Menu"><span class="">Fazemos campe&#245;es</span></a>
+
+                        </li>
+                        <li class="icons_menu liga-record  ">
+                            <a href="https://arquivo.pt/noFrame/replay/20200427114945/https://liga.record.pt" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="https://liga.record.pt" data-consumer="ga,piwik" data-url="https://liga.record.pt"><span class="">Liga Record</span></a>
+
+                        </li>
+                        <li class="icons_menu videos  ">
+                            <a href="/noFrame/replay/20200427114945/https://www.record.pt/multimedia/videos?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/multimedia/videos?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/multimedia/videos?ref=Masterpage_Menu"><span class="hasChildrens">V&#237;deos</span></a>
+                                <ul class="sub_sections">
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/multimedia/videos/fc-porto?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/multimedia/videos/fc-porto?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/multimedia/videos/fc-porto?ref=Masterpage_Menu">FC Porto</a>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/multimedia/videos/benfica?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/multimedia/videos/benfica?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/multimedia/videos/benfica?ref=Masterpage_Menu">Benfica</a>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/multimedia/videos/sporting?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/multimedia/videos/sporting?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/multimedia/videos/sporting?ref=Masterpage_Menu">Sporting</a>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/multimedia/videos/diario-de-cr7?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/multimedia/videos/diario-de-cr7?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/multimedia/videos/diario-de-cr7?ref=Masterpage_Menu">O Di&#225;rio de CR7</a>
+                                        </li>
+                                </ul>
+
+                        </li>
+                        <li class="icons_menu fotogalerias  ">
+                            <a href="/noFrame/replay/20200427114945/https://www.record.pt/multimedia/fotogalerias?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/multimedia/fotogalerias?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/multimedia/fotogalerias?ref=Masterpage_Menu"><span class="hasChildrens">Fotogalerias</span></a>
+                                <ul class="sub_sections">
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/multimedia/fotogalerias/fc-porto?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/multimedia/fotogalerias/fc-porto?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/multimedia/fotogalerias/fc-porto?ref=Masterpage_Menu">FC Porto</a>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/multimedia/fotogalerias/benfica?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/multimedia/fotogalerias/benfica?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/multimedia/fotogalerias/benfica?ref=Masterpage_Menu">Benfica</a>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/multimedia/fotogalerias/sporting?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/multimedia/fotogalerias/sporting?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/multimedia/fotogalerias/sporting?ref=Masterpage_Menu">Sporting</a>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/multimedia/fotogalerias/diario-de-cr7?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/multimedia/fotogalerias/diario-de-cr7?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/multimedia/fotogalerias/diario-de-cr7?ref=Masterpage_Menu">O Di&#225;rio de CR7</a>
+                                        </li>
+                                </ul>
+
+                        </li>
+                        <li class="icons_menu infografias  ">
+                            <a href="/noFrame/replay/20200427114945/https://www.record.pt/multimedia/infografias?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/multimedia/infografias?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/multimedia/infografias?ref=Masterpage_Menu"><span class="">Infografias</span></a>
+
+                        </li>
+                        <li class="icons_menu 20180713_1545_resumos  ">
+                            <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes/resumos" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/resultados-e-classificacoes/resumos" data-consumer="ga,piwik" data-url="/resultados-e-classificacoes/resumos"><span class="">Resumos</span></a>
+
+                        </li>
+                        <li class="icons_menu opiniao  ">
+                            <a href="/noFrame/replay/20200427114945/https://www.record.pt/opiniao?ref=Masterpage_Menu" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="/opiniao?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/opiniao?ref=Masterpage_Menu"><span class="hasChildrens">Opini&#227;o</span></a>
+                                <ul class="sub_sections">
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/opiniao/cronistas?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/opiniao/cronistas?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/opiniao/cronistas?ref=Masterpage_Menu">Cronistas</a>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/opiniao/pancada-central?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/opiniao/pancada-central?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/opiniao/pancada-central?ref=Masterpage_Menu">Pancada Central </a>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/opiniao/medalhas?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/opiniao/medalhas?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/opiniao/medalhas?ref=Masterpage_Menu">Medalhas</a>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/opiniao/escrevem-os-leitores?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/opiniao/escrevem-os-leitores?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/opiniao/escrevem-os-leitores?ref=Masterpage_Menu">Escrevem os leitores</a>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/opiniao/qual-e-o-problema?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/opiniao/qual-e-o-problema?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/opiniao/qual-e-o-problema?ref=Masterpage_Menu">Qual &#233; o problema</a>
+                                        </li>
+                                </ul>
+
+                        </li>
+                        <li class="icons_menu outros-paises  bt_openOutros">
+                            <a href="javascript:;" class="eventAnalytics" data-category="Geral" data-action="MenuHeader" data-name="javascript:;" data-consumer="ga,piwik" data-url="javascript:;"><span class="hasChildrens">Outros</span></a>
+                                <ul class="sub_sections">
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/record-mais?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/record-mais?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/record-mais?ref=Masterpage_Menu">Record mais</a>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/record-gaming?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/record-gaming?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/record-gaming?ref=Masterpage_Menu">Record Gaming</a>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/fora-de-campo?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/fora-de-campo?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/fora-de-campo?ref=Masterpage_Menu">Fora de campo</a>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/jogo-da-vida?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/jogo-da-vida?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/jogo-da-vida?ref=Masterpage_Menu">Jogo da Vida</a>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/insonias-no-record?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/insonias-no-record?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/insonias-no-record?ref=Masterpage_Menu">Ins&#243;nias no Record</a>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/nutricao?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/nutricao?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/nutricao?ref=Masterpage_Menu">Nutri&#231;&#227;o</a>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/record-running?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/record-running?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/record-running?ref=Masterpage_Menu">Record Running</a>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/aposta-na-desportiva?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/aposta-na-desportiva?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/aposta-na-desportiva?ref=Masterpage_Menu">Aposta na Desportiva</a>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="/iniciativas/c-studio?ref=Masterpage_Menu" data-consumer="ga,piwik" data-url="/iniciativas/c-studio?ref=Masterpage_Menu" href="/noFrame/replay/20200427114945/https://www.record.pt/iniciativas/c-studio?ref=Masterpage_Menu">C_Studio</a>
+                                        </li>
+                                        <li>
+                                            <a class="eventAnalytics hasChildrens" data-category="Geral" data-action="MenuHeader" data-name="http://www.cofinadigital.pt/?ref=record" data-consumer="ga,piwik" data-url="http://www.cofinadigital.pt/?ref=record" href="https://arquivo.pt/noFrame/replay/20200427114945/http://www.cofinadigital.pt/?ref=record">Publicidade</a>
+                                        </li>
+                                </ul>
+
+                        </li>
+            </ul>
+        </section>
+    </nav>
+    <div class="darkMask"></div>
+    <div class="clearfix"></div>
+
+
+
+
+
+
+    <section class="container bloco01 mt-2 mt-d-4">
+        <div class="d-flex flex-column flex-lg-row">
+            <div class="col-12">
+                <article class="main_article">
+                    <div class="article_titles">
+                        <h1>A página que procura não foi encontrada</h1>
+                        <a href="/noFrame/replay/20200427114945/https://www.record.pt/?ref=404_ParaHomepage" target="___wb_replay_top_frame" class="btn_submit eventAnalytics" data-category="404" data-action="IrParaHomepage" data-name="/?ref=404_ParaHomepage">ir para a homepage</a>
+                        <div class="mainPesquisa">
+                            <form action="/noFrame/replay/20200427114945/https://www.record.pt/pesquisa" method="get">
+                                <input type="text" name="q" placeholder="O que procura no Record?" onfocus="this.placeholder=''" onblur="this.placeholder='O que procura no Record?'">
+                                <input type="hidden" name="ref" value="404_Pesquisa"/>
+                                <button type="submit" onclick="cofinaAnalytics.gaEvent('event', '404', 'Pesquisar');">
+                                    <span class="icon-search"></span>
+                                </button>
+                            </form>
+
+                        </div>
+                    </div>
+                </article>
+
+                <section class="genericNews_block mt-3 mt-md-5">
+                    <script src="https://arquivo.pt/noFrame/replay/20200427114945js_/https://st.pba.xl.pt/recommendationlayout/pbarecommendation.js"></script>
+<section class="genericNews_block mt-3 mt-md-5">
+    <div id="recommendation_1540554304297"></div>
+</section>
+<script>
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+let arguments;
+
+{(function () { var config = { "suid": "", "abtest": "", "rec_pos": "outras", "siteid": "REC", "lazyload": "true", "templateprovider": "https://st.pba.xl.pt/recommendationlayout/templateprovider.ashx", "recommendation": { "url": "https://st.pba.xl.pt/recommendationlayout/recommendation.ashx" }, "items_row": 4, "number_items": 4, "template": { "name": "record_201807" }, "css": [], "js": [{ "name": "default" }, { "name": "cofina_201807" }] }; var d = false; var tk = document.createElement('script'); tk.src = 'https://st.pba.xl.pt/recommendationlayout/pbarecommendation.js'; tk.type = 'text/javascript'; tk.async = 'true'; tk.onload = tk.onreadystatechange = function () { var rs = this.readyState; if (d || rs && rs != 'complete' && rs != 'loaded') return; d = true; try { __pbarecommendation(config).replace('recommendation_1540554304297'); } catch (e) { } }; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tk, s); })();
+
+}}</script>
+
+                </section>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="clearfix"></div>
+
+    
+
+
+
+<div class="clearfix"></div>
+<section class="container leaderboard_footer mt-4">
+    <div class="leaderboard_footer_pub p-2">
+        
+
+
+<div id="div-gpt-ad-Leaderboard-838586">
+    <script>
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+let arguments;
+
+{
+        if (typeof (showPubOn) !== 'undefined') {
+            $(function () {
+                try {
+                    var div = document.getElementById('div-gpt-ad-Leaderboard-838586');
+                    setTimeout(function () {
+                        new Waypoint({
+                            element: div,
+                            handler: function (direction) {
+                                    COF.pubApi.renderLeaderboard($(this.element));
+                                    this.destroy();
+                            },
+                            offset: '120%'
+                        })
+                    }, 50);
+                } catch (e) {
+                    console.log(e.message);
+                }
+            });
+        }
+    
+
+}}</script>
+</div>
+    </div>
+</section>
+<div class="clearfix"></div>
+
+<footer class="footer mt-4">
+    <section class="container">
+        <span class="sr-only">Footer</span>
+        
+
+
+    <ul class="links_sections">
+            <li><a class="eventAnalytics" data-category="Geral" data-action="Footer" data-name="/futebol?ref=Masterpage_AreasFooter" data-consumer="ga,piwik" href="/noFrame/replay/20200427114945/https://www.record.pt/futebol?ref=Masterpage_AreasFooter">Futebol</a></li>
+            <li><a class="eventAnalytics" data-category="Geral" data-action="Footer" data-name="/resultados-e-classificacoes?ref=Masterpage_AreasFooter" data-consumer="ga,piwik" href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes?ref=Masterpage_AreasFooter">Resultados e Classifica&#231;&#245;es</a></li>
+            <li><a class="eventAnalytics" data-category="Geral" data-action="Footer" data-name="/opiniao?ref=Masterpage_AreasFooter" data-consumer="ga,piwik" href="/noFrame/replay/20200427114945/https://www.record.pt/opiniao?ref=Masterpage_AreasFooter">Opini&#227;o</a></li>
+            <li><a class="eventAnalytics" data-category="Geral" data-action="Footer" data-name="/multimedia?ref=Masterpage_AreasFooter" data-consumer="ga,piwik" href="/noFrame/replay/20200427114945/https://www.record.pt/multimedia?ref=Masterpage_AreasFooter">Multim&#233;dia</a></li>
+            <li><a class="eventAnalytics" data-category="Geral" data-action="Footer" data-name="/fora-de-campo?ref=Masterpage_AreasFooter" data-consumer="ga,piwik" href="/noFrame/replay/20200427114945/https://www.record.pt/fora-de-campo?ref=Masterpage_AreasFooter">Fora de Campo</a></li>
+            <li><a class="eventAnalytics" data-category="Geral" data-action="Footer" data-name="/entrevistas?ref=Masterpage_AreasFooter" data-consumer="ga,piwik" href="/noFrame/replay/20200427114945/https://www.record.pt/entrevistas?ref=Masterpage_AreasFooter">Entrevistas</a></li>
+            <li><a class="eventAnalytics" data-category="Geral" data-action="Footer" data-name="/modalidades?ref=Masterpage_AreasFooter" data-consumer="ga,piwik" href="/noFrame/replay/20200427114945/https://www.record.pt/modalidades?ref=Masterpage_AreasFooter">Modalidades</a></li>
+            <li><a class="eventAnalytics" data-category="Geral" data-action="Footer" data-name="/jogo-da-vida?ref=Masterpage_AreasFooter" data-consumer="ga,piwik" href="/noFrame/replay/20200427114945/https://www.record.pt/jogo-da-vida?ref=Masterpage_AreasFooter">Jogo da Vida</a></li>
+    </ul>
+
+
+            <ul class="socialIcons">
+            <li>
+                <a href="https://arquivo.pt/noFrame/replay/20200427114945/https://www.facebook.com/RecordPortugal/" target="___wb_replay_top_frame" class="icon-facebook eventAnalytics" title="Facebook" data-category="Footer" data-action="Facebook" data-name="" data-consumer="ga,piwik"></a>
+            </li>
+            <li>
+                <a href="https://arquivo.pt/noFrame/replay/20200427114945/https://www.instagram.com/record_portugal/" target="___wb_replay_top_frame" class="icon-instagram eventAnalytics" title="Instagram" data-category="Footer" data-action="Instagram" data-name="" data-consumer="ga,piwik"></a>
+            </li>
+            <li>
+                <a href="https://arquivo.pt/noFrame/replay/20200427114945/https://twitter.com/record_portugal" target="___wb_replay_top_frame" class="icon-twitter eventAnalytics" title="Twitter" data-category="Footer" data-action="Twitter" data-name="" data-consumer="ga,piwik"></a>
+            </li>
+            <li>
+                <a href="https://arquivo.pt/noFrame/replay/20200427114945/https://www.youtube.com/channel/UCwJSUiU29jy38Wlt2j6j5yw" target="___wb_replay_top_frame" class="icon-youtube eventAnalytics" title="Youtube" data-category="Footer" data-action="Youtube" data-name="" data-consumer="ga,piwik"></a>
+            </li>
+        <li>
+            <a class="icon-rss eventAnalytics" href="/noFrame/replay/20200427114945/https://www.record.pt/rss/" target="___wb_replay_top_frame" title="Feed RSS" data-category="Footer" data-action="FeedRSS" data-name="" data-consumer="ga,piwik"> </a>
+        </li>
+    </ul>
+    <div class="clearfix"></div>
+    <ul class="links_footer">
+        <li>
+            <a href="https://arquivo.pt/noFrame/replay/20200427114945/https://www.livroreclamacoes.pt/inicio" target="___wb_replay_top_frame">
+                <img src="/noFrame/replay/20200427114945im_/https://www.record.pt/i/lrecw.png">
+            </a>
+
+        </li>
+    </ul>
+
+
+        
+
+<div class="clearfix"></div>
+<svg xmlns="http://www.w3.org/2000/svg" class="logo" x="0" y="0" viewbox="0 0 379 100"><path d="M328.32,36.37c-8.21,1.52-15.15,6.38-20.28,13.22a13.1,13.1,0,0,0-4.92-13,10.53,10.53,0,0,0-11.23-.14,58.18,58.18,0,0,0-12.46,10.44c-2.95-6.84-7.13-11.52-14.54-12.46-13.08-2.11-18.75,7.54-18.67,18.92a12.42,12.42,0,0,0-9.41-8.91c4.53,4.47,5.25,12,2.37,20.74C235.37,76.26,225.07,83,217.94,80.58c-8.49-2.52-12.31-12.53-8.13-23.4,2.52-7.06,8.35-13,14.11-15.34,0-.14,11.23-5.26,18.72-0.14a15.55,15.55,0,0,0-6.7-5.62c-13.6-7.06-33,3.1-42,19.87a38.93,38.93,0,0,0-5,17.77c-11.12,11.2-24.73,12.4-28.52.88-6.2-19.37,7.05-36.72,19.22-36.94,1.08,0,1.22.36,0.36,1.3-7.78,5.47-8,15-2,18.22,8.5,4.75,15.41-2.67,16.28-10.8v-3.1c-0.72-7-6.41-13.32-19.88-11.74a38.25,38.25,0,0,0-11.8,3.6c-15.92,7.42-24.84,20.45-25.71,40-5.47,5.69-16.2,11.31-24.41,8.64a11,11,0,0,1-3.67-1.87c-3.09-2.23-5.25-5.61-6.05-10.87a47,47,0,0,0,9.72-1.15,38.15,38.15,0,0,0,15.48-7.06c21.89-16.05,4.61-37.58-15.48-33.91a12.77,12.77,0,0,0-2.23.5c-16,4.47-28.15,20.88-28.87,39.53v3.24a45.59,45.59,0,0,0,3.31,15.34s0,0.13.13,0.35c-16.8,6-25.56-3-26.62-24.47a64.39,64.39,0,0,0,18.14-8.5c17.06-13,19-33,6.19-45.29C75,2.53,65.45.15,55.66,0,31.54-.57,10,16.14.22,39.68c13.6-19.37,33.12-26.06,46.72-21.89C73.22,25.57,61.13,53.72,43,61c-4,.72-7.27.36-9.64-1.08,3.09-11.81,6.55-23.33,10.51-34.56C33.7,23.19,24.34,24.13,15.77,30.1,6.19,51.56,1.3,74.38,0,98.36L30.82,90a57.56,57.56,0,0,1,1.29-20.09c10.43,31.21,27.23,39.89,53.5,19.51,2.28,3.82,9.25,11.48,26.85,6.34,0.72-.22,1.52-0.43,2.31-0.72A43.81,43.81,0,0,0,137,78.56c1.65,7.49,3.81,13.61,11.44,17.57,9.94,4.75,27.15-4.11,40.68-18.43V77.6c1,8.16,5.39,14.88,12.68,18.38,11.08,5.4,31,0,39.74-17.78a50.52,50.52,0,0,0,5.38-19.07l0,0.06a29.14,29.14,0,0,1,1.44-7.41,8.88,8.88,0,0,1,1.66-2.52c1.8-1.88,3.09-1.3,3.81.5,5,14.33-6.33,36.43-12.89,48.6l29.38-4.9c6.34-13.6,9.79-27.36,9.79-41.32a9.42,9.42,0,0,1,4.32-3.46c4-1.44,7.27.58,7.27,4,0,4.18-2,9.65-4.89,14.18,4.89-1.29,9.79-3,14-6a19.66,19.66,0,0,0,1.61-1.37,53,53,0,0,0-2.69,8.42c-4,17.36.36,27.51,10.65,29,5.62,0.65,11.95-1.66,17.93-6.77a48.6,48.6,0,0,0,9.43-11c4,12.16,11.59,20.3,22,19,8.71-1.08,15.77-7.27,20-15.4-8.36,6.69-16.13,1.65-18.87-10.66C359,58.47,362,45.66,365.47,32.84A212.57,212.57,0,0,1,377.64.73l-31,8.71a143.28,143.28,0,0,0-8.14,26.78A31.87,31.87,0,0,0,328.32,36.37Zm0,40c-5.18.86-9.22-2.74-9.22-9.72A24,24,0,0,1,328.32,48a26.82,26.82,0,0,1,9.29-4.89,119.32,119.32,0,0,0-.72,28.22C333.94,74.31,331,75.9,328.32,76.33ZM112.46,60.2c-2.66,2.81-6,5.18-9.72,4.61a35.65,35.65,0,0,1,5.12-18.15,29.61,29.61,0,0,1,4.6-5.83c3.17-3.09,6.27-4,8.43-3,3.31,1.44-.51,11.52-2.74,14.76A51.29,51.29,0,0,1,112.46,60.2Z" fill="#FFF"/></svg>
+<div class="clearfix"></div>
+
+<ul class="links_footer">
+        <li><a href="/noFrame/replay/20200427114945/https://www.record.pt/estatuto-editorial/detalhe/estatuto-editorial-de-record">Estatuto Editorial de RECORD</a></li>
+        <li><a href="/noFrame/replay/20200427114945/https://www.record.pt/ficha-tecnica/detalhe/20151126-1605-ficha-tecnica">Ficha t&#233;cnica</a></li>
+        <li><a href="https://arquivo.pt/noFrame/replay/20200427114945/https://nonio.net/a-mensagem-nonio/">A Mensagem N&#243;nio</a></li>
+        <li><a href="/noFrame/replay/20200427114945/https://www.record.pt/lei-da-transparencia/detalhe/lei-da-transparencia">Lei da Transpar&#234;ncia</a></li>
+        <li><a href="/noFrame/replay/20200427114945/https://www.record.pt/historia-record/detalhe/20151221_1438_record--a-historia">Record – A hist&#243;ria</a></li>
+        <li><a href="https://arquivo.pt/noFrame/replay/20200427114945/http://www.cofinadigital.pt/?ref=record">Publicidade</a></li>
+
+    <li><a href="https://arquivo.pt/noFrame/replay/20200427114945/https://www.classificadoscm.pt/" target="___wb_replay_top_frame">Anunciar on-line</a></li>
+    <li><a href="https://arquivo.pt/noFrame/replay/20200427114945/https://assinaturas.xl.pt/record?source=Record&utm_source=Geral_Footer" target="___wb_replay_top_frame" class="eventAnalytics" data-category="Botao_Assinar" data-action="Botao Geral_Footer" data-name="" data-consumer="ga,piwik">Assinaturas</a></li>
+    <li><a href="https://arquivo.pt/noFrame/replay/20200427114945/http://record.descontos.pt/" target="___wb_replay_top_frame">Promoções</a></li>
+    <li><a href="mailto:leitor@record.pt">Contacte-nos</a></li>
+</ul>
+
+
+        <div class="clearfix"></div>
+        <ul class="links_footer">
+            <li>
+                Marketing Automation certified by E-GOI<img src="/noFrame/replay/20200427114945im_/https://www.record.pt/i/egoi.png">
+            </li>
+        </ul>
+    </section>
+
+</footer>
+<section class="copy">
+    <p>Copyright © 2019. Todos os direitos reservados. É expressamente proibida a reprodução na totalidade ou em parte, em qualquer tipo de suporte, sem prévia permissão por escrito da Cofina Media S.A. Consulte a <a href="https://arquivo.pt/noFrame/replay/20200427114945/https://aminhaconta.xl.pt/Layers/PrivacyPolicy" target="___wb_replay_top_frame">Política de Privacidade Cofina</a>.</p>
+</section>
+
+<section class="nav_bottom_mobile">
+    <ul>
+        <li data-hrefmenufooter="home">
+            <a href="/noFrame/replay/20200427114945/https://www.record.pt/" class="eventAnalytics" data-category="Geral" data-action="Footer" data-name="/" data-consumer="ga,piwik">
+                <span class="icon-icon_nav_noticias"></span>
+                <span>Notícias</span>
+            </a>
+        </li>
+        <li data-hrefmenufooter="multimedia/videos">
+            <a href="/noFrame/replay/20200427114945/https://www.record.pt/multimedia/videos" class="eventAnalytics" data-category="Geral" data-action="Footer" data-name="/multimedia/videos" data-consumer="ga,piwik">
+                <span class="icon-video"></span>
+                <span>Vídeos</span>
+            </a>
+        </li>
+        <li data-hrefmenufooter="resultados-e-classificacoes">
+            <a href="/noFrame/replay/20200427114945/https://www.record.pt/resultados-e-classificacoes" class="eventAnalytics" data-category="Geral" data-action="Footer" data-name="/resultados-e-classificacoes" data-consumer="ga,piwik">
+                <span class="icon-icon_nav_flag"></span>
+                <span>Diretos</span>
+            </a>
+        </li>
+        <li data-hrefmenufooter="multimedia/fotogalerias">
+            <a href="/noFrame/replay/20200427114945/https://www.record.pt/multimedia/fotogalerias" class="eventAnalytics" data-category="Geral" data-action="Footer" data-name="/multimedia/fotogalerias" data-consumer="ga,piwik">
+                <span class="icon-foto"></span>
+                <span>Fotos</span>
+            </a>
+        </li>
+    </ul>
+</section>
+
+
+
+<div id="om-eg3jst5twjrtv39nfete-holder"></div>
+<script>
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+let arguments;
+
+{
+    function loadOptinMonster() {
+        var e = document.createElement('script');
+        e.setAttribute('language', 'javascript');
+        e.setAttribute('type', 'text/javascript');
+        e.setAttribute('src', 'https://a.omappapi.com/app/js/api.min.js');
+        e.setAttribute('data-account', '25966');
+        e.setAttribute('data-user', '34994');
+        e.setAttribute('async', '');
+        document.body.appendChild(e);
+    }
+
+
+}}</script>
+
+
+
+    <script src="/noFrame/replay/20200427114945js_/https://www.record.pt/scripts/bundles/detalhe.js?v=637232541320000000"></script>
+
+    <script type="text/javascript">
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+let arguments;
+
+{
+
+        var configAnalytics = {
+            debugMode: COF.config.DEBUG,
+        };
+
+        configAnalytics.ga = {
+            enabled: true,
+            googleDimensions: []
+        };
+
+        configAnalytics.ga = GlobalVariables.analyticsConfig.ga;
+        configAnalytics.ga.identifier = 'UA-154015-3';
+        configAnalytics.ga.defaultUrl = '/error/404';
+
+        cofinaAnalytics.init(configAnalytics);
+
+        cofinaAnalytics.gaEvent('event', 'ERRO', '404', '');
+
+    
+
+}}</script>
+
+    <script src="//arquivo.pt/noFrame/replay/20200427114945js_///cdn.xl.pt/sso/js/CofinaSSOApi.js?_=20171114"></script>
+    <script>
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+let arguments;
+
+{
+        (function () {
+            CofinaSSOApi.initWithCheckLogin();
+        })();
+    
+
+}}</script>
+
+</body>
+</html>
