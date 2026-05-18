@@ -1,0 +1,1339 @@
+
+<html>
+
+<head>
+<!-- WB Insert -->
+<script>
+  wbinfo = {};
+  wbinfo.top_url = "https://arquivo.pt/noFrame/replay/20061207214109/http://ojogo.pt/artigos/15-234/Pri.gif";
+  wbinfo.url = "http://ojogo.pt/artigos/15-234/Pri.gif";
+  wbinfo.timestamp = "20061207214109";
+  wbinfo.request_ts = "20061207214109";
+  wbinfo.prefix = decodeURI("https://arquivo.pt/noFrame/replay/");
+  wbinfo.mod = "";
+  wbinfo.is_framed = false;
+  wbinfo.is_live = false;
+  wbinfo.coll = "replay";
+  wbinfo.proxy_magic = "";
+  wbinfo.static_prefix = "https://arquivo.pt/noFrame/static/";
+  wbinfo.enable_auto_fetch = true;
+  wbinfo.target_frame = "___wb_replay_top_frame";
+</script>
+<script src='https://arquivo.pt/noFrame/static/wombat.js'> </script>
+<script>
+  wbinfo.wombat_ts = "20061207214109";
+  wbinfo.wombat_sec = "1165527669";
+  wbinfo.wombat_scheme = "http";
+  wbinfo.wombat_host = "ojogo.pt";
+
+  wbinfo.wombat_opts = {};
+
+  if (window && window._WBWombatInit) {
+    window._WBWombatInit(wbinfo);
+  }
+</script>
+
+
+
+<!-- Add custom banner here. Used only in non-framed replay. -->
+
+
+
+<!-- End WB Insert -->
+
+<meta http-equiv="Content-Language" content="pt">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Pragma" content="no-cache">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>O Jogo Online</title>
+<script type="text/javascript">
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+let arguments;
+
+{
+
+function EscolheDestinoEdicao()
+{
+	if(document.formEdicoes.edicoes.selectedIndex != 0)
+	{
+		document.location.href = document.formEdicoes.edicoes.options[document.formEdicoes.edicoes.selectedIndex].value;
+	}
+}
+
+var enablepersist="on" //Enable saving state of content structure using session cookies? (on/off)
+var collapseprevious="yes" //Collapse previously open content when opening present? (yes/no)
+
+if (document.getElementById){
+document.write('<style type="text/css">')
+document.write('.switchcontent{display:none;}')
+document.write('</style>')
+}
+
+function getElementbyClass(classname){
+ccollect=new Array()
+var inc=0
+var alltags=document.all? document.all : document.getElementsByTagName("*")
+for (i=0; i<alltags.length; i++){
+if (alltags[i].className==classname)
+ccollect[inc++]=alltags[i]
+}
+}
+
+function contractcontent(omit){
+var inc=0
+while (ccollect[inc]){
+if (ccollect[inc].id!=omit)
+ccollect[inc].style.display="none"
+inc++
+}
+}
+
+function expandcontent(cid){
+if (typeof ccollect!="undefined"){
+if (collapseprevious=="yes")
+contractcontent(cid)
+document.getElementById(cid).style.display=(document.getElementById(cid).style.display!="block")? "block" : "none"
+}
+}
+
+function revivecontent(){
+contractcontent("omitnothing")
+selectedItem=getselectedItem()
+selectedComponents=selectedItem.split("|")
+for (i=0; i<selectedComponents.length-1; i++)
+document.getElementById(selectedComponents[i]).style.display="block"
+}
+
+function get_cookie(Name) { 
+var search = Name + "="
+var returnvalue = "";
+if (document.cookie.length > 0) {
+offset = document.cookie.indexOf(search)
+if (offset != -1) { 
+offset += search.length
+end = document.cookie.indexOf(";", offset);
+if (end == -1) end = document.cookie.length;
+returnvalue=unescape(document.cookie.substring(offset, end))
+}
+}
+return returnvalue;
+}
+
+function getselectedItem(){
+if (get_cookie(window.location.pathname) != ""){
+selectedItem=get_cookie(window.location.pathname)
+return selectedItem
+}
+else
+return ""
+}
+
+function saveswitchstate(){
+var inc=0, selectedItem=""
+while (ccollect[inc]){
+if (ccollect[inc].style.display=="block")
+selectedItem+=ccollect[inc].id+"|"
+inc++
+}
+
+document.cookie=window.location.pathname+"="+selectedItem
+}
+
+function do_onload(){
+getElementbyClass("switchcontent")
+if (enablepersist=="on" && typeof ccollect!="undefined")
+revivecontent()
+}
+
+
+if (window.addEventListener)
+window.addEventListener("load", do_onload, false)
+else if (window.attachEvent)
+window.attachEvent("onload", do_onload)
+else if (document.getElementById)
+window.onload=do_onload
+
+if (enablepersist=="on" && document.getElementById)
+window.onunload=saveswitchstate
+
+
+
+}}</script><script language="JavaScript">
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+let arguments;
+
+{
+<!--
+
+browserName = navigator.appName;
+browserVer = parseInt(navigator.appVersion);
+
+if (	(browserName == "Netscape" && browserVer >=3) ||
+		(browserName == "Microsoft Internet Explorer" && browserVer >= 4)
+	) browserOk = true;
+else browserOk = false;
+
+if (browserOk) {
+	pagina_esq_off = new Image(25, 45);
+	pagina_esq_off.src = "../Imagens/pagina_esq_off.gif";
+
+	pagina_esq_on = new Image(25, 45);
+	pagina_esq_on.src = "../Imagens/pagina_esq_on.gif";
+
+	pagina_dir_off = new Image(25, 45);
+	pagina_dir_off.src = "../Imagens/pagina_dir_off.gif";
+
+	pagina_dir_on = new Image(25, 45);
+	pagina_dir_on.src = "../Imagens/pagina_dir_on.gif";
+}
+
+function buttonOn(imgName)
+{
+	if (browserOk) document[imgName].src = WB_wombat_runEval2((_______eval_arg, isGlobal) => { var ge = eval; return isGlobal ? ge(_______eval_arg) : eval(_______eval_arg); }).eval(this, (function() { return arguments })(),imgName + "_on.src");
+	return true;
+}
+
+function buttonOff(imgName)
+{
+	if (browserOk) document[imgName].src = WB_wombat_runEval2((_______eval_arg, isGlobal) => { var ge = eval; return isGlobal ? ge(_______eval_arg) : eval(_______eval_arg); }).eval(this, (function() { return arguments })(),imgName + "_off.src");
+	return true;
+}
+// -->
+
+
+}}</script>
+<script language="JavaScript1.1" type="text/javascript">
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+let arguments;
+
+{ var TileID = Math.floor(Math.random()*100000000); 
+
+}}</script><script language="JavaScript" type="text/JavaScript">
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+let arguments;
+
+{ document.write ('<SCR' + 'IPT SRC="http://ads.sapo.pt/js.ng/site=ojogo&chansm=ojogo&adsize=1x1&typesm=uniquevisitors&pagetype=hp&TileID='+TileID+'"></SCR' + 'IPT>'); 
+
+}}</script>
+
+
+<script language="JavaScript">
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+let arguments;
+
+{
+<!--
+function TakeOut(URL,nome,w,h)
+{
+    msg = open(URL,nome,"width="+w+",height="+h+",toolbar=no,scrollbars=no,resizable=no,status=no,directories=no,menubar=no,location=((self.__WB_check_loc && self.__WB_check_loc(location, arguments)) || {}).href = no");
+}
+// -->
+
+
+}}</script>
+<link rel="stylesheet" type="text/css" href="/noFrame/replay/20061207214109cs_/http://ojogo.pt/style.css" title="O Jogo">
+</head>
+<body topmargin="0">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top">
+      <table border="0" width="758" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><img border="0" src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/Imagens/pub.gif"></td>    
+          <td><center><script language="JavaScript" type="text/JavaScript">
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+let arguments;
+
+{ document.write ('<SCR' + 'IPT SRC="http://ads.sapo.pt/js.ng/site=ojogo&chansm=ojogo&adsize=728x90&typesm=leaderboard&pagetype=hp&tile='+TileID+'"></SCR' + 'IPT>'); 
+
+}}</script></center></td>
+        </tr>
+        <tr>
+          <td height="10" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+    <td width="10"><img border="0" src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/Imagens/3x3.gif" width="10" height="1"></td>
+    <td width="120" valign="top" rowspan="2"><div id="myChaser">
+<script language="JavaScript" type="text/JavaScript">
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+let arguments;
+
+{ document.write ('<SCR' + 'IPT SRC="http://ads.sapo.pt/js.ng/site=ojogo&chansm=ojogo&adsize=120x600&typesm=skyscraper&pagetype=hp&tile='+TileID+'"></SCR' + 'IPT>'); 
+
+}}</script>
+</div>
+<script language="javascript">
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+let arguments;
+
+{
+myChaser.style.visibility = 'hidden';
+
+<!--
+// Chaser Code
+
+var Chaser =
+{
+	hover	: 5,
+	divisor	: 6,
+	callRate: 55,
+	layer	: document[document.all ? "all" : "layers"]["myChaser"]
+}
+
+Chaser.paint = function() {
+
+	targetY = (document.all ? document.body.scrollTop : window.pageYOffset) + Chaser.hover;
+
+	currentY = document.all ? Chaser.layer.style.pixelTop : Chaser.layer.top;
+
+	difference = currentY - targetY;
+	decrement = Math.round(difference / Chaser.divisor);
+
+	if (document.all)
+		Chaser.layer.style.pixelTop -= decrement;
+	else
+		Chaser.layer.top -= decrement;
+}
+
+window.setInterval("Chaser.paint()", Chaser.callRate);
+
+
+//-->
+
+
+}}</script>
+
+<!-- NÃO MEXER A PARTIR DESTA LINHA -->
+<script>
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+let arguments;
+
+{
+myTimer1=setTimeout("myChaser.style.visibility = 'visible'",0)
+
+
+}}</script>
+<style type="text/css">
+#myChaser {
+    position:relative;
+}
+</style></td>
+  </tr>
+  <tr>
+    <td>
+      <table border="0" width="750" cellspacing="0" cellpadding="0">
+        <tr>
+          <td colspan="3">
+            <table border="0" width="758" cellspacing="0" cellpadding="0">
+              <tr>
+                <td colspan="2">
+          <table width="0" cellspacing="0" cellpadding="0" width="758"> 
+            <tr>
+              <td>               
+                <map name="header">
+                <area alt="Homepage" coords="3,92,340,4" href="https://arquivo.pt/noFrame/replay/20061207214109/http://www.ojogo.pt">
+                <area alt="Versão Impressa" coords="553,2,670,114" href="javascript:TakeOut('../Imagens/ImagemPrimeiraPagina.asp?D=22-289','oJogo',315,400)" shape="RECT">
+                <area alt="Folhear Jornal" coords="672,2,755,108" href="artigo432587.htm" shape="RECT">
+                </map>
+                <img src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/Imagens/header.gif" width="668" height="108" border="0" alt="" usemap="#header"></td>
+                </td>
+                <td background="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/Imagens/folhear.gif" width="90">
+                 <table border="0" cellspacing="0" cellpadding="0" align="center">
+                  <tr>
+                    
+                    <td><img src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/Imagens/pagina_esq_off.gif" name="pagina_esq" border="0" width="29"></td>
+                    
+                    <td><a href="artigo596658.htm" onmouseover="return buttonOn('pagina_dir')" onmouseout="return buttonOff('pagina_dir')"><img src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/Imagens/pagina_dir_off.gif" name="pagina_dir" border="0" alt="Contra os pactos n&atilde;o h&aacute; argumentos"></a></td>
+                    
+                  </tr>
+                 </table> 
+                </td>
+                </tr>
+                </table>
+                </td>
+              </tr>
+              <tr>
+            	<td background="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/Imagens/back_dia.gif" width="156"><font face="Arial" size="1" color="#ffffff">&nbsp;&nbsp;Nº&nbsp;289/22&nbsp;&nbsp;Qui, 7 Dez 2006</font></td>
+                <td><map name="menu">
+                <area alt="Clube Móvel" coords="17,0,149,18" href="https://arquivo.pt/noFrame/replay/20061207214109/http://www.ojogo.pt/clubemovel/clubemovel.asp">
+                <area alt="Notícias na Hora" coords="150,0,324,19" href="https://arquivo.pt/noFrame/replay/20061207214109/http://www.ojogo.pt/javaApplet/Directo.asp?D=1" shape="RECT">
+                <area alt="Quem Somos" coords="325,-2,473,19" href="https://arquivo.pt/noFrame/replay/20061207214109/http://www.ojogo.pt/QuemSomos/QuemSomos.asp" shape="RECT">
+                </map>
+                <img src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/Imagens/menu.gif" width="602" height="19" border="0" alt="" usemap="#menu"></td>
+              </tr>
+              <tr>
+            <td height="10" colspan="2"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td height="2" bgcolor="#FFFFFF" colspan="3"></td>
+        </tr>
+        <tr>
+          <td valign="top" class="ffffff" width="170" rowspan="2"> 
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="166">
+<tr>
+<td valign="center"><script language="JavaScript" type="text/JavaScript">
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+let arguments;
+
+{ document.write ('<SCR' + 'IPT SRC="http://ads.sapo.pt/js.ng/site=ojogo&chansm=ojogo&adsize=151x151&typesm=btojogo&pos=1&pagetype=hp&tile='+TileID+'"></SCR' + 'IPT>'); 
+
+}}</script>
+
+</td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+</table>
+
+<table border="0" width="166" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+	
+	<div onclick="expandcontent('0')" style="cursor:hand; cursor:pointer"><img src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/icon_Futebol.gif" border="0" hspace="0" vspace="0"></div>
+	<div id="0" class="switchcontent">
+
+    	<table cellspacing="0" cellpadding="0" border="0" width="156">
+      	<tr bgcolor="#ffffff">
+        <td bgcolor="#FEECB1"><div align="right"><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596658.htm"><font class="BECategoria2Activa">Liga dos Campeões</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596704.htm"><font class="BECategoria2Activa">FC Porto</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596708.htm"><font class="BECategoria2Activa">Sporting</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596739.htm"><font class="BECategoria2Activa">Benfica</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596740.htm"><font class="BECategoria2Activa">Bwinliga</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596765.htm"><font class="BECategoria2Activa">Liga de Honra</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596775.htm"><font class="BECategoria2Activa">Liga de Clubes</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596777.htm"><font class="BECategoria2Activa">Arbitragem</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596778.htm"><font class="BECategoria2Activa">Selecções</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596780.htm"><font class="BECategoria2Activa">Juízes no Desporto</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596787.htm"><font class="BECategoria2Activa">Brasileirao</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596791.htm"><font class="BECategoria2Activa">Futebol Internacional</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596806.htm"><font class="BECategoria2Activa">Futebol Feminino</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br></div></td></tr></table>
+
+	</div>
+	
+	<div onclick="expandcontent('1')" style="cursor:hand; cursor:pointer"><img src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/icon_Modalidades.gif" border="0" hspace="0" vspace="0"></div>
+	<div id="1" class="switchcontent">
+
+    	<table cellspacing="0" cellpadding="0" border="0" width="156">
+      	<tr bgcolor="#ffffff">
+        <td bgcolor="#FEECB1"><div align="right"><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596807.htm"><font class="BECategoria2Activa">Basquetebol</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596814.htm"><font class="BECategoria2Activa">Voleibol</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596815.htm"><font class="BECategoria2Activa">Atletismo</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596817.htm"><font class="BECategoria2Activa">Ténis</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596819.htm"><font class="BECategoria2Activa">Ténis de Mesa</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596820.htm"><font class="BECategoria2Activa">Natação</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596825.htm"><font class="BECategoria2Activa">Raguebi</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596826.htm"><font class="BECategoria2Activa">Golfe</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596827.htm"><font class="BECategoria2Activa">Judo</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br></div></td></tr></table>
+
+	</div>
+	
+	<div onclick="expandcontent('2')" style="cursor:hand; cursor:pointer"><img src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/icon_Outros.gif" border="0" hspace="0" vspace="0"></div>
+	<div id="2" class="switchcontent">
+
+    	<table cellspacing="0" cellpadding="0" border="0" width="156">
+      	<tr bgcolor="#ffffff">
+        <td bgcolor="#FEECB1"><div align="right"><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596828.htm"><font class="BECategoria2Activa">Agenda</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596829.htm"><font class="BECategoria2Activa">TV Desporto</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596830.htm"><font class="BECategoria2Activa">Media</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596834.htm"><font class="BECategoria2Activa">Diversos</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br></div></td></tr></table>
+
+	</div>
+	
+	<div onclick="expandcontent('3')" style="cursor:hand; cursor:pointer"><img src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/icon_Opiniao.gif" border="0" hspace="0" vspace="0"></div>
+	<div id="3" class="switchcontent">
+
+    	<table cellspacing="0" cellpadding="0" border="0" width="156">
+      	<tr bgcolor="#ffffff">
+        <td bgcolor="#FEECB1"><div align="right"><a href="/noFrame/replay/20061207214109/http://ojogo.pt/22-289/artigo596835.htm"><font class="BECategoria2Activa">Editorial</font></a><br><img width="150" src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/intervalo_tabela.gif"><br></div></td></tr></table>
+
+	</div>
+		
+</td>
+</tr>
+</table>
+
+<table border="0" width="166" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<img src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/icon_estatistica.gif" border="0"><br>
+<img src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/numeros_campeonato1.gif" border="0" usemap="#MapaEstatisticas" width="156"> 
+  <map name="MapaEstatisticas"> 
+    <area shape="rect" coords="1,97,149,115" href="/noFrame/replay/20061207214109/http://ojogo.pt/geradores/estatisticas.asp?E=G&O=P&idEdicao=2504&id_art=0">
+    <area shape="rect" coords="1,79,149,96" href="/noFrame/replay/20061207214109/http://ojogo.pt/geradores/estatisticas.asp?E=PJ&O=P&amp;idEdicao=2504&amp;id_art=0">
+    <area shape="rect" coords="1,61,149,78" href="/noFrame/replay/20061207214109/http://ojogo.pt/geradores/estatisticas.asp?E=RJ&O=P&idEdicao=2504&id_art=0">
+    <area shape="rect" coords="1,43,149,60" href="/noFrame/replay/20061207214109/http://ojogo.pt/geradores/estatisticas.asp?E=RSJ&O=P&amp;idEdicao=2504&amp;id_art=0">
+    <area shape="rect" coords="1,25,149,42" href="/noFrame/replay/20061207214109/http://ojogo.pt/geradores/estatisticas.asp?E=CG&O=P&idEdicao=2504&id_art=0">
+    <area shape="rect" coords="1,8,149,24" href="/noFrame/replay/20061207214109/http://ojogo.pt/geradores/estatisticas.asp?E=CA&O=P&idEdicao=2504&id_art=0">
+   </map>
+</td>
+</tr>
+</table>
+ 
+<table border="0" width="156" cellpadding="0" cellspacing="0" bgcolor="#FEECB1"> 
+<tr>
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+   <tr>
+      <td><img src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/3x3.gif" width="1" height="5"></td>   
+   </tr>
+   <tr>
+      <td><img src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/3x3.gif" width="1" height="5"></td>
+   </tr>
+   <tr>
+      <td></td>
+   </tr>
+</table>
+
+  <a href="javascript:TakeOut('http://www.ojogo.pt/Imagens/cartoon.asp?D=22-289','Cartoon',600,230)">
+  <img src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/cartoon.gif" border="0" width="150" height="35"></a>
+  
+  
+  
+<!--
+
+<table border="0" cellspacing="0" width="150" cellpadding="0">
+<tr align="center"><td align="center"><font face="Arial" size="2">Jogo das estrelas e despedida à Selecção Nacional<br>16 de Maio - 21 horas<br>Estádio José Alvalade</font></td></tr>
+<tr align="center"><td align="center"><img border="0" src="../Imagens/estrelas.jpg" width="150" height="60"><br></td></tr>
+<tr align="center"><td align="center">
+<font face="Arial" size="1"><a href="http://infordesporto.sapo.pt/jogodasestrelas.asp" target="_blank">Verifique os resultados</a></font></td></tr></table><br>
+
+-->
+
+
+<img border="0" src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/Imagens/icon_inqueritos.gif" width="150" height="22">
+
+<form method="POST" name="form1214" onsubmit="javascript: return ValidaCampos1214();" target="___wb_replay_top_frame" action="/noFrame/replay/20061207214109/http://ojogo.pt/Sondagens/resultados.asp">
+        <input type="hidden" name="data" value="NULL"><input type="hidden" name="idSessao" value=""><input type="hidden" name="idSondagem" value="1214"><input type="hidden" name="include" value="True"><input type="hidden" name="pagina" value="1">
+        
+  <table border="0" cellspacing="0" width="150" cellpadding="0">
+    
+    <tr> 
+      
+      <td bgcolor="E9A230" width="30" align="right"><font color="FEECB1"><b>1</b></font></td>
+      <td width="60" align="center">&nbsp;</td>
+      <td width="60" align="center">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="130" colspan="2" align="left"><strong><font face="Arial" size="1" color="black">Escolha a Selecção do Ano 2006, segundo a táctica 4-2-3-1. Qual o guarda-redes? 
+        </font></strong> </td></tr>
+        <tr><td colspan="2"><input type="radio" name="pergunta2609" value="8005"><font face="Arial" size="1">Helton (FC Porto)</font>&nbsp;&nbsp;&nbsp;  <br><input type="radio" name="pergunta2609" value="8006"><font face="Arial" size="1">Ricardo (Sporting)</font>&nbsp;&nbsp;&nbsp;  <br><input type="radio" name="pergunta2609" value="8007"><font face="Arial" size="1">Quim (Benfica)</font>&nbsp;&nbsp;&nbsp;  <br>
+<img src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/Imagens/imagem_final_sondagme.gif" width="140" height="7">
+</td></tr>
+    <tr> 
+      
+      <td bgcolor="E9A230" width="30" align="right"><font color="FEECB1"><b>2</b></font></td>
+      <td width="60" align="center">&nbsp;</td>
+      <td width="60" align="center">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="130" colspan="2" align="left"><strong><font face="Arial" size="1" color="black">Lateral-direito 
+        </font></strong> </td></tr>
+        <tr><td colspan="2"><input type="radio" name="pergunta2610" value="8008"><font face="Arial" size="1">Bosingwa (FC Porto)</font>&nbsp;&nbsp;&nbsp;  <br><input type="radio" name="pergunta2610" value="8009"><font face="Arial" size="1">Caneira (Sporting)</font>&nbsp;&nbsp;&nbsp;  <br><input type="radio" name="pergunta2610" value="8010"><font face="Arial" size="1">Nélson (Benfica)</font>&nbsp;&nbsp;&nbsp;  <br>
+<img src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/Imagens/imagem_final_sondagme.gif" width="140" height="7">
+</td></tr>
+    <tr> 
+      
+      <td bgcolor="E9A230" width="30" align="right"><font color="FEECB1"><b>3</b></font></td>
+      <td width="60" align="center">&nbsp;</td>
+      <td width="60" align="center">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="130" colspan="2" align="left"><strong><font face="Arial" size="1" color="black">Defesas-centrais (2) 
+        </font></strong> </td></tr>
+        <tr><td colspan="2"><input type="checkbox" name="pergunta2611" value="8011"><font face="Arial" size="1">Pepe (FC Porto)</font>&nbsp;&nbsp;&nbsp;  <br><input type="checkbox" name="pergunta2611" value="8012"><font face="Arial" size="1">Tonel (Sporting)</font>&nbsp;&nbsp;&nbsp;  <br><input type="checkbox" name="pergunta2611" value="8013"><font face="Arial" size="1">Luisão (Benfica)</font>&nbsp;&nbsp;&nbsp;  <br><input type="checkbox" name="pergunta2611" value="8014"><font face="Arial" size="1">Bruno Alves (FC Porto)</font>&nbsp;&nbsp;&nbsp;  <br><input type="checkbox" name="pergunta2611" value="8015"><font face="Arial" size="1">Polga (Sporting)</font>&nbsp;&nbsp;&nbsp;  <br><input type="checkbox" name="pergunta2611" value="8016"><font face="Arial" size="1">Ricardo Rocha (Benfica)</font>&nbsp;&nbsp;&nbsp;  <br>
+<img src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/Imagens/imagem_final_sondagme.gif" width="140" height="7">
+</td></tr>
+    <tr> 
+      
+      <td bgcolor="E9A230" width="30" align="right"><font color="FEECB1"><b>4</b></font></td>
+      <td width="60" align="center">&nbsp;</td>
+      <td width="60" align="center">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="130" colspan="2" align="left"><strong><font face="Arial" size="1" color="black">Lateral-esquerdo 
+        </font></strong> </td></tr>
+        <tr><td colspan="2"><input type="radio" name="pergunta2612" value="8017"><font face="Arial" size="1">Tello (Sporting)</font>&nbsp;&nbsp;&nbsp;  <br><input type="radio" name="pergunta2612" value="8018"><font face="Arial" size="1">Léo (Benfica)</font>&nbsp;&nbsp;&nbsp;  <br><input type="radio" name="pergunta2612" value="8019"><font face="Arial" size="1">Alonso (Nacional)</font>&nbsp;&nbsp;&nbsp;  <br>
+<img src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/Imagens/imagem_final_sondagme.gif" width="140" height="7">
+</td></tr>
+    <tr> 
+      
+      <td bgcolor="E9A230" width="30" align="right"><font color="FEECB1"><b>5</b></font></td>
+      <td width="60" align="center">&nbsp;</td>
+      <td width="60" align="center">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="130" colspan="2" align="left"><strong><font face="Arial" size="1" color="black">Médios-defensivos (2) 
+        </font></strong> </td></tr>
+        <tr><td colspan="2"><input type="checkbox" name="pergunta2613" value="8020"><font face="Arial" size="1">Lucho Gonzalez (FC Porto)</font>&nbsp;&nbsp;&nbsp;  <br><input type="checkbox" name="pergunta2613" value="8021"><font face="Arial" size="1">João Moutinho (Sporting)</font>&nbsp;&nbsp;&nbsp;  <br><input type="checkbox" name="pergunta2613" value="8022"><font face="Arial" size="1">Katsouranis (Benfica)</font>&nbsp;&nbsp;&nbsp;  <br><input type="checkbox" name="pergunta2613" value="8023"><font face="Arial" size="1">Paulo Assunção (FC Porto)</font>&nbsp;&nbsp;&nbsp;  <br><input type="checkbox" name="pergunta2613" value="8024"><font face="Arial" size="1">Petit (Benfica)</font>&nbsp;&nbsp;&nbsp;  <br><input type="checkbox" name="pergunta2613" value="8025"><font face="Arial" size="1">Andrés Madrid (Sp.Braga)</font>&nbsp;&nbsp;&nbsp;  <br>
+<img src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/Imagens/imagem_final_sondagme.gif" width="140" height="7">
+</td></tr>
+    <tr> 
+      
+      <td bgcolor="E9A230" width="30" align="right"><font color="FEECB1"><b>6</b></font></td>
+      <td width="60" align="center">&nbsp;</td>
+      <td width="60" align="center">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="130" colspan="2" align="left"><strong><font face="Arial" size="1" color="black">Ala-direito 
+        </font></strong> </td></tr>
+        <tr><td colspan="2"><input type="radio" name="pergunta2614" value="8026"><font face="Arial" size="1">Quaresma (FC Porto)</font>&nbsp;&nbsp;&nbsp;  <br><input type="radio" name="pergunta2614" value="8027"><font face="Arial" size="1">Yannick Djaló (Sporting)</font>&nbsp;&nbsp;&nbsp;  <br><input type="radio" name="pergunta2614" value="8028"><font face="Arial" size="1">Zé Manuel (Boavista)</font>&nbsp;&nbsp;&nbsp;  <br>
+<img src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/Imagens/imagem_final_sondagme.gif" width="140" height="7">
+</td></tr>
+    <tr> 
+      
+      <td bgcolor="E9A230" width="30" align="right"><font color="FEECB1"><b>7</b></font></td>
+      <td width="60" align="center">&nbsp;</td>
+      <td width="60" align="center">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="130" colspan="2" align="left"><strong><font face="Arial" size="1" color="black">Ala-esquerdo 
+        </font></strong> </td></tr>
+        <tr><td colspan="2"><input type="radio" name="pergunta2615" value="8029"><font face="Arial" size="1">Nani (Sporting)</font>&nbsp;&nbsp;&nbsp;  <br><input type="radio" name="pergunta2615" value="8030"><font face="Arial" size="1">Simão (Benfica)</font>&nbsp;&nbsp;&nbsp;  <br><input type="radio" name="pergunta2615" value="8031"><font face="Arial" size="1">Cesinha (Sp.Braga)</font>&nbsp;&nbsp;&nbsp;  <br>
+<img src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/Imagens/imagem_final_sondagme.gif" width="140" height="7">
+</td></tr>
+    <tr> 
+      
+      <td bgcolor="E9A230" width="30" align="right"><font color="FEECB1"><b>8</b></font></td>
+      <td width="60" align="center">&nbsp;</td>
+      <td width="60" align="center">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="130" colspan="2" align="left"><strong><font face="Arial" size="1" color="black">Médio-ofensivo/segundo avançado 
+        </font></strong> </td></tr>
+        <tr><td colspan="2"><input type="radio" name="pergunta2616" value="8032"><font face="Arial" size="1">Anderson (FC Porto)</font>&nbsp;&nbsp;&nbsp;  <br><input type="radio" name="pergunta2616" value="8033"><font face="Arial" size="1">Nuno Gomes (Benfica)</font>&nbsp;&nbsp;&nbsp;  <br><input type="radio" name="pergunta2616" value="8034"><font face="Arial" size="1">João Pinto (Boavista/Sp.Braga)</font>&nbsp;&nbsp;&nbsp;  <br>
+<img src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/Imagens/imagem_final_sondagme.gif" width="140" height="7">
+</td></tr>
+    <tr> 
+      
+      <td bgcolor="E9A230" width="30" align="right"><font color="FEECB1"><b>9</b></font></td>
+      <td width="60" align="center">&nbsp;</td>
+      <td width="60" align="center">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="130" colspan="2" align="left"><strong><font face="Arial" size="1" color="black">Ponta-de-lança 
+        </font></strong> </td></tr>
+        <tr><td colspan="2"><input type="radio" name="pergunta2617" value="8035"><font face="Arial" size="1">Postiga (FC Porto)</font>&nbsp;&nbsp;&nbsp;  <br><input type="radio" name="pergunta2617" value="8036"><font face="Arial" size="1">Liedson (Sporting)</font>&nbsp;&nbsp;&nbsp;  <br><input type="radio" name="pergunta2617" value="8037"><font face="Arial" size="1">Miccoli (Benfica)</font>&nbsp;&nbsp;&nbsp;  <br>
+<img src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/Imagens/imagem_final_sondagme.gif" width="140" height="7">
+</td></tr>&nbsp;<tr align="center"><td colspan="2"><input type="submit" value="Submeter" name="accao"> <br><br><font face="Arial" size="2"><a href="/noFrame/replay/20061207214109/http://ojogo.pt/sondagens/resultados.asp?idSondagem=1214" target="___wb_replay_top_frame">Verificar Resultados</a></font> </td> </tr> </table></form>
+<form method="POST" name="form1215" onsubmit="javascript: return ValidaCampos1215();" target="___wb_replay_top_frame" action="/noFrame/replay/20061207214109/http://ojogo.pt/Sondagens/resultados.asp">
+        <input type="hidden" name="data" value="NULL"><input type="hidden" name="idSessao" value=""><input type="hidden" name="idSondagem" value="1215"><input type="hidden" name="include" value="True"><input type="hidden" name="pagina" value="1">
+        
+  <table border="0" cellspacing="0" width="150" cellpadding="0">
+    
+    <tr> 
+      
+      <td bgcolor="E9A230" width="30" align="right"><font color="FEECB1"><b>1</b></font></td>
+      <td width="60" align="center">&nbsp;</td>
+      <td width="60" align="center">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="130" colspan="2" align="left"><strong><font face="Arial" size="1" color="black">Bueno está a justificar a confiança nele depositada pelo treinador do Sporting, Paulo Bento? 
+        </font></strong> </td></tr>
+        <tr><td colspan="2"><input type="radio" name="pergunta2618" value="8038"><font face="Arial" size="1">Sim</font>&nbsp;&nbsp;&nbsp;  <br><input type="radio" name="pergunta2618" value="8039"><font face="Arial" size="1">Não</font>&nbsp;&nbsp;&nbsp;  <br>
+<img src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/Imagens/imagem_final_sondagme.gif" width="140" height="7">
+</td></tr>
+    <tr> 
+      
+      <td bgcolor="E9A230" width="30" align="right"><font color="FEECB1"><b>2</b></font></td>
+      <td width="60" align="center">&nbsp;</td>
+      <td width="60" align="center">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="130" colspan="2" align="left"><strong><font face="Arial" size="1" color="black">Nuno Gomes, castigado, não jogará com a Naval. Quem deve substituir o avançado do Benfica? 
+        </font></strong> </td></tr>
+        <tr><td colspan="2"><input type="radio" name="pergunta2619" value="8040"><font face="Arial" size="1">Mantorras</font>&nbsp;&nbsp;&nbsp;  <br><input type="radio" name="pergunta2619" value="8041"><font face="Arial" size="1">Kikin Fonseca</font>&nbsp;&nbsp;&nbsp;  <br><input type="radio" name="pergunta2619" value="8042"><font face="Arial" size="1">Karagounis</font>&nbsp;&nbsp;&nbsp;  <br>
+<img src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/Imagens/imagem_final_sondagme.gif" width="140" height="7">
+</td></tr>
+    <tr> 
+      
+      <td bgcolor="E9A230" width="30" align="right"><font color="FEECB1"><b>3</b></font></td>
+      <td width="60" align="center">&nbsp;</td>
+      <td width="60" align="center">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="130" colspan="2" align="left"><strong><font face="Arial" size="1" color="black">Até que fase da Liga dos Campeões pode chegar o FC Porto? 
+        </font></strong> </td></tr>
+        <tr><td colspan="2"><input type="radio" name="pergunta2620" value="8043"><font face="Arial" size="1">1/4 de final</font>&nbsp;&nbsp;&nbsp;  <br><input type="radio" name="pergunta2620" value="8044"><font face="Arial" size="1">1/2 de final</font>&nbsp;&nbsp;&nbsp;  <br><input type="radio" name="pergunta2620" value="8045"><font face="Arial" size="1">Final</font>&nbsp;&nbsp;&nbsp;  </td><td width="20"></td></tr>
+    <tr align="center"> 
+      <td colspan="3"><img src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/Imagens/imagem_final_sondagme.gif" width="145" height="7"> 
+        
+        <input type="submit" value="Submeter" name="accao">
+        <br>
+        <br>
+        <font face="Arial" size="2"><a href="/noFrame/replay/20061207214109/http://ojogo.pt/sondagens/resultados.asp?idSondagem=1215" target="___wb_replay_top_frame">Verificar 
+        Resultados</a></font></td>
+    </tr>
+  </table>
+      </form>
+  <script language="JavaScript">
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+let arguments;
+
+{
+<!-- 
+function ValidaCampos1214()
+{ 
+	retorno = false;
+	for (i=0; i<document.form1214.pergunta2609.length; i++)
+	{
+  		if (document.form1214.pergunta2609[i].checked == true)
+			retorno = true;
+	}
+	if (retorno == false)
+	{
+		alert('Todas as questões são de preenchimento obrigatório.');
+		return false;
+	}
+	retorno = false;
+	for (i=0; i<document.form1214.pergunta2610.length; i++)
+	{
+  		if (document.form1214.pergunta2610[i].checked == true)
+			retorno = true;
+	}
+	if (retorno == false)
+	{
+		alert('Todas as questões são de preenchimento obrigatório.');
+		return false;
+	}
+	retorno = false;
+	for (i=0; i<document.form1214.pergunta2612.length; i++)
+	{
+  		if (document.form1214.pergunta2612[i].checked == true)
+			retorno = true;
+	}
+	if (retorno == false)
+	{
+		alert('Todas as questões são de preenchimento obrigatório.');
+		return false;
+	}
+	retorno = false;
+	for (i=0; i<document.form1214.pergunta2614.length; i++)
+	{
+  		if (document.form1214.pergunta2614[i].checked == true)
+			retorno = true;
+	}
+	if (retorno == false)
+	{
+		alert('Todas as questões são de preenchimento obrigatório.');
+		return false;
+	}
+	retorno = false;
+	for (i=0; i<document.form1214.pergunta2615.length; i++)
+	{
+  		if (document.form1214.pergunta2615[i].checked == true)
+			retorno = true;
+	}
+	if (retorno == false)
+	{
+		alert('Todas as questões são de preenchimento obrigatório.');
+		return false;
+	}
+	retorno = false;
+	for (i=0; i<document.form1214.pergunta2616.length; i++)
+	{
+  		if (document.form1214.pergunta2616[i].checked == true)
+			retorno = true;
+	}
+	if (retorno == false)
+	{
+		alert('Todas as questões são de preenchimento obrigatório.');
+		return false;
+	}
+	retorno = false;
+	for (i=0; i<document.form1214.pergunta2617.length; i++)
+	{
+  		if (document.form1214.pergunta2617[i].checked == true)
+			retorno = true;
+	}
+	if (retorno == false)
+	{
+		alert('Todas as questões são de preenchimento obrigatório.');
+		return false;
+	}
+}
+//-->
+
+
+}}</script><script language="JavaScript">
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+let arguments;
+
+{
+<!-- 
+function ValidaCampos1215()
+{ 
+	retorno = false;
+	for (i=0; i<document.form1215.pergunta2618.length; i++)
+	{
+  		if (document.form1215.pergunta2618[i].checked == true)
+			retorno = true;
+	}
+	if (retorno == false)
+	{
+		alert('Todas as questões são de preenchimento obrigatório.');
+		return false;
+	}
+	retorno = false;
+	for (i=0; i<document.form1215.pergunta2619.length; i++)
+	{
+  		if (document.form1215.pergunta2619[i].checked == true)
+			retorno = true;
+	}
+	if (retorno == false)
+	{
+		alert('Todas as questões são de preenchimento obrigatório.');
+		return false;
+	}
+	retorno = false;
+	for (i=0; i<document.form1215.pergunta2620.length; i++)
+	{
+  		if (document.form1215.pergunta2620[i].checked == true)
+			retorno = true;
+	}
+	if (retorno == false)
+	{
+		alert('Todas as questões são de preenchimento obrigatório.');
+		return false;
+	}
+}
+//-->
+
+
+}}</script>
+ <img src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/icon_arquivo.gif" width="150"><br>
+  
+  <form method="GET" name="formEdicoes">
+    <p>
+      <select name="edicoes" onchange="EscolheDestinoEdicao(this)" size="1">
+        <option selected value="0">Edições</option>
+        
+        <option value="../22-289/index.htm">Qui, 7 Dez 2006 
+        </option>
+        
+        <option value="../22-288/index.htm">Qua, 6 Dez 2006 
+        </option>
+        
+        <option value="../22-287/index.htm">Ter, 5 Dez 2006 
+        </option>
+        
+        <option value="../22-286/index.htm">Seg, 4 Dez 2006 
+        </option>
+        
+        <option value="../22-285/index.htm">Dom, 3 Dez 2006 
+        </option>
+        
+        <option value="../22-284/index.htm">Sab, 2 Dez 2006 
+        </option>
+        
+        <option value="../22-283/index.htm">Sex, 1 Dez 2006 
+        </option>
+        
+      </select>
+      </p> <a href="/noFrame/replay/20061207214109/http://ojogo.pt/sugestoes/comentario.asp" target="___wb_replay_top_frame"><img src="https://arquivo.pt/noFrame/replay/20061207214109im_/http://www.ojogo.pt/Imagens/icon_sugestoes.gif" width="150" height="21" border="0"></a><br>
+  </form>
+  
+</td>
+</tr>
+</table>
+
+<table border="0" width="156" cellpadding="0" cellspacing="0">
+<tr>
+<td height="10"></td>
+</tr>
+<tr>
+<td align="center"><script language="JavaScript" type="text/JavaScript">
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+let arguments;
+
+{ document.write ('<SCR' + 'IPT SRC="http://ads.sapo.pt/js.ng/site=ojogo&chansm=ojogo&adsize=151x151&typesm=btojogo&pos=2&pagetype=hp&tile='+TileID+'"></SCR' + 'IPT>'); 
+
+}}</script>
+
+</td>
+<td>
+</td>
+</tr>
+</table>
+
+</td>
+          <td colspan="2" bgcolor="#FFFFFF" width="606"></td>
+       </tr>
+       <tr>
+         <td valign="top" bgcolor="#FFFFFF" width="606" align="left">
+           <table border="0" cellspacing="0" cellpadding="0">
+             <tr>
+               <td></td>
+               <td valign="top" width="390">
+<map name="FPMap0">
+<area href="artigo596666.htm" shape="rect" coords="2, 365, 121, 400">
+<area href="artigo596665.htm" shape="rect" coords="0, 398, 121, 431">
+<area href="artigo596668.htm" shape="rect" coords="0, 429, 123, 469">
+<area href="artigo596702.htm" shape="rect" coords="0, 467, 126, 516">
+<area href="artigo596658.htm" shape="default">
+<area href="artigo596658.htm" coords="0, 0, 10000, 10000" shape="rect"></map><img src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/artigos/22-289/pri.jpg" nosave height="518" width="382" usemap="#FPMap0">
+<p>O FC Porto est&aacute; nos oitavos-de-final da Liga dos Campe&otilde;es
+e a confirma&ccedil;&atilde;o desse apuramento anunciado &eacute; quase
+tudo o que interessa reter do jogo de ontem, no Est&aacute;dio do Drag&atilde;o.
+<hr size="1" width="100%">
+<h2>
+<img src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/artigos/22-289/n.gif" nosave height="110" width="118" align="RIGHT"><a href="artigo596674.htm">[Manchester
+3 | Benfica 1]</a></h2>
+
+<h1>
+<a href="artigo596674.htm">Gol&atilde;o de N&eacute;lson fez sonhar</a></h1>
+
+<p><br>Fim de linha para o Benfica na Liga dos Campe&otilde;es, mas n&atilde;o
+na Europa. As &aacute;guias saltam para a Ta&ccedil;a UEFA com a experi&ecirc;ncia
+(e foi muita) adquirida na competi&ccedil;&atilde;o mais importante do
+calend&aacute;rio europeu.
+<br>&nbsp;
+<h2>
+<a href="artigo596686.htm">Fernando Santos</a></h2>
+
+<h1>
+<a href="artigo596686.htm">"Golo nos descontos da primeira parte
+marcou o jogo"</a></h1>
+
+<p><br>A diferen&ccedil;a para a efic&aacute;cia que teria feito hist&oacute;ria
+traduz-se nuns poucos minutos de recuo no terreno, fatais quando se tem
+pela frente o Manchester United (MU), lamentou Fernando Santos.
+<hr size="1" width="100%">
+<h1>
+<a href="artigo596732.htm">Djal&oacute; recuper&aacute;vel</a></h1>
+
+<p><br>O avan&ccedil;ado ficou aos cuidados do departamento cl&iacute;nico,
+mas os respons&aacute;veis sportinguistas acreditam que ele recuperar&aacute;
+a tempo do jogo do pr&oacute;ximo s&aacute;bado &agrave; noite no Bonfim.
+<br>&nbsp;
+<h1>
+<a href="artigo596723.htm">Caneira apto para Set&uacute;bal</a></h1>
+
+<p><br>O prazo de recupera&ccedil;&atilde;o do violento traumatismo na
+perna direita apontava para tr&ecirc;s semanas, mas o defesa precisou de
+apenas duas para regressar ao trabalho.
+<br>&nbsp;
+<h2>
+<a href="artigo596708.htm">O JOGO ouviu 14 personalidades</a></h2>
+
+<h1>
+<a href="artigo596708.htm">Op&ccedil;&otilde;es de Paulo Bento
+n&atilde;o est&atilde;o em causa</a></h1>
+
+<p><br>Entre as 14 personalidades ouvidas por O JOGO, Manuel Fernandes
+&eacute; a &uacute;nica voz que discorda do sistema de rotatividade imposto
+pelo treinador leonino.
+<br>&nbsp;
+<h2>
+<a href="artigo596734.htm">Perante insinua&ccedil;&otilde;es de
+um s&oacute;cio</a></h2>
+
+<h1>
+<a href="artigo596734.htm">Soares Franco fez a defesa de Carlos
+Freitas</a></h1>
+
+<p><br>A reuni&atilde;o decorreu longe dos ouvidos e olhares da Comunica&ccedil;&atilde;o
+Social, tendo a proposta da Direc&ccedil;&atilde;o sido aprovada com uma
+maioria de 66%, com 25% de votos contra e oito por cento de absten&ccedil;&otilde;es.
+<br>&nbsp;
+<h1>
+<img src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/artigos/22-289/c.gif" nosave height="100" width="150" align="LEFT"><a href="artigo596726.htm">Cavaco
+Silva recebeu medalha do Centen&aacute;rio</a></h1>
+
+<p><br>Filipe Soares Franco, Ribeiro Telles e Rog&eacute;rio Alves foram
+recebidos pelo Presidente da Rep&uacute;blica. O desporto foi tema central.
+
+<!--<p>&nbsp;</p>-->
+
+<p><br>
+
+<div align="center">
+	<center><table border="0" cellpadding="0" cellspacing="0" width="80%" id="Table1">
+			<tr>
+				<td align="center" width="100%">
+					<hr width="50%" noshade size="1">
+					<br>
+					
+					<br>
+					<br>
+					<script language="javascript" type="text/javascript" src="https://arquivo.pt/noFrame/replay/20061207214109js_/http://adw.sapo.pt/showConfAd.html?id=45"></script>
+					<font face="Arial" size="1"><br>
+						Nenhuma parte desta publicação pode ser reproduzida sem a<br>
+						permissão prévia da <b>Jornalinveste</b>.</font><font face="Arial" size="2"><br>
+						<br>
+					</font><font face="Arial" size="2" color="#000080"><a href="https://arquivo.pt/noFrame/replay/20061207214109/http://www.sportmultimedia.pt" target="___wb_replay_top_frame"><img border="0" src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/Imagens/sportinveste.gif"></a></font><font face="Arial" size="2"> <br>
+					</font>
+					<font face="Arial" size="1">
+						<br>
+					</font><a href="https://arquivo.pt/noFrame/replay/20061207214109/http://www.ojogo.pt/sugestoes/comentario.asp"><font face="Arial" size="2"><b>
+								Publicidade:&nbsp;
+								contacte-nos</b></font></a><font face="Arial" size="2"> <br>
+					</font>
+					<font face="Arial" size="1">
+						<br>
+					</font>
+					<font face="Arial" size="1" color="#808080">Os textos, <b>fotografias</b>,
+						gráficos e materiais audio e/ou vídeo
+						da Associated Press não poderão ser publicados, emitidos,&nbsp;
+						reescritos, a fim de serem emitidos ou publicados ou
+						redistribuídos, directa ou indirectamente, em qualquer meio
+						de comunicação. É proibido o armazenamento em
+						computador destes materiais ou de partes dos mesmos,
+						salvo para fins pessoais ou não comerciais.</font><font face="Arial" size="2"> <br>
+						<br><small><small><font color="#C0C0C0"><font face="Arial">Este
+										site foi optimizado para as versões 4.0 ou superior
+										dos browsers Netscape Navigator ou Microsoft Internet Explorer
+										a uma resolução de 800x600.</font></font></small></small>
+				</td>
+			</tr>
+		</table>
+	</center>
+</div>
+</td>
+               <td valign="top" align="left" width="7"></td>
+              <td valign="top" align="right" width="187">
+	<table border="0" cellspacing="0" cellpadding="0" width="187" bgcolor="#ffffff">
+		<tr>
+        		<td align="center" valign="top"></td>
+    		</tr>
+    		<tr>
+      			<td height="3"></td>
+    		</tr>
+	</table>
+<table bordercolor="FEECB1" border="1" cellspacing="0" cellpadding="0" bordercolorlight="FEECB1" bordercolordark="E9A230" bgcolor="FEECB1" width="187">
+
+  <tr>
+    <td width="187">
+      <table cellspacing="0" cellpadding="0" border="0" bgcolor="#FEECB1">
+    
+    <tr>
+      <td align="left"><img src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/Imagens/DESTAQUES.gif" width="182" height="25"></td>
+    </tr>
+    <tr><td>
+          <table cellspacing="4" cellpadding="0" border="0" width="100%">
+    <tr>
+      <th bgcolor="#E9A230" align="Left"><font class="BDCategoria2Secundaria">Bwinliga<br></font></th>
+    </tr>
+    
+    <tr>
+      <td>
+        <font class="BDCategoria3">Braga<br><a href="artigo596740.htm"><font class="BDTitulo">Laborat&oacute;rio de golos</font></a><br>
+        <br>
+        </font></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <font class="BDCategoria3">Marítimo<br><a href="artigo596747.htm"><font class="BDTitulo">Souza cobi&ccedil;ado por meio mundo</font></a><br>
+        <br>
+        </font></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <font class="BDCategoria3">Boavista<br><a href="artigo596746.htm"><font class="BDTitulo">Fernando Dinis pode ser solu&ccedil;&atilde;o</font></a><br>
+        <br>
+        </font></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <font class="BDCategoria3">Setúbal<br><a href="artigo596748.htm"><font class="BDTitulo">"Terceira facada no le&atilde;o"</font></a><br>
+        <br>
+        </font></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <font class="BDCategoria3">Nacional<br><a href="artigo596751.htm"><font class="BDTitulo">"Empate ser&aacute; um bom resultado"</font></a><br>
+        <br>
+        </font></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <font class="BDCategoria3">União de Leiria<br><a href="artigo596754.htm"><font class="BDTitulo">Falhas na finaliza&ccedil;&atilde;o v&atilde;o ser corrigidas</font></a><br>
+        <br>
+        </font></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <font class="BDCategoria3">Belenenses<br><a href="artigo596753.htm"><font class="BDTitulo">Novo treino no Jamor para poupar Restelo</font></a><br>
+        <br>
+        </font></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <font class="BDCategoria3">Estrela da Amadora<br><a href="artigo596757.htm"><font class="BDTitulo">Treinos em clubes amigos</font></a><br>
+        <br>
+        </font></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <font class="BDCategoria3">Paços de Ferreira<br><a href="artigo596756.htm"><font class="BDTitulo">Elias deve render Dani</font></a><br>
+        <br>
+        </font></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <font class="BDCategoria3">Naval<br><a href="artigo596758.htm"><font class="BDTitulo">Todos com Mira</font></a><br>
+        <br>
+        </font></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <font class="BDCategoria3">Académica<br><a href="artigo596755.htm"><font class="BDTitulo">Zada foi reintegrado no plantel da Briosa</font></a><br>
+        <br>
+        </font></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <font class="BDCategoria3">Beira-Mar<br><a href="artigo596761.htm"><font class="BDTitulo">Experi&ecirc;ncias e vit&oacute;ria na visita a Esmoriz</font></a><br>
+        <br>
+        </font></td>
+    </tr>
+    
+    <tr>
+      <th bgcolor="#E9A230" align="Left"><font class="BDCategoria2Secundaria">Liga de Honra<br></font></th>
+    </tr>
+    
+    <tr>
+      <td>
+        <font class="BDCategoria3">Guimarães<br><a href="artigo596766.htm"><font class="BDTitulo">"Chegar ao Natal nos primeiros lugares"</font></a><br>
+        <br>
+        </font></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <font class="BDCategoria3">Penafiel<br><a href="artigo596768.htm"><font class="BDTitulo">Comiss&atilde;o Administrativa render&aacute; Ant&oacute;nio Oliveira</font></a><br>
+        <br>
+        </font></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <font class="BDCategoria3">Varzim<br><a href="artigo596772.htm"><font class="BDTitulo">Hor&aacute;cio indiferente ao voto de confian&ccedil;a</font></a><br>
+        <br>
+        </font></td>
+    </tr>
+    
+    <tr>
+      <th bgcolor="#E9A230" align="Left"><font class="BDCategoria2Secundaria">Brasileirao<br></font></th>
+    </tr>
+    
+    <tr>
+      <td><a href="artigo596787.htm"><font class="BDTitulo">"Argentina podia ter sido campe&atilde;"</font></a><br>
+        <br>
+        </font></td>
+    </tr>
+    
+    <tr>
+      <th bgcolor="#E9A230" align="Left"><font class="BDCategoria2Secundaria">Futebol Internacional<br></font></th>
+    </tr>
+    
+    <tr>
+      <td>
+        <font class="BDCategoria3">Inglaterra<br><font class="BDCategoria4">Premier League<br></font><a href="artigo596795.htm"><font class="BDTitulo">Hil&aacute;rio &eacute; hip&oacute;tese frente ao Arsenal</font></a><br>
+        <br>
+        </font></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <font class="BDCategoria3">Itália<br><font class="BDCategoria4">Inter<br></font><a href="artigo596793.htm"><font class="BDTitulo">Mancini justifica sa&iacute;da de Figo</font></a><br>
+        <br>
+        </font></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <font class="BDCategoria3">Grécia<br><a href="artigo596801.htm"><font class="BDTitulo">Fangueiro no Ionikos</font></a><br>
+        <br>
+        </font></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <font class="BDCategoria3">Mundial de Clubes<br><a href="artigo596802.htm"><font class="BDTitulo">Al-Ahly sem press&atilde;o</font></a><br>
+        <br>
+        </font></td>
+    </tr>
+    
+    <tr>
+      <th bgcolor="#E9A230" align="Left"><font class="BDCategoria2Secundaria">Basquetebol<br></font></th>
+    </tr>
+    
+    <tr>
+      <td>
+        <font class="BDCategoria3">Liga Uzo<br><a href="artigo596807.htm"><font class="BDTitulo">Vit&oacute;ria gorda e sem contesta&ccedil;&atilde;o</font></a><br>
+        <br>
+        </font></td>
+    </tr>
+    
+    <tr>
+      <th bgcolor="#E9A230" align="Left"><font class="BDCategoria2Secundaria">Ténis<br></font></th>
+    </tr>
+    
+    <tr>
+      <td>
+        <font class="BDCategoria3">Orange Bowl<br><a href="artigo596817.htm"><font class="BDTitulo">Gast&atilde;o Elias joga hoje com o campe&atilde;o mundial</font></a><br>
+        <br>
+        </font></td>
+    </tr>
+    
+    <tr>
+      <th bgcolor="#E9A230" align="Left"><font class="BDCategoria2Secundaria">Natação<br></font></th>
+    </tr>
+    
+    <tr>
+      <td><a href="artigo596824.htm"><font class="BDTitulo">Diana Guimar&atilde;es campe&atilde; do Mundo</font></a><br>
+        <br>
+        </font></td>
+    </tr>
+    
+	</table></td></tr>
+		
+  </table></td></tr></table>
+  <table border="0" cellpadding="0" cellspacing="0" width="187">
+  	<tr>
+  		<td></td>
+  	</tr>
+  </table>
+  <table border="0" cellpadding="0" cellspacing="0" width="187">
+  	<tr>
+  		<td></td>
+  	</tr>
+  </table>
+  
+</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+   </td>
+   <td width="10"><img border="0" src="/noFrame/replay/20061207214109im_/http://ojogo.pt/artigos/Imagens/3x3.gif" width="10" height="1"></td>
+  </tr>
+ </table>
+</html>

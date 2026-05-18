@@ -1,0 +1,20 @@
+[
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20231111173915/https://desporto.sapo.pt/",
+        "source": "desporto.sapo.pt",
+        "year": "2023",
+        "title": "Casa Pia AC, Jogada, Y. Soma, 36m",
+        "body_text": "I Liga Primeira Liga Segunda Liga Supertaça Cândido de Oliveira Taça da Liga Taça de Portugal II Divisão Campeonato de Futebol Feminino Primeira Divisão S19 Campeonato Nacional U23 Play-offs 1/2 Liga 3 Calendário Classificação",
+        "publication_date": "2023-11-11",
+        "date_extraction_method": "arquivo_pt_proxy"
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20231112174221/https://desporto.sapo.pt/",
+        "source": "desporto.sapo.pt",
+        "year": "2023",
+        "title": "FC Porto, Cartão Amarelo, Francisco Conceição, 26m",
+        "body_text": "I Liga Primeira Liga Segunda Liga Supertaça Cândido de Oliveira Taça da Liga Taça de Portugal II Divisão Campeonato de Futebol Feminino Primeira Divisão S19 Campeonato Nacional U23 Play-offs 1/2 Liga 3 Calendário Classificação",
+        "publication_date": "2023-11-12",
+        "date_extraction_method": "arquivo_pt_proxy"
+    }
+]

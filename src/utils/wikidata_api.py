@@ -3,7 +3,7 @@ import requests
 def consultar_wikidata_genero(nome):
     """
     Queries the Wikidata API to retrieve the biographical gender (Property P21) 
-    of a given entity (PER)[cite: 6, 23].
+    of a given entity (PER).
     
     This function acts as a centralized 'ground truth' for gender disambiguation
     across different NLP models in the project.
@@ -22,22 +22,22 @@ def consultar_wikidata_genero(nome):
     }
     
     try:
-        # Step 1: Search for the entity ID[cite: 23]
+        # Step 1: Search for the entity ID
         res = requests.get(url, params=params, headers=headers, timeout=5).json()
         
         if res.get('search'):
             entity_id = res['search'][0]['id']
-            # Step 2: Fetch detailed entity data[cite: 23]
+            # Step 2: Fetch detailed entity data
             entity_url = f"https://www.wikidata.org/wiki/Special:EntityData/{entity_id}.json"
             entity_data = requests.get(entity_url, headers=headers, timeout=5).json()
             
             claims = entity_data['entities'][entity_id].get('claims', {})
             
-            # P21: Sex or Gender property[cite: 6, 23]
+            # P21: Sex or Gender property
             if 'P21' in claims:
                 gender_id = claims['P21'][0]['mainsnak']['datavalue']['value']['id']
                 
-                # Q6581097 = Male / Q6581072 = Female[cite: 23]
+                # Q6581097 = Male / Q6581072 = Female
                 if gender_id == 'Q6581097': 
                     return "Masculino"
                 if gender_id == 'Q6581072': 

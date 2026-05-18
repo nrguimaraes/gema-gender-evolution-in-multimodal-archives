@@ -1,12 +1,11 @@
 import os
 import json
 import stanza
-# Import the centralized Wikidata utility from your new structure
+
 from src.utils.wikidata_api import consultar_wikidata_genero 
 
 # --- CONFIGURATION ---
 INPUT_DIR = "data/cleaned"
-# Dedicated folder for weighted Stanza results[cite: 6]
 OUTPUT_DIR = "data/processed/processed_stanza_weights"
 TARGET_YEARS = ['2017', '2023']
 
@@ -14,15 +13,15 @@ if not os.path.exists(OUTPUT_DIR):
     os.makedirs(OUTPUT_DIR)
 
 print("Loading Stanza (Morphology and Syntax Pipeline)...")
-# Processors: tokenize, mwt (multi-word tokens), pos (tags), and lemma[cite: 4, 7]
+# Processors: tokenize, mwt (multi-word tokens), pos (tags), and lemma
 nlp = stanza.Pipeline('pt', processors='tokenize,mwt,pos,lemma', download_method=None)
 
 def analyze_stanza_hibrido(text):
     """
     Analyzes text using Stanza for morphological features and validates 
-    Proper Nouns against Wikidata using a weighted heuristic system[cite: 1, 6].
+    Proper Nouns against Wikidata using a weighted heuristic system.
     """
-    # Focusing on the first 800 characters to capture the lead and protagonist[cite: 26]
+    # Focusing on the first 800 characters to capture the lead and protagonist
     doc = nlp(text[:800]) 
     
     pos_data = {
@@ -35,11 +34,11 @@ def analyze_stanza_hibrido(text):
 
     for sentence in doc.sentences:
         for word in sentence.words:
-            # 1. CAPTURE PROPER NOUNS (PROPN)[cite: 4, 7]
+            # 1. CAPTURE PROPER NOUNS (PROPN)
             if word.upos == "PROPN":
                 candidate_names.append(word.text)
 
-            # 2. GRAMMATICAL GENDER ANALYSIS (feats)[cite: 4, 7]
+            # 2. GRAMMATICAL GENDER ANALYSIS (feats)
             feats = word.feats if word.feats else ""
             gender = "F" if "Gender=Fem" in feats else "M" if "Gender=Masc" in feats else None
             
@@ -47,10 +46,10 @@ def analyze_stanza_hibrido(text):
                 if gender == "F":
                     if word.upos in ["PRON", "DET"]:
                         pos_data["feminine"]["pronouns"].append(word.text.lower())
-                        score_f += 5 # Weight 5 for pronouns/determinants[cite: 1]
+                        score_f += 5 # Weight 5 for pronouns/determinants
                     elif word.upos == "NOUN":
                         pos_data["feminine"]["nouns"].append(word.text.lower())
-                        score_f += 2 # Weight 2 for nouns[cite: 5]
+                        score_f += 2 # Weight 2 for nouns
                 else:
                     if word.upos in ["PRON", "DET"]:
                         pos_data["masculine"]["pronouns"].append(word.text.lower())
@@ -59,20 +58,20 @@ def analyze_stanza_hibrido(text):
                         pos_data["masculine"]["nouns"].append(word.text.lower())
                         score_m += 2
 
-    # 3. WIKIDATA VALIDATION (Weight 15)[cite: 6]
+    # 3. WIKIDATA VALIDATION (Weight 15)
     # Filter unique names detected by Stanza
     validated_protagonists = []
     for name in list(set(candidate_names)):
-        if len(name) > 3: # Avoid acronyms or very short names[cite: 26]
+        if len(name) > 3: # Avoid acronyms or very short names
             genero_wiki = consultar_wikidata_genero(name)
             if genero_wiki != "Desconhecido":
                 validated_protagonists.append({"name": name, "gender": genero_wiki})
                 if genero_wiki == "Feminino":
-                    score_f += 15 # Biographical tie-breaker weight[cite: 6]
+                    score_f += 15 # Biographical tie-breaker weight
                 else:
                     score_m += 15
 
-    # 4. FINAL VERDICT[cite: 26]
+    # 4. FINAL VERDICT
     if score_f > score_m:
         verdict = "Feminino"
     elif score_m > score_f:
@@ -100,10 +99,10 @@ for filename in files:
 
     for art in data:
         full_text = f"{art.get('title', '')}. {art.get('body_text', '')}"
-        # Core hybrid analysis[cite: 1, 6]
+        # Core hybrid analysis
         art['analise_stanza_weighted'] = analyze_stanza_hibrido(full_text)
 
-    # Save to the tool-specific output folder[cite: 6]
+    # Save to the tool-specific output folder
     with open(output_path, "w", encoding="utf-8") as out:
         json.dump(data, out, indent=4, ensure_ascii=False)
 

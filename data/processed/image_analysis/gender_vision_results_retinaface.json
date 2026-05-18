@@ -1,0 +1,553 @@
+{
+    "abola_pt_2015_b9dd4b6c99.jpg": {
+        "full_image": []
+    },
+    "abola_pt_2015_f2ff99768a.jpg": {
+        "full_image": []
+    },
+    "abola_pt_2017_8beef6267d.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 85.42,
+                "face_confidence": 0.99
+            }
+        ]
+    },
+    "abola_pt_2017_b918842ed7.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 91.12,
+                "face_confidence": 1.0
+            }
+        ]
+    },
+    "abola_pt_2017_cba4e91730.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 66.94,
+                "face_confidence": 0.93
+            }
+        ]
+    },
+    "abola_pt_2018_16df42aba5.jpg": {
+        "full_image": []
+    },
+    "abola_pt_2018_c9f33b8771.jpg": {
+        "full_image": [
+            {
+                "gender": "Woman",
+                "gender_confidence": 79.3,
+                "face_confidence": 1.0
+            }
+        ]
+    },
+    "abola_pt_2018_e2ee5d245c.jpg": {
+        "full_image": [
+            {
+                "gender": "Woman",
+                "gender_confidence": 79.3,
+                "face_confidence": 1.0
+            }
+        ]
+    },
+    "abola_pt_2020_b73fc899f1.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 96.6,
+                "face_confidence": 0.94
+            }
+        ]
+    },
+    "abola_pt_2020_cfba005a4f.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 100.0,
+                "face_confidence": 0.99
+            }
+        ]
+    },
+    "abola_pt_2020_df0dfaeb27.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 100.0,
+                "face_confidence": 0.99
+            }
+        ]
+    },
+    "abola_pt_2024_9800d25399.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 99.97,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 100.0,
+                "face_confidence": 0.99
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 98.12,
+                "face_confidence": 0.94
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 100.0,
+                "face_confidence": 0.94
+            }
+        ]
+    },
+    "abola_pt_2024_9b150ba865.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 99.87,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 100.0,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 96.63,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 80.6,
+                "face_confidence": 0.92
+            }
+        ]
+    },
+    "abola_pt_2024_ce352b1ea6.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 99.16,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.98,
+                "face_confidence": 0.99
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 98.3,
+                "face_confidence": 0.99
+            }
+        ]
+    },
+    "desporto_sapo_pt_2001_210a164f46.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2001_721372efe6.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2001_82fa2de648.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2005_10273d0ada.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2005_ec651fa797.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2005_fac8f5a849.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2006_200535ad51.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2006_7313e5018b.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2006_f9cae6dd4d.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2010_56bad22eca.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2010_6d86243c3b.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2010_7be76bdfa6.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2011_30ab6ff355.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2011_d0049a1bcd.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2011_fdc73670b3.jpg": {
+        "full_image": [
+            {
+                "gender": "Woman",
+                "gender_confidence": 57.6,
+                "face_confidence": 0.93
+            }
+        ]
+    },
+    "desporto_sapo_pt_2015_40556ad4b3.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2018_9181b4da8c.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2018_bf0223324d.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2018_e09194a5bd.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2023_60424aa3bc.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2023_955d8a60b3.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2023_dc75783587.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2024_1bc966c57a.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2024_53949febef.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2024_732262feaa.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2025_11bcdaf08b.jpg": {
+        "full_image": []
+    },
+    "desporto_sapo_pt_2025_3b04b087ac.jpg": {
+        "full_image": []
+    },
+    "noticiasaominuto_com_2013_285d2d05c5.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 99.82,
+                "face_confidence": 1.0
+            }
+        ]
+    },
+    "noticiasaominuto_com_2014_3b1c615835.jpg": {
+        "full_image": [
+            {
+                "gender": "Woman",
+                "gender_confidence": 65.87,
+                "face_confidence": 1.0
+            }
+        ]
+    },
+    "noticiasaominuto_com_2014_746888478e.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 77.93,
+                "face_confidence": 0.97
+            }
+        ]
+    },
+    "noticiasaominuto_com_2014_9e53dae586.jpg": {
+        "full_image": []
+    },
+    "noticiasaominuto_com_2016_654e330105.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 98.83,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 98.52,
+                "face_confidence": 0.99
+            }
+        ]
+    },
+    "noticiasaominuto_com_2016_bb71674448.jpg": {
+        "full_image": []
+    },
+    "noticiasaominuto_com_2023_2a976cb276.jpg": {
+        "full_image": []
+    },
+    "noticiasaominuto_com_2023_5ed789c7ef.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 100.0,
+                "face_confidence": 1.0
+            }
+        ]
+    },
+    "noticiasaominuto_com_2023_b00bce1d62.jpg": {
+        "full_image": []
+    },
+    "noticiasaominuto_com_2024_057384b4e3.jpg": {
+        "full_image": []
+    },
+    "noticiasaominuto_com_2024_2da6249a38.jpg": {
+        "full_image": []
+    },
+    "noticiasaominuto_com_2024_56b80824fe.jpg": {
+        "full_image": []
+    },
+    "ojogo_pt_2001_1a136fb675.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 99.44,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 100.0,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 96.16,
+                "face_confidence": 1.0
+            }
+        ]
+    },
+    "ojogo_pt_2001_4460f4750d.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 100.0,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.52,
+                "face_confidence": 0.99
+            }
+        ]
+    },
+    "ojogo_pt_2002_319dcfc101.jpg": {
+        "full_image": []
+    },
+    "ojogo_pt_2003_3a75352960.jpg": {
+        "full_image": []
+    },
+    "ojogo_pt_2004_133384383f.jpg": {
+        "full_image": []
+    },
+    "ojogo_pt_2004_b138e1547f.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 100.0,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 100.0,
+                "face_confidence": 0.96
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.98,
+                "face_confidence": 0.96
+            }
+        ]
+    },
+    "ojogo_pt_2004_cdb2569a6c.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 99.88,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.99,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.99,
+                "face_confidence": 1.0
+            }
+        ]
+    },
+    "ojogo_pt_2010_396fec865c.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 99.96,
+                "face_confidence": 1.0
+            }
+        ]
+    },
+    "ojogo_pt_2010_6eca4efd0f.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 99.96,
+                "face_confidence": 1.0
+            }
+        ]
+    },
+    "ojogo_pt_2010_ac5d826f92.jpg": {
+        "full_image": []
+    },
+    "ojogo_pt_2011_9440e9a8bd.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 96.61,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.78,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 98.91,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.29,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.99,
+                "face_confidence": 1.0
+            }
+        ]
+    },
+    "ojogo_pt_2011_b76ff6bc15.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 98.92,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 94.38,
+                "face_confidence": 1.0
+            }
+        ]
+    },
+    "ojogo_pt_2011_fe8ae1d928.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 99.94,
+                "face_confidence": 1.0
+            }
+        ]
+    },
+    "ojogo_pt_2016_35dc684108.jpg": {
+        "full_image": []
+    },
+    "ojogo_pt_2016_57328fea21.jpg": {
+        "full_image": []
+    },
+    "ojogo_pt_2016_edb9ab7558.jpg": {
+        "full_image": []
+    },
+    "ojogo_pt_2017_1dbc13131d.jpg": {
+        "full_image": []
+    },
+    "ojogo_pt_2017_96f1de5780.jpg": {
+        "full_image": []
+    },
+    "ojogo_pt_2018_27af11ab44.jpg": {
+        "full_image": []
+    },
+    "ojogo_pt_2018_4d9711b14a.jpg": {
+        "full_image": []
+    },
+    "ojogo_pt_2018_f79de9f5ad.jpg": {
+        "full_image": []
+    },
+    "ojogo_pt_2019_08ccdec1bc.jpg": {
+        "full_image": []
+    },
+    "ojogo_pt_2019_4004184852.jpg": {
+        "full_image": []
+    },
+    "ojogo_pt_2019_c2490d0af5.jpg": {
+        "full_image": []
+    },
+    "ojogo_pt_2020_28668c16d7.jpg": {
+        "full_image": []
+    },
+    "ojogo_pt_2020_3a28a4e0be.jpg": {
+        "full_image": []
+    },
+    "ojogo_pt_2020_8cf78132d2.jpg": {
+        "full_image": []
+    },
+    "record_pt_2001_351a2ed207.jpg": {
+        "full_image": []
+    },
+    "record_pt_2011_87b49f8677.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 64.32,
+                "face_confidence": 0.99
+            }
+        ]
+    },
+    "record_pt_2011_a9fbe6d575.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 86.76,
+                "face_confidence": 0.98
+            }
+        ]
+    },
+    "record_pt_2013_688956d7f3.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 98.52,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Woman",
+                "gender_confidence": 95.4,
+                "face_confidence": 1.0
+            }
+        ]
+    },
+    "record_pt_2014_1d8020f471.jpg": {
+        "full_image": []
+    },
+    "record_pt_2014_37fbd00d63.jpg": {
+        "full_image": []
+    },
+    "record_pt_2014_dfdf314b0b.jpg": {
+        "full_image": []
+    },
+    "record_pt_2015_1150d48bb2.jpg": {
+        "full_image": []
+    },
+    "record_pt_2015_8d11c5256a.jpg": {
+        "full_image": []
+    }
+}

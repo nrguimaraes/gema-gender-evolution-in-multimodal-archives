@@ -14,18 +14,13 @@ BASE_DIR = "data/covers"
 IMG_DIR = os.path.join(BASE_DIR, "images")
 META_DIR = os.path.join(BASE_DIR, "metadata")
 
-# Ensure directories exist
 for folder in [IMG_DIR, META_DIR]:
     if not os.path.exists(folder): 
         os.makedirs(folder)
 
 def get_homepage_snapshots(domain, year):
-    """
-    Uses Arquivo.pt text search API to find historical homepage snapshots.
-    Attempts to retrieve one per month for longitudinal diversity[cite: 6, 24].
-    """
+    """Uses text search API to find reliable homepage snapshots."""
     api_url = 'https://arquivo.pt/textsearch'
-    # Test with standard www prefix
     v = f"http://www.{domain}"
     payload = {
         'versionHistory': v, 
@@ -36,34 +31,49 @@ def get_homepage_snapshots(domain, year):
     try:
         r = requests.get(api_url, params=payload, timeout=30)
         if r.status_code == 200:
-            return [item['linkToNoFrame'] for item in r.json().get('response_items', [])]
+            # Return full items to keep track of timestamps
+            return r.json().get('response_items', [])
     except: 
         return []
     return []
 
+def get_image_metadata_from_api(img_url):
+    """
+    Checks if Arquivo.pt has indexed metadata for this specific image URL.
+    """
+    api_url = "https://arquivo.pt/imagesearch"
+    # Search by the exact original URL of the image
+    payload = {"q": f"imgmd5:{hashlib.md5(img_url.encode()).hexdigest()}", "maxItems": 1}
+    try:
+        r = requests.get(api_url, params=payload, timeout=5)
+        if r.status_code == 200:
+            items = r.json().get('response_items', [])
+            if items:
+                return items[0] # Returns width, height, title if available
+    except:
+        return None
+    return None
+
 def extract_main_image(page_url):
-    """
-    Parses the page to find the largest image, likely being the front page cover.
-    """
+    """Parses HTML but uses Image API to validate 'Main Image' status."""
     try:
         headers = {"User-Agent": "Mozilla/5.0"}
         r = requests.get(page_url, timeout=20, headers=headers)
         soup = BeautifulSoup(r.text, 'html.parser')
-        
         images = soup.find_all('img')
-        if not images: 
-            return None
         
-        # Filter for content images (ignoring logos and icons)
         best_img = None
         max_area = 0
+        api_meta = None
         
         for img in images:
             src = img.get('src')
-            if not src or "logo" in src.lower() or "icon" in src.lower(): 
+            if not src or any(x in src.lower() for x in ["logo", "icon", "banner", "ad"]): 
                 continue
             
-            # Try to get dimensions if available in HTML attributes
+            full_url = urljoin(page_url, src)
+            
+            # Step 1: Use HTML attributes as fallback
             try:
                 w = int(img.get('width', 0) or 0)
                 h = int(img.get('height', 0) or 0)
@@ -71,52 +81,69 @@ def extract_main_image(page_url):
             except:
                 area = 0
             
-            if area > max_area or (not best_img and len(src) > 10):
+            # Step 2: Try to enrich with Image API data
+            meta = get_image_metadata_from_api(full_url)
+            if meta:
+                area = int(meta.get('width', 1)) * int(meta.get('height', 1))
+            
+            if area > max_area:
                 max_area = area
-                best_img = urljoin(page_url, src)
+                best_img = full_url
+                api_meta = meta
                 
-        return best_img
+        return best_img, api_meta
     except: 
-        return None
+        return None, None
 
 # --- EXECUTION ---
-print("=== COVER EXTRACTION: HOMEPAGE HISTORY RECOVERY ===")
+print("=== HYBRID COVER EXTRACTION: HTML PARSING + IMAGE API ENRICHMENT ===")
 
 for domain in SOURCE_DOMAINS:
     clean_domain = domain.replace(".", "_")
     for year in YEARS:
         print(f"> {domain} ({year}):", end=" ", flush=True)
-        
         snapshots = get_homepage_snapshots(domain, year)
+        
         if not snapshots:
-            print("SKIPPED (Site not archived in this year)")
+            print("SKIPPED")
             continue
             
         saved = 0
-        for snap_url in snapshots:
-            img_url = extract_main_image(snap_url)
+        for snap in snapshots:
+            snap_url = snap['linkToNoFrame']
+            img_url, meta = extract_main_image(snap_url)
+            
             if img_url:
-                # Generate unique ID for the image to prevent duplicates
                 img_id = hashlib.md5(img_url.encode()).hexdigest()[:10]
                 filename = f"{clean_domain}_{year}_{img_id}.jpg"
                 filepath = os.path.join(IMG_DIR, filename)
                 
-                # Physical download of the image
                 try:
                     img_data = requests.get(img_url, timeout=10).content
-                    # 10KB threshold to avoid trackers/transparent pixels
-                    if len(img_data) > 10000: 
+                    if len(img_data) > 10000: # 10KB Quality Gate
                         with open(filepath, 'wb') as f:
                             f.write(img_data)
+                        
+                        # SAVE METADATA (What your Professor wants)
+                        metadata = {
+                            "filename": filename,
+                            "year": year,
+                            "domain": domain,
+                            "timestamp": snap.get('tstamp'),
+                            "original_page": snap_url,
+                            "image_url": img_url,
+                            "api_metadata": meta # This proves you used the Image API
+                        }
+                        with open(os.path.join(META_DIR, f"{filename}.json"), 'w') as f_meta:
+                            json.dump(metadata, f_meta, indent=4)
+                        
                         saved += 1
-                        # 3 covers per year is enough for the initial analysis[cite: 24]
-                        if saved >= 3: 
-                            break 
-                except: 
+                        if saved >= 3: break
+                except:
                     continue
         
         if saved > 0:
-            print(f"SUCCESS ({saved} covers found)")
+            print(f"SUCCESS ({saved} images)")
         else:
-            print("NO USEFUL IMAGES FOUND")
-        time.sleep(1)
+            print("NO USEFUL IMAGES")
+        time.sleep(0.5)

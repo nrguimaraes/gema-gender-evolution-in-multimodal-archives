@@ -1,0 +1,274 @@
+{
+    "abola_pt_2011_54acc4430f.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 99.52,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 91.85,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 87.4,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 95.34,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.92,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.38,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.73,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.76,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 100.0,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.02,
+                "face_confidence": 1.0
+            }
+        ]
+    },
+    "abola_pt_2011_8984a98885.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 99.52,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 91.85,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 87.4,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 95.34,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.92,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.38,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.73,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.76,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 100.0,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.02,
+                "face_confidence": 1.0
+            }
+        ]
+    },
+    "abola_pt_2011_c507e86f04.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 99.52,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 91.85,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 87.4,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 95.34,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.92,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.38,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.73,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.76,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 100.0,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.02,
+                "face_confidence": 1.0
+            }
+        ]
+    },
+    "abola_pt_2012_24074b49ae.jpg": {
+        "full_image": []
+    },
+    "abola_pt_2012_294fad9628.jpg": {
+        "full_image": []
+    },
+    "abola_pt_2012_6c4df9a8c5.jpg": {
+        "full_image": []
+    },
+    "abola_pt_2014_22a26cbb24.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 95.63,
+                "face_confidence": 1.0
+            }
+        ]
+    },
+    "abola_pt_2014_8ddd5d1ce4.jpg": {
+        "full_image": []
+    },
+    "abola_pt_2014_bb4966b061.jpg": {
+        "full_image": []
+    },
+    "abola_pt_2016_21d68e9237.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 100.0,
+                "face_confidence": 1.0
+            }
+        ]
+    },
+    "abola_pt_2016_2e0bcc0c71.jpg": {
+        "full_image": []
+    },
+    "abola_pt_2016_7868cb8e83.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 99.98,
+                "face_confidence": 1.0
+            }
+        ]
+    },
+    "abola_pt_2023_4736773b57.jpg": {
+        "full_image": []
+    },
+    "ojogo_pt_2001_1a136fb675.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 99.44,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 100.0,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 96.16,
+                "face_confidence": 1.0
+            }
+        ]
+    },
+    "ojogo_pt_2004_68447b1981.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 99.91,
+                "face_confidence": 1.0
+            }
+        ]
+    },
+    "ojogo_pt_2004_cdb2569a6c.jpg": {
+        "full_image": [
+            {
+                "gender": "Man",
+                "gender_confidence": 99.88,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.99,
+                "face_confidence": 1.0
+            },
+            {
+                "gender": "Man",
+                "gender_confidence": 99.99,
+                "face_confidence": 1.0
+            }
+        ]
+    },
+    "record_pt_2011_05f6feea79.jpg": {
+        "full_image": [
+            {
+                "gender": "Woman",
+                "gender_confidence": 100.0,
+                "face_confidence": 1.0
+            }
+        ]
+    },
+    "record_pt_2015_3dd440921a.jpg": {
+        "full_image": []
+    },
+    "record_pt_2015_77c8bf1aa2.jpg": {
+        "full_image": []
+    }
+}
