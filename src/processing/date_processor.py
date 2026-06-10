@@ -48,6 +48,13 @@ def process_enrichment_dates():
     files = [f for f in os.listdir(INPUT_DIR) if f.endswith('.json')]
     
     for filename in files:
+        output_path = os.path.join(OUTPUT_DIR, filename)
+
+        # Resume: skip if output file already exists
+        if os.path.exists(output_path):
+            print(f"  {filename}: already enriched, skipping.")
+            continue
+
         print(f"Enriching dates for: {filename}")
         with open(os.path.join(INPUT_DIR, filename), "r", encoding="utf-8") as f:
             data = json.load(f)

@@ -1,0 +1,255 @@
+[
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20030424034732/http:/www.abola.pt:80/wqui/FutInternacional/ArqTextos/UEFA05.htm",
+        "source": "abola.pt",
+        "year": "2003",
+        "title": "Futebol Internacional - UEFA (Resto da Europa) (04)",
+        "body_text": "www.abola.pt - Futebol Internacional - UEFA (Resto da Europa) (04) (edição de quinta-feira) Queremos a final! Faltam escassos 180 minutos, na perspectiva de que não terá lugar qualquer suplemento, para que duas equipas portuguesas, ambas do Porto, possam participar em mais um momento de glória do futebol português. Sevilha está, pois, à curtíssima distância de poder contemplar uma final entre dois clubes portugueses, uma novidade para nós, embora não seja inédita para outros. A caminho do Euro-2004, queríamos melhor jornada de promoção? Não há nenhum português, seja qual for a sua cor clubística, que não sonhe com o cenário aqui idealizado: por que não encontrarem-se na final as duas equipas lusas que hoje começam a disputar as meias-finais da Taça UEFA? Sim, por que não? Querer — não exigir — a final é pedido que F. C. Porto e Boavista não nos possam satisfazer? Conhecendo-se o potencial de ambos, respeitando-se, obviamente, a capacidade dos adversários, existe a consciência de que a tarefa não é impossível. A primeira formação a entrar em cena é a do Boavista. O ambiente que o espera em Glasgow é especial, frenético, por vezes arrebatador, realidades que ganharam outra dimensão após a indiscutível eliminação do Liverpool, mas a bem da verdade o Boavista da Taça UEFA nada tem a ver com aquele que tão pálida imagem tem fornecido na SuperLiga. A forma categórica como foi ultrapassando obstáculos, muitos deles ao nível deste Celtic, levam-nos a acreditar, seja qual for o desfecho de hoje, que Sevilha não é nenhuma miragem. Confronto de tradições Nas Antas, sobem a primeiro plano duas equipas de topo do futebol europeu — integrando alguns dos maiores nomes da actualidade, casos de Deco ou Fernando Couto, Jorge Costa ou Claudio Lopez, Costinha ou Mihajlovic —, que arrastam consigo enorme curiosidade: sempre que o F. C. Porto chegou às meias-finais (com Aberdeen e Dínamo de Kiev), jogando a primeira mão na condição de visitado, a final não lhe escapou; sempre que a Lazio iniciou as meias-finais (frente a Atlético Madrid e Lokomotiv Moscovo) na condição de visitante... a final foi sua. Mais: as duas formações foram finalistas em duas ocasiões e só ganharam uma. O F. C. Porto ganhou a Taça dos Campeões (86/87) e perdeu a Taça das Taças (83/84); a Lazio venceu a derradeira edição desta competição (98/99) e perdeu a Taça UEFA (97/98). Sendo verdade que tudo isto será acertado, o percurso portista na prova tem sido de estrondo e anima toda a gente. É para continuar? As condições existentes apontam nesse sentido, para mais quando quem gosta de futebol só pensa numa coisa: queremos a final!",
+        "publication_date": "2003-04-24",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Feminino",
+            "confidence_scores": {
+                "F": 0.125,
+                "M": 0.075,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 0,
+                    "gram_total": 144
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": []
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "ambas",
+                            "uma",
+                            "uma",
+                            "a",
+                            "sua",
+                            "que",
+                            "as",
+                            "que",
+                            "as",
+                            "a",
+                            "a",
+                            "a",
+                            "a",
+                            "a",
+                            "a",
+                            "que",
+                            "outra",
+                            "a",
+                            "a",
+                            "a",
+                            "nenhuma",
+                            "a",
+                            "consigo",
+                            "a",
+                            "a",
+                            "a",
+                            "as",
+                            "a",
+                            "sua",
+                            "as",
+                            "a",
+                            "a",
+                            "a",
+                            "a",
+                            "a",
+                            "toda",
+                            "a",
+                            "as",
+                            "a"
+                        ],
+                        "nouns": [
+                            "edição",
+                            "quinta-feira",
+                            "final",
+                            "perspectiva",
+                            "equipas",
+                            "glória",
+                            "distância",
+                            "novidade",
+                            "jornada",
+                            "promoção",
+                            "cor",
+                            "final",
+                            "equipas",
+                            "meias-finais",
+                            "final",
+                            "capacidade",
+                            "consciência",
+                            "tarefa",
+                            "formação",
+                            "cena",
+                            "vezes",
+                            "realidades",
+                            "dimensão",
+                            "eliminação",
+                            "verdade",
+                            "imagem",
+                            "superliga",
+                            "forma",
+                            "miragem",
+                            "tradições",
+                            "equipas",
+                            "actualidade",
+                            "curiosidade",
+                            "meias-finais",
+                            "mão",
+                            "condição",
+                            "final",
+                            "meias-finais",
+                            "condição",
+                            "final",
+                            "formações",
+                            "ocasiões",
+                            "edição",
+                            "competição",
+                            "verdade",
+                            "prova",
+                            "gente",
+                            "condições",
+                            "coisa",
+                            "final"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "qualquer",
+                            "outros",
+                            "nenhum",
+                            "o",
+                            "que",
+                            "que",
+                            "o",
+                            "ambos",
+                            "o",
+                            "que",
+                            "o",
+                            "o",
+                            "aquele",
+                            "que",
+                            "muitos",
+                            "deles",
+                            "o",
+                            "alguns",
+                            "que",
+                            "o",
+                            "lhe",
+                            "o",
+                            "tudo",
+                            "isto",
+                            "o"
+                        ],
+                        "nouns": [
+                            "www.abola.pt",
+                            "minutos",
+                            "lugar",
+                            "suplemento",
+                            "momento",
+                            "futebol",
+                            "poder",
+                            "final",
+                            "clubes",
+                            "caminho",
+                            "português",
+                            "cenário",
+                            "potencial",
+                            "adversários",
+                            "ambiente",
+                            "obstáculos",
+                            "nível",
+                            "desfecho",
+                            "confronto",
+                            "plano",
+                            "topo",
+                            "futebol",
+                            "nomes",
+                            "casos",
+                            "visitante",
+                            "percurso",
+                            "estrondo",
+                            "sentido",
+                            "futebol"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20030216054136/http:/www.abola.pt:80/wdom/Grandes/Benfica.htm",
+        "source": "abola.pt",
+        "year": "2003",
+        "title": "Sport Lisboa e Benfica",
+        "body_text": "0 3 Falta acertar arestas João Paulo Almeida chefia departamento médico João Paulo Almeida deverá ser o próximo responsável pelo departamento médico do Benfica. A SAD do Benfica vem mantendo contactos com o médico em causa, estando bastante adiantadas as conversações, que dificilmente não chegarão a bom porto. Benfica, liderado por Tiago, volta a aumentar distância sobre o Sporting Nono golo do 30 Baralha e volta a dar. Há uma semana, o Benfica empatou, na Luz, com o Moreirense e o Sporting goleou por 4-0 o Paços de Ferreira. Há três dias, em Alvalade, os leões bateram a Académica por 1-0. Classificações Informações gerais",
+        "publication_date": "2003-02-16",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0667,
+                "M": 0.1333,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 0,
+                    "gram_total": 27
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": []
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "as",
+                            "a"
+                        ],
+                        "nouns": [
+                            "arestas",
+                            "causa",
+                            "conversações",
+                            "distância",
+                            "semana",
+                            "classificações"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "o",
+                            "que",
+                            "o",
+                            "o",
+                            "o",
+                            "o",
+                            "o",
+                            "os"
+                        ],
+                        "nouns": [
+                            "departamento",
+                            "responsável",
+                            "departamento",
+                            "contactos",
+                            "médico",
+                            "porto",
+                            "golo",
+                            "dias",
+                            "leões"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+]

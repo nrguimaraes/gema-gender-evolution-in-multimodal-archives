@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import ast, sys; ast.parse\\(open\\('dashboard/app_dashboard.py'\\).read\\(\\)\\); ast.parse\\(open\\('dashboard/db.py'\\).read\\(\\)\\); ast.parse\\(open\\('evaluation/pipeline_evaluation.py'\\).read\\(\\)\\); print\\('Syntax OK — all 3 files'\\)\")",
+      "Bash(python -c ' *)",
+      "Bash(python -c \"import streamlit, plotly, pymongo, yake, pandas; print\\('All deps OK'\\)\")",
+      "Bash(python -m pip install streamlit plotly --quiet)",
+      "PowerShell(& \"C:\\\\Users\\\\maria\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python311\\\\python.exe\" -c \"import streamlit, plotly, pymongo, yake, pandas; print\\('All deps OK'\\)\")"
+    ]
+  }
+}
