@@ -21,38 +21,45 @@ def get_db():
     return client[DB_NAME]
 
 
-@st.cache_data(ttl=600, show_spinner=False)
+# Minimum cover area (%) a face must occupy to be considered an editorial subject.
+# Calibrated on the actual data distribution (501 female detections, median = 0.17%).
+# Faces >= 1% of the cover are almost certainly the intended subject of that cover.
+PROMINENCE_THRESHOLD = 1.0
+
+
 def fp_field_exists() -> bool:
-    """Returns True if at least one face document has 'person_type' populated."""
-    db = get_db()
-    doc = db["covers_analysis"].find_one(
-        {"faces_detected.person_type": {"$exists": True, "$ne": None}},
-        {"_id": 1},
-    )
-    return doc is not None
+    """
+    Always True: prominence-based editorial filter is available for all covers_analysis data.
+    (Legacy: used to check for person_type field which is not populated.)
+    """
+    return True
 
 
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
 
-_NEWSPAPER_MAP = {
-    "a-bola": "A Bola", "abola": "A Bola",
-    "record": "Record",
-    "o-jogo": "O Jogo", "ojogo": "O Jogo",
-}
-
 def _normalise_source(raw: str) -> str:
     """Normalise raw source strings to display newspaper names."""
     if not isinstance(raw, str):
         return "Other"
-    key = raw.strip().lower().replace(" ", "-")
+    key = raw.strip().lower().replace(" ", "-").replace("_", "-")
     if "bola" in key:
         return "A Bola"
     if "record" in key:
         return "Record"
     if "jogo" in key:
         return "O Jogo"
+    if "sapo" in key:
+        return "SAPO"
+    if "noticia" in key or "nam" in key or "minuto" in key:
+        return "Notícias ao Minuto"
+    if "zap" in key:
+        return "ZAP"
+    if "euronews" in key:
+        return "Euronews"
+    if "flashscore" in key:
+        return "Flashscore"
     return "Other"
 
 
@@ -69,12 +76,18 @@ def fetch_visual_yearly(filter_fp: bool = False) -> pd.DataFrame:
     """
     db = get_db()
 
-    # Only apply the false-positive filter when the field is actually present
-    apply_fp = filter_fp and fp_field_exists()
-
     pipeline = [{"$unwind": "$faces_detected"}]
-    if apply_fp:
-        pipeline.append({"$match": {"faces_detected.person_type": {"$in": ["athlete", "atleta"]}}})
+    if filter_fp:
+        if person_type_annotated():
+            # Prefer manual annotation when available
+            pipeline.append({"$match": {
+                "faces_detected.person_type": {"$in": ["athlete", "atleta"]}
+            }})
+        else:
+            # Fall back to prominence proxy
+            pipeline.append({"$match": {
+                "faces_detected.cover_coverage_percentage": {"$gte": PROMINENCE_THRESHOLD}
+            }})
     pipeline += [
         {"$group": {
             "_id": {
@@ -140,7 +153,7 @@ def fetch_text_yearly() -> pd.DataFrame:
     df["text_gender"] = df["text_gender"].map(lambda x: gender_map.get(x, x))
     df["source"] = df["source"].apply(_normalise_source)
     df["year"] = df["year"].astype(int)
-    return df[df["source"].isin(["A Bola", "Record", "O Jogo"])]
+    return df
 
 
 # ---------------------------------------------------------------------------
@@ -218,24 +231,43 @@ def fetch_top_entities(top_n: int = 20) -> pd.DataFrame:
 # Keywords per sport modality for text-based detection (used when the 'sport' field is absent)
 SPORT_KEYWORDS: dict[str, list[str]] = {
     "Futebol":      ["futebol", "golo", "golos", "bola", "defesa", "avançada",
-                     "atacante", "liga", "campeonato", "seleção"],
+                     "atacante", "liga", "campeonato", "seleção", "penalty", "árbitro",
+                     "baliza", "guarda-redes", "fifa", "uefa", "premier league", "la liga"],
     "Atletismo":    ["atletismo", "maratona", "corrida", "velocidade", "salto",
-                     "lançamento", "sprint", "pista"],
+                     "lançamento", "sprint", "pista", "disco", "martelo", "peso",
+                     "decatlo", "heptatlo", "estafeta", "obstáculos"],
     "Ténis":        ["ténis", "tennis", "grand slam", "wimbledon", "roland garros",
-                     "us open", "australian open", "set", "match"],
+                     "us open", "australian open", "set", "match", "ace", "serviço",
+                     "wta", "atp", "itf", "courts", "torneio de ténis"],
     "Natação":      ["natação", "nadadora", "piscina", "metros livres",
-                     "braco", "bruços", "costas", "borboleta"],
-    "Ginástica":    ["ginástica", "ginasta", "rítmica", "artística", "trampolim"],
-    "Surf":         ["surf", "surfista", "onda", "meo rip curl", "wsl", "ondas"],
-    "Basquetebol":  ["basquetebol", "basquete", "nba", "cesto", "triplo duplo"],
-    "Voleibol":     ["voleibol", "volei", "vôlei", "rede"],
-    "Ciclismo":     ["ciclismo", "ciclista", "volta a", "pedalada", "etapa"],
-    "Andebol":      ["andebol", "handball"],
-    "Judo":         ["judo", "judoca", "tatami", "ippon"],
-    "Boxe":         ["boxe", "boxeo", "pugilismo", "nocaute"],
-    "Triatlo":      ["triatlo", "triatleta", "ironman"],
-    "Golfe":        ["golfe", "golfista", "ryder cup", "masters"],
-    "Remo":         ["remo", "remadora", "canoagem", "caiaque"],
+                     "bruços", "costas", "borboleta", "mariposa", "fina",
+                     "piscina olímpica", "nado sincronizado", "polo aquático"],
+    "Ginástica":    ["ginástica", "ginasta", "rítmica", "artística", "trampolim",
+                     "trave", "paralelas", "barra fixa", "solo", "aparelho",
+                     "biles", "simone biles", "fig", "fig gymnastics",
+                     "pirueta", "salto mortal", "gym", "acrobacia"],
+    "Surf":         ["surf", "surfista", "onda", "meo rip curl", "wsl", "ondas",
+                     "bodyboard", "prancha", "pipeline", "nazaré"],
+    "Basquetebol":  ["basquetebol", "basquete", "nba", "cesto", "triplo duplo",
+                     "wnba", "euroliga", "three-pointer", "playoff"],
+    "Voleibol":     ["voleibol", "volei", "vôlei", "rede", "bloco", "receção",
+                     "voleibol de praia", "beach volley"],
+    "Ciclismo":     ["ciclismo", "ciclista", "volta a", "pedalada", "etapa",
+                     "tour de france", "giro", "vuelta", "pelotão", "crono"],
+    "Andebol":      ["andebol", "handball", "sete metros", "guarda-redes andebol"],
+    "Judo":         ["judo", "judoca", "tatami", "ippon", "waza", "kata", "dan"],
+    "Boxe":         ["boxe", "boxeo", "pugilismo", "nocaute", "round", "combate",
+                     "peso pena", "peso leve", "peso médio", "campeã mundial"],
+    "Triatlo":      ["triatlo", "triatleta", "ironman", "duatlo"],
+    "Golfe":        ["golfe", "golfista", "ryder cup", "masters", "green", "par",
+                     "birdie", "eagle", "pgr", "lpga"],
+    "Remo":         ["remo", "remadora", "canoagem", "caiaque", "kayak",
+                     "barco", "world rowing"],
+    "Hóquei":       ["hóquei", "hoquei", "hockey", "stick", "campo de hóquei"],
+    "Esgrima":      ["esgrima", "esgrimista", "florete", "sabre", "espada"],
+    "Tiro":         ["tiro desportivo", "tiro ao alvo", "carabina", "pistola desportiva"],
+    "Luta":         ["luta olímpica", "wrestling", "greco-romana", "freestyle wrestling"],
+    "Pentatlo":     ["pentatlo", "pentatlo moderno"],
 }
 
 
@@ -471,3 +503,97 @@ def fetch_pipeline_stats() -> dict:
         "unique_feminine_entities": unique_feminine,
         "unique_masculine_entities": unique_masculine,
     }
+
+
+# ---------------------------------------------------------------------------
+# Athlete detail queries (Q8 / Q9C)
+# ---------------------------------------------------------------------------
+
+@st.cache_data(ttl=600, show_spinner=False)
+def fetch_athlete_articles(entity_name: str, gender_key: str = "feminine") -> pd.DataFrame:
+    """
+    Returns all articles that mention a specific named entity.
+    Columns: year | source | content
+    """
+    db = get_db()
+    field = f"gender_analysis.details.protagonists.{gender_key}"
+    pipeline = [
+        {"$match": {field: entity_name}},
+        {"$project": {
+            "year": 1,
+            "source": {"$ifNull": ["$journal", "$source"]},
+            "title": 1,
+            "body_text": 1,
+        }},
+        {"$limit": 500},
+    ]
+    rows = list(db["articles_final"].aggregate(pipeline))
+    if not rows:
+        return pd.DataFrame(columns=["year", "source", "content"])
+    records = [
+        {
+            "year":    r.get("year"),
+            "source":  _normalise_source(str(r.get("source", ""))),
+            "content": f"{r.get('title', '')}. {r.get('body_text', '')}",
+        }
+        for r in rows
+    ]
+    return pd.DataFrame(records)
+
+
+@st.cache_data(ttl=600, show_spinner=False)
+def person_type_annotated() -> bool:
+    """Returns True if at least one female face has been manually annotated with person_type."""
+    db = get_db()
+    doc = db["covers_analysis"].find_one(
+        {"faces_detected": {"$elemMatch": {"gender": "Woman", "person_type": {"$exists": True, "$ne": None}}}},
+        {"_id": 1},
+    )
+    return doc is not None
+
+
+@st.cache_data(ttl=600, show_spinner=False)
+def fetch_visual_fp_comparison() -> pd.DataFrame:
+    """
+    Returns female face counts per year broken down into three categories:
+      - count_athlete:     person_type = 'athlete'  (or prominence proxy when not annotated)
+      - count_non_sport:   person_type in ['publicity', 'other', 'not_woman']
+      - count_unannotated: no person_type yet (only present during partial annotation)
+    Columns: year | count_athlete | count_non_sport | count_unannotated | annotated
+    """
+    db = get_db()
+    use_annotation = person_type_annotated()
+
+    def _count_by_year(match_extra):
+        pipeline = [
+            {"$unwind": "$faces_detected"},
+            {"$match": {**{"faces_detected.gender": "Woman"}, **match_extra}},
+            {"$group": {"_id": "$year", "count": {"$sum": 1}}},
+            {"$sort": {"_id": 1}},
+        ]
+        return {r["_id"]: r["count"]
+                for r in db["covers_analysis"].aggregate(pipeline)}
+
+    if use_annotation:
+        athlete_counts     = _count_by_year({"faces_detected.person_type": {"$in": ["athlete", "atleta"]}})
+        non_sport_counts   = _count_by_year({"faces_detected.person_type": {"$in": ["publicity", "other", "not_woman"]}})
+        unannotated_counts = _count_by_year({"faces_detected.person_type": {"$exists": False}})
+        none_counts        = _count_by_year({"faces_detected.person_type": None})
+        for y, v in none_counts.items():
+            unannotated_counts[y] = unannotated_counts.get(y, 0) + v
+    else:
+        athlete_counts     = _count_by_year({"faces_detected.cover_coverage_percentage": {"$gte": PROMINENCE_THRESHOLD}})
+        non_sport_counts   = _count_by_year({"faces_detected.cover_coverage_percentage": {"$lt": PROMINENCE_THRESHOLD}})
+        unannotated_counts = {}
+
+    years = sorted(set(athlete_counts) | set(non_sport_counts) | set(unannotated_counts))
+    if not years:
+        return pd.DataFrame(columns=["year", "count_athlete", "count_non_sport", "count_unannotated", "annotated"])
+
+    return pd.DataFrame({
+        "year":               years,
+        "count_athlete":      [athlete_counts.get(y, 0)     for y in years],
+        "count_non_sport":    [non_sport_counts.get(y, 0)   for y in years],
+        "count_unannotated":  [unannotated_counts.get(y, 0) for y in years],
+        "annotated":          use_annotation,
+    })

@@ -2,6 +2,7 @@ import os
 import sys
 import json
 import pymongo
+from pymongo import UpdateOne # Importante para inserir em lote
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 
@@ -10,19 +11,21 @@ WIN_IP = "172.17.16.1"
 client = pymongo.MongoClient(f'mongodb://{WIN_IP}:27017/', serverSelectionTimeoutMS=5000)
 db = client['estagio_desporto']
 
-col_raw = db['articles_raw']       # Raw articles (archive/backup)
-col_final = db['articles_final']   # Classified articles (production/analysis)
+col_raw = db['articles_raw']       
+col_final = db['articles_final']   
 
 RAW_FOLDER = os.path.join(PROJECT_ROOT, "data", "enriched")
 CLASSIFIED_FOLDER = os.path.join(PROJECT_ROOT, "data", "processed", "processed_wikineural_final")
 
+# Tamanho do lote de inserção (5000 é um valor muito rápido e seguro)
+BATCH_SIZE = 5000 
 
 def upload_to_mongo():
-    """
-    Uploads to MongoDB:
-      1. Raw articles (from data/enriched) → articles_raw collection
-      2. Classified articles (from data/processed/processed_wikineural_final) → articles_final collection
-    """
+    # --- 0. LIMPEZA DA BASE DE DADOS ANTIGA ---
+    print("A limpar as coleções antigas para evitar dados fantasma...")
+    col_raw.drop()
+    col_final.drop()
+    print("Coleções limpas! A iniciar o upload...")
 
     # --- 1. Upload raw articles ---
     if not os.path.exists(RAW_FOLDER):
@@ -30,6 +33,7 @@ def upload_to_mongo():
     else:
         raw_files = [f for f in os.listdir(RAW_FOLDER) if f.endswith('.json')]
         raw_count = 0
+        operations = [] # Lista para guardar o lote
 
         for file in raw_files:
             with open(os.path.join(RAW_FOLDER, file), 'r', encoding='utf-8') as f:
@@ -40,18 +44,29 @@ def upload_to_mongo():
                 if not art_id:
                     continue
                 art['_id'] = art_id
-                col_raw.update_one({"_id": art_id}, {"$set": art}, upsert=True)
+                
+                # Adiciona à lista de operações em vez de enviar logo
+                operations.append(UpdateOne({"_id": art_id}, {"$set": art}, upsert=True))
                 raw_count += 1
+
+                # Quando chegar a 5000, envia tudo de uma vez para o Mongo
+                if len(operations) >= BATCH_SIZE:
+                    col_raw.bulk_write(operations)
+                    operations = [] # Limpa a lista para o próximo lote
+
+        # Envia o que sobrou (se o último lote não chegar a 5000)
+        if operations:
+            col_raw.bulk_write(operations)
 
         print(f"articles_raw: {raw_count} documents synced from {len(raw_files)} files.")
 
     # --- 2. Upload classified articles ---
     if not os.path.exists(CLASSIFIED_FOLDER):
         print(f"Error: Folder '{CLASSIFIED_FOLDER}' not found.")
-        print("Run classify_articles.py first to generate the classified files.")
     else:
         classified_files = [f for f in os.listdir(CLASSIFIED_FOLDER) if f.endswith('.json')]
         classified_count = 0
+        operations = [] # Lista para guardar o lote
 
         for file in classified_files:
             with open(os.path.join(CLASSIFIED_FOLDER, file), 'r', encoding='utf-8') as f:
@@ -62,13 +77,20 @@ def upload_to_mongo():
                 if not art_id:
                     continue
                 art['_id'] = art_id
-                col_final.update_one({"_id": art_id}, {"$set": art}, upsert=True)
+                
+                operations.append(UpdateOne({"_id": art_id}, {"$set": art}, upsert=True))
                 classified_count += 1
+
+                if len(operations) >= BATCH_SIZE:
+                    col_final.bulk_write(operations)
+                    operations = []
+
+        if operations:
+            col_final.bulk_write(operations)
 
         print(f"articles_final: {classified_count} documents synced from {len(classified_files)} files.")
 
     print("\nUpload to MongoDB complete.")
-
 
 if __name__ == "__main__":
     upload_to_mongo()

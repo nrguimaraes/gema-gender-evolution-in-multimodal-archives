@@ -1,0 +1,295 @@
+[
+    {
+        "link": "https://arquivo.pt/noFrame/replay/19981212031549/http://www.ojogo.pt:80/Artigo.asp?ID_art=61529",
+        "source": "ojogo.pt",
+        "year": "1998",
+        "title": "Oferta de 140 mil contos/ano Lista de oito está reduzida a três com Roy Evans e Howard Watkinson",
+        "body_text": null,
+        "publication_date": "1998-12-12",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.1,
+                "M": 0.9,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 1,
+                    "gram_total": 4
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Roy Evans"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [],
+                        "nouns": [
+                            "oferta",
+                            "lista"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [],
+                        "nouns": [
+                            "contos",
+                            "ano"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/19981212031549/http://www.ojogo.pt:80/Artigo.asp?ID_art=61561",
+        "source": "ojogo.pt",
+        "year": "1998",
+        "title": "JARDEL põe um ponto final nas especulações",
+        "body_text": null,
+        "publication_date": "1998-12-12",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Neutro/Equilibrado",
+            "confidence_scores": {
+                "F": 0.1,
+                "M": 0.1,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 0,
+                    "gram_total": 2
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": []
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [],
+                        "nouns": [
+                            "especulações"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [],
+                        "nouns": [
+                            "ponto"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/19981212031549/http://www.ojogo.pt:80/Artigo.asp?ID_art=61557",
+        "source": "ojogo.pt",
+        "year": "1998",
+        "title": "O segredo do minuto 89 na vitória em Setúbal Rodolfo Moura levantou-o e disse-lhe",
+        "body_text": null,
+        "publication_date": "1998-12-12",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.05,
+                "M": 0.15,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 0,
+                    "gram_total": 4
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": []
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [],
+                        "nouns": [
+                            "vitória"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o"
+                        ],
+                        "nouns": [
+                            "segredo",
+                            "minuto"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/19981212031549/http://www.ojogo.pt:80/artigo.asp?id_art=61599",
+        "source": "ojogo.pt",
+        "year": "1998",
+        "title": "Belenenses, Varzim e Lamas eliminados",
+        "body_text": null,
+        "publication_date": "1998-12-12",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Neutro/Equilibrado",
+            "confidence_scores": {
+                "F": 0.0,
+                "M": 0.0,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 0,
+                    "gram_total": 0
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": []
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [],
+                        "nouns": []
+                    },
+                    "masculine": {
+                        "pronouns": [],
+                        "nouns": []
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/19981212031549/http://www.ojogo.pt:80/artigo.asp?id_art=61601",
+        "source": "ojogo.pt",
+        "year": "1998",
+        "title": "Portugal com sorte o sorteio do Europeu'2000",
+        "body_text": null,
+        "publication_date": "1998-12-12",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0667,
+                "M": 0.1333,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 0,
+                    "gram_total": 3
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": []
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [],
+                        "nouns": [
+                            "sorte"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o"
+                        ],
+                        "nouns": [
+                            "sorteio"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/19981212031549/http://www.ojogo.pt:80/artigo.asp?id_art=61612",
+        "source": "ojogo.pt",
+        "year": "1998",
+        "title": "Maia/Cin regressou ao trabalho com os olhos postos na Volta",
+        "body_text": null,
+        "publication_date": "1998-12-12",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.05,
+                "M": 0.15,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 0,
+                    "gram_total": 4
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": []
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [],
+                        "nouns": [
+                            "volta"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "os"
+                        ],
+                        "nouns": [
+                            "trabalho",
+                            "olhos"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/19981212031549/http://www.ojogo.pt:80/artigo.asp?id_art=61618",
+        "source": "ojogo.pt",
+        "year": "1998",
+        "title": "Portugal e Espanha discutem acesso ao Mundial'99",
+        "body_text": null,
+        "publication_date": "1998-12-12",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0,
+                "M": 0.2,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 0,
+                    "gram_total": 1
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": []
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [],
+                        "nouns": []
+                    },
+                    "masculine": {
+                        "pronouns": [],
+                        "nouns": [
+                            "acesso"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+]

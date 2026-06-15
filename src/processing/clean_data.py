@@ -122,7 +122,7 @@ else:
             continue
             
         # Only process known sources
-        fontes_validas = ("abolapt_", "ojogopt_", "recordpt_", "sapo_", "zap_aeiou_pt_noticias_desporto_",
+        fontes_validas = ("abolapt_", "ojogopt_", "recordpt_", "sapo_", "zapaeiou_",
                           "noticiasaominuto_", "euronews_", "flashscore_")
         if not file.startswith(fontes_validas):
             continue

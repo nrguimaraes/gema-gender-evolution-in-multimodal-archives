@@ -1,0 +1,2169 @@
+[
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20160204201728/http://www.noticiasaominuto.com/desporto/533167/carrillo-e-bom-mas-o-que-importa-e-os-extremos-que-tenho-para-amanha",
+        "source": "noticiasaominuto.com",
+        "year": "2016",
+        "title": "Desporto Rui Vitória Há 52 mins \"Carrillo é bom mas o que importa é os extremos que tenho para amanhã\"",
+        "body_text": "Rui Vitória recusou alongar-se sobre a já confirmada transferência de André Carrillo para a Luz no final da temporada. Na conferência de imprensa de antevisão ao Benfica-Belenenses, o técnico reforçou que “o que importa é o jogo de amanhã”. “O Carrillo é um bom jogador”, começou por dizer. “Mas o que me importa é o jogo de amanhã e os extremos que tenho para amanhã. Não daqui a seis meses”. Quanto ao jogo em si, Rui Vitória antecipou “um Belenenses forte”, que “vem de “uma série de bons resultados”, mas garante que o Benfica só pensa em “ganhar”. “Vejo uma equipa que vem de um resultado positivo, que vai querer mostrar qualidade. Espero uma equipa atrevida, que tem bons jogadores e que está bem estruturada. Temos de saber o que fazer em termos estratégicos. Vão criar dificuldades. Temos de estar fortes”. O técnico confirmou, ainda, que Lisandro López e Luisão não estarão aptos para o jogo da 21ª jornada da I Liga.",
+        "publication_date": "2016-02-04",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.059,
+                "M": 0.941,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 4,
+                    "gram_total": 61
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Lisandro López",
+                        "Luisão",
+                        "Rui Vitória",
+                        "André Carrillo"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "a",
+                            "uma",
+                            "uma",
+                            "que",
+                            "uma",
+                            "que"
+                        ],
+                        "nouns": [
+                            "transferência",
+                            "temporada",
+                            "conferência",
+                            "imprensa",
+                            "antevisão",
+                            "série",
+                            "equipa",
+                            "qualidade",
+                            "equipa",
+                            "dificuldades",
+                            "jornada"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "que",
+                            "os",
+                            "que",
+                            "o",
+                            "o",
+                            "que",
+                            "o",
+                            "o",
+                            "um",
+                            "o",
+                            "que",
+                            "me",
+                            "o",
+                            "os",
+                            "que",
+                            "ao",
+                            "um",
+                            "que",
+                            "o",
+                            "um",
+                            "que",
+                            "o",
+                            "que",
+                            "o",
+                            "o"
+                        ],
+                        "nouns": [
+                            "mins",
+                            "extremos",
+                            "final",
+                            "técnico",
+                            "jogo",
+                            "jogador",
+                            "jogo",
+                            "extremos",
+                            "meses",
+                            "jogo",
+                            "“",
+                            "resultados",
+                            "resultado",
+                            "jogadores",
+                            "termos",
+                            "técnico",
+                            "jogo"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20160204201728/http://www.noticiasaominuto.com/desporto/533130/super-dragoes-preparam-dia-inesquecivel-para-jovem-atacado",
+        "source": "noticiasaominuto.com",
+        "year": "2016",
+        "title": "\"dia inesquecível\" para jovem atacado",
+        "body_text": "Os Super Dragões, claque do FC Porto, também reagiram ao incidente verificado no FC Porto B-Benfica B, quando um jovem adepto foi atacado, alegadamente por adeptos afetos ao Benfica, que lhe retiraram a camisola que lhe havia sido entregue pelo guarda-redes Raúl Gudiño. Através da rede social Facebook, a claque convidou o jovem e a sua família a marcarem presença “no jogo contra o Borussia de Dortmund no Estádio do Dragão”, sendo que irá “custear todas as despesas com viagem, estadia e bilhete de jogo”. Leia aqui, na íntegra, o texto publicado pelos Super Dragões: “Os Super Dragões informam que entraram em contacto com a família do pequeno Leo e convidaram-no juntamente com os pais para no próximo dia 25 estarem presentes connosco no jogo contra o Borussia de Dortumund no Estádio do Dragão! A direção dos SD irá custear todas as despesas com viagem, estadia e bilhete de jogo e promete que toda a família SD irá fazer de tudo para proporcionar ao pequeno Leo um dia inesquecível!!!",
+        "publication_date": "2016-02-04",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0951,
+                "M": 0.9049,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 1,
+                    "gram_total": 61
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Raúl Gudiño"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "que",
+                            "a",
+                            "a",
+                            "sua",
+                            "todas",
+                            "as",
+                            "a",
+                            "connosco",
+                            "a",
+                            "todas",
+                            "as",
+                            "toda",
+                            "a"
+                        ],
+                        "nouns": [
+                            "camisola",
+                            "rede",
+                            "claque",
+                            "família",
+                            "presença",
+                            "despesas",
+                            "viagem",
+                            "estadia",
+                            "íntegra",
+                            "família",
+                            "direção",
+                            "despesas",
+                            "viagem",
+                            "estadia",
+                            "família"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "os",
+                            "um",
+                            "que",
+                            "lhe",
+                            "lhe",
+                            "o",
+                            "o",
+                            "o",
+                            "os",
+                            "os",
+                            "o",
+                            "tudo"
+                        ],
+                        "nouns": [
+                            "dia",
+                            "jovem",
+                            "claque",
+                            "incidente",
+                            "jovem",
+                            "adeptos",
+                            "guarda-redes",
+                            "facebook",
+                            "jovem",
+                            "jogo",
+                            "bilhete",
+                            "jogo",
+                            "texto",
+                            "contacto",
+                            "pais",
+                            "dia",
+                            "jogo",
+                            "bilhete",
+                            "jogo",
+                            "dia"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20160204201728/http://www.noticiasaominuto.com/desporto/533192/luisao-vai-ser-novamente-submetido-a-intervencao-cirurgica",
+        "source": "noticiasaominuto.com",
+        "year": "2016",
+        "title": "Luisão vai ser novamente submetido a intervenção cirúrgica",
+        "body_text": "Rui Vitória disse esta quinta-feira que Luisão era baixa garantida para o encontro de amanhã frente ao Belenenses, no estádio do Restelo, e agora surge a confirmação por parte do clube da Luz, que o capitão dos 'encarnados' vai ter de ser novamente operado. O atleta tem uma “refractura de um dos focos, pós queda, do cúbito esquerdo. e será submetido a intervenção cirúrgica”, pode ler-se no boletim clínico publicado pelo Benfica, no seu site oficial. O técnico do Benfica fica assim reduzido a duas opções para o eixo da defesa para o próximo encontro da I Liga. Lisandro também se encontra a recuperar de uma lesão e Rui Vitória tem apenas à disposição o brasileiro Jardel e o jovem sueco Lindelof.",
+        "publication_date": "2016-02-04",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.081,
+                "M": 0.919,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 4,
+                    "gram_total": 42
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Jardel",
+                        "Lisandro",
+                        "Luisão",
+                        "Rui Vitória"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "esta",
+                            "a",
+                            "uma",
+                            "a",
+                            "uma"
+                        ],
+                        "nouns": [
+                            "intervenção",
+                            "quinta-feira",
+                            "confirmação",
+                            "parte",
+                            "refractura",
+                            "queda",
+                            "intervenção",
+                            "opções",
+                            "defesa",
+                            "lesão",
+                            "disposição"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "que",
+                            "o",
+                            "o",
+                            "seu",
+                            "o",
+                            "o",
+                            "o",
+                            "se",
+                            "o",
+                            "o"
+                        ],
+                        "nouns": [
+                            "encontro",
+                            "estádio",
+                            "clube",
+                            "capitão",
+                            "atleta",
+                            "focos",
+                            "cúbito",
+                            "boletim",
+                            "site",
+                            "técnico",
+                            "eixo",
+                            "encontro",
+                            "brasileiro",
+                            "sueco"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20160204201728/http://www.noticiasaominuto.com/desporto/533017/sporting-ainda-quer-utilizar-carrillo-antes-da-mudanca-para-a-luz",
+        "source": "noticiasaominuto.com",
+        "year": "2016",
+        "title": "Sporting ainda quer utilizar Carrillo antes da mudança para a Luz",
+        "body_text": "O Sporting inscreveu André Carrillo na lista de jogadores para a Liga Europa. Segundo escreve ojornal O Jogo, os 'leões' incluíram o peruano nos jogadores que poderão alinhar já no jogo frente ao Bayer Leverkusen, nos 16avos de final da competição. O extremo já assinou contrato com o Benfica, mas esse só é válido a partir de julho de 2016. Desta forma, o Sporting pode e, ao que tudo indica, parece querer fazer uso do jogador que, apesar de tudo, ainda é jogador do Sporting até ao fim da temporada. Em relação à lista que o clube de Alvalade apresentou na fase de grupos registam-se as entradas de Hernán Barcos, Sebastián Coates e Bruno César. Em sentido contrário estão Marcelo Boeck, Montero, Jonathan Silva e Tanaka. Nota ainda para as ausências de Marvin Zeegelar e de Schelotto da lista entregue pelo Sporting.",
+        "publication_date": "2016-02-04",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.064,
+                "M": 0.936,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 6,
+                    "gram_total": 50
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Sebastián Coates",
+                        "Bruno César",
+                        "Marcelo Boeck",
+                        "André Carrillo",
+                        "Hernán Barcos",
+                        "Jonathan Silva"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "a",
+                            "as",
+                            "as"
+                        ],
+                        "nouns": [
+                            "mudança",
+                            "lista",
+                            "competição",
+                            "forma",
+                            "temporada",
+                            "relação",
+                            "lista",
+                            "fase",
+                            "entradas",
+                            "nota",
+                            "ausências",
+                            "lista"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "o",
+                            "os",
+                            "o",
+                            "que",
+                            "o",
+                            "o",
+                            "esse",
+                            "o",
+                            "ao",
+                            "que",
+                            "tudo",
+                            "que",
+                            "tudo",
+                            "o"
+                        ],
+                        "nouns": [
+                            "jogadores",
+                            "ojornal",
+                            "jogo",
+                            "leões",
+                            "peruano",
+                            "jogadores",
+                            "jogo",
+                            "16avos",
+                            "final",
+                            "extremo",
+                            "contrato",
+                            "julho",
+                            "uso",
+                            "jogador",
+                            "jogador",
+                            "fim",
+                            "clube",
+                            "grupos",
+                            "sentido"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20160204201728/http://www.noticiasaominuto.com/desporto/533153/portugal-chega-vence-e-passa-a-proxima-fase",
+        "source": "noticiasaominuto.com",
+        "year": "2016",
+        "title": "Portugal chega, vence e passa à próxima fase",
+        "body_text": "Portugal entrou da melhor maneira neste Europeu de futsal. A seleção nacional venceu esta quinta-feira a congénere eslovena por 6-2 e assegurou a passagem à próxima fase da competição. A primeira parte foi dividida, com várias oportunidades para ambas as equipas. Portugal até começou da pior forma ao conceder um golo logo aos 2:17. No entanto, a equipa orientada por Jorge Braz respondeu e, por intermédio de Fábio Cecílio, empatou a partida. Depois a magia falou mais alto. Ricardinho, com um excelente toque de calcanhar bateu o guarda-redes esloveno e fez o 2-1 para Portugal. Já perto do final da primeira parte, a Eslovénia colocou novamente a partida empatada, depois de um golo marcado por Vrohvec. No início do segundo tempo, Portugal entrou determinado em fazer valer a sua superioridade. Foi, novamente, Ricardinho que deu o mote e colocou a seleção nacional em vantagem no marcador. Pedro Cary, à passagem do minuto 30, fez o 4-2. Ricardinho voltou a fazer o gosto ao pé e apontou o 5-2, fazendo assim o seu terceiro golo na partida. Fábio Cecílio sentenciou o encontro e fixou o resultado final em 6-2, resultado esse que coloca Portugal na próxima fase do Euro'2016.",
+        "publication_date": "2016-02-04",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.1027,
+                "M": 0.8973,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 4,
+                    "gram_total": 74
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Ricardinho",
+                        "Pedro Cary",
+                        "Fábio Cecílio",
+                        "Jorge Braz"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "esta",
+                            "a",
+                            "a",
+                            "várias",
+                            "ambas",
+                            "as",
+                            "a",
+                            "a",
+                            "a",
+                            "a",
+                            "a",
+                            "a",
+                            "sua",
+                            "a"
+                        ],
+                        "nouns": [
+                            "fase",
+                            "maneira",
+                            "seleção",
+                            "quinta-feira",
+                            "congénere",
+                            "passagem",
+                            "fase",
+                            "competição",
+                            "parte",
+                            "oportunidades",
+                            "equipas",
+                            "forma",
+                            "equipa",
+                            "partida",
+                            "magia",
+                            "parte",
+                            "partida",
+                            "superioridade",
+                            "seleção",
+                            "vantagem",
+                            "passagem",
+                            "partida",
+                            "fase"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "um",
+                            "um",
+                            "o",
+                            "o",
+                            "um",
+                            "que",
+                            "o",
+                            "o",
+                            "o",
+                            "o",
+                            "o",
+                            "seu",
+                            "o",
+                            "o",
+                            "esse",
+                            "que"
+                        ],
+                        "nouns": [
+                            "futsal",
+                            "golo",
+                            "entanto",
+                            "intermédio",
+                            "toque",
+                            "calcanhar",
+                            "guarda-redes",
+                            "final",
+                            "golo",
+                            "início",
+                            "tempo",
+                            "mote",
+                            "marcador",
+                            "minuto",
+                            "gosto",
+                            "pé",
+                            "golo",
+                            "encontro",
+                            "resultado",
+                            "resultado"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20160204201728/http://www.noticiasaominuto.com/desporto/532397/este-mercedes-de-1937-foi-vendido-por-quase-10-milhoes-de-dolares",
+        "source": "noticiasaominuto.com",
+        "year": "2016",
+        "title": "SOBRE RODAS Este Mercedes de 1937 foi vendido por quase 10 milhões de dólares",
+        "body_text": "Embora tenha sido produzido em 1937 – ou seja, ainda antes da Segunda Guerra Mundial – este Mercedes-Benz 540 K Special Roadster foi preservado nas melhores condições e, 79 anos após ter sido produzido, foi vendido pela estonteante quantia de 9,9 milhões de dólares, ou seja, cerca de nove milhões de euros. A venda foi feita num leilão que decorreu no resort Arizona Biltmore, em Phoenix, nos Estados Unidos, leilão esse que gerou um total de 63 milhões de dólares – 57 milhões de euros – graças a ‘bombas’ históricas como um Lamborghini Miura P400 SV de 1971.",
+        "publication_date": "2016-02-04",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0522,
+                "M": 0.1478,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 0,
+                    "gram_total": 23
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": []
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "a"
+                        ],
+                        "nouns": [
+                            "condições",
+                            "quantia",
+                            "venda",
+                            "bombas"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "este",
+                            "este",
+                            "que",
+                            "esse",
+                            "que",
+                            "um",
+                            "um"
+                        ],
+                        "nouns": [
+                            "dólares",
+                            "anos",
+                            "dólares",
+                            "euros",
+                            "leilão",
+                            "resort",
+                            "leilão",
+                            "total",
+                            "dólares",
+                            "euros"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20160621214331/https://www.noticiasaominuto.com/desporto/609587/turquia-vence-republica-checa-e-apura-irlanda-do-norte",
+        "source": "noticiasaominuto.com",
+        "year": "2016",
+        "title": "e... apura Irlanda do Norte",
+        "body_text": "A Turquia venceu hoje a República Checa, por 2-0, em jogo da última jornada do Grupo D do Euro2016 de futebol, um resultado que apura a Irlanda do Norte como um dos melhores terceiros. Em Lens, França, Burak Yilmaz (10 minutos) e Ozan Tufan (65) marcaram os golos dos turcos, que somaram os primeiros três pontos e acabam o grupo na terceira posição, a quatro da Croácia e a três da Espanha, enquanto os checos, com um ponto, estão eliminados. Com este resultado, a Turquia ainda mantém esperanças de se qualificar, precisando que um dos terceiros posicionados dos grupos E ou F termine com um pior registo, sendo que o triunfo dos turcos já colocou a estreante Irlanda do Norte, terceira na 'poule' C, nos oitavos de final.",
+        "publication_date": "2016-06-21",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0381,
+                "M": 0.9619,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 2,
+                    "gram_total": 42
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Burak Yilmaz",
+                        "Ozan Tufan"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "a",
+                            "a",
+                            "a",
+                            "a"
+                        ],
+                        "nouns": [
+                            "jornada",
+                            "posição",
+                            "esperanças"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "um",
+                            "que",
+                            "os",
+                            "que",
+                            "os",
+                            "o",
+                            "os",
+                            "um",
+                            "este",
+                            "se",
+                            "um",
+                            "o"
+                        ],
+                        "nouns": [
+                            "jogo",
+                            "futebol",
+                            "resultado",
+                            "terceiros",
+                            "minutos",
+                            "golos",
+                            "turcos",
+                            "pontos",
+                            "grupo",
+                            "checos",
+                            "ponto",
+                            "resultado",
+                            "terceiros",
+                            "grupos",
+                            "registo",
+                            "triunfo",
+                            "turcos",
+                            "estreante",
+                            "poule",
+                            "c",
+                            "oitavos",
+                            "final"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20160621214331/https://www.noticiasaominuto.com/desporto/609540/sao-paulo-nao-tem-condicoes-para-viabilizar-continuidade-do-maicon",
+        "source": "noticiasaominuto.com",
+        "year": "2016",
+        "title": "Desporto António Araújo Há 2 Horas \"São Paulo não tem condições para viabilizar continuidade do Maicon\"",
+        "body_text": "O empresário de Maicon colocou um ponto final na especulação acerca da possível continuidade do defesa no São Paulo. António Araújo diz ter sido informado pelo FC Porto, emblema que o emprestou em janeiro passado, que o emblema de São Paulo não tem condições financeiras para garantir o concurso do futebolista. “O São Paulo não tem condições para viabilizar a continuidade do Maicon, e quem nos informou dessa decisão foi o próprio FC Porto. Ele vai voltar ao FC Porto”, afirmou em entrevista à ESPN.com.br, assegurando ter enviado um email aos ‘tricolores’ para o qual não recebeu resposta. “Eu enviei um email para o Gustavo [de Oliveira, gerente de futebol] e, até agora, ele não respondeu. Portanto, não posso dizer mais nada. Reafirmo que o jogador vai voltar ao Porto”. Por seu lado, o São Paulo recusou comentar as declarações do agente do atleta: “O clube não vai comentar as declarações do empresário”.",
+        "publication_date": "2016-06-21",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0571,
+                "M": 0.9429,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 1,
+                    "gram_total": 56
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "António Araújo"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "as",
+                            "as"
+                        ],
+                        "nouns": [
+                            "condições",
+                            "continuidade",
+                            "especulação",
+                            "continuidade",
+                            "defesa",
+                            "condições",
+                            "condições",
+                            "continuidade",
+                            "decisão",
+                            "entrevista",
+                            "resposta",
+                            "declarações",
+                            "declarações"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "um",
+                            "que",
+                            "o",
+                            "o",
+                            "o",
+                            "o",
+                            "o",
+                            "próprio",
+                            "ele",
+                            "um",
+                            "o",
+                            "qual",
+                            "eu",
+                            "um",
+                            "o",
+                            "ele",
+                            "nada",
+                            "o",
+                            "seu",
+                            "o",
+                            "o"
+                        ],
+                        "nouns": [
+                            "empresário",
+                            "ponto",
+                            "emblema",
+                            "janeiro",
+                            "emblema",
+                            "concurso",
+                            "futebolista",
+                            "email",
+                            "tricolores",
+                            "email",
+                            "gerente",
+                            "futebol",
+                            "jogador",
+                            "lado",
+                            "agente",
+                            "atleta",
+                            "clube",
+                            "empresário"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20160621214331/https://www.noticiasaominuto.com/desporto/609514/estou-ha-10-anos-no-benfica-como-e-que-vou-ter-25-anos",
+        "source": "noticiasaominuto.com",
+        "year": "2016",
+        "title": "\"Estou há 10 anos no Benfica, como é que vou ter 25 anos?\"",
+        "body_text": "Aos 18 anos, Renato Sanches despontou esta temporada na equipa do Benfica e terminou a época como uma das peças fundamentais na formação de Rui Vitória. No entanto, o jovem, que já foi vendido ao Bayern Munique, comentou o assunto polémico relativo à sua idade. Para Renato Sanches, muito do que se falou foi uma falta de respeito para com ele e para com toda a equipa. \"Certas pessoas faltaram ao respeito ao nosso grupo e treinador.No Benfica todos temos redes sociais e televisão em casa, e ouvimos aquilo diariamente.Todos os jogadores veem as notícias e pensam. Refletem...\", começou por dizer o jovem, em declarações à revista Sábado. No entanto, apesar de ficar cansado deste tema, Sanches garantiu que soube lidar com a situação. \"Claro que esses comentários me fartaram, mas sempre pensei assim: no futebol nem tudo é bom. Há aqueles que gostam e os que não gostam. Há quem diga que o Ronaldo ou o Messi não jogam nada. São gostos. Claro que farta tu acordares de manhã e veres mais uma vez que o Renato não tem 18 anos, afinal tem 23 ou 25.Cresci em Portugal, estou há 10 anos no Benfica, como é que vou ter 25 anos? Não tem lógica o que certas pessoas falam\", finalizou.",
+        "publication_date": "2016-06-21",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0784,
+                "M": 0.9216,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 3,
+                    "gram_total": 74
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Renato Sanches",
+                        "Messi",
+                        "Rui Vitória"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "esta",
+                            "a",
+                            "sua",
+                            "uma",
+                            "toda",
+                            "a",
+                            "certas",
+                            "as",
+                            "a",
+                            "certas"
+                        ],
+                        "nouns": [
+                            "temporada",
+                            "equipa",
+                            "época",
+                            "peças",
+                            "formação",
+                            "idade",
+                            "falta",
+                            "equipa",
+                            "pessoas",
+                            "redes",
+                            "televisão",
+                            "casa",
+                            "notícias",
+                            "declarações",
+                            "revista",
+                            "situação",
+                            "manhã",
+                            "vez",
+                            "pessoas"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "que",
+                            "o",
+                            "que",
+                            "ele",
+                            "nosso",
+                            "todos",
+                            "aquilo",
+                            "todos",
+                            "os",
+                            "o",
+                            "esses",
+                            "tudo",
+                            "aqueles",
+                            "que",
+                            "os",
+                            "que",
+                            "o",
+                            "o",
+                            "nada",
+                            "o",
+                            "o",
+                            "que"
+                        ],
+                        "nouns": [
+                            "anos",
+                            "anos",
+                            "anos",
+                            "entanto",
+                            "jovem",
+                            "assunto",
+                            "respeito",
+                            "respeito",
+                            "grupo",
+                            "treinador",
+                            "jogadores",
+                            "jovem",
+                            "sábado",
+                            "entanto",
+                            "tema",
+                            "comentários",
+                            "futebol",
+                            "acordares",
+                            "veres",
+                            "anos",
+                            "anos",
+                            "anos"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20160621214331/https://www.noticiasaominuto.com/desporto/609455/ronaldo-e-um-bocadinho-como-a-amalia-um-dia-vamos-falar-dele",
+        "source": "noticiasaominuto.com",
+        "year": "2016",
+        "title": "\"Ronaldo é um bocadinho como a Amália. Um dia vamos falar dele...\"",
+        "body_text": "Fernando Santos fez esta segunda-feira a antevisão do encontro agendado para esta quarta-feira, diante da Hungria. O treinador da formação de todos nós defendeu Ronaldo a insurgiu-se contra as críticas dos portugueses, que mostraram algum desânimo com os últimos resutlados. Pressão de ganhar:Nós temos a certeza que vamos disputar este jogo com a clara finalidade de o poder vencer. O que nos interessa é estar nos quartos de final e jogar com um qualquer adversário. Com respeito por todos, o que queremos é ganhar. Semblante carregado de Ronaldo:A seguir ao primeiro jogo, disseram que Ronaldo estava muito sorridente. Ele vai superar essas questões e fazer aquilo que faz de melhor ao longo de toda a vida: marcar golos. Pelo menos, a certeza absoluta que vai fazer tudo com cabeça e sem ansiedade para conseguir fazer golos. Isso deixa-me sereno. Críticas dos portugueses a Ronaldo:Quando temos alguém que nos últimos anos é o porta-bandeira deste país, que todos nós dizemos que amamos e tenho a certeza que amamos porque conheço bem o povo português. Quando temos alguém que é o porta-bandeira do nosso país [e o criticam]… É um bocadinho como a Amália… Um dia vamos falar dele… Regresso dia 11:Não fico cá de férias, já tenho saudades da família. Se for para ficar de férias ia-me embora já hoje. Como consigo prometer? Eu acredito nos meus jogadores, é muito fácil responder. Não conseguimos ganhar mas fizemos tudo para ganhar. Porque é que não hei-de acreditar? De repente passamos todos de otimistas a pessimistas, acreditámos todos em Portugal até há dois dias atrás. Agora que Portugal fez um dos melhores jogos que tenho visto no Europeu, parece que não fizemos nada. Tenho um grupo fantástico em termos de trabalho e determinação e com um empenho total. Porque é que não acreditaria neles? Por isso continuo a acreditar, vou acreditar e vou lá chegar.",
+        "publication_date": "2016-06-21",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Feminino",
+            "confidence_scores": {
+                "F": 0.8617,
+                "M": 0.1383,
+                "signals_count": {
+                    "bio_f": 1,
+                    "bio_m": 0,
+                    "gram_total": 120
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [
+                        "Amália"
+                    ],
+                    "masculine": []
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "esta",
+                            "a",
+                            "esta",
+                            "da",
+                            "as",
+                            "a",
+                            "a",
+                            "essas",
+                            "toda",
+                            "a",
+                            "a",
+                            "que",
+                            "a",
+                            "a",
+                            "eu"
+                        ],
+                        "nouns": [
+                            "segunda-feira",
+                            "antevisão",
+                            "quarta-feira",
+                            "formação",
+                            "críticas",
+                            "pressão",
+                            "certeza",
+                            "finalidade",
+                            "questões",
+                            "vida",
+                            "certeza",
+                            "cabeça",
+                            "ansiedade",
+                            "críticas",
+                            "certeza",
+                            "férias",
+                            "saudades",
+                            "família",
+                            "férias",
+                            "otimistas",
+                            "determinação"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "um",
+                            "dele",
+                            "o",
+                            "todos",
+                            "que",
+                            "algum",
+                            "os",
+                            "nós",
+                            "este",
+                            "o",
+                            "o",
+                            "que",
+                            "um",
+                            "qualquer",
+                            "todos",
+                            "o",
+                            "que",
+                            "ele",
+                            "aquilo",
+                            "que",
+                            "tudo",
+                            "isso",
+                            "alguém",
+                            "que",
+                            "o",
+                            "que",
+                            "todos",
+                            "o",
+                            "alguém",
+                            "que",
+                            "o",
+                            "nosso",
+                            "o",
+                            "um",
+                            "dele",
+                            "meus",
+                            "tudo",
+                            "todos",
+                            "todos",
+                            "que",
+                            "nada",
+                            "um",
+                            "um",
+                            "neles",
+                            "isso"
+                        ],
+                        "nouns": [
+                            "bocadinho",
+                            "dia",
+                            "encontro",
+                            "treinador",
+                            "portugueses",
+                            "desânimo",
+                            "resutlados",
+                            "jogo",
+                            "poder",
+                            "quartos",
+                            "final",
+                            "adversário",
+                            "respeito",
+                            "semblante",
+                            "jogo",
+                            "longo",
+                            "golos",
+                            "menos",
+                            "golos",
+                            "portugueses",
+                            "anos",
+                            "porta-bandeira",
+                            "país",
+                            "povo",
+                            "porta-bandeira",
+                            "país",
+                            "bocadinho",
+                            "dia",
+                            "regresso",
+                            "dia",
+                            "jogadores",
+                            "repente",
+                            "dias",
+                            "jogos",
+                            "grupo",
+                            "termos",
+                            "trabalho",
+                            "empenho"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20160621214331/https://www.noticiasaominuto.com/desporto/609575/ibra-ja-assinou-com-o-united-acordo-foi-rubricado-de-forma-curiosa",
+        "source": "noticiasaominuto.com",
+        "year": "2016",
+        "title": "Ibra já assinou com o United. Acordo foi rubricado de forma curiosa",
+        "body_text": "O portal TalkSPORT adianta esta terça-feira que Zlatan Ibrahimovic já tem acordo fechado com o Manchester United para a próxima temporada. Segundo dá conta o jornalista Tancredi Palmeri, o sueco irá mesmo tornar-se jogador dos ‘red devils’. “Ele assinou pelo Manchester United”, disse, avançando depois com a data em que o clube e o jogador de 34 anos chegaram a acordo. “Ele assinou o acordo no início de junho. Foi-lhe enviado para o centro de estágio, ainda na fase de preparação do Euro’2016. Ele assinou-o e enviou-o de volta”, explicou. “É um pré-acordo e ele prepara-se para a mudança. É como as coisas funcionam no futebol, aconteceu o mesmo com Mourinho e com Manchester United”, atirou depois, revelando que o acordo com Ibra está protegido por uma cláusula de rescisão muito elevada. “Até onde sei, o valor para quebrar o pré-acordo é são alto que ninguém o conseguirá irá fazer”.",
+        "publication_date": "2016-06-21",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0594,
+                "M": 0.9406,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 2,
+                    "gram_total": 64
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Mourinho",
+                        "Zlatan Ibrahimovic"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "esta",
+                            "a",
+                            "a",
+                            "que",
+                            "a",
+                            "as",
+                            "uma"
+                        ],
+                        "nouns": [
+                            "forma",
+                            "terça-feira",
+                            "temporada",
+                            "conta",
+                            "data",
+                            "fase",
+                            "preparação",
+                            "volta",
+                            "mudança",
+                            "coisas",
+                            "cláusula",
+                            "rescisão"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "o",
+                            "o",
+                            "o",
+                            "o",
+                            "ele",
+                            "o",
+                            "o",
+                            "ele",
+                            "o",
+                            "o",
+                            "ele",
+                            "um",
+                            "ele",
+                            "o",
+                            "mesmo",
+                            "o",
+                            "o",
+                            "o",
+                            "ninguém",
+                            "o"
+                        ],
+                        "nouns": [
+                            "acordo",
+                            "portal",
+                            "talksport",
+                            "acordo",
+                            "jornalista",
+                            "sueco",
+                            "jogador",
+                            "devils",
+                            "clube",
+                            "jogador",
+                            "anos",
+                            "acordo",
+                            "acordo",
+                            "início",
+                            "junho",
+                            "centro",
+                            "estágio",
+                            "euro’2016",
+                            "pré-acordo",
+                            "futebol",
+                            "acordo",
+                            "onde",
+                            "valor",
+                            "pré-acordo"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20160621214331/https://www.noticiasaominuto.com/desporto/608195/suecos-perdem-a-cabeca-e-criam-o-volvo-mais-monstruoso-de-sempre",
+        "source": "noticiasaominuto.com",
+        "year": "2016",
+        "title": "SOBRE RODAS Suecos perdem a cabeça e criam o Volvo mais 'monstruoso' de sempre",
+        "body_text": "A colaboração entre a Volvo e a Polestar Performance voltou a dar frutos, desta feita, com o carro mais poderoso da sempre da marca sueca. Graças ao kit de otimização da Polestar, o XC90 T8 Twin Engine irá, agora, atingir uns ‘monstruosos’ 421 cavalos de potência e 678 Nm de binário. Como resultado, este modelo passará a atingir os 100 km/h em apenas 5,5 segundos. O consumo não foi descurado e mantém-se nos 2,1 litros/100 km. Quanto ao preço, em Portugal este kit não será propriamente barato, podendo ultrapassar os mil euros.",
+        "publication_date": "2016-06-21",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0514,
+                "M": 0.1486,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 0,
+                    "gram_total": 35
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": []
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "a",
+                            "a"
+                        ],
+                        "nouns": [
+                            "cabeça",
+                            "colaboração",
+                            "feita",
+                            "marca",
+                            "otimização",
+                            "potência"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "o",
+                            "o",
+                            "uns",
+                            "este",
+                            "os",
+                            "o",
+                            "ao",
+                            "este",
+                            "os"
+                        ],
+                        "nouns": [
+                            "suecos",
+                            "frutos",
+                            "carro",
+                            "kit",
+                            "cavalos",
+                            "binário",
+                            "resultado",
+                            "modelo",
+                            "km/h",
+                            "segundos",
+                            "consumo",
+                            "litros/100",
+                            "km",
+                            "preço",
+                            "kit",
+                            "euros"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20160621214331/https://www.noticiasaominuto.com/desporto/609585/croacia-interrompe-invencibilidade-espanhola-e-vence-grupo-d",
+        "source": "noticiasaominuto.com",
+        "year": "2016",
+        "title": "Croácia interrompe invencibilidade espanhola e vence Grupo D",
+        "body_text": "A Croácia venceu hoje o Grupo D do Euro2016 de futebol, ao vencer por 2-1 a Espanha, que interrompeu uma série recorde de 14 jogos sem derrotas em jogos de fases finais de Europeus. Logo aos sete minutos, Álvaro Morata deu vantagem aos bicampeões europeus, que ainda desperdiçaram uma grande penalidade aos 72, por Sérgio Ramos, mas Nikola Kalinic (45) e Ivan Perisic (87) consumaram o triunfo à Croácia. Nos oitavos de final, a Croácia, que somou sete pontos, mais um do que a Espanha, vai defrontar um dos melhores terceiros classificados, enquanto os espanhóis jogam com a Itália.",
+        "publication_date": "2016-06-21",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0933,
+                "M": 0.9067,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 4,
+                    "gram_total": 30
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Ivan Perisic",
+                        "Nikola Kalinic",
+                        "Álvaro Morata",
+                        "Sérgio Ramos"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "que",
+                            "uma",
+                            "uma",
+                            "a",
+                            "que",
+                            "a",
+                            "a"
+                        ],
+                        "nouns": [
+                            "invencibilidade",
+                            "série",
+                            "derrotas",
+                            "fases",
+                            "vantagem",
+                            "penalidade"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "que",
+                            "o",
+                            "que",
+                            "os"
+                        ],
+                        "nouns": [
+                            "futebol",
+                            "jogos",
+                            "jogos",
+                            "minutos",
+                            "bicampeões",
+                            "triunfo",
+                            "oitavos",
+                            "final",
+                            "pontos",
+                            "terceiros",
+                            "espanhóis"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20161031181245/https://www.noticiasaominuto.com/desporto/679805/madureira-avisa-arbitro-e-benfica-guerra-vergonha-e-odio-eterno",
+        "source": "noticiasaominuto.com",
+        "year": "2016",
+        "title": "Madureira avisa árbitro e Benfica: \"Guerra\", \"vergonha\" e \"ódio eterno\"",
+        "body_text": "O clássico com o Benfica já aquece. Fernando Madureira, líder da claque dos Super Dragões, deixou uma mensagem dirigida a João Pinheiro, árbitro que dirigiu o jogo com o V. Setúbal que terminou com um empate sem golos. Utilizando uma notícia de um diário desportivo português onde o juiz terá sido ameaçado, Madureira vai avisando que “a vergonha não tem limites!”. “Nenhum adepto gosta de ver o seu clube ser roubado! Quem não quer ser lobo, não lhe pode vestir a pele! Sejam sérios e honestos para o bem do futebol”, atirou de seguida. A vergonha não tem limites! Nenhum adepto gosta de ver o seu clube ser roubado! Quem não quer ser lobo ,não lhe pode vestir a pele! Sejam sérios e honestos para o bem do futebol️! Uma foto publicada por FcPorto•SuperDragoes•Porto (@macacolidersd) a Out 31, 2016 às 5:28 PDT Já horas antes, antes da partida, num texto intitulado “Guerra é Guerra! Olho por olho, dente por dente! Lampiões ódio eterno! Estes roubos tem de acabar!”, pode ler-se a frase “enquanto formos sempre bons rapazes seremos sempre comidos”. Guerra é Guerra! Olho por olho,dente por dente! Lampiões ódio eterno! Estes roubos tem de acabar! Uma foto publicada por FcPorto•SuperDragoes•Porto (@macacolidersd) a Out 30, 2016 às 3:20 PDT",
+        "publication_date": "2016-10-31",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0627,
+                "M": 0.1373,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 0,
+                    "gram_total": 83
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": []
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "uma",
+                            "uma",
+                            "a",
+                            "a",
+                            "a",
+                            "a",
+                            "uma",
+                            "a",
+                            "uma"
+                        ],
+                        "nouns": [
+                            "vergonha",
+                            "claque",
+                            "mensagem",
+                            "notícia",
+                            "vergonha",
+                            "pele",
+                            "seguida",
+                            "vergonha",
+                            "pele",
+                            "foto",
+                            "5:28",
+                            "horas",
+                            "partida",
+                            "guerra",
+                            "frase",
+                            "guerra",
+                            "foto"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "o",
+                            "que",
+                            "o",
+                            "o",
+                            "que",
+                            "um",
+                            "um",
+                            "onde",
+                            "o",
+                            "nenhum",
+                            "o",
+                            "seu",
+                            "lhe",
+                            "o",
+                            "nenhum",
+                            "o",
+                            "seu",
+                            "lhe",
+                            "o",
+                            "estes",
+                            "estes"
+                        ],
+                        "nouns": [
+                            "árbitro",
+                            "ódio",
+                            "\"",
+                            "clássico",
+                            "líder",
+                            "árbitro",
+                            "jogo",
+                            "empate",
+                            "golos",
+                            "diário",
+                            "juiz",
+                            "limites",
+                            "adepto",
+                            "clube",
+                            "bem",
+                            "futebol",
+                            "limites",
+                            "adepto",
+                            "clube",
+                            "bem",
+                            "futebol️",
+                            "texto",
+                            "olho",
+                            "olho",
+                            "dente",
+                            "dente",
+                            "lampiões",
+                            "roubos",
+                            "rapazes",
+                            "olho",
+                            "olho",
+                            "dente",
+                            "dente",
+                            "lampiões",
+                            "roubos"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20161031181245/https://www.noticiasaominuto.com/desporto/679789/este-momento-vai-passar-sporting-vai-ser-campeao-nacional",
+        "source": "noticiasaominuto.com",
+        "year": "2016",
+        "title": "\"Este momento vai passar, Sporting vai ser campeão nacional\"",
+        "body_text": "Sousa Cintra já passou pela presidência do Sporting e veio defender publicamente Bruno de Carvalho. Para o empresário, “este momento vai passar”, manifestando ainda a crença de que os ‘leões’ “vão ser campeões nacionais”, já que “nada está perdido”. A explicação encontrada por Sousa Cintra para a baixa de rendimento da equipa prende-se “com a saída de jogadores importantes na estratégia” e recorda que “em outras épocas, algumas equipas recuperaram o atraso e terminaram a prova no 1.º lugar”. Adrien voltou ontem, domingo, aos treinos e “é uma mais-valia para o Sporting, as coisas vão melhorar”. Já no que diz respeito ao jogo com o Dortmund, a contar para a quarta jornada da fase de grupos da Champions, o antigo dirigente considera que “os jogadores mantenham todo o empenho\" durante os 90 minutos e que \"acreditem que pode vencer na Alemanha”, sendo que o segredo é que “os jogadores mantenham todo o empenho”. Não obstante, Sousa Cintra vai dizendo que uma possível derrota na Alemanha “não complica mais o momento da equipa do Sporting”, pois “são duas competições distintas”, referindo-se à prova milionária e ao campeonato.",
+        "publication_date": "2016-10-31",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0806,
+                "M": 0.9194,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 2,
+                    "gram_total": 72
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Sousa Cintra",
+                        "Bruno de Carvalho"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "a",
+                            "a",
+                            "a",
+                            "outras",
+                            "algumas",
+                            "a",
+                            "uma",
+                            "as",
+                            "a",
+                            "uma"
+                        ],
+                        "nouns": [
+                            "presidência",
+                            "crença",
+                            "explicação",
+                            "baixa",
+                            "equipa",
+                            "saída",
+                            "estratégia",
+                            "épocas",
+                            "equipas",
+                            "prova",
+                            "mais-valia",
+                            "coisas",
+                            "jornada",
+                            "fase",
+                            "derrota",
+                            "equipa",
+                            "competições",
+                            "prova"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "este",
+                            "o",
+                            "este",
+                            "os",
+                            "nada",
+                            "o",
+                            "o",
+                            "que",
+                            "o",
+                            "o",
+                            "os",
+                            "todo",
+                            "o",
+                            "os",
+                            "o",
+                            "os",
+                            "todo",
+                            "o",
+                            "o"
+                        ],
+                        "nouns": [
+                            "momento",
+                            "campeão",
+                            "empresário",
+                            "momento",
+                            "leões",
+                            "campeões",
+                            "rendimento",
+                            "jogadores",
+                            "atraso",
+                            "lugar",
+                            "domingo",
+                            "treinos",
+                            "respeito",
+                            "jogo",
+                            "grupos",
+                            "dirigente",
+                            "jogadores",
+                            "empenho",
+                            "minutos",
+                            "segredo",
+                            "jogadores",
+                            "empenho",
+                            "momento",
+                            "campeonato"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20161031181245/https://www.noticiasaominuto.com/desporto/679771/renovacao-so-quero-e-continuar-a-marcar-pelo-sporting",
+        "source": "noticiasaominuto.com",
+        "year": "2016",
+        "title": "\"Renovação? Só quero é continuar a marcar pelo Sporting\"",
+        "body_text": "Pedro Marques renovou o seu vínculo com o Sporting e em declarações ao site do clube, o avançado mostrou-se muito feliz com a extensão do acordo. “É sempre especial renovar o contrato. Significa que reconhecem o meu trabalho, o que é muito bom. Só quero continuar a marcar pelo Sporting CP. Gosto de pensar que me vêm como uma boa aposta das camadas jovens”, afirmou, em declarações ao canal do clube. “O segredo foi mesmo chegar e trabalhar para cumprir os meus objetivos que é fazer golos. Tenho outro, que é chegar à equipa principal e jogar no relvado de Alvalade. Gosto de rever os meus golos, de ver de novo a minha equipa a jogar e assim inspirar-me”, concluiu.",
+        "publication_date": "2016-10-31",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0545,
+                "M": 0.9455,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 1,
+                    "gram_total": 44
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Pedro Marques"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "uma",
+                            "a",
+                            "minha"
+                        ],
+                        "nouns": [
+                            "renovação",
+                            "declarações",
+                            "extensão",
+                            "aposta",
+                            "camadas",
+                            "declarações",
+                            "equipa",
+                            "equipa"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "seu",
+                            "o",
+                            "o",
+                            "o",
+                            "o",
+                            "meu",
+                            "o",
+                            "que",
+                            "o",
+                            "os",
+                            "meus",
+                            "que",
+                            "outro",
+                            "que",
+                            "os",
+                            "meus"
+                        ],
+                        "nouns": [
+                            "vínculo",
+                            "site",
+                            "clube",
+                            "avançado",
+                            "acordo",
+                            "contrato",
+                            "trabalho",
+                            "canal",
+                            "clube",
+                            "segredo",
+                            "objetivos",
+                            "golos",
+                            "relvado",
+                            "golos",
+                            "novo"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20161031181245/https://www.noticiasaominuto.com/desporto/679630/se-pensarmos-no-fc-porto-amanha-vai-ser-um-tiro-no-pe",
+        "source": "noticiasaominuto.com",
+        "year": "2016",
+        "title": "\"Se pensarmos no FC Porto amanhã, vai ser um tiro no pé\"",
+        "body_text": "O Benfica recebe esta terça-feira o Dínamo Kiev, na 4.ª jornada da fase de grupos da Liga dos Campeões. Rui Vitória fez a antevisão deste encontro referindo que este “é mais um jogo para vencer”, mas não quis desvendar pormenores sobre o onze titular. “Amanhã logo veremos. É evidente que entrando numa situação em que as coisas começam a correr bem, temos de tentar estabilizar mais a equipa. Mas amanhã logo veremos. A equipa que entrar vai responder da melhor maneira”, começou por dizer Rui Vitória, em declarações à RTP. “Nós queremos acima de tudo ganhar este jogo. Na ultima partida em Kiev, faltavam quatro finais. Agora faltam três. Não faz sentido pensar em ir para a Liga Europa. É ganhar o jogo de amanhã e no final desta fase logo faremos as contas. Queremos ganhar sempre”, vincou. Mas o que espera o treinador do Benfica da equipa ucraniana? “É uma equipa difícil e que normalmente tem bons resultados fora de casa. Nós termos ganho lá, não quer dizer que a vitória esteja garantida cá. Pensar isso é o maior erro que podemos cometer. Temos um jogo e um adversário complicado. Há muita coisa em jogo na Liga dos Campeões”, acrescentou, dizendo depois que acredita que os jogadores vão estar focados no D. Kiev e não no Clássico com o FC Porto, que se realiza no próximo domingo. “Não estou na cabeça dos jogadores. Mas há algo claro para mim. Todos temos tido grande caráter. Se há coisa que nós temos repetido é que o foco seja no próximo jogo. Se até aqui sempre foi assim, pensar de outra forma é dar tiros nos pés. A partir das 22h da noite de amanhã, podemos pensar no FC Porto”, concluiu.",
+        "publication_date": "2016-10-31",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0822,
+                "M": 0.9178,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 1,
+                    "gram_total": 90
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Rui Vitória"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "esta",
+                            "a",
+                            "que",
+                            "as",
+                            "a",
+                            "a",
+                            "que",
+                            "a",
+                            "as",
+                            "uma",
+                            "a",
+                            "muita",
+                            "mim",
+                            "outra"
+                        ],
+                        "nouns": [
+                            "terça-feira",
+                            "jornada",
+                            "fase",
+                            "antevisão",
+                            "situação",
+                            "coisas",
+                            "equipa",
+                            "equipa",
+                            "maneira",
+                            "declarações",
+                            "partida",
+                            "fase",
+                            "contas",
+                            "equipa",
+                            "equipa",
+                            "casa",
+                            "vitória",
+                            "coisa",
+                            "cabeça",
+                            "coisa",
+                            "forma",
+                            "22h",
+                            "noite"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "um",
+                            "o",
+                            "o",
+                            "este",
+                            "o",
+                            "nós",
+                            "tudo",
+                            "este",
+                            "o",
+                            "o",
+                            "que",
+                            "o",
+                            "que",
+                            "nós",
+                            "isso",
+                            "o",
+                            "que",
+                            "um",
+                            "um",
+                            "os",
+                            "o",
+                            "que",
+                            "se",
+                            "algo",
+                            "todos",
+                            "o"
+                        ],
+                        "nouns": [
+                            "tiro",
+                            "pé",
+                            "grupos",
+                            "encontro",
+                            "jogo",
+                            "pormenores",
+                            "titular",
+                            "jogo",
+                            "finais",
+                            "sentido",
+                            "jogo",
+                            "final",
+                            "treinador",
+                            "resultados",
+                            "termos",
+                            "erro",
+                            "jogo",
+                            "adversário",
+                            "jogo",
+                            "jogadores",
+                            "domingo",
+                            "jogadores",
+                            "caráter",
+                            "foco",
+                            "jogo",
+                            "tiros",
+                            "pés"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20161031181245/https://www.noticiasaominuto.com/desporto/679752/bola-de-ouro-a-epoca-de-cristiano-foi-incrivel-com-champions-e-euro",
+        "source": "noticiasaominuto.com",
+        "year": "2016",
+        "title": "\"Bola de Ouro? A época de Cristiano foi incrível, com Champions e Euro\"",
+        "body_text": "Gareth Bale renovou recentemente com o Real Madrid até 2022, tornando-se no jogador mais bem pago do plantel. O futebolista vai continuar a fazer companhia a Cristiano Ronaldo na frente de ataque e defende a entrega da Bola de ouro ao luso. “A temporada de Cristiano foi incrível. Foi um ano fantástico com a Champions e o Europeu. Desejo sorte a todos, mas, sobretudo, ao meu companheiro de equipa”, afirmou, dá conta a imprensa espanhola. Bale comentou depois a renovação do contrato com os 'blancos'. “Os mais importante é ganhar todos os títulos possíveis e por isso renovei com o Real Madrid, porque penso que podemos ganhar muita coisa. É importante continuar a marcar, assistir e ajudar a equipa a ganhar coisas. Não sei quando a posso ganhar, nunca foi um objetivo pessoal. Sempre acreditei que se ganhar e jogar bem, os prémios individuais vão chegar”, acrescentou.",
+        "publication_date": "2016-10-31",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0917,
+                "M": 0.9083,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 2,
+                    "gram_total": 48
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Gareth Bale",
+                        "Cristiano Ronaldo"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "a",
+                            "a",
+                            "a",
+                            "a",
+                            "a",
+                            "muita",
+                            "a",
+                            "a"
+                        ],
+                        "nouns": [
+                            "época",
+                            "companhia",
+                            "frente",
+                            "entrega",
+                            "temporada",
+                            "sorte",
+                            "equipa",
+                            "conta",
+                            "imprensa",
+                            "renovação",
+                            "coisa",
+                            "equipa",
+                            "coisas"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "o",
+                            "o",
+                            "todos",
+                            "meu",
+                            "os",
+                            "os",
+                            "todos",
+                            "os",
+                            "isso",
+                            "o",
+                            "um",
+                            "os"
+                        ],
+                        "nouns": [
+                            "jogador",
+                            "plantel",
+                            "futebolista",
+                            "ataque",
+                            "ouro",
+                            "luso",
+                            "ano",
+                            "companheiro",
+                            "contrato",
+                            "blancos",
+                            "títulos",
+                            "objetivo",
+                            "prémios"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20161031181245/https://www.noticiasaominuto.com/desporto/679530/vettel-arrisca-suspensao-depois-de-dizer-a-dirigente-da-fia-vai-te-f",
+        "source": "noticiasaominuto.com",
+        "year": "2016",
+        "title": "Vettel arrisca suspensão depois de dizer a dirigente da FIA: \"Vai-te f…\"",
+        "body_text": "Vettel arrisca suspensão depois de dizer a dirigente da FIA: \"Vai-te f…\"© Reprodução/ Twitter O GP do México correu de mal a pior para Sebastian Vettel, piloto da Ferrari. O alemão terminou a prova em terceiro lugar mas foi penalizado em 10 segundos, por condução perigosa e errática, acabando na quinta posição, atrás de Daniel Ricciardo e Max Verstappen. Como se isso não bastasse, Vettel arrisca agora uma suspensão por ter insultado Charlie Whiting, um diretor de corrida e alto comissário da FIA. Depois de se irritar com o comportamento de Verstappen, Vettel perdeu a cabeça com o dirigente da FIA: \"Sabem que mais? Aqui vai uma mensagem para o Charlie: Vai-te f…, sinceramente, vai-te f…\", disse o piloto, enquanto as televisões gravaram o momento. Foi o diretor desportivo da Ferrari, Maurizio Arrivabene, que teve de colocar um ponto final na conversa, mas Whiting acabou por confrontar o piloto antes da cerimónia do pódio. Segundo escreve o Record, Vettel arrisca agora uma forte suspensão por uso de linguagem inapropriada e pode mesmo ficar de fora do próximo Grande Prémio do Brasil, que está agendado para o fim de semana de 11 a 13 de novembro.",
+        "publication_date": "2016-10-31",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0774,
+                "M": 0.9226,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 6,
+                    "gram_total": 62
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Sebastian Vettel",
+                        "Charlie Whiting",
+                        "Daniel Ricciardo",
+                        "Maurizio Arrivabene",
+                        "Max Verstappen",
+                        "Vettel"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "a",
+                            "a",
+                            "a",
+                            "uma",
+                            "a",
+                            "uma",
+                            "as",
+                            "uma"
+                        ],
+                        "nouns": [
+                            "suspensão",
+                            "suspensão",
+                            "prova",
+                            "condução",
+                            "posição",
+                            "suspensão",
+                            "corrida",
+                            "cabeça",
+                            "mensagem",
+                            "televisões",
+                            "conversa",
+                            "cerimónia",
+                            "suspensão",
+                            "linguagem",
+                            "semana"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "o",
+                            "isso",
+                            "um",
+                            "se",
+                            "o",
+                            "o",
+                            "o",
+                            "o",
+                            "o",
+                            "o",
+                            "que",
+                            "um",
+                            "o",
+                            "o",
+                            "que",
+                            "o"
+                        ],
+                        "nouns": [
+                            "dirigente",
+                            "dirigente",
+                            "©",
+                            "piloto",
+                            "alemão",
+                            "lugar",
+                            "segundos",
+                            "diretor",
+                            "comissário",
+                            "comportamento",
+                            "dirigente",
+                            "f",
+                            "piloto",
+                            "momento",
+                            "diretor",
+                            "ponto",
+                            "piloto",
+                            "pódio",
+                            "uso",
+                            "fim",
+                            "novembro"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20161031181245/https://www.noticiasaominuto.com/desporto/679384/andre-horta-felicita-irmao-apos-bisar-e-dar-podio-ao-sp-braga",
+        "source": "noticiasaominuto.com",
+        "year": "2016",
+        "title": "REDE SOCIAL André Horta Há 19 Horas André Horta felicita irmão após bisar e dar pódio ao Sp. Braga",
+        "body_text": "Ricardo Horta marcou este domingo os dois tentos que deram a vitória (2-1) ao Sp. Braga sobre o Belenenses e permitiram aos minhoto ascender ao terceiro lugar, passando o Sporting e ficando com os mesmos pontos do FC Porto, e o irmão deixou-lhe uma dedicatória nas redes sociais. “Porque tu jogas muito, porque trabalhas como ninguém, porque vives isto como poucos, porque tas sempre comigo, porque mereces tudo e porque pra mim és e serás sempre o melhor”, pode ler-se na publicação feita no Instagram. André Horta joga no Benfica e ficou extremamente feliz com o trabalho do irmão durante a partida que se disputou na Pedreira. Porque tu jogas muito, porque trabalhas como ninguém, porque vives isto como poucos, porque tas sempre comigo, porque mereces tudo e porque pra mim és e serás sempre o melhor ️️ Te amooooooo ️️️ #VaiPutoooooooo #SempreJuntos #MeuNumeroUm Um vídeo publicado por André Horta ️️ (@andrehorta10) a Out 30, 2016 às 1:34 PDT",
+        "publication_date": "2016-10-31",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0694,
+                "M": 0.9306,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 3,
+                    "gram_total": 49
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "André Horta",
+                        "André Hor",
+                        "Ricardo Horta"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "uma",
+                            "comigo",
+                            "a",
+                            "que",
+                            "comigo"
+                        ],
+                        "nouns": [
+                            "horas",
+                            "vitória",
+                            "dedicatória",
+                            "redes",
+                            "jogas",
+                            "trabalhas",
+                            "publicação",
+                            "partida",
+                            "tu",
+                            "jogas",
+                            "trabalhas"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "este",
+                            "os",
+                            "que",
+                            "o",
+                            "o",
+                            "os",
+                            "o",
+                            "ninguém",
+                            "isto",
+                            "poucos",
+                            "tudo",
+                            "o",
+                            "o",
+                            "se",
+                            "ninguém",
+                            "isto",
+                            "poucos",
+                            "tudo",
+                            "o",
+                            "um"
+                        ],
+                        "nouns": [
+                            "irmão",
+                            "pódio",
+                            "domingo",
+                            "tentos",
+                            "lugar",
+                            "pontos",
+                            "irmão",
+                            "tas",
+                            "trabalho",
+                            "irmão",
+                            "tas",
+                            "vídeo"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20161031181245/https://www.noticiasaominuto.com/desporto/677254/pensaria-duas-vezes-antes-de-fugir-a-policia-australiana-ou-nao",
+        "source": "noticiasaominuto.com",
+        "year": "2016",
+        "title": "SOBRE RODAS Pensaria duas vezes antes de fugir à polícia australiana, ou não?",
+        "body_text": "Pensaria duas vezes antes de fugir à polícia australiana, ou não?© Reprodução/ Razão Automóvel Pensaria duas vezes antes de fugir à polícia australiana, ou não?© Reprodução / Razão Automóvel Pensaria duas vezes antes de fugir à polícia australiana, ou não?© Reprodução / Razão Automóvel Pensaria duas vezes antes de fugir à polícia australiana, ou não?© Reprodução / Razão Automóvel Pensaria duas vezes antes de fugir à polícia australiana, ou não?© Reprodução / Razão Automóvel Pensaria duas vezes antes de fugir à polícia australiana, ou não?© Reprodução/ Razão Automóvel A polícia da costa leste da Austrália vai ter à disposição, nos próximos 12 meses, este incrível Audi S7 Sportback, cedido pela Audi Australia. Este é o segundo modelo cedido pela marca alemã às autoridades do país, depois do Audi RS4 Avant. Conforme descreve o site Razão Automóvel, esta verdadeira bomba tem um motor V8 biturbo de 4.0 litros com 450 cv e 550 Nmde binário. Dos 0 aos 100 km/h demora 4.6 segundos atinge uma velocidade máxima de 250 km/h (limitada eletronicamente) No entanto, este Audi S7 Sportback não vai ser usado para perseguições a criminosos em fuga. O seu uso destina-sea programas de interação com a comunidade mais jovem e em outros eventos especiais no país.",
+        "publication_date": "2016-10-31",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Feminino",
+            "confidence_scores": {
+                "F": 0.1194,
+                "M": 0.0806,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 0,
+                    "gram_total": 62
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": []
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "esta",
+                            "uma",
+                            "a"
+                        ],
+                        "nouns": [
+                            "vezes",
+                            "polícia",
+                            "vezes",
+                            "polícia",
+                            "©",
+                            "reprodução/",
+                            "vezes",
+                            "polícia",
+                            "reprodução",
+                            "vezes",
+                            "polícia",
+                            "reprodução",
+                            "vezes",
+                            "polícia",
+                            "reprodução",
+                            "vezes",
+                            "polícia",
+                            "reprodução",
+                            "vezes",
+                            "polícia",
+                            "©",
+                            "reprodução/",
+                            "polícia",
+                            "costa",
+                            "disposição",
+                            "marca",
+                            "autoridades",
+                            "bomba",
+                            "velocidade",
+                            "perseguições",
+                            "fuga",
+                            "interação",
+                            "comunidade"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "este",
+                            "este",
+                            "o",
+                            "o",
+                            "um",
+                            "este",
+                            "o",
+                            "seu",
+                            "outros"
+                        ],
+                        "nouns": [
+                            "meses",
+                            "modelo",
+                            "país",
+                            "site",
+                            "motor",
+                            "biturbo",
+                            "litros",
+                            "km/h",
+                            "segundos",
+                            "km/h",
+                            "entanto",
+                            "criminosos",
+                            "uso",
+                            "programas",
+                            "eventos",
+                            "país"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+]

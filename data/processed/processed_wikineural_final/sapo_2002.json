@@ -1,0 +1,2026 @@
+[
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20020524001853/http://infordesporto.sapo.pt/mundial2002/noticias/23mai_15.asp",
+        "source": "sapo.pt",
+        "year": "2002",
+        "title": "Oliveira volta a fazer experiências",
+        "body_text": "Segundo treino do dia Oliveira volta a fazer experiências O seleccionador nacional, António Oliveira, voltou esta tarde a fazer experiências. Do segundo treino do dia, a novidade foi a chamada de Pedro Barbosa para a equipa titular. O capitão do Sporting jogou do lado esquerdo do meio-campo, passando Figo para o centro e João Pinto para o lugar de ponta-de-lança. Pauleta e Nuno Gomes jogaram na outra equipa. A \"peladinha\" de hoje terminou com uma vitória de 2 a 0. Tentos dos titulares João Pinto e Luís Figo. Amanhã, a selecção portuguesa tem agendado apenas um treino para a parte da tarde (final da manhã em Portugal).",
+        "publication_date": "2002-05-24",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.1143,
+                "M": 0.8857,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 5,
+                    "gram_total": 42
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Pauleta",
+                        "João Pinto",
+                        "António Oliveira",
+                        "Pedro Barbosa",
+                        "Luís Figo"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "esta",
+                            "a",
+                            "a",
+                            "a",
+                            "outra",
+                            "a",
+                            "uma",
+                            "a",
+                            "a"
+                        ],
+                        "nouns": [
+                            "experiências",
+                            "experiências",
+                            "tarde",
+                            "experiências",
+                            "novidade",
+                            "chamada",
+                            "equipa",
+                            "ponta-de-lança",
+                            "equipa",
+                            "peladinha",
+                            "vitória",
+                            "selecção",
+                            "parte",
+                            "tarde",
+                            "manhã"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "o",
+                            "o",
+                            "o"
+                        ],
+                        "nouns": [
+                            "treino",
+                            "dia",
+                            "seleccionador",
+                            "treino",
+                            "dia",
+                            "capitão",
+                            "lado",
+                            "meio-campo",
+                            "centro",
+                            "lugar",
+                            "tentos",
+                            "titulares",
+                            "treino",
+                            "final"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20020524001853/http://infordesporto.sapo.pt/mundial2002/noticias/23mai_19.asp",
+        "source": "sapo.pt",
+        "year": "2002",
+        "title": "Capucho queixa-se de difícil adaptação ao clima",
+        "body_text": "Equipas asiáticas em vantagem Capucho queixa-se de difícil adaptação ao clima Capucho disse hoje que a adaptação ao clima de Macau está a ser difícil. O extremo do FC Porto descolou-se, no final do treino vesperino, à sala de imprensa para falar com os jornalistas: « As selecções asiáticas e africanas podem surpreender, sobretudo porque as equipas europeias vão ter muitas dificuldades com o clima, especialmente na primeira fase. A nossa adaptação aqui está a custar, mas foi por isso que viemos tão cedo. A adaptação vai melhorar com certeza absoluta, mas cuidado, a primeira fase vai ser muito importante », afirma. Sobre o encontro de sábado, frente à China, Capucho declarou que « a equipa já vem treinando há alguns dias e, no sábado, já vai estar num ritmo muito bom, a poucos dias do começo do Mundial », conluiu o jogador portista.",
+        "publication_date": "2002-05-24",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Neutro/Equilibrado",
+            "confidence_scores": {
+                "F": 0.1,
+                "M": 0.1,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 0,
+                    "gram_total": 50
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": []
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "as",
+                            "as",
+                            "muitas",
+                            "a",
+                            "nossa",
+                            "a",
+                            "a",
+                            "a"
+                        ],
+                        "nouns": [
+                            "adaptação",
+                            "equipas",
+                            "vantagem",
+                            "adaptação",
+                            "adaptação",
+                            "sala",
+                            "imprensa",
+                            "selecções",
+                            "equipas",
+                            "dificuldades",
+                            "fase",
+                            "adaptação",
+                            "adaptação",
+                            "certeza",
+                            "fase",
+                            "equipa"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "os",
+                            "o",
+                            "isso",
+                            "o",
+                            "alguns",
+                            "poucos",
+                            "o"
+                        ],
+                        "nouns": [
+                            "clima",
+                            "clima",
+                            "clima",
+                            "extremo",
+                            "final",
+                            "treino",
+                            "jornalistas",
+                            "clima",
+                            "cuidado",
+                            "encontro",
+                            "sábado",
+                            "dias",
+                            "sábado",
+                            "ritmo",
+                            "dias",
+                            "começo",
+                            "jogador"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20020524001853/http://infordesporto.sapo.pt/mundial2002/noticias/23mai_10.asp",
+        "source": "sapo.pt",
+        "year": "2002",
+        "title": "Hugo Viana rumo a Macau sexta-feira",
+        "body_text": "Oliveira quer integrar o quanto antes o jogador Hugo Viana rumo a Macau sexta-feira 0 nacional de futebol proveniente da Suíça, onde disputou o Europeu de sub-21, tinha manifestado o desejo de descansar alguns dias antes de rumar ao Oriente, mas a equipa técnica liderada por António Oliveira fez questão da sua rápida integração. O plano de viagem para Macau ainda não está definido, sendo apenas certa a partida do jogador na sexta-feiar, chegando no dia seguinte a território macaense.",
+        "publication_date": "2002-05-24",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0857,
+                "M": 0.9143,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 2,
+                    "gram_total": 28
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Hugo Viana",
+                        "António Oliveira"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "onde",
+                            "a",
+                            "sua",
+                            "certa",
+                            "a"
+                        ],
+                        "nouns": [
+                            "sexta-feira",
+                            "sexta-feira",
+                            "equipa",
+                            "questão",
+                            "integração",
+                            "viagem",
+                            "partida"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "quanto",
+                            "o",
+                            "o",
+                            "o",
+                            "alguns",
+                            "o"
+                        ],
+                        "nouns": [
+                            "jogador",
+                            "futebol",
+                            "sub-21",
+                            "desejo",
+                            "dias",
+                            "plano",
+                            "jogador",
+                            "dia",
+                            "território"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20020524001853/http://infordesporto.sapo.pt/mundial2002/noticias/22mai_29.asp",
+        "source": "sapo.pt",
+        "year": "2002",
+        "title": "Hugo Viana entre a alegria e a tristeza",
+        "body_text": "22h45 Dispensa de Kenedy permitiu-lhe concretizar um sonho Hugo Viana entre a alegria e a tristeza Hugo Viana comentou a sua escolha para render Kenedy na selecção afirmando estar a experimentar sentimentos mistos pois está «feliz pela escolha do seleccionador, mas também triste pelo que sucedeu a Kenedy . Imagino o seu sofrimento!» - disse Hugo Viana referindo-se ao médio português, que teve de abandonar o estágio da selecção em Macau devido a um controlo posítivo de furosemida. Aceitando que «é muito bom» ser convocado para um Mundial aos 19 anos, Hugo Viana demonstrou grande desportivismo e solidariedade preferindo «que nada tivesse acontecido a Kenedy». Sobre a sua participação nos jogos da selecção, o jovem jogador do Sporting tem consciência de que será mais um e o objectivo « é lutar, como todos, por um lugar! Sempre disse que tinha esperança, mas de todo os que formavam o lote de seleccionáveis, sabia que era o que podia sonhar menos...» , relembrou Hugo Viana.",
+        "publication_date": "2002-05-24",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0807,
+                "M": 0.9193,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 1,
+                    "gram_total": 57
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Hugo Viana"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "a",
+                            "a",
+                            "a",
+                            "a",
+                            "sua",
+                            "a",
+                            "sua"
+                        ],
+                        "nouns": [
+                            "alegria",
+                            "tristeza",
+                            "22h45",
+                            "alegria",
+                            "tristeza",
+                            "escolha",
+                            "selecção",
+                            "escolha",
+                            "selecção",
+                            "furosemida",
+                            "solidariedade",
+                            "participação",
+                            "selecção",
+                            "consciência",
+                            "esperança"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "um",
+                            "pelo",
+                            "que",
+                            "o",
+                            "seu",
+                            "que",
+                            "o",
+                            "um",
+                            "um",
+                            "o",
+                            "o",
+                            "todos",
+                            "um",
+                            "todo",
+                            "os",
+                            "que",
+                            "o",
+                            "o",
+                            "que"
+                        ],
+                        "nouns": [
+                            "sonho",
+                            "sentimentos",
+                            "seleccionador",
+                            "sofrimento",
+                            "português",
+                            "estágio",
+                            "controlo",
+                            "anos",
+                            "desportivismo",
+                            "jogos",
+                            "jogador",
+                            "objectivo",
+                            "lugar",
+                            "lote",
+                            "seleccionáveis"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20020524001853/http://infordesporto.sapo.pt/mundial2002/noticias/23mai_20.asp",
+        "source": "sapo.pt",
+        "year": "2002",
+        "title": "África do Sul derrota Turquia com \"bis\" de McCarthy",
+        "body_text": "Jogo de preparação disputado em Hong Kong África do Sul derrota Turquia com \"bis\" de McCarthy A selecção da África do Sul bateu a Turquia por 2-0, em jogo de preparação para o Mundial de 2002 disputado em Hong Kong, com os dois golos da vitória dos africanos a serem apontados por Benni McCarthy, cuja continuidade no FC Porto continua em dúvida. McCarthy abriu o marcador aos 59' e ampliou a vantagem dos sul-africanos aos 90'. O jogo foi presenciado por cerca de 7500 espectadores.",
+        "publication_date": "2002-05-24",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0929,
+                "M": 0.9071,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 1,
+                    "gram_total": 28
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Benni McCarthy"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "a",
+                            "cuja",
+                            "a"
+                        ],
+                        "nouns": [
+                            "derrota",
+                            "preparação",
+                            "derrota",
+                            "selecção",
+                            "preparação",
+                            "vitória",
+                            "continuidade",
+                            "dúvida",
+                            "vantagem"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "os",
+                            "o",
+                            "o"
+                        ],
+                        "nouns": [
+                            "bis",
+                            "jogo",
+                            "bis",
+                            "jogo",
+                            "golos",
+                            "africanos",
+                            "marcador",
+                            "sul-africanos",
+                            "'",
+                            "jogo",
+                            "espectadores"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20020524001853/http://www.infordesporto.sapo.pt/Futebol/Noticias/2002/Maio/22/benfica02.asp",
+        "source": "sapo.pt",
+        "year": "2002",
+        "title": "Benfica promete reforços para a próxima semana",
+        "body_text": "MAIS NOTÍCIAS DE FUTEBOL NACIONAL - 22 de Maio de 2002 TUDO SOBRE A SELECÇÃO NACIONAL Notícias de futebol internacional Moreirense e Sp. Braga empatam Portugal vence Inglaterra mas fica de fora do Europeu Beira-Mar começa a trabalhar no dia 3 de Julho CML - Aprovados acordos entre CML, Benfica e Sporting BENFICA - No Jamor a partir de Abril do próximo ano BENFICA - Malheiro promete reforços na próxima semana FC PORTO - Regresso de Deco... em grande SPORTING - Jardel admite sair do Sporting Hugo Viana parte para Macau no final do jogo com a Inglaterra Por intermédio do seu director de comunicação Benfica promete reforços para a próxima semana As primeiras contratações da equipa benfiquista na época que se iniciará em Julho próximo serão apresentadas já dentro de poucos dias. A garantia foi dada ao final da manhã pelo director de comunicação benfiquista. «Projectamos a próxima semana como interessante em termos de conteúdo noticioso, não excluíndo que se possa verificar mais do que uma apresentação de novos jogadores» , afirmou João Malheiro, recusando-se, no entanto, a confirmar no imediato notícias recentes relacionadas com contratações de jogadores. Refira-se que neste momento estão bastante avançadas as negociações com Cristiano (lateral-esquerdo do Beira-Mar), Yannick (guarda-redes do Alverca), Peixe (médio também do Alverca) e o regresso de Roger, que esteve emprestado ao Fluminense durante a passada temporada. | Andebol | Atletismo | Basquetebol | Ciclismo | Desportos Náuticos | Futebol | Futsal | Hóquei | Râguebi | Ténis | Voleibol | Outras Modalidades | | Livraria |",
+        "publication_date": "2002-05-22",
+        "date_extraction_method": "text_regex",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0939,
+                "M": 0.9061,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 2,
+                    "gram_total": 66
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Hugo Viana",
+                        "Jardel"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "a",
+                            "a",
+                            "a",
+                            "as",
+                            "que",
+                            "se",
+                            "a",
+                            "a",
+                            "uma",
+                            "as",
+                            "a",
+                            "outras"
+                        ],
+                        "nouns": [
+                            "semana",
+                            "semana",
+                            "parte",
+                            "comunicação",
+                            "semana",
+                            "contratações",
+                            "equipa",
+                            "época",
+                            "garantia",
+                            "manhã",
+                            "comunicação",
+                            "semana",
+                            "apresentação",
+                            "notícias",
+                            "contratações",
+                            "negociações",
+                            "temporada",
+                            "modalidades"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "seu",
+                            "poucos",
+                            "que",
+                            "o",
+                            "que"
+                        ],
+                        "nouns": [
+                            "reforços",
+                            "notícias",
+                            "maio",
+                            "futebol",
+                            "dia",
+                            "julho",
+                            "acordos",
+                            "abril",
+                            "ano",
+                            "reforços",
+                            "final",
+                            "jogo",
+                            "intermédio",
+                            "director",
+                            "reforços",
+                            "julho",
+                            "dias",
+                            "final",
+                            "director",
+                            "termos",
+                            "conteúdo",
+                            "jogadores",
+                            "entanto",
+                            "imediato",
+                            "jogadores",
+                            "momento",
+                            "lateral-esquerdo",
+                            "guarda-redes",
+                            "regresso",
+                            "andebol"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20020524001853/http://www.infordesporto.sapo.pt/futebol/noticias/2002/maio/23/sporting02.asp",
+        "source": "sapo.pt",
+        "year": "2002",
+        "title": "Sporting vai realizar sete ou oito encontros de carácter particular",
+        "body_text": "MAIS NOTÍCIAS DE FUTEBOL NACIONAL - 23 Maio de 2002 TUDO SOBRE A SELECÇÃO NACIONAL Notícias de futebol internacional BENFICA - Cristiano por horas BENFICA - Zahovic nega saída BENFICA - Jesualdo Ferreira deve continuar BRAGA - Guarda-redes Quim novamente \"parado\" BRAGA - Idalécio e Miran rescindiram FARENSE - Carlos Pereira é o novo presidente da SAD FARENSE - Pres.da Câmara de Faro contribui com 25% do ordenado Doping atinge futebol feminino Kenedy já está em Portugal SPORTING - Mais um treino na Academia de Alcochete SPORTING - Sete ou oito encontros de carácter particular SPORTING - André Cruz com nova proposta FC PORTO - Dragões defrontam Celta e Braga num triangular FC PORTO - Deco e Derlei brilham no treino FC PORTO - Angola divulga convocados para jogo com os \"dragões\" Revelou Bölöni Sporting vai realizar sete ou oito encontros de carácter particular Laszlo Bölöni revelou ontem na Academia de Alcochete que a equipa leonina vai realizar sete ou oito encontros de carácter particular, antes da terceira pré-eliminatória da Liga dos Campeões, não adiantando, todavia, quem serão as equipas que vão defrontar os \"leões\". «Quando os jogos de preparação estiverem todos acertados, a Imprensa ficará a saber quem serão os nossos adversários» , garantiu o treinador romeno, confirmando o arranque da temporada a 1 de Julho. | Andebol | Atletismo | Basquetebol | Ciclismo | Desportos Náuticos | Futebol | Futsal | Hóquei | Râguebi | Ténis | Voleibol | Outras Modalidades | | Livraria |",
+        "publication_date": "2002-05-24",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0588,
+                "M": 0.9412,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 7,
+                    "gram_total": 51
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Jesualdo Ferreira",
+                        "Derlei",
+                        "Deco",
+                        "Laszlo Bölöni",
+                        "Carlos Pereira",
+                        "André Cruz",
+                        "Idalécio"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "a",
+                            "as",
+                            "que",
+                            "a",
+                            "outras"
+                        ],
+                        "nouns": [
+                            "horas",
+                            "saída",
+                            "proposta",
+                            "equipa",
+                            "pré-eliminatória",
+                            "equipas",
+                            "preparação",
+                            "temporada",
+                            "modalidades"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "os",
+                            "quem",
+                            "os",
+                            "os",
+                            "todos",
+                            "os",
+                            "nossos",
+                            "o",
+                            "o"
+                        ],
+                        "nouns": [
+                            "encontros",
+                            "carácter",
+                            "notícias",
+                            "maio",
+                            "futebol",
+                            "presidente",
+                            "ordenado",
+                            "futebol",
+                            "treino",
+                            "encontros",
+                            "carácter",
+                            "dragões",
+                            "treino",
+                            "jogo",
+                            "dragões",
+                            "encontros",
+                            "carácter",
+                            "encontros",
+                            "carácter",
+                            "leões",
+                            "jogos",
+                            "adversários",
+                            "treinador",
+                            "arranque",
+                            "julho",
+                            "andebol"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20020524001853/http://www.infordesporto.sapo.pt/futebol/noticias/2002/maio/22/sporting01.asp",
+        "source": "sapo.pt",
+        "year": "2002",
+        "title": "«Tenho uma proposta muito séria de Itália»",
+        "body_text": "MAIS NOTÍCIAS DE FUTEBOL NACIONAL - 22 de Maio de 2002 TUDO SOBRE A SELECÇÃO NACIONAL Notícias de futebol internacional Moreirense e Sp. Braga empatam Portugal vence Inglaterra mas fica de fora do Europeu Beira-Mar começa a trabalhar no dia 3 de Julho CML - Aprovados acordos entre CML, Benfica e Sporting BENFICA - No Jamor a partir de Abril do próximo ano BENFICA - Malheiro promete reforços na próxima semana FC PORTO - Regresso de Deco... em grande SPORTING - Jardel admite sair do Sporting Hugo Viana parte para Macau no final do jogo com a Inglaterra Jardel admite sair do Sporting «Tenho uma proposta muito séria de Itália» O ponta-de-lança do Sporting afirmou hoje no final do treino matinal do Sporting, que decorreu em Alcochete à porta fechada, que vai ser muito difícil permanecer se o Sporting não comprar a metade do meu passe . O marcador da I Liga admitiu mesmo a possibilidade de abandonar o clube de Alvalade: Tenho uma proposta muito séria de Itália , justificou. Entretanto, Dias da Cunha e José Eduardo Bettencourt, respectivamente presidente do clube e administrador da SAD leonina, encontram-se reunidos na Academia com o treinador Laszlo Bölöni. De acordo com o sítio do Sporting, participaram no apronto da manhã 22 jogadores, excepção feita aos convocados para os sub-21 e selecção A. A saber: Tiago, Nuno Santos, Beto II, César Prates, André Cruz, Phil Babb, Quiroga, Hélder Rosário, Hugo, Paíto, Diogo, Rui Bento, Custódio, Carlos Martins, Ricardo Fernandes, Hanuch, Toñito, Cristiano Ronaldo, Quaresma, Luís Filipe, Nalitzis e Jardel. O Sporting regressa aos treinos amanhã, quinta-feira, às 10 horas, em nova sessão marcada para a Academia de Alcochete. | Andebol | Atletismo | Automobilismo | Basquetebol | Ciclismo | Deficientes | Desportos Náuticos | Futebol | Futsal | Golfe | Hóquei | Natação | Râguebi | Ténis | Voleibol | Outras Modalidades | | A Empresa | Livraria |",
+        "publication_date": "2002-05-22",
+        "date_extraction_method": "text_regex",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.08,
+                "M": 0.92,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 2,
+                    "gram_total": 65
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Hugo Viana",
+                        "Jardel"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "uma",
+                            "a",
+                            "a",
+                            "uma",
+                            "que",
+                            "a",
+                            "a",
+                            "uma",
+                            "a",
+                            "outras",
+                            "a"
+                        ],
+                        "nouns": [
+                            "proposta",
+                            "semana",
+                            "parte",
+                            "proposta",
+                            "porta",
+                            "metade",
+                            "possibilidade",
+                            "proposta",
+                            "manhã",
+                            "excepção",
+                            "selecção",
+                            "quinta-feira",
+                            "horas",
+                            "sessão",
+                            "modalidades"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "que",
+                            "o",
+                            "meu",
+                            "o",
+                            "o",
+                            "o",
+                            "o",
+                            "os",
+                            "o"
+                        ],
+                        "nouns": [
+                            "notícias",
+                            "maio",
+                            "futebol",
+                            "dia",
+                            "julho",
+                            "acordos",
+                            "abril",
+                            "ano",
+                            "reforços",
+                            "final",
+                            "jogo",
+                            "ponta-de-lança",
+                            "final",
+                            "treino",
+                            "passe",
+                            "marcador",
+                            "clube",
+                            "presidente",
+                            "clube",
+                            "administrador",
+                            "treinador",
+                            "acordo",
+                            "sítio",
+                            "apronto",
+                            "jogadores",
+                            "convocados",
+                            "sub-21",
+                            "treinos",
+                            "andebol"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20020524001853/http://www.infordesporto.sapo.pt/Futebol/Noticias/2002/Maio/23/porto03.asp",
+        "source": "sapo.pt",
+        "year": "2002",
+        "title": "FC Porto comemora 50 anos de existência do estádio das Antas",
+        "body_text": "MAIS NOTÍCIAS DE FUTEBOL NACIONAL - 23 Maio de 2002 TUDO SOBRE A SELECÇÃO NACIONAL Notícias de futebol internacional BENFICA - Cristiano por horas BENFICA - Zahovic nega saída BENFICA - Jesualdo Ferreira deve continuar BRAGA - Guarda-redes Quim novamente \"parado\" BRAGA - Idalécio e Miran rescindiram FARENSE - Carlos Pereira é o novo presidente da SAD FARENSE - Pres.da Câmara de Faro contribui com 25% do ordenado Doping atinge futebol feminino Kenedy já está em Portugal SPORTING - Mais um treino na Academia de Alcochete SPORTING - Sete ou oito encontros de carácter particular SPORTING - André Cruz com nova proposta FC PORTO - Dragões defrontam Celta e Braga num triangular FC PORTO - Deco e Derlei brilham no treino FC PORTO - Angola divulga convocados para jogo com os \"dragões\" 22h15 Seleccionador angolano já divulgou a lista de convocados FC Porto comemora 50 anos do estádio das Antas com particular frente a Angola Ismael Kurtz, o seleccionador de Angola já divulgou os convocados para o encontro particular com o FC Porto, agendado para a próxima terça-feira, nas Antas e que se insere nas comemorações dos 50 anos do estádio \"azul e branco\". Assim, os jogadores angolanos que vão marcar presença nas bodas dos \"dragões\" são os seguintes: Guarda-redes- Láma, Fernando e Laurentino Defesas: Renato, Bodunha, Paulo Silva, Nelo, Cali, Xinguila, Dias Caires, Hélder Vincente e Rui Marques. Médios: Marco Freitas, André, Miloy e Stopirra. Avançados: Mauro, Flávio, Akwá, Quinzinho e Sandro. Também presente para assistir à partida e participar nas cerimónias vai estar o ministro da defesa de Angola, Kumby Baihama. Ângelo Carvalho, Barrigana, José Maria Matos, Pinto Vieira, Romão e Virgilio (alguns dos elementos que faziam parte do plantel portista no primeiro jogo disputado nas Antas), serão homanageados. Os sócios do FC Porto vão desembolsar dois euros (superior), quatro (arquibancada) e cinco (central), para assistir ao jogo. Os não sócios vão pagar cinco, sete e dez euros, enquanto os jovens estudantes e portadores de cartão jovem pagam dois euros. | Andebol | Atletismo | Automobilismo | Basquetebol | Ciclismo | Deficientes | Desportos Náuticos | Futebol | Futsal | Golfe | Hóquei | Natação | Râguebi | Ténis | Voleibol | Outras Modalidades | | A Empresa | Livraria |",
+        "publication_date": "2002-05-24",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0543,
+                "M": 0.9457,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 7,
+                    "gram_total": 81
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Jesualdo Ferreira",
+                        "Derlei",
+                        "Deco",
+                        "Carlos Pereira",
+                        "André Cruz",
+                        "Ismael Kur",
+                        "Idalécio"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "a",
+                            "a",
+                            "outras",
+                            "a"
+                        ],
+                        "nouns": [
+                            "existência",
+                            "horas",
+                            "saída",
+                            "proposta",
+                            "22h15",
+                            "lista",
+                            "terça-feira",
+                            "comemorações",
+                            "presença",
+                            "bodas",
+                            "partida",
+                            "cerimónias",
+                            "defesa",
+                            "parte",
+                            "arquibancada",
+                            "central",
+                            "modalidades"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "os",
+                            "o",
+                            "os",
+                            "o",
+                            "o",
+                            "que",
+                            "se",
+                            "os",
+                            "que",
+                            "os",
+                            "o",
+                            "alguns",
+                            "que",
+                            "os",
+                            "os",
+                            "os"
+                        ],
+                        "nouns": [
+                            "anos",
+                            "estádio",
+                            "notícias",
+                            "maio",
+                            "futebol",
+                            "presidente",
+                            "ordenado",
+                            "futebol",
+                            "treino",
+                            "encontros",
+                            "carácter",
+                            "dragões",
+                            "treino",
+                            "jogo",
+                            "dragões",
+                            "seleccionador",
+                            "anos",
+                            "estádio",
+                            "frente",
+                            "seleccionador",
+                            "encontro",
+                            "anos",
+                            "estádio",
+                            "jogadores",
+                            "dragões",
+                            "seguintes",
+                            "médios",
+                            "avançados",
+                            "ministro",
+                            "elementos",
+                            "plantel",
+                            "jogo",
+                            "sócios",
+                            "euros",
+                            "jogo",
+                            "sócios",
+                            "euros",
+                            "estudantes",
+                            "portadores",
+                            "cartão",
+                            "euros",
+                            "andebol"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20020524001853/http://infordesporto.sapo.pt/Futebol/Internacional/Noticias/2002/Maio/23/holanda.asp",
+        "source": "sapo.pt",
+        "year": "2002",
+        "title": "Frank Rijkaard ameaçado de morte",
+        "body_text": "Holanda Frank Rijkaard ameaçado de morte A antiga estrela holandesa, Frank Rijkaard, que actualmente treina no seu país o Sparta de Roterdão, foi alvo de uma ameaça de morte através de uma carta que chegou dentro de uma bala à sede do clube. Os responsáveis por tal acto exigem o despedimento imediato de Rijkaard, ameaçando atentar contra a sua vida e dos seus familiares caso o clube não siga as suas instruções. Os dirigentes do Sparta, que luta arduamente para não ser relegado  algo que nunca aconteceu em toda a sua história -, já fizeram saber que não irão despedir Rijkaard mas ainda assim levarão a sério a ameaça, principalmente devido ao recente assassinato do político Pin Fortuyn. | Andebol | Atletismo | Basquetebol | Ciclismo | Desportos Náuticos | Futebol | Futsal | Hóquei | Râguebi | Ténis | Voleibol | Outras Modalidades | | Livraria |",
+        "publication_date": "2002-05-24",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.1038,
+                "M": 0.8962,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 2,
+                    "gram_total": 52
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Rijkaard",
+                        "Frank Rijkaard"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "uma",
+                            "uma",
+                            "que",
+                            "uma",
+                            "a",
+                            "sua",
+                            "as",
+                            "suas",
+                            "toda",
+                            "a",
+                            "sua",
+                            "a",
+                            "outras"
+                        ],
+                        "nouns": [
+                            "morte",
+                            "morte",
+                            "estrela",
+                            "ameaça",
+                            "morte",
+                            "carta",
+                            "bala",
+                            "sede",
+                            "vida",
+                            "instruções",
+                            "história",
+                            "ameaça",
+                            "modalidades"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "que",
+                            "seu",
+                            "o",
+                            "os",
+                            "tal",
+                            "o",
+                            "seus",
+                            "o",
+                            "os",
+                            "que",
+                            "algo",
+                            "que"
+                        ],
+                        "nouns": [
+                            "país",
+                            "alvo",
+                            "clube",
+                            "responsáveis",
+                            "acto",
+                            "despedimento",
+                            "familiares",
+                            "clube",
+                            "dirigentes",
+                            "sério",
+                            "assassinato",
+                            "político",
+                            "andebol"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20020524001853/http://infordesporto.sapo.pt/mundial2002/noticias/23mai_29.asp",
+        "source": "sapo.pt",
+        "year": "2002",
+        "title": "Equatorianos não têm nada para esconder",
+        "body_text": "23 Maio 2002 Italianos \"espiam\" com consentimento do adversário Equatorianos não têm nada para esconder Conrado Coradini, técnico-adjunto de Trapattoni na \"squadra azurra\" foi autorizado por Hernán Dário Gomez, seleccionador do Equador, a assistir ao treino que os sul-americanos hoje realizaram. Isto porque apesar de ambas as equipas serem adversárias no Grupo G juntamente com México e Croácia, o técnico equatoriano revelou que nada tem a esconder dos italianos, pelo que não teve qualquer problema em permitir o acesso ao técnico transalpino.",
+        "publication_date": "2002-05-24",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0308,
+                "M": 0.9692,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 1,
+                    "gram_total": 26
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Hernán Dário Gomez"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "ambas",
+                            "as"
+                        ],
+                        "nouns": [
+                            "squadra",
+                            "equipas"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "nada",
+                            "nada",
+                            "que",
+                            "os",
+                            "isto",
+                            "o",
+                            "nada",
+                            "que",
+                            "qualquer",
+                            "o"
+                        ],
+                        "nouns": [
+                            "maio",
+                            "consentimento",
+                            "adversário",
+                            "técnico-adjunto",
+                            "seleccionador",
+                            "treino",
+                            "sul-americanos",
+                            "técnico",
+                            "italianos",
+                            "problema",
+                            "acesso",
+                            "técnico"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20020524001853/http://www.infordesporto.sapo.pt/mundial2002/noticias/23mai_24.asp",
+        "source": "sapo.pt",
+        "year": "2002",
+        "title": "Vitória vale 60 mil euros às Super Águias",
+        "body_text": "Nigéria Vitória vale 60 mil euros às Super Águias Cerca de sessenta mil euros é quanto cada jogador da selecção da Nigéria receberá caso saia do Japão com a Taça, de acordo com o anúncio feito pela federação nigeriana. Os nigerianos estão Inseridos no Grupo F, conhecido pelo grupo da morte por ter ainda a Inglaterra, Suécia e Argentina, e cada jogador receberá cerca de 6.500 euros por cada vitória na primeira fase. A recompensa sobe até à final... Assim, caso cheguem aos oitavos-de-final o prémio é de 7.563 euros, um pouco mais 8.645 euros caso atinjam os quartos-de-final. A presença na meia-final valerá a cada Super Águia 10.806 euros, enquanto disputar a final terá como gratificação 12.966 euros.",
+        "publication_date": "2002-05-24",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0851,
+                "M": 0.1149,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 0,
+                    "gram_total": 47
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": []
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "a",
+                            "cada",
+                            "a",
+                            "a",
+                            "a"
+                        ],
+                        "nouns": [
+                            "vitória",
+                            "vitória",
+                            "selecção",
+                            "saia",
+                            "federação",
+                            "vitória",
+                            "fase",
+                            "recompensa",
+                            "final",
+                            "quartos-de-final",
+                            "presença",
+                            "meia-final",
+                            "final",
+                            "gratificação"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "cada",
+                            "o",
+                            "os",
+                            "cada",
+                            "o",
+                            "um",
+                            "os",
+                            "cada"
+                        ],
+                        "nouns": [
+                            "euros",
+                            "super",
+                            "euros",
+                            "super",
+                            "euros",
+                            "jogador",
+                            "caso",
+                            "acordo",
+                            "anúncio",
+                            "nigerianos",
+                            "jogador",
+                            "euros",
+                            "oitavos-de-final",
+                            "prémio",
+                            "euros",
+                            "euros",
+                            "super",
+                            "euros",
+                            "euros"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20020524001853/http://www.infordesporto.sapo.pt/mundial2002/noticias/23mai_5.asp",
+        "source": "sapo.pt",
+        "year": "2002",
+        "title": "Mellberg e Ljunberg desentendem-se",
+        "body_text": "Mellberg e Ljunberg quase chegaram a vias de facto Altos, loiros e vermelhos... de fúria No treino desta quinta-feira da selecção sueca, dois dos jogadores quase se envolveram-se numa cena de luta livre. Depois de Mellberg ter efectuado algumas entradas mais agressivas sobre Ljunberg, eis que o jogador do Arsenal perdeu as estribeiras e agarrou o seu colega, dando-se início a um confronto físico que teve de ser sanado pelos restantes companheiros. No final do apronto, e de cabeça mais fria, o atacante do Arsenal - conhecido pelas suas qualidades e também pelo seu cabelo pintado de vermelho - afirmou que «são coisas que acontecem quando se joga. Ele entrou várias vezes fora de tempo e não se pode tolerar isso, mas está tudo esquecido agora».",
+        "publication_date": "2002-05-24",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.081,
+                "M": 0.119,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 0,
+                    "gram_total": 42
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": []
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "algumas",
+                            "as",
+                            "suas",
+                            "que",
+                            "várias"
+                        ],
+                        "nouns": [
+                            "vias",
+                            "fúria",
+                            "quinta-feira",
+                            "selecção",
+                            "cena",
+                            "luta",
+                            "entradas",
+                            "estribeiras",
+                            "cabeça",
+                            "qualidades",
+                            "coisas",
+                            "vezes"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "se",
+                            "o",
+                            "o",
+                            "seu",
+                            "um",
+                            "que",
+                            "o",
+                            "seu",
+                            "ele",
+                            "isso",
+                            "tudo"
+                        ],
+                        "nouns": [
+                            "facto",
+                            "treino",
+                            "jogadores",
+                            "jogador",
+                            "colega",
+                            "início",
+                            "confronto",
+                            "companheiros",
+                            "final",
+                            "apronto",
+                            "atacante",
+                            "cabelo",
+                            "vermelho",
+                            "tempo"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20020524001853/http://infordesporto.sapo.pt/mundial2002/noticias/23mai_14.asp",
+        "source": "sapo.pt",
+        "year": "2002",
+        "title": "Senegal vence Equador",
+        "body_text": "Senegal vence Equador O Senegal e o Equador, duas selecções que vão estar presentes na fase final do Campeonato do Mundo, encontraram-se hoje, no Estádio Tottori, no Japão, para disputar um jogo de preparação. A vitória sorriu à selecção africana, que derrotou (1-0) a sua congénere do Equador, com um golo solitário de El Hadji Diouf. O Senegal integra o Grupo A, juntamente com a França, Uruguai e Dinamarca, enquanto o Equador está inserido no Grupo G, com a Itália, Croácia e México.",
+        "publication_date": "2002-05-24",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.1182,
+                "M": 0.8818,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 1,
+                    "gram_total": 22
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "El Hadji Diouf"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "que",
+                            "a",
+                            "que",
+                            "a",
+                            "sua",
+                            "a",
+                            "a"
+                        ],
+                        "nouns": [
+                            "selecções",
+                            "fase",
+                            "preparação",
+                            "vitória",
+                            "selecção",
+                            "congénere"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "o",
+                            "um",
+                            "um",
+                            "o",
+                            "o",
+                            "o"
+                        ],
+                        "nouns": [
+                            "jogo",
+                            "golo"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20020524001853/http://www.infordesporto.sapo.pt/futebol/noticias/2002/maio/23/porto01.asp",
+        "source": "sapo.pt",
+        "year": "2002",
+        "title": "FC Porto, Celta de Vigo e Braga disputam triangular",
+        "body_text": "MAIS NOTÍCIAS DE FUTEBOL NACIONAL - 23 Maio de 2002 TUDO SOBRE A SELECÇÃO NACIONAL Notícias de futebol internacional BENFICA - Cristiano por horas BENFICA - Zahovic nega saída BENFICA - Jesualdo Ferreira deve continuar BRAGA - Guarda-redes Quim novamente \"parado\" BRAGA - Idalécio e Miran rescindiram FARENSE - Carlos Pereira é o novo presidente da SAD FARENSE - Pres.da Câmara de Faro contribui com 25% do ordenado Doping atinge futebol feminino Kenedy já está em Portugal SPORTING - Mais um treino na Academia de Alcochete SPORTING - Sete ou oito encontros de carácter particular SPORTING - André Cruz com nova proposta FC PORTO - Dragões defrontam Celta e Braga num triangular FC PORTO - Deco e Derlei brilham no treino FC PORTO - Angola divulga convocados para jogo com os \"dragões\" 12h53 Entre 17 e 19 de Agosto FC Porto, Celta de Vigo e Braga disputam triangular O FC Porto, o Celta de Vigo e o Sporting de Braga vão participar num torneio triângular que se realizará nos dias 17, 18 e 19 de Agosto. O torneio, que servirá de preparação para as três equipas com vista aos próximos campeonatos dos respectivos países, deve-se às boas relações existentes entre os três clubes do Eixo Atlântico. | Andebol | Atletismo | Basquetebol | Ciclismo | Desportos Náuticos | Futebol | Futsal | Hóquei | Râguebi | Ténis | Voleibol | Outras Modalidades | | Livraria |",
+        "publication_date": "2002-05-24",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0512,
+                "M": 0.9488,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 6,
+                    "gram_total": 43
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Jesualdo Ferreira",
+                        "Derlei",
+                        "Deco",
+                        "Carlos Pereira",
+                        "André Cruz",
+                        "Idalécio"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "as",
+                            "outras"
+                        ],
+                        "nouns": [
+                            "horas",
+                            "saída",
+                            "proposta",
+                            "preparação",
+                            "equipas",
+                            "vista",
+                            "relações",
+                            "modalidades"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "os",
+                            "o",
+                            "o",
+                            "o",
+                            "que",
+                            "se",
+                            "o",
+                            "que",
+                            "os"
+                        ],
+                        "nouns": [
+                            "notícias",
+                            "maio",
+                            "futebol",
+                            "presidente",
+                            "ordenado",
+                            "futebol",
+                            "treino",
+                            "encontros",
+                            "carácter",
+                            "dragões",
+                            "treino",
+                            "jogo",
+                            "dragões",
+                            "agosto",
+                            "torneio",
+                            "dias",
+                            "agosto",
+                            "torneio",
+                            "campeonatos",
+                            "países",
+                            "clubes",
+                            "andebol"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20020524001853/http://www.infordesporto.sapo.pt/futebol/noticias/2002/maio/23/braga01.asp",
+        "source": "sapo.pt",
+        "year": "2002",
+        "title": "Guarda-redes Quim novamente \"parado\"",
+        "body_text": "MAIS NOTÍCIAS DE FUTEBOL NACIONAL - 23 Maio de 2002 TUDO SOBRE A SELECÇÃO NACIONAL Notícias de futebol internacional BENFICA - Cristiano por horas BENFICA - Zahovic nega saída BENFICA - Jesualdo Ferreira deve continuar BRAGA - Guarda-redes Quim novamente \"parado\" BRAGA - Idalécio e Miran rescindiram FARENSE - Carlos Pereira é o novo presidente da SAD FARENSE - Pres.da Câmara de Faro contribui com 25% do ordenado Doping atinge futebol feminino Kenedy já está em Portugal SPORTING - Mais um treino na Academia de Alcochete SPORTING - Sete ou oito encontros de carácter particular SPORTING - André Cruz com nova proposta FC PORTO - Dragões defrontam Celta e Braga num triangular FC PORTO - Deco e Derlei brilham no treino FC PORTO - Angola divulga convocados para jogo com os \"dragões\" 11h41 Por decisão da Federação Portuguesa de Futebol Guarda-redes Quim novamente \"parado\" A SAD do clube minhoto foi ontem notificada pela Federação Portuguesa de Futebol (FPF), via fax, que o guarda-redes Quim terá de ficar novamente suspenso. A FPF justifica a decisão no facto de ser a única entidade que tem competência para levantar uma suspensão por doping, seja ela preventiva ou não, e não a Comissão Disciplinar (CD) da Liga, órgão que, recorde-se, decidiu levantar a suspensão do jogador. A FPF argumentar que a decisão da CD foi ilegal uma vez que aquele órgão não tem competência para tal e, sendo assim, o guarda-redes Quim vai ter de voltar a parar. | Andebol | Atletismo | Basquetebol | Ciclismo | Desportos Náuticos | Futebol | Futsal | Hóquei | Râguebi | Ténis | Voleibol | Outras Modalidades | | Livraria |",
+        "publication_date": "2002-05-24",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0931,
+                "M": 0.9069,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 6,
+                    "gram_total": 58
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Jesualdo Ferreira",
+                        "Derlei",
+                        "Deco",
+                        "Carlos Pereira",
+                        "André Cruz",
+                        "Idalécio"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "a",
+                            "a",
+                            "a",
+                            "a",
+                            "que",
+                            "uma",
+                            "ela",
+                            "a",
+                            "a",
+                            "a",
+                            "a",
+                            "uma",
+                            "outras"
+                        ],
+                        "nouns": [
+                            "horas",
+                            "saída",
+                            "proposta",
+                            "decisão",
+                            "decisão",
+                            "entidade",
+                            "competência",
+                            "suspensão",
+                            "suspensão",
+                            "decisão",
+                            "vez",
+                            "competência",
+                            "modalidades"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "os",
+                            "o",
+                            "que",
+                            "aquele",
+                            "o"
+                        ],
+                        "nouns": [
+                            "notícias",
+                            "maio",
+                            "futebol",
+                            "presidente",
+                            "ordenado",
+                            "futebol",
+                            "treino",
+                            "encontros",
+                            "carácter",
+                            "dragões",
+                            "treino",
+                            "jogo",
+                            "dragões",
+                            "clube",
+                            "fax",
+                            "guarda-redes",
+                            "facto",
+                            "doping",
+                            "cd",
+                            "órgão",
+                            "jogador",
+                            "cd",
+                            "órgão",
+                            "guarda-redes",
+                            "andebol"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20020524001853/http://www.infordesporto.sapo.pt/futebol/noticias/2002/maio/23/farense01.asp",
+        "source": "sapo.pt",
+        "year": "2002",
+        "title": "Carlos Pereira é o novo presidente da SAD",
+        "body_text": "MAIS NOTÍCIAS DE FUTEBOL NACIONAL - 23 Maio de 2002 TUDO SOBRE A SELECÇÃO NACIONAL Notícias de futebol internacional BENFICA - Cristiano por horas BENFICA - Zahovic nega saída BENFICA - Jesualdo Ferreira deve continuar BRAGA - Guarda-redes Quim novamente \"parado\" BRAGA - Idalécio e Miran rescindiram FARENSE - Carlos Pereira é o novo presidente da SAD FARENSE - Pres.da Câmara de Faro contribui com 25% do ordenado Doping atinge futebol feminino Kenedy já está em Portugal SPORTING - Mais um treino na Academia de Alcochete SPORTING - Sete ou oito encontros de carácter particular SPORTING - André Cruz com nova proposta FC PORTO - Dragões defrontam Celta e Braga num triangular FC PORTO - Deco e Derlei brilham no treino FC PORTO - Angola divulga convocados para jogo com os \"dragões\" 11h21 Farense Carlos Pereira é o novo presidente da SAD O advogado Carlos Pereira, antigo jogador do Farense, foi ontem eleito presidente do Conselho de Administração da SAD do clube algarvio. Carlos Pereira foi eleito numa sessão que retomou os trabalhos da reunião de accionistas interrompida segunda-feira, por proposta do representante da Câmara de Faro. De referir que a eleição da nova Administração do Farense só foi possível concretizar-se depois da Câmara de Faro ter apresentado um plano designado por \"Operação-Alma Farense\", comprometendo-se a apoiar o Farense Futebol SAD e o Farense Clube e a encontrar soluções que permitam a sustentabilidade e viabilidade da instituição. | Andebol | Atletismo | Basquetebol | Ciclismo | Desportos Náuticos | Futebol | Futsal | Hóquei | Râguebi | Ténis | Voleibol | Outras Modalidades | | Livraria |",
+        "publication_date": "2002-05-24",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0778,
+                "M": 0.9222,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 5,
+                    "gram_total": 54
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Jesualdo Ferreira",
+                        "Derlei",
+                        "Carlos Pereira",
+                        "André Cruz",
+                        "Idalécio"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "que",
+                            "a",
+                            "que",
+                            "a",
+                            "outras"
+                        ],
+                        "nouns": [
+                            "horas",
+                            "saída",
+                            "proposta",
+                            "administração",
+                            "sessão",
+                            "reunião",
+                            "segunda-feira",
+                            "proposta",
+                            "eleição",
+                            "administração",
+                            "soluções",
+                            "sustentabilidade",
+                            "viabilidade",
+                            "instituição",
+                            "modalidades"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "o",
+                            "os",
+                            "o",
+                            "o",
+                            "os",
+                            "um",
+                            "o",
+                            "o"
+                        ],
+                        "nouns": [
+                            "presidente",
+                            "notícias",
+                            "maio",
+                            "futebol",
+                            "presidente",
+                            "ordenado",
+                            "futebol",
+                            "treino",
+                            "encontros",
+                            "carácter",
+                            "dragões",
+                            "treino",
+                            "jogo",
+                            "dragões",
+                            "presidente",
+                            "advogado",
+                            "jogador",
+                            "presidente",
+                            "clube",
+                            "trabalhos",
+                            "accionistas",
+                            "representante",
+                            "plano",
+                            "andebol"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20020524001853/http://infordesporto.sapo.pt/futebol/internacional/noticias/2002/maio/23/inglaterra.asp",
+        "source": "sapo.pt",
+        "year": "2002",
+        "title": "19 jogadores despedidos",
+        "body_text": "22h27 Inglaterra 19 jogadores despedidos Como forma de combater a crise que assola o clube, o Bradford City decidiu despedir dezanove jogadores. Apanhados pela crise que abalou o futebol inglês na sequência da falência da plataforma digital ITV, a direcção do Bradford City viu-se já na obrigação de dispensar 32 funcionários a que se acrescentam agora mais 19 jogadores. O Bradford City milita actualmente na II Divisão inglesa e conta no seu palmarés com a conquista da Taça de Inglaterra, em 1911. | Andebol | Atletismo | Automobilismo | Basquetebol | Ciclismo | Deficientes | Desportos Náuticos | Futebol | Futsal | Golfe | Hóquei | Natação | Râguebi | Ténis | Voleibol | Outras Modalidades | | A Empresa | Livraria |",
+        "publication_date": "2002-05-24",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Feminino",
+            "confidence_scores": {
+                "F": 0.1059,
+                "M": 0.0941,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 0,
+                    "gram_total": 34
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": []
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "que",
+                            "que",
+                            "a",
+                            "a",
+                            "outras",
+                            "a"
+                        ],
+                        "nouns": [
+                            "forma",
+                            "crise",
+                            "crise",
+                            "sequência",
+                            "falência",
+                            "plataforma",
+                            "direcção",
+                            "obrigação",
+                            "divisão",
+                            "conquista",
+                            "modalidades"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "o",
+                            "o",
+                            "que",
+                            "se",
+                            "o",
+                            "seu"
+                        ],
+                        "nouns": [
+                            "jogadores",
+                            "jogadores",
+                            "clube",
+                            "jogadores",
+                            "futebol",
+                            "funcionários",
+                            "jogadores",
+                            "palmarés",
+                            "andebol"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20020524001853/http://infordesporto.sapo.pt/Futebol/Internacional/Noticias/2002/Maio/23/italia.asp",
+        "source": "sapo.pt",
+        "year": "2002",
+        "title": "Parma quer accionar opção por Adriano",
+        "body_text": "Itália Parma quer accionar opção por Adriano O avançado brasileiro Adriano, que na época passada esteve emprestado à Fiorentina, de Nuno Gomes, pelo Inter Milão, transferiu-se para o Parma, que comprou 50 por cento do seu passe. No entanto, o clube onde alinha o português Sérgio Conceição, quer exercer o direito de opção que ainda tem por Adriano, já na próxima época. Os valores do negócio não foram revelados. | Andebol | Atletismo | Basquetebol | Ciclismo | Desportos Náuticos | Futebol | Futsal | Hóquei | Râguebi | Ténis | Voleibol | Outras Modalidades | | Livraria |",
+        "publication_date": "2002-05-24",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0593,
+                "M": 0.9407,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 3,
+                    "gram_total": 27
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Adriano",
+                        "Nuno Gomes",
+                        "Sérgio Conceição"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "que",
+                            "outras"
+                        ],
+                        "nouns": [
+                            "opção",
+                            "opção",
+                            "época",
+                            "opção",
+                            "época",
+                            "modalidades"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "que",
+                            "o",
+                            "que",
+                            "seu",
+                            "o",
+                            "onde",
+                            "o",
+                            "o",
+                            "os"
+                        ],
+                        "nouns": [
+                            "avançado",
+                            "passe",
+                            "entanto",
+                            "clube",
+                            "português",
+                            "direito",
+                            "valores",
+                            "negócio",
+                            "andebol"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20020524001853/http://infordesporto.sapo.pt/Futebol/Internacional/Noticias/2002/Maio/22/inglaterra.asp",
+        "source": "sapo.pt",
+        "year": "2002",
+        "title": "Novo Wembley vai mesmo ser construído",
+        "body_text": "Com capacidade para 90 mil esp ectadores Novo Wembley vai mesmo ser construído O presidente da Federação Inglesa de Futebol (FA), Adam Crozier, afastou a possibilidade do Estádio Wembley reabrir na próxima temporada dado não ter sido possível juntar o dinheiro necessário para a construção do novo estádio. Segundo o líder da FA o novo Estádio Wembley vai mesmo avançar, anunciando para a próxima semana a assinatura do contrato de financiamento com o banco alemão WestLB. O estádio terá capacidade para 90 mil pessoas. | Andebol | Atletismo | Basquetebol | Ciclismo | Desportos Náuticos | Futebol | Futsal | Hóquei | Râguebi | Ténis | Voleibol | Outras Modalidades | | Livraria |",
+        "publication_date": "2002-05-24",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0966,
+                "M": 0.9034,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 1,
+                    "gram_total": 29
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Adam Crozier"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "a",
+                            "a",
+                            "a",
+                            "outras"
+                        ],
+                        "nouns": [
+                            "capacidade",
+                            "possibilidade",
+                            "temporada",
+                            "construção",
+                            "semana",
+                            "assinatura",
+                            "capacidade",
+                            "pessoas",
+                            "modalidades"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "o",
+                            "o",
+                            "o",
+                            "o",
+                            "o"
+                        ],
+                        "nouns": [
+                            "presidente",
+                            "dinheiro",
+                            "estádio",
+                            "líder",
+                            "contrato",
+                            "financiamento",
+                            "banco",
+                            "estádio",
+                            "andebol"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20020524001853/http://infordesporto.sapo.pt/Atletismo/Noticias/2002/Maio/23/01.asp",
+        "source": "sapo.pt",
+        "year": "2002",
+        "title": "Rui Silva lesionado compromete sonho leonino",
+        "body_text": "| Andebol | Atletismo | Automobilismo | Basquetebol | Ciclismo | Deficientes | Desportos Náuticos | Futebol | Futsal | Golfe | Hóquei | Natação | Râguebi | Ténis | Voleibol | Outras Modalidades | | A Empresa | Livraria |",
+        "publication_date": "2002-05-24",
+        "date_extraction_method": "arquivo_pt_proxy",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.12,
+                "M": 0.88,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 1,
+                    "gram_total": 5
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Rui Silva"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "outras",
+                            "a"
+                        ],
+                        "nouns": [
+                            "modalidades"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [],
+                        "nouns": [
+                            "sonho",
+                            "andebol"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20020524001853/http://infordesporto.sapo.pt/ciclismo/Noticias/2002/Maio/23-giro01.asp",
+        "source": "sapo.pt",
+        "year": "2002",
+        "title": "Gilberto Simoni vence 11ª etapa do Giro",
+        "body_text": "Calendário das Três Grandes Voltas Quinta-feira, 23 de Maio de 2002 Volta à Itália Gilberto Simoni vence 11ª etapa do Giro O italiano Gilberto Simoni (Saeco), vencedor da edição anterior do Giro, venceu a 11ª etapa da corrida deste ano, entre Benevento e Campitello de Matese num total de 140 km. Jens Heppner (Telekom) chegou com mais de um minuto de atraso mas manteve a camisola rosa, símbolo de liderança na prova. Bikes | Estrada e Pista | Volta a Portugal 2000 Ciclismo | Primeira",
+        "publication_date": "2002-05-23",
+        "date_extraction_method": "text_regex",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0963,
+                "M": 0.9037,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 2,
+                    "gram_total": 27
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Jens Heppner",
+                        "Gilberto Simoni"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "a"
+                        ],
+                        "nouns": [
+                            "etapa",
+                            "quinta-feira",
+                            "volta",
+                            "etapa",
+                            "edição",
+                            "etapa",
+                            "corrida",
+                            "camisola",
+                            "liderança",
+                            "prova",
+                            "bikes"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o"
+                        ],
+                        "nouns": [
+                            "giro",
+                            "calendário",
+                            "maio",
+                            "giro",
+                            "italiano",
+                            "vencedor",
+                            "giro",
+                            "ano",
+                            "total",
+                            "km",
+                            "minuto",
+                            "atraso",
+                            "símbolo"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20020524001853/http://infordesporto.sapo.pt/ciclismo/Noticias/2002/Maio/23-midi.asp",
+        "source": "sapo.pt",
+        "year": "2002",
+        "title": "Salanson vence 2ª etapa",
+        "body_text": "Calendário das Três Grandes Voltas Quinta-feira, 23 de Maio de 2002 Grande Prémio Midi Libre Salanson vence 2ª etapa, José Azevedo foi 44º O ciclista português JoséAzevedo (ONCE) terminou a segunda etapa que ligou Carcassonne e Villefranche-de-Rouergue na 44ªa posição, mas manteve o 38º lugar na geral classificativa. A vitória na tirada foi para abrice Salanson (Bonjour), enquanto o bielorusso Alexander Usov (Phonak) é o novo líder. Bikes | Estrada e Pista | Volta a Portugal 2000 Ciclismo | Primeira",
+        "publication_date": "2002-05-23",
+        "date_extraction_method": "text_regex",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.0957,
+                "M": 0.9043,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 2,
+                    "gram_total": 23
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "José Azevedo",
+                        "Alexander Usov"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [
+                            "a",
+                            "que",
+                            "a"
+                        ],
+                        "nouns": [
+                            "etapa",
+                            "quinta-feira",
+                            "etapa",
+                            "etapa",
+                            "posição",
+                            "classificativa",
+                            "vitória",
+                            "tirada"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [
+                            "o",
+                            "o",
+                            "o",
+                            "o"
+                        ],
+                        "nouns": [
+                            "calendário",
+                            "maio",
+                            "ciclista",
+                            "lugar",
+                            "abrice",
+                            "bielorusso",
+                            "líder",
+                            "bikes"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "link": "https://arquivo.pt/noFrame/replay/20020524001853/http://infordesporto.sapo.pt/ciclismo/Noticias/2002/Maio/23-medico.asp",
+        "source": "sapo.pt",
+        "year": "2002",
+        "title": "Médico Francesco Conconi em tribunal",
+        "body_text": "Calendário das Três Grandes Voltas Quinta-feira, 23 de Maio de 2002 Por suspeitas de fraude desportiva Médico Francesco Conconi em tribunal Bikes | Estrada e Pista | Volta a Portugal 2000 Ciclismo | Primeira",
+        "publication_date": "2002-05-23",
+        "date_extraction_method": "text_regex",
+        "gender_analysis": {
+            "verdict": "Masculino",
+            "confidence_scores": {
+                "F": 0.075,
+                "M": 0.925,
+                "signals_count": {
+                    "bio_f": 0,
+                    "bio_m": 1,
+                    "gram_total": 8
+                }
+            },
+            "details": {
+                "protagonists": {
+                    "feminine": [],
+                    "masculine": [
+                        "Francesco Conconi"
+                    ]
+                },
+                "grammatical_data": {
+                    "feminine": {
+                        "pronouns": [],
+                        "nouns": [
+                            "quinta-feira",
+                            "suspeitas",
+                            "fraude"
+                        ]
+                    },
+                    "masculine": {
+                        "pronouns": [],
+                        "nouns": [
+                            "médico",
+                            "tribunal",
+                            "calendário",
+                            "maio",
+                            "tribunal"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+]
