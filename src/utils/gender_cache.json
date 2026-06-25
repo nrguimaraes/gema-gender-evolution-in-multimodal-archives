@@ -91107,7 +91107,9 @@
     "gender": "Female",
     "sport": "ténis",
     "nationality": "Estados Unidos",
-    "birth_year": 1981
+    "birth_year": 1981,
+    "wikidata_url": "https://www.wikidata.org/wiki/Q11459",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Serena_Williams_at_2013_US_Open.jpg?width=300"
   },
   "\u0000info\u0000A. Bajrami": {
     "gender": "Female",
@@ -91149,12 +91151,72 @@
     "gender": "Female",
     "sport": "judo",
     "nationality": "Portugal",
-    "birth_year": 1999
+    "birth_year": 1999,
+    "wikidata_url": "https://www.wikidata.org/wiki/Q86355050",
+    "image_url": null
   },
   "\u0000info\u0000Patrícia Mamona": {
     "gender": "Female",
     "sport": "atletismo",
     "nationality": "Portugal",
     "birth_year": 1988
+  },
+  "\u0000info\u0000Musa": {
+    "gender": "Female",
+    "sport": null,
+    "nationality": null,
+    "birth_year": null
+  },
+  "\u0000info\u0000Maria Sharapova": {
+    "gender": "Female",
+    "sport": "ténis",
+    "nationality": "Rússia",
+    "birth_year": 1987
+  },
+  "\u0000info\u0000Sara Moreira": {
+    "gender": "Female",
+    "sport": "atletismo",
+    "nationality": "Portugal",
+    "birth_year": 1985
+  },
+  "\u0000info\u0000Carla Sacramento": {
+    "gender": "Female",
+    "sport": "atletismo",
+    "nationality": "Portugal",
+    "birth_year": 1971
+  },
+  "\u0000info\u0000Vítor Magalhães": {
+    "gender": "Male",
+    "sport": null,
+    "nationality": "Portugal",
+    "birth_year": 1971
+  },
+  "\u0000info\u0000Julia Rose": {
+    "gender": "Female",
+    "sport": null,
+    "nationality": "Estados Unidos",
+    "birth_year": 1973
+  },
+  "\u0000info\u0000Marta Temido": {
+    "gender": "Female",
+    "sport": null,
+    "nationality": "Portugal",
+    "birth_year": 1974
+  },
+  "\u0000info\u0000Cristiano Ronaldo": {
+    "gender": "Male",
+    "sport": "futebol",
+    "nationality": "Portugal",
+    "birth_year": 1985,
+    "wikidata_url": "https://www.wikidata.org/wiki/Q11571",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2025_Cristiano_Ronaldo_(cropped).jpg?width=300"
+  },
+  "\u0000info\u0000Maria Martins": {
+    "gender": "Female",
+    "sport": "ciclismo de estrada",
+    "nationality": "Portugal",
+    "birth_year": 1999,
+    "wikidata_url": "https://www.wikidata.org/wiki/Q47073025",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/UCI_Track_World_Championships_2020_100.jpg?width=300"
   }
 }

@@ -49,7 +49,7 @@ MENS_WORLD_CUPS   = {2002, 2006, 2010, 2014, 2018, 2022}
 WOMENS_WORLD_CUPS = {1999, 2003, 2007, 2011, 2015, 2019, 2023}
 EURO_CUPS         = {2000, 2004, 2008, 2012, 2016, 2020, 2024}
 
-ALL_SOURCES = ["A Bola", "Record", "O Jogo", "SAPO", "Notícias ao Minuto", "ZAP", "Euronews", "Flashscore"]
+ALL_SOURCES = ["A Bola", "Record", "O Jogo", "SAPO", "Notícias ao Minuto", "ZAP", "Euronews"]
 PRINT_SOURCES = ["A Bola", "Record", "O Jogo"]
 
 SOURCE_COLORS = {
@@ -60,7 +60,6 @@ SOURCE_COLORS = {
     "Notícias ao Minuto":"#984ea3",
     "ZAP":               "#a65628",
     "Euronews":          "#f781bf",
-    "Flashscore":        "#999999",
 }
 
 # ---------------------------------------------------------------------------
@@ -69,13 +68,13 @@ SOURCE_COLORS = {
 
 with st.sidebar:
     st.title("GEMA")
-    st.caption("Gender Evolution in Multimodal Archives · 1998–2024")
+    st.caption("Gender Evolution in Multimodal Archives · 1998–2026")
     st.divider()
 
     year_range = st.slider(
         "Year range",
-        min_value=1998, max_value=2024,
-        value=(2016, 2024),
+        min_value=1998, max_value=2026,
+        value=(2016, 2026),
     )
 
     selected_sources = st.multiselect(
@@ -95,15 +94,21 @@ with st.sidebar:
     show_euros     = st.checkbox("UEFA Euro",           value=False)
 
     st.divider()
-    _prom_threshold = getattr(db, "PROMINENCE_THRESHOLD", 1.0)
-    filter_fp = st.checkbox(
-        "Show only prominent faces (editorial subjects)",
-        value=False,
+    st.markdown("**Text article filters**")
+    filter_body = st.checkbox(
+        "Exclude title-only articles",
+        value=True,
         help=(
-            f"Keep only faces that cover ≥{_prom_threshold}% of the cover page. "
-            "These are almost certainly the intended editorial subject, not incidental detections."
+            "When ON, articles without body text are excluded from all text analysis "
+            "(Q1 textual line, Q5, Q8, Q9). "
+            "When OFF, all articles are included — years where most articles have "
+            "no body text are marked with orange diamonds on Q1."
         ),
     )
+
+    filter_prominent = False
+    filter_athletes = False
+    filter_fp = False
 
     st.divider()
     st.caption("🔬 CC3051 · GEMA · 2025")
@@ -112,16 +117,26 @@ with st.sidebar:
 # Data loading
 # ---------------------------------------------------------------------------
 
+def _safe_fetch(fn, *args, fallback=None, **kwargs):
+    """Call fn(*args, **kwargs), returning fallback (empty DataFrame) on any error."""
+    try:
+        return fn(*args, **kwargs)
+    except Exception as e:
+        st.warning(f"⚠️ Could not load data from `{fn.__name__}`: {e}")
+        return fallback if fallback is not None else pd.DataFrame()
+
 with st.spinner("Loading data from database…"):
-    df_vis_raw   = db.fetch_visual_yearly(filter_fp=filter_fp)
-    df_txt_raw   = db.fetch_text_yearly()
-    df_corr      = db.fetch_visual_text_correlation()
-    df_prom      = db.fetch_prominence_detail(filter_fp=filter_fp)
-    df_ner       = db.fetch_top_entities(top_n=25)
-    df_sports    = db.fetch_sports_breakdown()
-    df_sports_yr = db.fetch_sports_by_year()
-    df_ent_dist  = db.fetch_entity_distribution("feminine")
-    df_sem       = db.fetch_semantic_keywords()
+    df_vis_raw    = _safe_fetch(db.fetch_visual_yearly, filter_athletes=filter_athletes, filter_prominent=filter_prominent)
+    df_txt_raw    = _safe_fetch(db.fetch_text_yearly, filter_body=filter_body)
+    df_txt_qual   = _safe_fetch(db.fetch_text_quality_by_year) if not filter_body else pd.DataFrame()
+    df_corr       = _safe_fetch(db.fetch_visual_text_correlation)
+    df_prom       = _safe_fetch(db.fetch_prominence_detail, filter_athletes=filter_athletes, filter_prominent=filter_prominent)
+    df_ner        = _safe_fetch(db.fetch_top_entities, top_n=25)
+    df_sports     = _safe_fetch(db.fetch_sports_breakdown)
+    df_sports_yr  = _safe_fetch(db.fetch_sports_by_year)
+    df_ent_dist   = _safe_fetch(db.fetch_entity_distribution, "feminine")
+    df_ent_dist_m = _safe_fetch(db.fetch_entity_distribution, "masculine")
+    df_sem        = _safe_fetch(db.fetch_semantic_keywords)
 
 
 def _apply_filters(df, year_col="year", src_col="source"):
@@ -149,7 +164,7 @@ if not df_corr.empty and "year" in df_corr.columns:
 st.title("GEMA — Gender Representation in Portuguese Sports Media")
 st.caption(
     "Multimodal analysis (computer vision + NLP) of gender representation "
-    "in Portuguese sports press — 1998 to 2024."
+    "in Portuguese sports press — 1998 to 2026."
 )
 
 
@@ -172,7 +187,7 @@ k3.metric("Faces Detected",          f"{int(df_vis['count'].sum()):,}" if not df
 k4.metric(
     f"Articles ({year_range[0]}–{year_range[1]})",
     f"{total_articles_in_range:,}",
-    help=f"Total articles in the selected period ({year_range[0]}–{year_range[1]}) and sources. The full database contains 198,771 articles (1998–2024).",
+    help=f"Total articles in the selected period ({year_range[0]}–{year_range[1]}) and sources. The full database contains 198,771 articles (1998–2026).",
 )
 
 st.divider()
@@ -202,10 +217,11 @@ def add_event_lines(fig, y_max=100):
     return fig
 
 
-tab1, tab2, tab3 = st.tabs([
+tab1, tab2, tab3, tab4 = st.tabs([
     "📈 Evolution & Events",
     "👁️ Visual vs Textual",
     "🔍 Diversity & Context",
+    "📋 Research Questions",
 ])
 
 
@@ -218,18 +234,28 @@ with tab1:
     # -----------------------------------------------------------------------
     # Q1 — Longitudinal evolution
     # -----------------------------------------------------------------------
-    st.subheader("Q1 · Longitudinal Evolution of Female Representation (1998–2024)")
+    st.subheader("Q1 · Longitudinal Evolution of Female Representation (1998–2026)")
     st.caption(
         "Annual percentage of female faces on front covers (visual axis) "
         "and female-dominant articles (textual axis)."
     )
 
-    q1_axis = st.radio(
-        "Show axis",
-        ["Both", "Visual only", "Textual only"],
-        horizontal=True,
-        key="q1_radio",
-    )
+    q1_col1, q1_col2 = st.columns([2, 1])
+    with q1_col1:
+        q1_axis = st.radio(
+            "Show axis",
+            ["Both", "Visual only", "Textual only"],
+            horizontal=True,
+            key="q1_radio",
+        )
+    with q1_col2:
+        q1_min_articles = st.number_input(
+            "Min. articles/year (textual)",
+            min_value=0, max_value=2000, value=200, step=50,
+            help="Years with fewer articles than this threshold are shown as grey hollow markers — "
+                 "their percentages are unreliable due to small sample size.",
+            key="q1_min_art",
+        )
 
     def _yr_female_pct_vis(df):
         if df.empty:
@@ -239,16 +265,18 @@ with tab1:
         piv["female_pct"] = w / (w + m).replace(0, float("nan")) * 100
         return piv[["year", "female_pct"]].dropna()
 
-    def _yr_female_pct_txt(df):
+    def _yr_female_pct_txt(df, min_articles=0):
         if df.empty:
-            return pd.DataFrame(columns=["year", "female_pct"])
+            return pd.DataFrame(columns=["year", "female_pct", "total", "reliable"])
         piv = df.groupby(["year", "text_gender"])["count"].sum().unstack(fill_value=0).reset_index()
         w = piv.get("Woman", 0);  m = piv.get("Man", 0)
-        piv["female_pct"] = w / (w + m).replace(0, float("nan")) * 100
-        return piv[["year", "female_pct"]].dropna()
+        piv["total"] = w + m
+        piv["female_pct"] = w / piv["total"].replace(0, float("nan")) * 100
+        piv["reliable"] = piv["total"] >= min_articles
+        return piv[["year", "female_pct", "total", "reliable"]].dropna(subset=["female_pct"])
 
     vis_evo = _yr_female_pct_vis(df_vis)
-    txt_evo = _yr_female_pct_txt(df_txt)
+    txt_evo = _yr_female_pct_txt(df_txt, min_articles=q1_min_articles)
 
     if vis_evo.empty and txt_evo.empty:
         st.info("No data for the selected range and sources.")
@@ -267,13 +295,55 @@ with tab1:
 
         if q1_axis in ("Both", "Textual only") and not txt_evo.empty:
             txt_evo["year"] = txt_evo["year"].astype(int)
+            NULL_BODY_THRESHOLD = 50
+
+            # Merge quality info when title-only articles are included
+            if not filter_body and not df_txt_qual.empty:
+                txt_evo = txt_evo.merge(
+                    df_txt_qual[["year", "null_pct"]].rename(columns={"null_pct": "null_body_pct"}),
+                    on="year", how="left"
+                )
+                txt_evo["null_body_pct"] = txt_evo["null_body_pct"].fillna(0)
+            else:
+                txt_evo["null_body_pct"] = 0
+
+            txt_reliable   = txt_evo[txt_evo["reliable"] & (txt_evo["null_body_pct"] < NULL_BODY_THRESHOLD)]
+            txt_low_art    = txt_evo[~txt_evo["reliable"]]
+            txt_title_only = txt_evo[txt_evo["reliable"] & (txt_evo["null_body_pct"] >= NULL_BODY_THRESHOLD)]
+
+            # Reliable years — normal line
             fig_q1.add_trace(go.Scatter(
-                x=txt_evo["year"], y=txt_evo["female_pct"].round(2),
+                x=txt_reliable["year"], y=txt_reliable["female_pct"].round(2),
                 mode="lines+markers", name="Textual · Articles",
                 line=dict(color="#e377c2", width=3, dash="dot"), marker=dict(size=8),
-                connectgaps=True,
+                connectgaps=False,
                 hovertemplate="<b>%{x}</b><br>Textual: %{y:.1f}%<extra></extra>",
             ))
+            # Title-only years — orange diamond markers (only when filter_body is OFF)
+            if not filter_body and not txt_title_only.empty:
+                fig_q1.add_trace(go.Scatter(
+                    x=txt_title_only["year"], y=txt_title_only["female_pct"].round(2),
+                    mode="markers",
+                    name=f"Textual · >{NULL_BODY_THRESHOLD}% title-only articles (lower quality)",
+                    marker=dict(size=11, symbol="diamond", color="#ff7f0e",
+                                line=dict(color="#cc5500", width=1)),
+                    customdata=txt_title_only[["total", "null_body_pct"]].values,
+                    hovertemplate=(
+                        "<b>%{x}</b><br>Textual: %{y:.1f}%<br>"
+                        "<i>%{customdata[1]:.0f}% of %{customdata[0]} articles had no body text</i>"
+                        "<extra></extra>"
+                    ),
+                ))
+            # Low-article years — grey hollow markers, no line
+            if not txt_low_art.empty:
+                fig_q1.add_trace(go.Scatter(
+                    x=txt_low_art["year"], y=txt_low_art["female_pct"].round(2),
+                    mode="markers",
+                    name=f"Textual · < {q1_min_articles} articles (unreliable sample)",
+                    marker=dict(size=9, color="white", line=dict(color="#aaaaaa", width=2)),
+                    customdata=txt_low_art["total"],
+                    hovertemplate="<b>%{x}</b><br>Textual: %{y:.1f}%<br><i>Only %{customdata} articles — unreliable</i><extra></extra>",
+                ))
 
         fig_q1.update_layout(
             title="<b>Female Representation: Visual vs Textual (%)</b>",
@@ -282,15 +352,43 @@ with tab1:
             hovermode="x unified", template="plotly_white",
             legend_title="Axis", height=420,
         )
+        # Shade pre-2010 period as methodologically heterogeneous
+        if year_range[0] < 2010:
+            fig_q1.add_vrect(
+                x0=year_range[0] - 0.5, x1=min(2009.5, year_range[1] + 0.5),
+                fillcolor="rgba(200,200,200,0.15)", line_width=0,
+                annotation_text="Sparse / heterogeneous data",
+                annotation_position="top left",
+                annotation_font_size=10,
+                annotation_font_color="#888888",
+            )
+
         add_event_lines(fig_q1)
         st.plotly_chart(fig_q1, use_container_width=True)
+
+        if not txt_evo.empty:
+            notes = []
+            low_art_yrs = sorted(txt_evo[~txt_evo["reliable"]]["year"].tolist())
+            if low_art_yrs:
+                notes.append(f"⬜ **Fewer than {q1_min_articles} articles (unreliable sample):** {', '.join(str(y) for y in low_art_yrs)}")
+            if not filter_body and "null_body_pct" in txt_evo.columns:
+                title_only_yrs = sorted(txt_evo[txt_evo["reliable"] & (txt_evo["null_body_pct"] >= NULL_BODY_THRESHOLD)]["year"].tolist())
+                if title_only_yrs:
+                    notes.append(f"🔶 **>{NULL_BODY_THRESHOLD}% title-only articles:** {', '.join(str(y) for y in title_only_yrs)}")
+            if notes:
+                st.caption("  \n".join(notes))
+
         with st.expander("ℹ️ How to read this chart"):
             st.markdown(
                 "Each line shows the **percentage of female representation** per year. "
                 "The **purple line** tracks visual covers (face detection by computer vision); "
                 "the **pink dashed line** tracks text articles (NLP protagonist analysis). "
-                "Vertical lines mark major sporting events — look for spikes in event years "
-                "and whether the two lines move together or diverge over time."
+                "**Grey hollow markers** indicate years with very few articles — percentages are not statistically reliable. "
+                "**Orange diamond markers** indicate years where more than 50% of articles had no body text: "
+                "gender classification was based on the title alone, which is far less accurate. "
+                "The **grey shaded area** (before 2010) marks a period of sparse and heterogeneous data "
+                "where cross-year comparisons are unreliable. "
+                "Vertical lines mark major sporting events."
             )
 
     st.divider()
@@ -388,7 +486,7 @@ with tab1:
 
     q5_metric = st.radio("Show", ["Heatmap", "Bar chart"], horizontal=True, key="q5_metric")
     q5_print_only = st.checkbox(
-        "Restrict to A Bola, Record, O Jogo (printed dailies)", value=True, key="q5_print"
+        "Restrict to A Bola, Record, O Jogo (printed dailies)", value=False, key="q5_print"
     )
 
     df_txt_q5 = _apply_filters(df_txt_raw)
@@ -457,6 +555,7 @@ with tab1:
                 fig5h.update_layout(
                     xaxis_title="Year", yaxis_title="Source",
                     template="plotly_white", height=max(250, len(pivot) * 50 + 80),
+                    xaxis=dict(tickmode="linear", dtick=1, tickangle=45),
                 )
                 st.plotly_chart(fig5h, use_container_width=True)
                 with st.expander("ℹ️ How to read this chart"):
@@ -481,20 +580,14 @@ with tab2:
     st.caption(
         "Not all detected female faces are the editorial subject of the cover. "
         "Many are tiny incidental detections — a photo in the background, a small inset. "
-        "This section separates **prominent faces** (≥ 1% of cover area, likely the featured athlete) "
-        "from all detections."
+        "All 501 female face detections were reviewed manually and assigned one of four labels: "
+        "**athlete**, **publicity/model**, **other** (fan, background), or **misdetection**."
     )
 
     if db.person_type_annotated():
         st.success(
-            "✅ **Manual annotation active** — the dark bar shows only faces manually labelled as `athlete` "
-            "using the annotation tool (`annotate_covers.py`)."
-        )
-    else:
-        st.info(
-            "**Proximity proxy active** — since `person_type` has not yet been annotated, "
-            "the dark bar shows faces covering ≥ 1% of the cover as a proxy for editorial subjects. "
-            "Run `streamlit run dashboard/annotate_covers.py` to annotate the 448 covers and get exact results."
+            "✅ **Manual annotation complete** — the chart shows all 501 female face detections "
+            "broken down by their manually assigned label."
         )
 
     df_fp = db.fetch_visual_fp_comparison()
@@ -515,8 +608,8 @@ with tab2:
             nonsport_color  = "#d62728"
             pending_color   = "#aec7e8"
         else:
-            athlete_label   = f"Prominent (≥{_prom_threshold}% cover — likely athlete)"
-            nonsport_label  = f"Peripheral (< {_prom_threshold}% cover — likely incidental)"
+            athlete_label   = "Likely athlete (large face)"
+            nonsport_label  = "Peripheral (small face)"
             pending_color   = None
             athlete_color   = "#2ca02c"
             nonsport_color  = "#d62728"
@@ -560,9 +653,8 @@ with tab2:
                 )
             else:
                 st.markdown(
-                    "Each bar is split by face size as a proxy: **green** = faces covering ≥ 1% of the cover "
-                    "(likely the editorial subject); **red** = smaller, peripheral detections. "
-                    "Run the annotation tool (`annotate_covers.py`) to replace this proxy with real labels."
+                    "Each bar is split by estimated face size: **green** = larger faces (likely the editorial subject); "
+                    "**red** = smaller, peripheral detections."
                 )
 
         # --- Summary metrics ---
@@ -579,11 +671,38 @@ with tab2:
                    delta_color="inverse")
         mc3.metric("Total female detections", total_all)
 
+        # --- Detailed classification breakdown (when annotated) ---
+        if is_annotated:
+            breakdown = db.fetch_female_classification_breakdown()
+            if breakdown:
+                st.divider()
+                st.markdown("**Classification breakdown — all 501 detected female faces**")
+                total_det = sum(v["count"] for v in breakdown.values())
+                total_above = sum(v["above_threshold"] for v in breakdown.values())
+
+                LABELS = {
+                    "athlete":   ("🏅 Athlete",              "#2ca02c"),
+                    "publicity": ("📢 Publicity / model",    "#9467bd"),
+                    "other":     ("👥 Other (fan, background…)", "#f39c12"),
+                    "not_woman": ("🚫 Misdetection (not a woman)", "#555555"),
+                }
+                cols = st.columns(len(LABELS))
+                for col_i, (key, (label, color)) in enumerate(LABELS.items()):
+                    v = breakdown.get(key, {"count": 0, "above_threshold": 0})
+                    pct = round(v["count"] / total_det * 100, 1) if total_det else 0
+                    cols[col_i].metric(label, v["count"], delta=f"{pct}% of total")
+
+                st.caption(
+                    f"All {total_det} detected female faces were manually reviewed and labelled. "
+                    "These labels are used exclusively in this chart (Q2). "
+                    "All other visual analyses use the full set of detected faces without filtering."
+                )
+
         # --- Per-year table ---
         st.markdown("**Breakdown per year**")
         col_map = {
             "year": "Year",
-            "count_athlete": "Athletes" if is_annotated else f"Prominent (≥{_prom_threshold}%)",
+            "count_athlete": "Athletes" if is_annotated else "Likely athlete",
             "count_non_sport": "Publicity / Other" if is_annotated else "Peripheral",
             "count_unannotated": "Pending",
         }
@@ -608,12 +727,13 @@ with tab2:
     # -----------------------------------------------------------------------
     st.subheader("Q3 · Visual Axis vs Textual Axis: Do Covers Reflect Articles?")
 
-    st.info(
-        "**How to read this:** Each dot is one year. The horizontal axis shows the percentage of "
-        "**female faces on covers**; the vertical axis shows the percentage of **female-dominant articles**. "
-        "If both axes moved together, the dots would align along an upward diagonal. "
-        "A flat or downward pattern means covers and articles tell different stories about women."
-    )
+    with st.expander("ℹ️ How to read this chart"):
+        st.markdown(
+            "Each dot is one year. The horizontal axis shows the percentage of "
+            "**female faces on covers**; the vertical axis shows the percentage of **female-dominant articles**. "
+            "If both axes moved together, the dots would align along an upward diagonal. "
+            "A flat or downward pattern means covers and articles tell different stories about women."
+        )
 
     if df_corr.empty:
         st.info("Insufficient data for correlation (years must overlap between both collections).")
@@ -661,8 +781,9 @@ with tab2:
                 st.success(f"**Positive correlation (r={r_val:.2f})** — when women appear more on covers, "
                            "they also feature more in articles.")
             else:
-                st.error(f"**Negative correlation (r={r_val:.2f})** — covers overrepresent women "
-                         "relative to articles, or vice versa.")
+                st.error(f"**Negative correlation (r={r_val:.2f})** — when female representation "
+                         "rises on covers, it tends to fall in articles, and vice versa. "
+                         "The two axes move independently of each other.")
 
         # Simple gap chart — easier to read for non-technical audience
         df_gap = df_corr.copy()
@@ -699,14 +820,6 @@ with tab2:
     # Q6 — Visual prominence
     # -----------------------------------------------------------------------
     st.subheader("Q6 · Visual Prominence — Space Occupied on the Cover")
-
-    st.info(
-        "**How to read this:** The prominence ratio compares the average cover area "
-        "(bounding box size as % of the page) occupied by female faces vs male faces. "
-        "A value of **1.0 = perfect parity** — both genders occupy the same space on average. "
-        "Values **below 1.0** mean women appear smaller on the page even when they are present. "
-        "Values **above 1.0** mean women occupy more space — rare, and often linked to Olympic covers."
-    )
 
     if df_prom.empty:
         st.info("No prominence data for the selected period.")
@@ -824,29 +937,66 @@ with tab3:
                 )
 
         with col_right:
-            df_rank = df_ent_dist.reset_index(drop=True)
-            df_rank["rank"] = df_rank.index + 1
+            zc1, zc2 = st.columns(2)
+            zipf_lines = zc1.multiselect(
+                "Show lines",
+                options=["Female", "Male"],
+                default=["Female", "Male"],
+                key="q8_zipf_lines",
+            )
+            zipf_mode = zc2.radio(
+                "Y-axis",
+                options=["Normalised (0–100%)", "Log scale"],
+                index=0,
+                key="q8_zipf_mode",
+                help=(
+                    "**Normalised:** each curve starts at 100% — compares the *shape* of concentration. "
+                    "**Log scale:** shows raw mention counts on a logarithmic axis — separates curves with very different volumes."
+                ),
+            )
+
             fig_zipf = go.Figure()
-            fig_zipf.add_trace(go.Scatter(
-                x=df_rank["rank"], y=df_rank["count"],
-                mode="lines+markers",
-                line=dict(color="#e377c2", width=2), marker=dict(size=5),
-                hovertemplate="Rank %{x}: <b>%{customdata}</b><br>Mentions: %{y}<extra></extra>",
-                customdata=df_rank["entity"],
-            ))
+
+            def _add_zipf_trace(fig, df_dist, name, color):
+                df_r = df_dist.reset_index(drop=True).copy()
+                df_r["rank"] = df_r.index + 1
+                if zipf_mode == "Normalised (0–100%)":
+                    max_count = df_r["count"].max()
+                    df_r["y"] = (df_r["count"] / max_count * 100).round(2)
+                    ytemplate = "%{y:.1f}%"
+                else:
+                    df_r["y"] = df_r["count"]
+                    ytemplate = "%{y:,}"
+                fig.add_trace(go.Scatter(
+                    x=df_r["rank"], y=df_r["y"],
+                    mode="lines", name=name,
+                    line=dict(color=color, width=2),
+                    hovertemplate=f"Rank %{{x}}: <b>%{{customdata}}</b><br>{'Share' if 'Norm' in zipf_mode else 'Mentions'}: {ytemplate}<extra></extra>",
+                    customdata=df_r["entity"],
+                ))
+
+            if "Female" in zipf_lines and not df_ent_dist.empty:
+                _add_zipf_trace(fig_zipf, df_ent_dist, "Female", "#e377c2")
+            if "Male" in zipf_lines and not df_ent_dist_m.empty:
+                _add_zipf_trace(fig_zipf, df_ent_dist_m, "Male", "#1f77b4")
+
+            y_label = "Share of top-1 mentions (%)" if "Norm" in zipf_mode else "Mentions"
             fig_zipf.update_layout(
                 title="<b>Rank–Frequency Distribution</b><br>"
                       "<sup>Steep curve = star dependency · Gradual curve = diversity</sup>",
-                xaxis_title="Athlete rank", yaxis_title="Mentions",
+                xaxis_title="Protagonist rank", yaxis_title=y_label,
+                yaxis_type="log" if zipf_mode == "Log scale" else "linear",
                 template="plotly_white", title_x=0.5, height=460,
+                legend_title="Gender",
             )
             st.plotly_chart(fig_zipf, use_container_width=True)
             with st.expander("ℹ️ How to read this chart"):
                 st.markdown(
-                    "Athletes are ranked from most mentioned (rank 1) to least mentioned. "
+                    "Protagonists are ranked from most mentioned (rank 1) to least mentioned. "
                     "A **steep drop** at the left means the top 1–2 athletes absorb most mentions — high star dependency. "
-                    "A **gradual slope** means coverage is more evenly spread across many athletes — higher diversity. "
-                    "Hover over each point to see the athlete's name and mention count."
+                    "A **gradual slope** means coverage is spread across many athletes — higher diversity.  \n"
+                    "**Normalised mode** sets rank 1 = 100% for each gender, so you compare the *shape* of concentration directly.  \n"
+                    "**Log scale** shows raw counts — useful to see the absolute gap between male and female coverage volumes."
                 )
 
         # ---- Athlete detail explorer ----
@@ -914,11 +1064,35 @@ with tab3:
                     from wikidata_api import consultar_wikidata_info_completa
                     with st.spinner("Fetching Wikidata info…"):
                         wd = consultar_wikidata_info_completa(selected_athlete)
-                    wd_cols = st.columns(4)
-                    wd_cols[0].metric("Gender",      wd.get("gender")      or "Unknown")
-                    wd_cols[1].metric("Sport",       wd.get("sport")       or "Unknown")
-                    wd_cols[2].metric("Nationality", wd.get("nationality") or "Unknown")
-                    wd_cols[3].metric("Birth Year",  str(wd.get("birth_year") or "Unknown"))
+
+                    img_col, info_col = st.columns([1, 3])
+
+                    with img_col:
+                        image_url = wd.get("image_url")
+                        if image_url:
+                            try:
+                                import requests as _req
+                                r = _req.get(image_url, timeout=8, allow_redirects=True)
+                                if r.status_code == 200 and "image" in r.headers.get("Content-Type", ""):
+                                    st.image(r.content, caption=selected_athlete, use_container_width=True)
+                                else:
+                                    st.image(image_url, caption=selected_athlete, use_container_width=True)
+                            except Exception:
+                                st.image(image_url, caption=selected_athlete, use_container_width=True)
+
+                    with info_col:
+                        wd_cols = st.columns(4)
+                        wd_cols[0].metric("Gender",      wd.get("gender")      or "Unknown")
+                        wd_cols[1].metric("Sport",       wd.get("sport")       or "Unknown")
+                        wd_cols[2].metric("Nationality", wd.get("nationality") or "Unknown")
+                        wd_cols[3].metric("Birth Year",  str(wd.get("birth_year") or "Unknown"))
+
+                        wd_url = wd.get("wikidata_url")
+                        if wd_url:
+                            st.markdown(f"[🔗 Open Wikidata page for {selected_athlete}]({wd_url})")
+                        else:
+                            search_url = f"https://www.wikidata.org/w/index.php?search={selected_athlete.replace(' ', '+')}"
+                            st.markdown(f"[🔍 Search Wikidata for {selected_athlete}]({search_url})")
                 except Exception:
                     pass
 
@@ -984,6 +1158,7 @@ with tab3:
                         pivot.columns = [int(c) for c in pivot.columns]
                         pivot = pivot[[c for c in pivot.columns
                                        if year_range[0] <= c <= year_range[1]]]
+                        pivot.columns = [str(c) for c in pivot.columns]
                         fig_hm = px.imshow(
                             pivot, color_continuous_scale="Teal", aspect="auto",
                             title="<b>Female Coverage by Discipline and Year</b>",
@@ -1334,25 +1509,115 @@ with tab3:
                         from wikidata_api import consultar_wikidata_info_completa
                         with st.spinner("Fetching Wikidata info..."):
                             wd_p = consultar_wikidata_info_completa(sel_prot)
-                        wd_pc = st.columns(4)
-                        wd_pc[0].metric("Gender",      wd_p.get("gender")      or "Unknown")
-                        wd_pc[1].metric("Sport",       wd_p.get("sport")       or "Unknown")
-                        wd_pc[2].metric("Nationality", wd_p.get("nationality") or "Unknown")
-                        wd_pc[3].metric("Birth Year",  str(wd_p.get("birth_year") or "Unknown"))
+                        img_col_p, info_col_p = st.columns([1, 3])
+                        with img_col_p:
+                            p_image_url = wd_p.get("image_url")
+                            if p_image_url:
+                                try:
+                                    import requests as _req2
+                                    r2 = _req2.get(p_image_url, timeout=8, allow_redirects=True)
+                                    if r2.status_code == 200 and "image" in r2.headers.get("Content-Type", ""):
+                                        st.image(r2.content, caption=sel_prot, use_container_width=True)
+                                    else:
+                                        st.image(p_image_url, caption=sel_prot, use_container_width=True)
+                                except Exception:
+                                    st.image(p_image_url, caption=sel_prot, use_container_width=True)
+                        with info_col_p:
+                            wd_pc = st.columns(4)
+                            wd_pc[0].metric("Gender",      wd_p.get("gender")      or "Unknown")
+                            wd_pc[1].metric("Sport",       wd_p.get("sport")       or "Unknown")
+                            wd_pc[2].metric("Nationality", wd_p.get("nationality") or "Unknown")
+                            wd_pc[3].metric("Birth Year",  str(wd_p.get("birth_year") or "Unknown"))
+                            wd_p_link = wd_p.get("wikidata_url")
+                            if wd_p_link:
+                                st.markdown(f"[🔗 Open Wikidata page for {sel_prot}]({wd_p_link})")
+                            else:
+                                search_url_p = f"https://www.wikidata.org/w/index.php?search={sel_prot.replace(' ', '+')}"
+                                st.markdown(f"[🔍 Search Wikidata for {sel_prot}]({search_url_p})")
                     except Exception:
                         pass
 
+
+# ===========================================================================
+# TAB 4 — Research Questions overview
+# ===========================================================================
+
+QUESTIONS = [
+    {
+        "id": "Q1",
+        "tab": "📈 Evolution & Events",
+        "title": "What is the longitudinal evolution of female representation in the Portuguese sports press between 1998 and 2024?",
+        "why": "Before asking *why* representation is unequal, it is essential to establish the baseline: has female coverage in Portuguese sports media changed at all over the past three decades, and if so, at what rate?",
+        "result": "Female representation remained persistently below 15% on both axes throughout 1998–2026, with no statistically significant upward trend. The Olympic Effect is visible as sharp spikes, but representation returns to baseline within one year in every case.",
+    },
+    {
+        "id": "Q2",
+        "tab": "👁️ Visual vs Textual",
+        "title": "How is the female presence represented on newspaper covers? Athletes vs. Advertising and Other Faces",
+        "why": "A raw count of female face detections on covers does not equal female athlete visibility. Advertising inserts, fans in the background, and gender classification errors all inflate the apparent visual presence of women.",
+        "result": "Of the 501 female detections, only 133 (26.5%) are genuine athletes. 124 (24.7%) are gender misdetections. A naive pipeline would overestimate female athletic visual presence by a factor of approximately 4×.",
+    },
+    {
+        "id": "Q3",
+        "tab": "👁️ Visual vs Textual",
+        "title": "How do the visual axis (covers) and the textual axis (articles) articulate in the representation of gender?",
+        "why": "Understanding whether the two axes correlate reveals whether editorial decisions are coordinated across print and digital, or whether the two channels follow independent logics.",
+        "result": "The correlation is slightly negative (r = −0.25, p = 0.52) — there is no meaningful alignment. The textual axis consistently leads the visual axis by 4–13 percentage points in every year from 2016 to 2024.",
+    },
+    {
+        "id": "Q4",
+        "tab": "📈 Evolution & Events",
+        "title": "How do major international sporting events (Olympic Games, World Championships) influence changes in female representation?",
+        "why": "It is widely assumed that major events boost female sports coverage. But are these boosts temporary or do they shift the editorial baseline permanently?",
+        "result": "Olympic years produce the highest female cover presence, but no comparison reaches statistical significance (Mann-Whitney p > 0.6). The Olympic boost is real but modest and transient.",
+    },
+    {
+        "id": "Q5",
+        "tab": "📈 Evolution & Events",
+        "title": "How is women's sports covered in major sports newspapers?",
+        "why": "The answer differs significantly by outlet. Aggregate annual figures hide structural differences between sources. Some outlets consistently underrepresent women; others show event-driven spikes.",
+        "result": "Digital-native outlets (Euronews, ZAP) show systematically higher female representation than the three print sports dailies (A Bola, Record, O Jogo) in most years. Source type is a stronger predictor of female representation than calendar year.",
+    },
+    {
+        "id": "Q6",
+        "tab": "👁️ Visual vs Textual",
+        "title": "What is the relationship between the frequency and visual prominence (area occupied on the cover) of women on newspaper covers?",
+        "why": "Counting faces treats a thumbnail in the corner of a cover the same as a full-page portrait. When female athletes do appear, are they given the same visual space as their male counterparts?",
+        "result": "The prominence ratio oscillates between 0.25 and 0.57, never reaching parity (1.0). Female athletes are not only less frequently featured but also receive less visual space when they do appear.",
+    },
+    {
+        "id": "Q7",
+        "tab": "🔍 Diversity & Context",
+        "title": "What sports are associated with peaks in female representation?",
+        "why": "Aggregate female representation conceals structural differences between disciplines. Knowing which sports drive female coverage informs media accountability research and policy decisions.",
+        "result": "Golf leads with 13,318 female-protagonist articles — driven by LPGA coverage. Football follows (8,734), then tennis (6,103). The discipline mix is more diverse than expected.",
+    },
+    {
+        "id": "Q8",
+        "tab": "🔍 Diversity & Context",
+        "title": "Does the representation of women focus on a few star athletes, or does it reflect a real diversity of protagonists?",
+        "why": "Coverage concentrated in a small number of protagonists is fragile — one retirement can cause a measurable drop in total female representation.",
+        "result": "Only ~200 female athletes were mentioned more than once in 26 years of Portuguese sports journalism. Serena Williams leads with 260 mentions, followed by Telma Monteiro (211) and Patrícia Mamona (140).",
+    },
+    {
+        "id": "Q9",
+        "tab": "🔍 Diversity & Context",
+        "title": "What topics are associated with women's sports coverage? Are they more related to athletic performance or to personal and private matters?",
+        "why": "The volume of coverage tells only part of the story. Female athletes may be described in personal terms — family, relationships, appearance — in ways that rarely appear in equivalent male coverage.",
+        "result": "Performance framing dominates at 68.8% of classifiable articles. However, YAKE! keyword analysis reveals personal-sphere terms (pregnancy, motherhood) co-existing with competition vocabulary — a framing asymmetry absent from male-focused coverage.",
+    },
+]
+
+with tab4:
+    st.subheader("Research Questions")
+    st.caption(
+        "The nine research questions are distributed across three analysis tabs (Evolution & Events, Visual vs Textual, Diversity & Context). "
+        "Each question below links to the tab where its interactive chart can be found."
+    )
     st.divider()
 
-    # -----------------------------------------------------------------------
-    # Pipeline statistics
-    # -----------------------------------------------------------------------
-    st.subheader("📊 Pipeline Status")
-    with st.spinner("Computing pipeline statistics…"):
-        stats = db.fetch_pipeline_stats()
-
-    s1, s2, s3, s4 = st.columns(4)
-    s1.metric("Classification Rate (Text)", f"{stats['classification_rate_pct']}%")
-    s2.metric("Faces — High Confidence (≥0.90)", f"{stats['high_conf_rate_pct']}%")
-    s3.metric("Unique Female Entities (NER)", f"{stats['unique_feminine_entities']:,}")
-    s4.metric("Unique Male Entities (NER)", f"{stats['unique_masculine_entities']:,}")
+    for q in QUESTIONS:
+        with st.expander(f"**{q['id']}** — {q['title']}"):
+            st.caption(f"📍 Found in tab: **{q['tab']}**")
+            st.markdown(f"**Why it matters:** {q['why']}")
+            st.markdown(f"**Key finding:** {q['result']}")

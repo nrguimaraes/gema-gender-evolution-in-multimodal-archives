@@ -103,10 +103,13 @@ def consultar_wikidata_info_completa(nome):
 
     with _cache_lock:
         if cache_key in _gender_cache:
-            return _gender_cache[cache_key]
+            cached = _gender_cache[cache_key]
+            # Re-fetch if cached entry is missing newer fields
+            if isinstance(cached, dict) and "image_url" in cached:
+                return cached
 
     headers = {'User-Agent': 'GemaGenderBot/1.0 (contact: internship_project@iaedu.pt)'}
-    info = {"gender": None, "sport": None, "nationality": None, "birth_year": None}
+    info = {"gender": None, "sport": None, "nationality": None, "birth_year": None, "wikidata_url": None, "image_url": None}
 
     def _label(entity_id):
         try:
@@ -128,6 +131,7 @@ def consultar_wikidata_info_completa(nome):
 
         if res.get('search'):
             entity_id = res['search'][0]['id']
+            info['wikidata_url'] = f"https://www.wikidata.org/wiki/{entity_id}"
             entity_url = f"https://www.wikidata.org/wiki/Special:EntityData/{entity_id}.json"
             entity_data = requests.get(entity_url, headers=headers, timeout=5).json()
             claims = entity_data['entities'][entity_id].get('claims', {})
@@ -152,6 +156,13 @@ def consultar_wikidata_info_completa(nome):
                         info['birth_year'] = int(time_val[1:5])
                     except ValueError:
                         pass
+
+            # P18: image — filename on Wikimedia Commons
+            if 'P18' in claims:
+                filename = claims['P18'][0]['mainsnak']['datavalue']['value']
+                # Wikimedia Commons Special:FilePath redirects to the actual image
+                filename_encoded = filename.replace(' ', '_')
+                info['image_url'] = f"https://commons.wikimedia.org/wiki/Special:FilePath/{filename_encoded}?width=300"
 
     except Exception:
         pass

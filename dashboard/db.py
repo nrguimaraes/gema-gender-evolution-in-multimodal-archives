@@ -22,17 +22,8 @@ def get_db():
 
 
 # Minimum cover area (%) a face must occupy to be considered an editorial subject.
-# Calibrated on the actual data distribution (501 female detections, median = 0.17%).
-# Faces >= 1% of the cover are almost certainly the intended subject of that cover.
-PROMINENCE_THRESHOLD = 1.0
-
-
-def fp_field_exists() -> bool:
-    """
-    Always True: prominence-based editorial filter is available for all covers_analysis data.
-    (Legacy: used to check for person_type field which is not populated.)
-    """
-    return True
+# Dataset median of cover_coverage_percentage — faces below this are editorial background.
+PROMINENCE_THRESHOLD = 0.17
 
 
 # ---------------------------------------------------------------------------
@@ -58,8 +49,6 @@ def _normalise_source(raw: str) -> str:
         return "ZAP"
     if "euronews" in key:
         return "Euronews"
-    if "flashscore" in key:
-        return "Flashscore"
     return "Other"
 
 
@@ -68,26 +57,36 @@ def _normalise_source(raw: str) -> str:
 # ---------------------------------------------------------------------------
 
 @st.cache_data(ttl=600, show_spinner=False)
-def fetch_visual_yearly(filter_fp: bool = False) -> pd.DataFrame:
+def fetch_visual_yearly(filter_athletes: bool = False, filter_prominent: bool = False) -> pd.DataFrame:
     """
     Aggregates cover face detections by year, newspaper and gender.
     Returns: year | source | gender | count | avg_prominence | avg_confidence
-    filter_fp: restrict to person_type='athlete' only if the field exists in the DB.
+
+    filter_athletes:  keep only faces annotated as 'athlete' (requires annotation tool).
+                      Falls back to prominence proxy when annotation is not available.
+    filter_prominent: keep only faces covering >= PROMINENCE_THRESHOLD % of the cover
+                      (the woman is the main visual subject of the page).
+    Both filters can be active simultaneously — they stack (AND logic).
     """
     db = get_db()
 
     pipeline = [{"$unwind": "$faces_detected"}]
-    if filter_fp:
+    match = {}
+
+    if filter_athletes:
+        # Minimum coverage threshold applied to both genders.
+        match["faces_detected.cover_coverage_percentage"] = {"$gte": 0.17}
         if person_type_annotated():
-            # Prefer manual annotation when available
-            pipeline.append({"$match": {
-                "faces_detected.person_type": {"$in": ["athlete", "atleta"]}
-            }})
-        else:
-            # Fall back to prominence proxy
-            pipeline.append({"$match": {
-                "faces_detected.cover_coverage_percentage": {"$gte": PROMINENCE_THRESHOLD}
-            }})
+            # Female faces: only those annotated as 'athlete' pass (publicity/other/not_woman excluded).
+            # Male faces: no person_type stored, so $nin treats the missing field as null
+            # (not in the exclusion list) and they pass through — filtered by coverage only.
+            match["faces_detected.person_type"] = {"$nin": ["publicity", "other", "not_woman"]}
+
+    if filter_prominent:
+        match["faces_detected.cover_coverage_percentage"] = {"$gte": PROMINENCE_THRESHOLD}
+
+    if match:
+        pipeline.append({"$match": match})
     pipeline += [
         {"$group": {
             "_id": {
@@ -113,14 +112,23 @@ def fetch_visual_yearly(filter_fp: bool = False) -> pd.DataFrame:
     return df
 
 
+# Filter applied to all text queries: require a non-empty body_text so that
+# gender classification is based on full article content, not just the title.
+_BODY_FILTER = {"body_text": {"$nin": [None, ""]}}
+
+
 @st.cache_data(ttl=600, show_spinner=False)
-def fetch_text_yearly() -> pd.DataFrame:
+def fetch_text_yearly(filter_body: bool = True) -> pd.DataFrame:
     """
     Aggregates article gender classifications by year and newspaper.
+    filter_body=True (default): exclude articles without body_text.
     Returns: year | source | text_gender | count
     """
     db = get_db()
-    pipeline = [
+    pipeline = []
+    if filter_body:
+        pipeline.append({"$match": _BODY_FILTER})
+    pipeline += [
         {"$project": {
             "year": 1,
             "journal": {"$ifNull": ["$journal", "$source"]},
@@ -157,13 +165,45 @@ def fetch_text_yearly() -> pd.DataFrame:
 
 
 # ---------------------------------------------------------------------------
+# Text quality
+# ---------------------------------------------------------------------------
+
+@st.cache_data(ttl=600, show_spinner=False)
+def fetch_text_quality_by_year() -> pd.DataFrame:
+    """
+    Returns per-year body_text null rate for articles_final.
+    Columns: year | total | null_body | null_pct
+    Used to flag years where classification was based mostly on titles only.
+    """
+    db = get_db()
+    pipeline = [
+        {"$group": {
+            "_id": "$year",
+            "total":     {"$sum": 1},
+            "null_body": {"$sum": {"$cond": [
+                {"$or": [{"$eq": ["$body_text", None]}, {"$eq": ["$body_text", ""]}]},
+                1, 0
+            ]}},
+        }},
+        {"$sort": {"_id": 1}},
+    ]
+    rows = list(db["articles_final"].aggregate(pipeline, allowDiskUse=True))
+    if not rows:
+        return pd.DataFrame(columns=["year", "total", "null_body", "null_pct"])
+    df = pd.json_normalize(rows).rename(columns={"_id": "year"})
+    df["year"] = df["year"].astype(str).str.strip().astype(int)
+    df["null_pct"] = (df["null_body"] / df["total"] * 100).round(1)
+    return df
+
+
+# ---------------------------------------------------------------------------
 # Tab 2 — Visual prominence and cross-axis correlation
 # ---------------------------------------------------------------------------
 
 @st.cache_data(ttl=600, show_spinner=False)
-def fetch_prominence_detail(filter_fp: bool = False) -> pd.DataFrame:
+def fetch_prominence_detail(filter_athletes: bool = False, filter_prominent: bool = False) -> pd.DataFrame:
     """Alias for fetch_visual_yearly, used explicitly in the prominence section."""
-    return fetch_visual_yearly(filter_fp=filter_fp)
+    return fetch_visual_yearly(filter_athletes=filter_athletes, filter_prominent=filter_prominent)
 
 
 @st.cache_data(ttl=600, show_spinner=False)
@@ -206,10 +246,12 @@ def fetch_visual_text_correlation() -> pd.DataFrame:
 def fetch_top_entities(top_n: int = 20) -> pd.DataFrame:
     """
     Returns the top N feminine NER entities ranked by mention count.
+    Only articles with non-empty body_text are included.
     Returns: entity | count
     """
     db = get_db()
     pipeline = [
+        {"$match": _BODY_FILTER},
         {"$project": {
             "year": 1,
             "source": {"$ifNull": ["$journal", "$source"]},
@@ -276,42 +318,33 @@ def fetch_sports_by_keywords() -> pd.DataFrame:
     """
     Detects sport modality in female-tagged articles using keyword matching.
     Fallback for when the structured 'sport' field is absent.
+    Each sport is queried separately with a regex $match so no Python-side limit is needed.
     Returns: sport | count
     """
     db = get_db()
-    pipeline = [
-        {"$match": {
-            "$or": [
-                {"gender_analysis.verdict": "Feminino"},
-                {"gender_analysis.dominant_gender": "Feminino"},
-            ]
-        }},
-        {"$project": {
-            "year": 1,
-            "text": {"$concat": [
-                {"$toLower": {"$ifNull": ["$title", ""]}}, " ",
-                {"$toLower": {"$ifNull": ["$body_text", ""]}}
-            ]},
-        }},
-        {"$limit": 2000},
-    ]
-    docs = list(db["articles_final"].aggregate(pipeline, allowDiskUse=True))
-    if not docs:
-        return pd.DataFrame(columns=["sport", "count"])
-
     rows = []
-    for doc in docs:
-        text = doc.get("text", "")
-        year = doc.get("year")
-        for sport, keywords in SPORT_KEYWORDS.items():
-            if any(kw in text for kw in keywords):
-                rows.append({"sport": sport, "year": year})
+    for sport, keywords in SPORT_KEYWORDS.items():
+        regex_pattern = "|".join(keywords)
+        pipeline = [
+            {"$match": {"$and": [
+                {"$or": [
+                    {"gender_analysis.verdict": "Feminino"},
+                    {"gender_analysis.dominant_gender": "Feminino"},
+                ]},
+                {"$or": [
+                    {"title":     {"$regex": regex_pattern, "$options": "i"}},
+                    {"body_text": {"$regex": regex_pattern, "$options": "i"}},
+                ]},
+            ]}},
+            {"$count": "count"},
+        ]
+        result = list(db["articles_final"].aggregate(pipeline, allowDiskUse=True))
+        if result:
+            rows.append({"sport": sport, "count": result[0]["count"]})
 
     if not rows:
         return pd.DataFrame(columns=["sport", "count"])
-
-    df = pd.DataFrame(rows)
-    return df.groupby("sport").size().reset_index(name="count").sort_values("count", ascending=False)
+    return pd.DataFrame(rows).sort_values("count", ascending=False)
 
 
 @st.cache_data(ttl=600, show_spinner=False)
@@ -319,42 +352,34 @@ def fetch_sports_by_year() -> pd.DataFrame:
     """
     Same keyword detection as fetch_sports_by_keywords but broken down by year.
     Used for the sport × year heatmap.
+    Each sport is queried separately with a regex $match so no Python-side limit is needed.
     Returns: sport | year | count
     """
     db = get_db()
-    pipeline = [
-        {"$match": {
-            "$or": [
-                {"gender_analysis.verdict": "Feminino"},
-                {"gender_analysis.dominant_gender": "Feminino"},
-            ]
-        }},
-        {"$project": {
-            "year": 1,
-            "text": {"$concat": [
-                {"$toLower": {"$ifNull": ["$title", ""]}}, " ",
-                {"$toLower": {"$ifNull": ["$body_text", ""]}}
-            ]},
-        }},
-        {"$limit": 2000},
-    ]
-    docs = list(db["articles_final"].aggregate(pipeline, allowDiskUse=True))
-    if not docs:
-        return pd.DataFrame(columns=["sport", "year", "count"])
-
     rows = []
-    for doc in docs:
-        text = doc.get("text", "")
-        year = doc.get("year")
-        for sport, keywords in SPORT_KEYWORDS.items():
-            if any(kw in text for kw in keywords):
-                rows.append({"sport": sport, "year": year})
+    for sport, keywords in SPORT_KEYWORDS.items():
+        regex_pattern = "|".join(keywords)
+        pipeline = [
+            {"$match": {"$and": [
+                {"$or": [
+                    {"gender_analysis.verdict": "Feminino"},
+                    {"gender_analysis.dominant_gender": "Feminino"},
+                ]},
+                {"$or": [
+                    {"title":     {"$regex": regex_pattern, "$options": "i"}},
+                    {"body_text": {"$regex": regex_pattern, "$options": "i"}},
+                ]},
+            ]}},
+            {"$group": {"_id": "$year", "count": {"$sum": 1}}},
+            {"$sort": {"_id": 1}},
+        ]
+        for doc in db["articles_final"].aggregate(pipeline, allowDiskUse=True):
+            if doc["_id"] is not None:
+                rows.append({"sport": sport, "year": int(doc["_id"]), "count": doc["count"]})
 
     if not rows:
         return pd.DataFrame(columns=["sport", "year", "count"])
-
-    df = pd.DataFrame(rows)
-    return df.groupby(["sport", "year"]).size().reset_index(name="count")
+    return pd.DataFrame(rows)
 
 
 @st.cache_data(ttl=600, show_spinner=False)
@@ -420,11 +445,13 @@ def fetch_semantic_keywords(top_n: int = 40) -> pd.DataFrame:
     """
     Fetches text from female-tagged articles for YAKE! keyword extraction.
     Capped at 500 documents to keep extraction fast.
+    Only articles with non-empty body_text are included.
     Returns: DataFrame with a single 'text' column.
     """
     db = get_db()
     pipeline = [
         {"$match": {
+            **_BODY_FILTER,
             "$or": [
                 {"gender_analysis.verdict": "Feminino"},
                 {"gender_analysis.dominant_gender": "Feminino"},
@@ -550,6 +577,38 @@ def person_type_annotated() -> bool:
         {"_id": 1},
     )
     return doc is not None
+
+
+@st.cache_data(ttl=600, show_spinner=False)
+def fetch_female_classification_breakdown() -> dict:
+    """
+    Returns a detailed breakdown of all originally-detected female faces:
+      - per person_type label (athlete, publicity, other, not_woman)
+      - how many occupy >= 0.17% of the cover
+    """
+    db = get_db()
+    pipeline = [
+        {"$unwind": "$faces_detected"},
+        {"$match": {"$or": [
+            {"faces_detected.gender": "Woman"},
+            {"faces_detected.gender_corrected": "Woman"},
+        ]}},
+        {"$group": {
+            "_id": "$faces_detected.person_type",
+            "count": {"$sum": 1},
+            "above_threshold": {"$sum": {"$cond": [
+                {"$gte": ["$faces_detected.cover_coverage_percentage", 0.17]}, 1, 0
+            ]}},
+        }},
+    ]
+    rows = list(db["covers_analysis"].aggregate(pipeline))
+    result = {}
+    for r in rows:
+        result[r["_id"] or "unannotated"] = {
+            "count": r["count"],
+            "above_threshold": r["above_threshold"],
+        }
+    return result
 
 
 @st.cache_data(ttl=600, show_spinner=False)
