@@ -27,6 +27,20 @@ st.set_page_config(
     layout="centered",
 )
 
+st.markdown("""
+<style>
+html, body, [class*="st-"], .stMarkdown, .stButton button,
+.stRadio label, .stSelectbox label, .stCaption,
+div[data-testid="stText"], div[data-testid="metric-container"] {
+    font-size: 20px !important;
+}
+h1 { font-size: 2.2rem !important; }
+h2 { font-size: 1.8rem !important; }
+h3 { font-size: 1.5rem !important; }
+.stButton button { font-size: 18px !important; padding: 0.5rem 1rem !important; }
+</style>
+""", unsafe_allow_html=True)
+
 # ---------------------------------------------------------------------------
 # DB helpers
 # ---------------------------------------------------------------------------
@@ -155,7 +169,7 @@ def _draw_faces(img_path: str, faces: list, highlight_idx: int, gender_filter: s
 st.title("🏷️ GEMA — Cover Annotation Tool")
 
 # --- Tabs for gender selection ---
-tab_w, tab_m, tab_stats = st.tabs(["👩 Female faces", "👨 Male faces", "📊 Stats"])
+tab_w, tab_stats = st.tabs(["👩 Female faces", "📊 Stats"])
 
 def _render_annotation_tab(gender_filter: str, misdetection_label: str, misdetection_btn: str):
     covers = _load_covers(gender_filter)
@@ -268,9 +282,6 @@ def _render_annotation_tab(gender_filter: str, misdetection_label: str, misdetec
 with tab_w:
     _render_annotation_tab("Woman", "not_woman", "🚫 Not a woman (misdetection)")
 
-with tab_m:
-    _render_annotation_tab("Man", "not_man", "🚫 Not a man (misdetection)")
-
 with tab_stats:
     st.subheader("📊 Annotation Summary")
 
@@ -315,7 +326,7 @@ with tab_stats:
     st.caption("Clears all person_type labels and restores original genders. Use to start over.")
     if st.button("Reset all annotations", type="secondary"):
         db_conn = get_db()
-        # Restore gender for any corrected faces
+        # Restore original genders for any corrected faces, then clear all person_type labels
         for original in ["Woman", "Man"]:
             db_conn["covers_analysis"].update_many(
                 {"faces_detected.gender_corrected": original},
@@ -323,7 +334,6 @@ with tab_stats:
                  "$unset": {"faces_detected.$[f].gender_corrected": ""}},
                 array_filters=[{"f.gender_corrected": original}],
             )
-        # Remove all person_type labels
         db_conn["covers_analysis"].update_many(
             {"faces_detected.person_type": {"$exists": True}},
             {"$unset": {"faces_detected.$[f].person_type": ""}},
