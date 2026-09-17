@@ -91121,7 +91121,9 @@
     "gender": "Female",
     "sport": "xadrez",
     "nationality": "Hungria",
-    "birth_year": 1976
+    "birth_year": 1976,
+    "wikidata_url": "https://www.wikidata.org/wiki/Q183250",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Judit_Polgár_2013.jpg?width=300"
   },
   "\u0000info\u0000Simone Biles": {
     "gender": "Female",
@@ -91218,5 +91220,21 @@
     "birth_year": 1999,
     "wikidata_url": "https://www.wikidata.org/wiki/Q47073025",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/UCI_Track_World_Championships_2020_100.jpg?width=300"
+  },
+  "\u0000info\u0000Auriol Dongmo": {
+    "gender": "Female",
+    "sport": "atletismo",
+    "nationality": "Camarões",
+    "birth_year": 1990,
+    "wikidata_url": "https://www.wikidata.org/wiki/Q16172020",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Auriol_Dongmo_Belgrade_2022.jpg?width=300"
+  },
+  "\u0000info\u0000Inês Henriques": {
+    "gender": "Female",
+    "sport": "atletismo",
+    "nationality": "Portugal",
+    "birth_year": 1980,
+    "wikidata_url": "https://www.wikidata.org/wiki/Q2741289",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Poves_Henriques_02cropped.jpg?width=300"
   }
 }

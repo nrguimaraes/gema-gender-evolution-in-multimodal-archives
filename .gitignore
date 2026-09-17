@@ -1,3 +1,9 @@
+# Claude Code local settings
+.claude/
+
+# Abandoned component (replaced by Plotly-based annotator)
+dashboard/_bbox_component/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

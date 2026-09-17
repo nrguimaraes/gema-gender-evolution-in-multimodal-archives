@@ -161,6 +161,13 @@ def fetch_text_yearly(filter_body: bool = True) -> pd.DataFrame:
     df["text_gender"] = df["text_gender"].map(lambda x: gender_map.get(x, x))
     df["source"] = df["source"].apply(_normalise_source)
     df["year"] = df["year"].astype(int)
+
+    # Drop source-year combinations with fewer than 10 articles (unreliable %)
+    totals = df.groupby(["year", "source"])["count"].sum()
+    valid = totals[totals >= 10].index
+    df = df.set_index(["year", "source"])
+    df = df[df.index.isin(valid)].reset_index()
+
     return df
 
 
