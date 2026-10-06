@@ -1,8 +1,46 @@
 # Claude Code local settings
 .claude/
 
-# Abandoned component (replaced by Plotly-based annotator)
+# IDE
+.idea/
+
+# Cover images (too large for git -- download via capaExtractor.py)
+data/capas/images/
+data/covers/
+
+# Internal / legacy data folders
+data/cleaned_antigo/
+data/enriched_antigo/
+data/raw/
+data/cleaned/
+data/enriched/
+data/processed/
+
+# Large model weights
+*.pt
+
+# Notebooks (internal analysis)
+*.ipynb
+.ipynb_checkpoints/
+
+# Abandoned component
 dashboard/_bbox_component/
+
+# Internal dashboard tools (not part of public release)
+dashboard/annotate_covers.py
+dashboard/audit_accuracy.py
+dashboard/bbox_annotator.py
+dashboard/eval_pipeline.py
+dashboard/app_dashboard.py
+dashboard/app_explorer.py
+dashboard/db.py
+
+# Huggingface Space (separate repo)
+huggingface/
+
+# Root-level legacy scripts
+main.py
+src/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
