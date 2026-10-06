@@ -28,7 +28,7 @@ DEST_COL  = "covers_manual_bbox"
 
 NEWSPAPERS = ["a-bola", "o-jogo", "record"]
 LABELS     = {"a-bola": "A Bola", "o-jogo": "O Jogo", "record": "Record"}
-N_COVERS   = 5
+N_COVERS   = 10
 DISPLAY_W  = 680
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -67,7 +67,7 @@ def load_sample(seed: int) -> dict:
     out = {}
     for np_ in NEWSPAPERS:
         docs = list(db[SRC_COL].find(
-            {"source": np_, "faces_detected": {"$exists": True}},
+            {"source": np_, "faces_detected": {"$exists": True, "$ne": []}},
             {"source": 1, "date": 1, "year": 1, "faces_detected": 1}
         ))
         sel = rng.sample(docs, min(N_COVERS, len(docs)))

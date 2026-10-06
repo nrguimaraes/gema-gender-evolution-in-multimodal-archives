@@ -162,9 +162,9 @@ if not df_corr.empty and "year" in df_corr.columns:
 # Header KPIs
 # ---------------------------------------------------------------------------
 
-st.title("GEMA — Gender Representation in Portuguese Sports Media")
+st.title("GEMA — Women's Representation in Portuguese Sports Media")
 st.caption(
-    "Multimodal analysis (computer vision + NLP) of gender representation "
+    "Multimodal analysis (computer vision + NLP) of women's representation "
     "in Portuguese sports press — 1998 to 2026."
 )
 
@@ -1561,7 +1561,7 @@ QUESTIONS = [
     {
         "id": "Q3",
         "tab": "👁️ Visual vs Textual",
-        "title": "How do the visual axis (covers) and the textual axis (articles) articulate in the representation of gender?",
+        "title": "How do the visual axis (covers) and the textual axis (articles) articulate in the representation of women?",
         "why": "Understanding whether the two axes correlate reveals whether editorial decisions are coordinated across print and digital, or whether the two channels follow independent logics.",
         "result": "The correlation is slightly negative (r = −0.25, p = 0.52) — there is no meaningful alignment. The textual axis consistently leads the visual axis by 4–13 percentage points in every year from 2016 to 2024.",
     },

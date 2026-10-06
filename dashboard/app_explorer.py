@@ -1,6 +1,6 @@
 """
 GEMA — Free Explorer
-Open-ended interactive dashboard: explore gender representation in Portuguese
+Open-ended interactive dashboard: explore women's representation in Portuguese
 sports media without a fixed question structure. Build your own view.
 
 Run: streamlit run dashboard/app_explorer.py
@@ -93,7 +93,7 @@ def event_label(year: int) -> str:
 
 with st.sidebar:
     st.title("🔭 GEMA Explorer")
-    st.caption("28 years of gender in Portuguese sports media.")
+    st.caption("28 years of women's representation in Portuguese sports media.")
     st.divider()
 
     year_range = st.slider("Year range", 1998, 2026, (1998, 2026))
@@ -190,7 +190,7 @@ def add_event_lines(fig):
 # Header
 # ---------------------------------------------------------------------------
 
-st.title("🔭 GEMA — Gender in Portuguese Sports Media")
+st.title("🔭 GEMA — Women's Representation in Portuguese Sports Media")
 st.caption("Explore 28 years of data freely. No fixed questions — build your own view.")
 
 vis_fem = female_pct(df_vis, "gender")
@@ -210,12 +210,11 @@ st.divider()
 # Tabs
 # ---------------------------------------------------------------------------
 
-tab_explore, tab_events, tab_sources, tab_athletes, tab_eval = st.tabs([
+tab_explore, tab_events, tab_sources, tab_athletes = st.tabs([
     "📊 Explore",
     "🏅 Events",
     "📰 By Source",
     "🏃 Athlete Explorer",
-    "🔬 Pipeline Eval",
 ])
 
 # ===========================================================================
@@ -669,170 +668,3 @@ with tab_athletes:
         template="plotly_white", height=380, legend_title="Gender",
     )
     st.plotly_chart(fig_zipf, use_container_width=True)
-
-
-# ===========================================================================
-# TAB 5 -- Pipeline Evaluation
-# ===========================================================================
-
-@st.cache_data(ttl=120)
-def load_eval_data():
-    _labels  = {"a-bola": "A Bola", "o-jogo": "O Jogo", "record": "Record"}
-    db_      = db.get_db()
-    ann_col  = db_["covers_manual_bbox"]
-    src_col  = db_["covers_analysis"]
-    rows = []
-    for ann in ann_col.find({}):
-        cid    = ann.get("cover_id", "")
-        source = ann.get("source", "?")
-        date   = str(ann.get("date", ""))[:10]
-        src_doc = src_col.find_one({"_id": cid})
-        if src_doc is None:
-            continue
-        pipeline_faces = src_doc.get("faces_detected", [])
-        manual_faces   = ann.get("manual_faces", [])
-        n_pipe   = len(pipeline_faces)
-        n_missed = len(manual_faces)
-        n_total  = n_pipe + n_missed
-        recall   = round(n_pipe / n_total * 100, 1) if n_total > 0 else None
-        pipe_w = sum(1 for f in pipeline_faces if f.get("gender") == "Woman")
-        pipe_m = sum(1 for f in pipeline_faces if f.get("gender") == "Man")
-        miss_w = sum(1 for f in manual_faces   if f.get("gender") == "Woman")
-        miss_m = sum(1 for f in manual_faces   if f.get("gender") == "Man")
-        rows.append({
-            "Source":   _labels.get(source, source),
-            "Date":     date,
-            "Pipeline": n_pipe,
-            "Missed":   n_missed,
-            "Total":    n_total,
-            "Recall":   recall,
-            "pipe_W":   pipe_w, "pipe_M": pipe_m,
-            "miss_W":   miss_w, "miss_M": miss_m,
-        })
-    return pd.DataFrame(rows).sort_values(["Source", "Date"])
-
-
-with tab_eval:
-    st.subheader("Pipeline Evaluation -- Face Detection Recall")
-    st.caption(
-        "Ground truth built from manual annotation of 15 sampled covers (5 per newspaper). "
-        "Faces partially occluded, facing away, or with less than half the face visible were excluded."
-    )
-
-    df_eval = load_eval_data()
-
-    if df_eval.empty:
-        st.info("No annotation data found. Run the BBox Annotator first.")
-    else:
-        tp_all  = int(df_eval["Pipeline"].sum())
-        fn_all  = int(df_eval["Missed"].sum())
-        tot_all = tp_all + fn_all
-        rec_all = round(tp_all / tot_all * 100, 1) if tot_all > 0 else 0
-
-        pipe_w_tot = int(df_eval["pipe_W"].sum())
-        miss_w_tot = int(df_eval["miss_W"].sum())
-        pipe_m_tot = int(df_eval["pipe_M"].sum())
-        miss_m_tot = int(df_eval["miss_M"].sum())
-        tot_w = pipe_w_tot + miss_w_tot
-        tot_m = pipe_m_tot + miss_m_tot
-        rec_w = round(pipe_w_tot / tot_w * 100, 1) if tot_w > 0 else 0
-        rec_m = round(pipe_m_tot / tot_m * 100, 1) if tot_m > 0 else 0
-
-        # Top metrics
-        m1, m2, m3, m4, m5 = st.columns(5)
-        m1.metric("Overall Recall",   f"{rec_all}%")
-        m2.metric("Faces detected",   tp_all)
-        m3.metric("Faces missed",     fn_all)
-        m4.metric("Recall (Women)",   f"{rec_w}%",
-                  delta=f"{rec_w - rec_all:.1f}pp vs avg", delta_color="normal")
-        m5.metric("Recall (Men)",     f"{rec_m}%",
-                  delta=f"{rec_m - rec_all:.1f}pp vs avg", delta_color="normal")
-
-        st.divider()
-
-        col_bar, col_gender = st.columns(2)
-
-        # Recall by newspaper
-        with col_bar:
-            st.markdown("**Recall by newspaper**")
-            agg = df_eval.groupby("Source")[["Pipeline", "Missed"]].sum().reset_index()
-            agg["Total"]  = agg["Pipeline"] + agg["Missed"]
-            agg["Recall"] = (agg["Pipeline"] / agg["Total"] * 100).round(1)
-            fig_np = px.bar(
-                agg, x="Source", y="Recall", text="Recall",
-                color="Source",
-                color_discrete_map={"A Bola": "#e41a1c", "Record": "#377eb8", "O Jogo": "#4daf4a"},
-                labels={"Recall": "Recall (%)", "Source": ""},
-                height=340,
-            )
-            fig_np.update_traces(texttemplate="%{text:.1f}%", textposition="outside",
-                                 cliponaxis=False)
-            fig_np.add_hline(y=rec_all, line_dash="dash", line_color="#9467bd",
-                             annotation_text=f"Overall {rec_all}%", annotation_font_size=11)
-            fig_np.update_layout(template="plotly_white", showlegend=False,
-                                 yaxis=dict(range=[0, 110], title="Recall (%)"))
-            st.plotly_chart(fig_np, use_container_width=True)
-
-        # Gender breakdown -- detected vs missed
-        with col_gender:
-            st.markdown("**Detected vs missed by gender**")
-            df_gnd = pd.DataFrame([
-                {"Gender": "Women", "Status": "Detected", "Faces": pipe_w_tot},
-                {"Gender": "Women", "Status": "Missed",   "Faces": miss_w_tot},
-                {"Gender": "Men",   "Status": "Detected", "Faces": pipe_m_tot},
-                {"Gender": "Men",   "Status": "Missed",   "Faces": miss_m_tot},
-            ])
-            fig_gnd = px.bar(
-                df_gnd, x="Gender", y="Faces", color="Status",
-                barmode="stack", text="Faces",
-                color_discrete_map={"Detected": "#2ca02c", "Missed": "#d62728"},
-                height=340,
-            )
-            fig_gnd.update_traces(textposition="inside", textfont_size=13)
-            fig_gnd.update_layout(template="plotly_white",
-                                  yaxis_title="Faces", legend_title="")
-            st.plotly_chart(fig_gnd, use_container_width=True)
-
-        st.divider()
-
-        # Per-cover recall chart
-        st.markdown("**Recall per cover**")
-        df_covers = df_eval.dropna(subset=["Recall"]).copy()
-        df_covers["Cover"] = df_covers["Source"] + " " + df_covers["Date"]
-        fig_cov = px.bar(
-            df_covers.sort_values("Recall"),
-            x="Recall", y="Cover", orientation="h",
-            color="Source",
-            color_discrete_map={"A Bola": "#e41a1c", "Record": "#377eb8", "O Jogo": "#4daf4a"},
-            text="Recall",
-            labels={"Recall": "Recall (%)", "Cover": ""},
-            height=max(350, len(df_covers) * 32),
-        )
-        fig_cov.update_traces(texttemplate="%{text:.1f}%", textposition="outside",
-                              cliponaxis=False)
-        fig_cov.add_vline(x=rec_all, line_dash="dash", line_color="#9467bd",
-                          annotation_text=f"avg {rec_all}%")
-        fig_cov.update_layout(template="plotly_white", showlegend=True,
-                               xaxis=dict(range=[0, 115], title="Recall (%)"))
-        st.plotly_chart(fig_cov, use_container_width=True)
-
-        st.divider()
-
-        # Methodology note + raw table
-        with st.expander("Methodology & raw data"):
-            st.markdown("""
-**Recall** = faces detected by pipeline / (detected + manually annotated missed faces)
-
-**Assumptions:**
-- All pipeline detections are treated as true positives (precision not measured)
-- Manual annotators excluded faces that were occluded, facing away, or with less than half the face visible
-- Sample: 5 covers per newspaper, randomly selected (seed = 42)
-
-**Why recall only?** Computing precision would require annotators to validate each pipeline detection, which was outside scope for this evaluation phase.
-""")
-            display_cols = ["Source", "Date", "Pipeline", "Missed", "Total", "Recall"]
-            st.dataframe(
-                df_eval[display_cols].rename(columns={
-                    "Pipeline": "Detected", "Recall": "Recall (%)"}),
-                use_container_width=True, hide_index=True,
-            )
