@@ -1,4 +1,4 @@
-# GEMA -- Gender Evolution in Multimodal Archives
+# GEMA
 
 A longitudinal study of women's representation in Portuguese sports media (1996--2024), combining NLP protagonist detection and computer vision analysis of front-page covers.
 
@@ -22,7 +22,7 @@ gema-gender-evolution-in-multimodal-archives/
 ## Data
 
 - **Text corpus**: 198,771 sports articles from 3 outlets (A Bola, Record, O Jogo), retrieved via [Arquivo.pt](https://arquivo.pt), spanning 1996--2024
-- **Cover corpus**: 11,331 front-page cover images from [VerCapas.com](https://www.vercapas.com) (images not included due to size; reproducible via `pipeline/crawlers/capaExtractor.py`)
+- **Cover corpus**: 11,331 front-page cover images from [VerCapas.com](https://www.vercapas.com), available in `data/capas/images/`
 
 ## Pipeline
 

@@ -11,14 +11,13 @@ data/
     gema_accuracy_audit_90_covers.csv   -- accuracy audit results for the visual pipeline
   capas/
     metadata/   -- one JSON per cover with face detection results (RetinaFace + DeepFace)
-    images/     -- cover images (NOT included in this repo, see below)
+    images/     -- cover images (included in this repo)
 ```
 
 ## Cover Images
 
-The 11,331 front-page cover images are not included in this repository due to size constraints.
-They were sourced from [VerCapas.com](https://www.vercapas.com) and can be re-downloaded
-using the crawler provided in `pipeline/crawlers/capaExtractor.py`.
+The 11,331 front-page cover images are available in `data/capas/images/`.
+They were sourced from [VerCapas.com](https://www.vercapas.com).
 
 ## Text Articles
 
