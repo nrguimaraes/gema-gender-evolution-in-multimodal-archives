@@ -1,6 +1,6 @@
 """
-GEMA — Gender Evolution in Multimodal Archives
-Interactive dashboard — HuggingFace Space version (static data, no MongoDB).
+GEMA — Women's Representation in Portuguese Sports Media
+Interactive dashboard (static data, no MongoDB).
 """
 import sys
 import os

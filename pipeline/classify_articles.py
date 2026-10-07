@@ -79,7 +79,7 @@ def _classify_file(file):
 
 def run_classification():
     """
-    Classifies all enriched articles with WikiNeural gender analysis.
+    Classifies all enriched articles for women's representation analysis.
     Uses a ThreadPoolExecutor per file to parallelize Wikidata lookups.
     Skips files that are already classified. Original article order is preserved.
     """

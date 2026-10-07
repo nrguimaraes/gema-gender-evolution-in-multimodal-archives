@@ -22,7 +22,7 @@ classifier = pipeline(
 def analyze_mdeberta(text):
     """
     Uses mDeBERTa to perform zero-shot classification on sports news 
-    gender representation[cite: 15].
+    women's representation[cite: 15].
     """
     labels = ["Masculino", "Feminino", "Ambos"]
     try:

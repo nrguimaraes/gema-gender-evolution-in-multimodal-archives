@@ -1,5 +1,5 @@
 """
-GEMA — Gender Evolution in Multimodal Archives
+GEMA — Women's Representation in Portuguese Sports Media
 Pipeline end-to-end evaluation script.
 
 Connects to MongoDB and prints a quality report covering:
@@ -252,7 +252,7 @@ def _fmt_section(title: str) -> str:
 def build_report(metrics: list[dict], generated_at: str) -> str:
     """Build the full plain-text report string."""
     lines = [
-        "GEMA — Gender Evolution in Multimodal Archives",
+        "GEMA — Women's Representation in Portuguese Sports Media",
         "Pipeline End-to-End Evaluation Report",
         f"Generated: {generated_at}",
         f"Database:  {MONGO_URI}{DB_NAME}",

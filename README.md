@@ -28,7 +28,7 @@ gema-gender-evolution-in-multimodal-archives/
 
 The pipeline has two main components:
 
-- **NLP**: protagonist detection using a WikiNeural 80/20 weighted ensemble + Stanza morphological tagger, with Wikidata entity linking for gender inference
+- **NLP**: protagonist detection using a WikiNeural 80/20 weighted ensemble + Stanza morphological tagger, with Wikidata entity linking to identify female protagonists
 - **CV**: face detection (RetinaFace) + gender classification (DeepFace) on cover images
 
 See [`pipeline/README.md`](pipeline/README.md) for full details.
