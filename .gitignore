@@ -24,16 +24,16 @@ data/processed/
 .ipynb_checkpoints/
 
 # Abandoned component
-dashboard/_bbox_component/
+demo/_bbox_component/
 
-# Internal dashboard tools (not part of public release)
-dashboard/annotate_covers.py
-dashboard/audit_accuracy.py
-dashboard/bbox_annotator.py
-dashboard/eval_pipeline.py
-dashboard/app_dashboard.py
-dashboard/app_explorer.py
-dashboard/db.py
+# Internal demo tools (not part of public release)
+demo/annotate_covers.py
+demo/audit_accuracy.py
+demo/bbox_annotator.py
+demo/eval_pipeline.py
+demo/app_dashboard.py
+demo/app_explorer.py
+demo/db.py
 
 # Huggingface Space (separate repo)
 huggingface/
