@@ -16,12 +16,12 @@ gema-gender-evolution-in-multimodal-archives/
   dashboard/      -- Streamlit dashboard (live demo above)
   data/
     annotations/  -- manual face-level annotations (90 covers, 383 faces)
-    capas/        -- cover metadata JSON files (images not included)
+    capas/        -- cover images and face detection metadata
 ```
 
 ## Data
 
-- **Text corpus**: 198,771 sports articles from 3 outlets (A Bola, Record, O Jogo), retrieved via [Arquivo.pt](https://arquivo.pt), spanning 1996--2024
+- **Text corpus**: 198,771 sports articles from 7 outlets, retrieved via [Arquivo.pt](https://arquivo.pt), spanning 1998--2024
 - **Cover corpus**: 11,331 front-page cover images from [VerCapas.com](https://www.vercapas.com), available in `data/capas/images/`
 
 ## Pipeline

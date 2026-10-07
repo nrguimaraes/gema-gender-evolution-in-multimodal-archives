@@ -26,7 +26,7 @@ data/
 
 The 198,771 text articles were retrieved from [Arquivo.pt](https://arquivo.pt) using the
 crawlers in `pipeline/crawlers/`. The `cleaned/` folder contains the cleaned version and
-`enriched/` contains the Wikidata-enriched version used as input to the classifier.
+`enriched/` adds publication date metadata (`publication_date`, `date_extraction_method`) and is used as input to the classifier.
 
 ## Cover Images
 
