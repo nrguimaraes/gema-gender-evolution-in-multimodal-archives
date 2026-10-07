@@ -1,0 +1,16 @@
+pymongo>=4.6
+requests>=2.31
+pandas>=2.0
+
+# NLP
+stanza>=1.7
+transformers>=4.40
+torch>=2.0
+
+# CV
+deepface>=0.0.90
+retinaface>=0.0.17
+ultralytics>=8.0
+
+# Wikidata
+SPARQLWrapper>=2.0

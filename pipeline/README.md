@@ -17,9 +17,12 @@ pipeline/
 
 ## Requirements
 
-Additional dependencies for the full pipeline:
+```bash
+pip install -r pipeline/requirements.txt
+```
+
+Additional infrastructure:
 - MongoDB (local or Atlas) for article and cover storage
-- `deepface`, `retinaface`, `stanza`, `transformers` for the NLP and CV components
 
 ## Crawlers
 

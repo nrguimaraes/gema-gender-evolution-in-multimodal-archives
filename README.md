@@ -13,7 +13,7 @@ The interactive dashboard is publicly available at:
 ```
 gema-gender-evolution-in-multimodal-archives/
   pipeline/       -- crawlers, NLP classifiers, CV pipeline, evaluation
-  dashboard/      -- Streamlit dashboard (live demo above)
+  demo/           -- Streamlit dashboard (live demo above, Docker support included)
   data/
     annotations/  -- manual face-level annotations (90 covers, 383 faces)
     capas/        -- cover images and face detection metadata
@@ -35,7 +35,7 @@ See [`pipeline/README.md`](pipeline/README.md) for full details.
 
 ## Dashboard
 
-The Streamlit dashboard allows exploration of 28 years of women's representation trends. See [`dashboard/README.md`](dashboard/README.md) to run locally.
+The Streamlit dashboard allows exploration of 28 years of women's representation trends. See [`demo/README.md`](demo/README.md) to run locally or with Docker.
 
 ## Annotations
 
