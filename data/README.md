@@ -12,10 +12,13 @@ data/
   capas/
     images/    -- 11,331 front-page cover images (JPG)
     metadata/  -- one JSON per cover with face detection results (RetinaFace + DeepFace)
+  raw/
+    articles/  -- raw article JSON files as extracted from Arquivo.pt
+    links/     -- article URL lists collected by the link crawler
   cleaned/     -- cleaned article JSON files by outlet and year (input to NLP pipeline)
-  enriched/    -- Wikidata-enriched article JSON files by outlet and year
+  enriched/    -- articles with publication date added (publication_date + date_extraction_method fields)
   processed/
-    image_analysis/           -- final visual pipeline results (RetinaFace + YOLOv8n)
+    image_analysis/             -- final visual pipeline results (RetinaFace + YOLOv8n)
     processed_wikineural_final/ -- final NLP classification results (WikiNeural 80/20 ensemble)
 ```
 
