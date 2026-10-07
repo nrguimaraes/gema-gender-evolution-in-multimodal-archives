@@ -22,7 +22,7 @@ gema-gender-evolution-in-multimodal-archives/
 ## Data
 
 - **Text corpus**: 198,771 sports articles from 7 outlets, retrieved via [Arquivo.pt](https://arquivo.pt), spanning 1998--2024
-- **Cover corpus**: 11,331 front-page cover images from [VerCapas.com](https://www.vercapas.com), available in `data/capas/images/`
+- **Cover corpus**: 11,331 front-page cover images from 3 national sports newspapers (A Bola, Record, O Jogo), sourced from [VerCapas.com](https://www.vercapas.com), available in `data/capas/images/`
 
 ## Pipeline
 
