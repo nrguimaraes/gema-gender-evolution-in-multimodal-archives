@@ -11,14 +11,11 @@ pipeline/
   vision/         -- CV pipeline (RetinaFace face detection + DeepFace gender classification)
   evaluation/     -- pipeline evaluation scripts
   resources/      -- Portuguese first-name list used by the NLTK baseline
-  wikidata_api.py -- Wikidata enrichment utility
+  classify_articles.py  -- batch classifier entry point (runs wikineural_pesos over all articles)
+  wikidata_api.py       -- Wikidata enrichment utility
 ```
 
 ## Requirements
-
-```bash
-pip install -r dashboard/requirements.txt
-```
 
 Additional dependencies for the full pipeline:
 - MongoDB (local or Atlas) for article and cover storage
@@ -34,7 +31,7 @@ Additional dependencies for the full pipeline:
 
 ## NLP Classifiers
 
-The production classifier is the WikiNeural 80/20 weighted ensemble (`classifiers/process_wikineural_pesos.py`).
+The production classifier is the WikiNeural 80/20 weighted ensemble (`classifiers/process_wikineural_pesos.py`), run at scale via `classify_articles.py`.
 All classifiers use the concatenation of title and body text as input:
 ```python
 full_text = f"{title}. {body_text}"
@@ -50,8 +47,7 @@ full_text = f"{title}. {body_text}"
 ## Visual Pipeline
 
 1. `vision/analyze_faces.py` -- RetinaFace detection + DeepFace gender classification
-2. `vision/import_vision_to_mongo.py` -- imports results into MongoDB
-3. `vision/merge_vision_results.py` -- merges batched results
+2. `vision/process_yolo.py` -- YOLOv8n person detection (used to flag occluded/rear-facing persons)
 
 ## Evaluation
 
