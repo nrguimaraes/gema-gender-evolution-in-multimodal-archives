@@ -18,7 +18,7 @@ pipeline/
 ## Requirements
 
 ```bash
-pip install -r pipeline/requirements.txt
+pip install -r requirements.txt
 ```
 
 Additional infrastructure:

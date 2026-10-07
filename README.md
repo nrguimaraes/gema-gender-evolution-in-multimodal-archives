@@ -33,7 +33,7 @@ The pipeline has two main components:
 
 See [`pipeline/README.md`](pipeline/README.md) for full details.
 
-## Dashboard
+## Demo
 
 The Streamlit dashboard allows exploration of 28 years of women's representation trends. See [`demo/README.md`](demo/README.md) to run locally or with Docker.
 
