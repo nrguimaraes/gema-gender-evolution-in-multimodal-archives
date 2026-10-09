@@ -75,18 +75,18 @@ The 11,331 front-page cover images are in `data/capas/images/`, named `<outlet>_
 
 ### Sample cover record
 
-`data/capas/images/a-bola_2016-01-02.jpg`:
+`data/capas/images/a-bola_2022-02-18.jpg` (all 3 faces correctly identified by the pipeline):
 
-![A Bola cover 2016-01-02](../docs/cover_example.jpg)
+![A Bola cover 2022-02-18](../docs/cover_example.jpg)
 
-**Crawl metadata** (`data/capas/metadata/a-bola_2016-01-02.jpg.json`):
+**Crawl metadata** (`data/capas/metadata/a-bola_2022-02-18.jpg.json`):
 
 ```json
 {
   "source": "a-bola",
-  "date": "2016-01-02",
-  "page_url": "https://www.vercapas.com/capa/arquivo/a-bola/2016-01-02.html",
-  "img_url": "https://imgs.vercapas.com/covers/a-bola/a-bola-2016-01-02-6b51d4.jpg",
+  "date": "2022-02-18",
+  "page_url": "https://www.vercapas.com/capa/arquivo/a-bola/2022-02-18.html",
+  "img_url": "https://imgs.vercapas.com/covers/a-bola/2022/a-bola-2022-02-18-5e0cc2d9.jpg",
   "resolution": "full"
 }
 ```
@@ -94,21 +94,28 @@ The 11,331 front-page cover images are in `data/capas/images/`, named `<outlet>_
 **After CV pipeline** (entry in `data/processed/image_analysis/gender_vision_results_retinaface.json`):
 
 ```json
-"a-bola_2016-01-02.jpg": {
+"a-bola_2022-02-18.jpg": {
   "full_image": [
-    {
-      "gender": "Man",
-      "gender_confidence": 99.97,
-      "face_confidence": 1.0,
-      "bbox": [89, 164, 225, 374],
-      "cover_coverage_percentage": 4.4
-    },
     {
       "gender": "Man",
       "gender_confidence": 100.0,
       "face_confidence": 1.0,
-      "bbox": [341, 154, 473, 350],
-      "cover_coverage_percentage": 3.98
+      "bbox": [126, 99, 243, 283],
+      "cover_coverage_percentage": 3.32
+    },
+    {
+      "gender": "Man",
+      "gender_confidence": 100.0,
+      "face_confidence": 0.97,
+      "bbox": [444, 770, 476, 814],
+      "cover_coverage_percentage": 0.22
+    },
+    {
+      "gender": "Man",
+      "gender_confidence": 99.99,
+      "face_confidence": 0.93,
+      "bbox": [127, 813, 156, 851],
+      "cover_coverage_percentage": 0.17
     }
   ]
 }
