@@ -1,6 +1,6 @@
 # GEMA
 
-A longitudinal study of women's representation in Portuguese sports media (1996-2024), combining NLP protagonist detection and computer vision analysis of front-page covers.
+A longitudinal study of women's representation in Portuguese sports media (1998-2026), combining NLP protagonist detection and computer vision analysis of front-page covers.
 
 ## Quick Start
 
@@ -46,7 +46,7 @@ The interactive dashboard is publicly available at:
 
 ## Description
 
-**What this project does:** GEMA is a longitudinal dataset and analysis pipeline covering 28 years (1996-2024) of women's representation in Portuguese sports media. It combines a large-scale text corpus of sports articles with a corpus of front-page newspaper cover images, processed through NLP and computer vision pipelines to measure how often women appear as protagonists in sports journalism.
+**What this project does:** GEMA is a longitudinal dataset and analysis pipeline covering nearly three decades (1998-2026) of women's representation in Portuguese sports media. It combines a large-scale text corpus of sports articles with a corpus of front-page newspaper cover images, processed through NLP and computer vision pipelines to measure how often women appear as protagonists in sports journalism.
 
 **Who it is for:**
 
@@ -55,19 +55,19 @@ The interactive dashboard is publicly available at:
 - Journalists and media analysts studying diversity in sports coverage
 - Social scientists tracking longitudinal trends in sports journalism
 
-**What problem it solves:** Women's representation in sports media is systematically understudied, in part because analysing it at scale requires processing both text and images across decades of content. GEMA provides ready-to-use processed results, a reproducible pipeline, and an interactive dashboard, making it straightforward to explore or build on 28 years of data from three major Portuguese sports newspapers.
+**What problem it solves:** Women's representation in sports media is systematically understudied, in part because analysing it at scale requires processing both text and images across decades of content. GEMA provides ready-to-use processed results, a reproducible pipeline, and an interactive dashboard, making it straightforward to explore or build on nearly three decades of data from major Portuguese sports newspapers.
 
 ## Project Status
 
-This project is currently completed and stable. The dataset and pipeline represent the full study period (1996-2024) as described in the associated paper.
+This project is currently completed and stable. The dataset and pipeline represent the full study period (1998-2026) as described in the associated paper.
 
 ## Dataset Statistics
 
 | Corpus | Size | Sources | Period |
 |--------|------|---------|--------|
 | Text articles | 198,771 articles | 7 outlets (A Bola, Record, O Jogo, Maisfutebol, Zerozero, Sporttotal, Ojogopt) | 1998-2024 |
-| Cover images | 11,331 images | 3 newspapers (A Bola, Record, O Jogo) | 2016-2024 |
-| Manual annotations | 383 faces across 90 covers | 3 newspapers | 2016-2024 |
+| Cover images | 11,331 images | 3 newspapers (A Bola, Record, O Jogo) | 2016-2026 |
+| Manual annotations | 383 faces across 90 covers | 3 newspapers | 2016-2026 |
 
 ## Repository Structure
 
