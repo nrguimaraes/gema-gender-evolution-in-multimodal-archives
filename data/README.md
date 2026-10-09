@@ -31,15 +31,40 @@ crawlers in `pipeline/crawlers/`. Files in `raw/articles/` follow the naming con
 adds publication date metadata (`publication_date`, `date_extraction_method`), used as input
 to the classifier.
 
-### Sample article record (raw)
+### Sample article record
+
+**Raw** (`data/raw/articles/abolapt_2000.json`):
 
 ```json
 {
-  "link": "https://arquivo.pt/noFrame/replay/...",
+  "link": "https://arquivo.pt/noFrame/replay/20000511184017/http:/www.abola.pt:80/...",
   "source": "abola.pt",
   "year": "2000",
-  "title": "Chegou a vez de Toñito?",
-  "body_text": "Augusto Inácio vai ser obrigado a proceder a alterações..."
+  "title": "Destaques de quinta-feira",
+  "body_text": "OS MELHORES DE «A BOLA» – Rui Jorge divide os méritos pelo grupo..."
+}
+```
+
+**After NLP classification** (`data/processed/processed_wikineural_final/abolapt_2000.json`):
+
+```json
+{
+  "link": "https://arquivo.pt/noFrame/replay/20000511184017/http:/www.abola.pt:80/...",
+  "source": "abola.pt",
+  "year": "2000",
+  "title": "Destaques de quinta-feira",
+  "publication_date": "2000-05-11",
+  "date_extraction_method": "arquivo_pt_proxy",
+  "gender_analysis": {
+    "verdict": "Masculino",
+    "confidence_scores": { "F": 0.08, "M": 0.92 },
+    "details": {
+      "protagonists": {
+        "feminine": [],
+        "masculine": ["Nuno Gomes", "Rui Jorge"]
+      }
+    }
+  }
 }
 ```
 
@@ -47,6 +72,45 @@ to the classifier.
 
 The 11,331 front-page cover images are in `data/capas/images/`, named `<outlet>_<YYYY-MM-DD>.jpg`
 (e.g. `a-bola_2016-05-11.jpg`). They were sourced from [VerCapas.com](https://www.vercapas.com).
+
+### Sample cover record
+
+**Crawl metadata** (`data/capas/metadata/a-bola_2016-01-02.jpg.json`):
+
+```json
+{
+  "source": "a-bola",
+  "date": "2016-01-02",
+  "page_url": "https://www.vercapas.com/capa/arquivo/a-bola/2016-01-02.html",
+  "img_url": "https://imgs.vercapas.com/covers/a-bola/a-bola-2016-01-02-6b51d4.jpg",
+  "resolution": "full"
+}
+```
+
+**After CV pipeline** (entry in `data/processed/image_analysis/gender_vision_results_retinaface.json`):
+
+```json
+"a-bola_2016-01-02.jpg": {
+  "full_image": [
+    {
+      "gender": "Man",
+      "gender_confidence": 99.97,
+      "face_confidence": 1.0,
+      "bbox": [89, 164, 225, 374],
+      "cover_coverage_percentage": 4.4
+    },
+    {
+      "gender": "Man",
+      "gender_confidence": 100.0,
+      "face_confidence": 1.0,
+      "bbox": [341, 154, 473, 350],
+      "cover_coverage_percentage": 3.98
+    }
+  ]
+}
+```
+
+The `bbox` field is `[x1, y1, x2, y2]` in pixels. `cover_coverage_percentage` is the fraction of the cover area occupied by that face.
 
 ## Annotations
 
