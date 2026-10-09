@@ -75,6 +75,10 @@ The 11,331 front-page cover images are in `data/capas/images/`, named `<outlet>_
 
 ### Sample cover record
 
+`data/capas/images/a-bola_2016-01-02.jpg`:
+
+![A Bola cover 2016-01-02](../docs/cover_example.jpg)
+
 **Crawl metadata** (`data/capas/metadata/a-bola_2016-01-02.jpg.json`):
 
 ```json
