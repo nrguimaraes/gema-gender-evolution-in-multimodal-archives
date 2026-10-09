@@ -59,3 +59,25 @@ Manual annotations used for pipeline evaluation are in `data/annotations/`:
 |------|-------------|
 | `Manual_Annotation_bbox.csv` | Face-level annotations for 90 covers (383 faces) |
 | `gema_accuracy_audit_90_covers.csv` | Accuracy audit results for the CV pipeline |
+
+## Loading the Data
+
+```python
+import json, csv
+
+# Load raw articles for one outlet/year
+with open("data/raw/articles/abolapt_2020.json", encoding="utf-8") as f:
+    articles = json.load(f)  # list of {"link", "source", "year", "title", "body_text"}
+
+# Load NLP classification results for the same outlet/year
+with open("data/processed/processed_wikineural_final/abolapt_2020.json", encoding="utf-8") as f:
+    classified = json.load(f)  # same fields + "publication_date", "gender_analysis"
+
+# Load CV pipeline results for all covers
+with open("data/processed/image_analysis/gender_vision_results_retinaface.json", encoding="utf-8") as f:
+    vision = json.load(f)  # keyed by filename, e.g. vision["a-bola_2022-02-18.jpg"]
+
+# Load cover annotations (Filename column links to data/capas/images/)
+with open("data/annotations/Manual_Annotation_bbox.csv", encoding="utf-8") as f:
+    annotations = list(csv.DictReader(f))
+```
