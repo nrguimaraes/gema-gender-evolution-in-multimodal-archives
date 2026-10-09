@@ -34,13 +34,40 @@ with open("data/processed/image_analysis/gender_vision_results_retinaface.json",
     vision = json.load(f)  # keyed by filename, e.g. vision["a-bola_2022-02-18.jpg"]
 ```
 
-See [Loading the Data](#loading-the-data) below for more examples.
+See [Query Examples](#query-examples) below for more.
 
 ## Live Demo
 
 The interactive dashboard is publicly available at:
 
 **https://gema-dashboard-npu4gb6tgvsmmkw23bsvqz.streamlit.app/**
+
+![GEMA dashboard](docs/demo_screenshot.png)
+
+## Description
+
+**What this project does:** GEMA is a longitudinal dataset and analysis pipeline covering 28 years (1996-2024) of women's representation in Portuguese sports media. It combines a large-scale text corpus of sports articles with a corpus of front-page newspaper cover images, processed through NLP and computer vision pipelines to measure how often women appear as protagonists in sports journalism.
+
+**Who it is for:**
+
+- Researchers studying gender representation and media bias
+- NLP and computer vision researchers working on Portuguese-language sports media
+- Journalists and media analysts studying diversity in sports coverage
+- Social scientists tracking longitudinal trends in sports journalism
+
+**What problem it solves:** Women's representation in sports media is systematically understudied, in part because analysing it at scale requires processing both text and images across decades of content. GEMA provides ready-to-use processed results, a reproducible pipeline, and an interactive dashboard, making it straightforward to explore or build on 28 years of data from three major Portuguese sports newspapers.
+
+## Project Status
+
+This project is currently completed and stable. The dataset and pipeline represent the full study period (1996-2024) as described in the associated paper.
+
+## Dataset Statistics
+
+| Corpus | Size | Sources | Period |
+|--------|------|---------|--------|
+| Text articles | 198,771 articles | 7 outlets (A Bola, Record, O Jogo, Maisfutebol, Zerozero, Sporttotal, Ojogopt) | 1998-2024 |
+| Cover images | 11,331 images | 3 newspapers (A Bola, Record, O Jogo) | 2016-2024 |
+| Manual annotations | 383 faces across 90 covers | 3 newspapers | 2016-2024 |
 
 ## Repository Structure
 
@@ -63,12 +90,51 @@ gema-gender-evolution-in-multimodal-archives/
       processed_wikineural_final/ final NLP results (WikiNeural 80/20 ensemble)
 ```
 
-## Data
+See [`data/README.md`](data/README.md) for full details, including data format and annotated examples.
 
-- **Text corpus**: 198,771 sports articles from 7 outlets, retrieved via [Arquivo.pt](https://arquivo.pt), spanning 1998-2024
-- **Cover corpus**: 11,331 front-page cover images from 3 national sports newspapers (A Bola, Record, O Jogo), sourced from [VerCapas.com](https://www.vercapas.com), available in `data/capas/images/`
+## Data Format
 
-See [`data/README.md`](data/README.md) for full details, including the CSV-to-image naming convention.
+### Article records (`data/raw/articles/` and `data/processed/processed_wikineural_final/`)
+
+Files follow the naming convention `<outlet>_<YYYY>.json` (e.g. `abolapt_2020.json`), each containing a list of article objects.
+
+| Field | Description |
+|-------|-------------|
+| `link` | Original article URL via Arquivo.pt |
+| `source` | Outlet identifier (e.g. `abola.pt`) |
+| `year` | Publication year |
+| `title` | Article headline |
+| `body_text` | Full article body |
+| `publication_date` | Extracted publication date (ISO format, added in enrichment step) |
+| `date_extraction_method` | Method used to extract the date |
+| `gender_analysis` | NLP classification result (added by the classifier) |
+| `gender_analysis.verdict` | `"Masculino"`, `"Feminino"`, or `"Neutro"` |
+| `gender_analysis.confidence_scores` | `{"F": float, "M": float}` |
+| `gender_analysis.details.protagonists` | `{"feminine": [...], "masculine": [...]}` named entities |
+
+### Cover image results (`data/processed/image_analysis/gender_vision_results_retinaface.json`)
+
+A single JSON object keyed by filename (e.g. `"a-bola_2022-02-18.jpg"`), each entry containing a list of detected faces.
+
+| Field | Description |
+|-------|-------------|
+| `gender` | `"Man"` or `"Woman"` |
+| `gender_confidence` | Confidence score (0-100) |
+| `face_confidence` | RetinaFace detection confidence (0-1) |
+| `bbox` | Bounding box `[x1, y1, x2, y2]` in pixels |
+| `cover_coverage_percentage` | Fraction of cover area occupied by this face |
+
+### Cover metadata (`data/capas/metadata/`)
+
+One JSON file per cover image (e.g. `a-bola_2022-02-18.jpg.json`).
+
+| Field | Description |
+|-------|-------------|
+| `source` | Newspaper slug (e.g. `a-bola`) |
+| `date` | Cover date (ISO format) |
+| `page_url` | VerCapas.com page URL |
+| `img_url` | Direct image URL |
+| `resolution` | Image resolution tier |
 
 ## Pipeline
 
@@ -78,12 +144,6 @@ The pipeline has two main components:
 - **CV**: face detection (RetinaFace) + gender classification (DeepFace) on cover images
 
 See [`pipeline/README.md`](pipeline/README.md) for full details.
-
-## Demo
-
-The Streamlit dashboard allows exploration of 28 years of women's representation trends. See [`demo/README.md`](demo/README.md) to run locally or with Docker.
-
-![GEMA dashboard](docs/demo_screenshot.png)
 
 ## Annotations
 
@@ -116,4 +176,63 @@ with open("data/processed/image_analysis/gender_vision_results_retinaface.json",
 # Load cover annotations (Filename column links to data/capas/images/)
 with open("data/annotations/Manual_Annotation_bbox.csv", encoding="utf-8") as f:
     annotations = list(csv.DictReader(f))
+```
+
+## Query Examples
+
+**1. Count articles with female protagonists per year for one outlet**
+
+```python
+import json
+from collections import Counter
+
+with open("data/processed/processed_wikineural_final/abolapt_2020.json", encoding="utf-8") as f:
+    articles = json.load(f)
+
+counts = Counter(a["gender_analysis"]["verdict"] for a in articles if "gender_analysis" in a)
+print(counts)  # Counter({'Masculino': 1820, 'Neutro': 312, 'Feminino': 48})
+```
+
+**2. Get all named female protagonists across an outlet/year**
+
+```python
+female_names = []
+for article in articles:
+    protagonists = article.get("gender_analysis", {}).get("details", {}).get("protagonists", {})
+    female_names.extend(protagonists.get("feminine", []))
+
+print(set(female_names))
+```
+
+**3. Find covers where the pipeline detected at least one woman**
+
+```python
+import json
+
+with open("data/processed/image_analysis/gender_vision_results_retinaface.json", encoding="utf-8") as f:
+    vision = json.load(f)
+
+covers_with_women = [
+    filename for filename, entry in vision.items()
+    if any(face["gender"] == "Woman" for face in entry.get("full_image", []))
+]
+print(f"{len(covers_with_women)} covers with at least one woman detected")
+```
+
+**4. Compute the share of female faces per newspaper**
+
+```python
+from collections import defaultdict
+
+stats = defaultdict(lambda: {"total": 0, "women": 0})
+for filename, entry in vision.items():
+    outlet = filename.split("_")[0]  # e.g. "a-bola"
+    for face in entry.get("full_image", []):
+        stats[outlet]["total"] += 1
+        if face["gender"] == "Woman":
+            stats[outlet]["women"] += 1
+
+for outlet, s in stats.items():
+    pct = 100 * s["women"] / s["total"] if s["total"] else 0
+    print(f"{outlet}: {pct:.1f}% female faces ({s['women']}/{s['total']})")
 ```
