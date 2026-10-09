@@ -65,9 +65,10 @@ This project is currently completed and stable. The dataset and pipeline represe
 
 | Corpus | Size | Sources | Period |
 |--------|------|---------|--------|
-| Text articles | 198,771 articles | 7 outlets (A Bola, Record, O Jogo, Maisfutebol, Zerozero, Sporttotal, Ojogopt) | 1998-2024 |
+| Text articles | 198,777 articles | 7 outlets (A Bola, Record, O Jogo, Euronews, Notícias ao Minuto, Sapo, Zap Aeiou) | 1998-2024 |
 | Cover images | 11,331 images | 3 newspapers (A Bola, Record, O Jogo) | 2016-2026 |
-| Manual annotations | 383 faces across 90 covers | 3 newspapers | 2016-2026 |
+| Manual annotations (bbox) | 30 covers, 95 faces | 3 newspapers | 2016-2026 |
+| Accuracy audit annotations | 383 face comparisons across 90 covers | 3 newspapers | 2016-2026 |
 
 ## Repository Structure
 
@@ -76,7 +77,7 @@ gema-gender-evolution-in-multimodal-archives/
   pipeline/       crawlers, NLP classifiers, CV pipeline, evaluation
   demo/           Streamlit dashboard (live demo above, Docker support included)
   data/
-    annotations/  manual face-level annotations (90 covers, 383 faces)
+    annotations/  manual bbox annotations (30 covers) + accuracy audit (90 covers, 383 faces)
     capas/
       images/     11,331 cover images (JPG), named <outlet>_<YYYY-MM-DD>.jpg
       metadata/   one JSON per cover with crawl metadata (source, date, original URL)
@@ -151,8 +152,8 @@ Manual annotations used for pipeline evaluation are in `data/annotations/`:
 
 | File | Description |
 |------|-------------|
-| `Manual_Annotation_bbox.csv` | Face-level annotations for 90 covers (383 faces) |
-| `gema_accuracy_audit_90_covers.csv` | Accuracy audit results for the CV pipeline |
+| `Manual_Annotation_bbox.csv` | Bounding box annotations for 30 covers (95 faces) |
+| `gema_accuracy_audit_90_covers.csv` | Face-level accuracy audit for 90 covers (383 face comparisons) |
 
 The `Filename` column in both files maps each row directly to its cover image in `data/capas/images/`.
 
