@@ -2,6 +2,40 @@
 
 A longitudinal study of women's representation in Portuguese sports media (1996--2024), combining NLP protagonist detection and computer vision analysis of front-page covers.
 
+## Quick Start
+
+The processed results are already included in this repository -- no need to re-run the pipeline.
+
+**Explore the dashboard (no setup required):**
+
+The interactive dashboard is publicly available at:
+**https://gema-dashboard-npu4gb6tgvsmmkw23bsvqz.streamlit.app/**
+
+**Run the dashboard locally:**
+
+```bash
+git clone https://github.com/nrguimaraes/gema-gender-evolution-in-multimodal-archives.git
+cd gema-gender-evolution-in-multimodal-archives/demo
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+**Use the data directly:**
+
+```python
+import json
+
+# NLP results -- women's representation in articles, one outlet/year
+with open("data/processed/processed_wikineural_final/abolapt_2020.json", encoding="utf-8") as f:
+    classified = json.load(f)  # list of articles, each with "gender_analysis" verdict
+
+# CV results -- face detection + gender on cover images
+with open("data/processed/image_analysis/gender_vision_results_retinaface.json", encoding="utf-8") as f:
+    vision = json.load(f)  # keyed by filename, e.g. vision["a-bola_2022-02-18.jpg"]
+```
+
+See [Loading the Data](#loading-the-data) below for more examples.
+
 ## Live Demo
 
 The interactive dashboard is publicly available at:
@@ -59,6 +93,8 @@ Manual annotations used for pipeline evaluation are in `data/annotations/`:
 |------|-------------|
 | `Manual_Annotation_bbox.csv` | Face-level annotations for 90 covers (383 faces) |
 | `gema_accuracy_audit_90_covers.csv` | Accuracy audit results for the CV pipeline |
+
+The `Filename` column in both files maps each row directly to its cover image in `data/capas/images/`.
 
 ## Loading the Data
 
