@@ -108,8 +108,8 @@ Files follow the naming convention `<outlet>_<YYYY>.json` (e.g. `abolapt_2020.js
 | `publication_date` | Extracted publication date (ISO format, added in enrichment step) |
 | `date_extraction_method` | Method used to extract the date |
 | `gender_analysis` | NLP classification result (added by the classifier) |
-| `gender_analysis.verdict` | `"Masculino"`, `"Feminino"`, or `"Neutro"` |
-| `gender_analysis.confidence_scores` | `{"F": float, "M": float}` |
+| `gender_analysis.verdict` | `"Masculino"`, `"Feminino"`, or `"Neutro/Equilibrado"` |
+| `gender_analysis.confidence_scores` | `{"F": float, "M": float, "signals_count": {...}}` |
 | `gender_analysis.details.protagonists` | `{"feminine": [...], "masculine": [...]}` named entities |
 
 ### Cover image results (`data/processed/image_analysis/gender_vision_results_retinaface.json`)
