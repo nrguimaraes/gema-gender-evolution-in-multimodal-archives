@@ -31,6 +31,18 @@ crawlers in `pipeline/crawlers/`. Files in `raw/articles/` follow the naming con
 adds publication date metadata (`publication_date`, `date_extraction_method`), used as input
 to the classifier.
 
+### Sample article record (raw)
+
+```json
+{
+  "link": "https://arquivo.pt/noFrame/replay/...",
+  "source": "abola.pt",
+  "year": "2000",
+  "title": "Chegou a vez de Toñito?",
+  "body_text": "Augusto Inácio vai ser obrigado a proceder a alterações..."
+}
+```
+
 ## Cover Images
 
 The 11,331 front-page cover images are in `data/capas/images/`, named `<outlet>_<YYYY-MM-DD>.jpg`
