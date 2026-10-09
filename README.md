@@ -16,13 +16,25 @@ gema-gender-evolution-in-multimodal-archives/
   demo/           -- Streamlit dashboard (live demo above, Docker support included)
   data/
     annotations/  -- manual face-level annotations (90 covers, 383 faces)
-    capas/        -- cover images and face detection metadata
+    capas/
+      images/     -- 11,331 cover images (JPG), named <outlet>_<YYYY-MM-DD>.jpg
+      metadata/   -- one JSON per cover with crawl metadata (source, date, original URL)
+    raw/
+      articles/   -- raw article JSON files, one per outlet per year
+      links/      -- article URL lists from the link crawler
+    cleaned/      -- cleaned article JSON files
+    enriched/     -- articles with publication date added (input to NLP classifier)
+    processed/
+      image_analysis/             -- final CV pipeline results (RetinaFace + YOLOv8n)
+      processed_wikineural_final/ -- final NLP results (WikiNeural 80/20 ensemble)
 ```
 
 ## Data
 
 - **Text corpus**: 198,771 sports articles from 7 outlets, retrieved via [Arquivo.pt](https://arquivo.pt), spanning 1998--2024
 - **Cover corpus**: 11,331 front-page cover images from 3 national sports newspapers (A Bola, Record, O Jogo), sourced from [VerCapas.com](https://www.vercapas.com), available in `data/capas/images/`
+
+See [`data/README.md`](data/README.md) for full details, including the CSV-to-image naming convention.
 
 ## Pipeline
 
