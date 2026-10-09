@@ -1,31 +1,31 @@
-﻿Source,Date,Boxes,Women,Men,Notes
-A Bola,2016-05-11,2,0,2,
-A Bola,2018-10-29,2,0,2,
-A Bola,2019-04-06,2,0,2,
-A Bola,2021-05-13,4,0,4,
-A Bola,2022-02-18,0,0,0,All faces were correctly identified
-A Bola,2022-10-07,3,0,3,
-A Bola,2023-06-05,3,0,3,
-A Bola,2023-09-26,5,1,4,
-A Bola,2023-09-27,4,3,1,
-A Bola,2026-03-01,4,0,4,
-O Jogo,2016-04-27,2,0,2,
-O Jogo,2017-06-15,1,0,1,
-O Jogo,2018-05-02,4,0,4,
-O Jogo,2019-02-17,0,0,0,All faces were correctly identified
-O Jogo,2019-12-09,1,0,1,
-O Jogo,2020-12-21,0,0,0,All faces were correctly identified
-O Jogo,2024-05-26,1,0,1,
-O Jogo,2024-08-12,2,0,2,
-O Jogo,2025-04-02,2,0,2,
-O Jogo,2025-12-13,0,0,0,All faces were correctly identified
-Record,2016-09-01,1,0,1,
-Record,2017-06-21,9,0,9,
-Record,2018-04-15,1,0,1,
-Record,2021-03-16,4,0,4,
-Record,2021-12-16,0,0,0,All faces were correctly identified
-Record,2023-01-03,5,1,4,
-Record,2023-04-02,24,21,2,In this instance, there were many faces on the cover that were not identified; however, it is important to note that these were very small faces associated with a brief news item
-Record,2023-12-29,2,0,2,
-Record,2024-04-29,7,0,7,
-Record,2026-02-16,0,0,0,
+Filename,Source,Date,Boxes,Women,Men,Notes
+a-bola_2016-05-11.jpg,A Bola,2016-05-11,2,0,2,
+a-bola_2018-10-29.jpg,A Bola,2018-10-29,2,0,2,
+a-bola_2019-04-06.jpg,A Bola,2019-04-06,2,0,2,
+a-bola_2021-05-13.jpg,A Bola,2021-05-13,4,0,4,
+a-bola_2022-02-18.jpg,A Bola,2022-02-18,0,0,0,All faces were correctly identified
+a-bola_2022-10-07.jpg,A Bola,2022-10-07,3,0,3,
+a-bola_2023-06-05.jpg,A Bola,2023-06-05,3,0,3,
+a-bola_2023-09-26.jpg,A Bola,2023-09-26,5,1,4,
+a-bola_2023-09-27.jpg,A Bola,2023-09-27,4,3,1,
+a-bola_2026-03-01.jpg,A Bola,2026-03-01,4,0,4,
+o-jogo_2016-04-27.jpg,O Jogo,2016-04-27,2,0,2,
+o-jogo_2017-06-15.jpg,O Jogo,2017-06-15,1,0,1,
+o-jogo_2018-05-02.jpg,O Jogo,2018-05-02,4,0,4,
+o-jogo_2019-02-17.jpg,O Jogo,2019-02-17,0,0,0,All faces were correctly identified
+o-jogo_2019-12-09.jpg,O Jogo,2019-12-09,1,0,1,
+o-jogo_2020-12-21.jpg,O Jogo,2020-12-21,0,0,0,All faces were correctly identified
+o-jogo_2024-05-26.jpg,O Jogo,2024-05-26,1,0,1,
+o-jogo_2024-08-12.jpg,O Jogo,2024-08-12,2,0,2,
+o-jogo_2025-04-02.jpg,O Jogo,2025-04-02,2,0,2,
+o-jogo_2025-12-13.jpg,O Jogo,2025-12-13,0,0,0,All faces were correctly identified
+record_2016-09-01.jpg,Record,2016-09-01,1,0,1,
+record_2017-06-21.jpg,Record,2017-06-21,9,0,9,
+record_2018-04-15.jpg,Record,2018-04-15,1,0,1,
+record_2021-03-16.jpg,Record,2021-03-16,4,0,4,
+record_2021-12-16.jpg,Record,2021-12-16,0,0,0,All faces were correctly identified
+record_2023-01-03.jpg,Record,2023-01-03,5,1,4,
+record_2023-04-02.jpg,Record,2023-04-02,24,21,2,In this instance
+record_2023-12-29.jpg,Record,2023-12-29,2,0,2,
+record_2024-04-29.jpg,Record,2024-04-29,7,0,7,
+record_2026-02-16.jpg,Record,2026-02-16,0,0,0,

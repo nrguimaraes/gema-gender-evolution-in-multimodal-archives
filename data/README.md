@@ -134,6 +134,6 @@ filename = source.lower().replace(" ", "-") + "_" + date + ".jpg"
 ### Sample annotation row
 
 ```
-Source,Date,Boxes,Women,Men,Notes
-A Bola,2016-05-11,2,0,2,
+Filename,Source,Date,Boxes,Women,Men,Notes
+a-bola_2016-05-11.jpg,A Bola,2016-05-11,2,0,2,
 ```
