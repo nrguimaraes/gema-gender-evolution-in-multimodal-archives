@@ -49,6 +49,8 @@ See [`pipeline/README.md`](pipeline/README.md) for full details.
 
 The Streamlit dashboard allows exploration of 28 years of women's representation trends. See [`demo/README.md`](demo/README.md) to run locally or with Docker.
 
+![GEMA dashboard](docs/demo_screenshot.png)
+
 ## Annotations
 
 Manual annotations used for pipeline evaluation are in `data/annotations/`:
